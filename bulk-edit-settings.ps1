@@ -7,10 +7,12 @@ param(
   [boolean]$disableEaseCursorMovement = $true, # disables "easing" cursor movement between displays, feels super jank when on
 
   # file explorer settings
-  # [boolean]$hideRecentlyUsedFilesInQuickAccess = $true, # prevents windows from showing recently used files in your quick access pin list in file explorer
   [boolean]$hideRecycleBinOnDesktop = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
   [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
+  [boolean]$showFrequentlyUsedFoldersInQuickAccess = $false, # allows windows to show recently used folders in your quick access pin list in file explorer
   [boolean]$showHiddenFilesAndFolders = $true, # prevents windows from hiding files and folders in file explorer
+  [boolean]$showOfficeCloudFilesInQuickAccess = $false, # allows windows to show cloud files from office.com in your quick access pin list in file explorer
+  [boolean]$showRecentlyUsedFilesInQuickAccess = $false, # allows windows to show recently used files in your quick access pin list in file explorer
 
   # network settings
   [boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
@@ -116,12 +118,6 @@ function editRegistry() {
       propertyValue = $disableEaseCursorMovement ? 0 : 1
     }
     # file explorer settings
-    # hideRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
-    #   path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-    #   property = "Start_TrackDocs"
-    #   propertyType = "DWord"
-    #   propertyValue = $hideRecentlyUsedFilesInQuickAccess ? 0 : 1
-    # }
     hideRecycleBinOnDesktop = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
@@ -148,12 +144,31 @@ function editRegistry() {
       propertyType = "DWord"
       propertyValue = $showFileExtensionsForKnownFileTypes ? 0 : 1
     }
+    showFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
+      property = "ShowRecent"
+      propertyType = "DWord"
+      propertyValue = $showFrequentlyUsedFoldersInQuickAccess ? 1 : 0
+    }
     showHiddenFilesAndFolders = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Hidden"
       propertyType = "DWord"
       propertyValue = $showHiddenFilesAndFolders ? 1 : 0
     }
+    showOfficeCloudFilesInQuickAccess = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
+      property = "ShowCloudFilesInQuickAccess"
+      propertyType = "DWord"
+      propertyValue = $showOfficeCloudFilesInQuickAccess ? 1 : 0
+    }
+    showRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
+      property = "ShowRecent"
+      propertyType = "DWord"
+      propertyValue = $showRecentlyUsedFilesInQuickAccess ? 1 : 0
+    }
+
     # start menu settings
     showMorePinsOnStartMenu = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
