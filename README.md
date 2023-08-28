@@ -227,6 +227,7 @@
 					- `winget install google.chromeremotedesktop --ignore-security-hash`
 					- `winget install obsproject.obsstudio --ignore-security-hash --force`
 				- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
+	- If software isn't available via winget, install software the old fashioned way 😭
 18. configuring rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
