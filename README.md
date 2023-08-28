@@ -1,51 +1,55 @@
 # steps
-1. update & configure your motherboard's bios
+1. update & configure your motherboard's bios 
 	- attach a flash drive to your computer (preferably less than 32gb)
 	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
 	- download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
+	- enter bios (mash delete while computer is resatarting)
+ 	- verify that cpu temp isn't anything crazy
+  		- should be on bios home page
+    		- should be sub 60c  
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
-2. purchase/obtain a `windows 11 pro for workstations` product key
+3. purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
-3. create a bootable flash drive & install windows
+4. create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
-4. verify that windows is activated
+5. verify that windows is activated
 	- open settings & navigate to `system > activation`
 	- If it says activation failed, don't panic.
 		- you may need to activate by phone
 		- there should be a button to do this via the `system > activation` screen
-5. update windows
+6. update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
 	- **restart your computer**
-6. update windows terminal
+7. update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 		- if update button doesn't appear within 30 seconds it's already up-to-date
-7. install powershell 7
+8. install powershell 7
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
-8. configure windows terminal & winget
+9. configure windows terminal & winget
 	- restart windows terminal
 	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 	- close windows terminal & open it again
 	- confirm that terminal is elevated (should state in tab) & run the following command
 		- `winget settings --enable InstallerHashOverride`
-9. install git
+10. install git
 	- open windows terminal
 	- run the following command
 		- `winget install git.git`
-10. download, configure, & run `bulk-edit-settings` powershell script
+11. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
@@ -56,7 +60,7 @@
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then **restart your computer**
-11. manually configure other windows settings
+12. manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -74,7 +78,7 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
-12. download, install, & run winget-autoupdate (bulk software installer/updater)
+13. download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
@@ -99,7 +103,7 @@
 			- REALiX.HWiNFO
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
-13. configure msi afterburner (gpu fan curve)
+14. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
@@ -120,8 +124,8 @@
 	- temps or model dependent
  	- higher end components run hotter than lower end components
   	- lower temp is better but as long as things are generally in below ranges you should be fine 
- 		- cpu idle temp should be 30-50 
-  		- gpu idle temp should be 30-50 
+ 		- cpu idle temp should be 30-50c 
+  		- gpu idle temp should be 30-50c
 16. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
