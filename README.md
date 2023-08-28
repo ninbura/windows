@@ -132,6 +132,22 @@
   	- lower temp is better but as long as things are generally in below ranges you should be fine 
  		- cpu idle temp should be 30-50c 
   		- gpu idle temp should be 30-50c
+	- open Aida64 Extreme (installed via wigui, search start)
+		- confirm you're okay with app being in trial mode
+		- open system stability test dialog `tools > system stability test`
+  			- enable the following devices
+     				- cpu
+       				- fpu
+       				- cache
+       				- system memory
+       				- GPU(s)
+			- run test for 5-15 minutes
+				- cpu temp should be 70-100c
+   				- gpu temp should be 50-80c
+	- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
+	- open crystaldiskinfo (search start)
+		- verify that m.2 idle temp is below 60c
+  		- verify that m.2 drive health is "good"
 16. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
