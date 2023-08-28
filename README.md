@@ -79,7 +79,7 @@
 	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
-	- click on the "configure WAU tab"
+	- click on the "configure wau tab"
  		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
