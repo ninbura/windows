@@ -17,7 +17,7 @@
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
 4. verify that windows is activated
-	- navigate to `system > activation`
+	- open settings & navigate to `system > activation`
 	- If it says activation failed, don't panic.
 	- If you purchased a key from the above link, you may need to activate by phone.
 	- there should be a button to do this via the `system > activation` screen
