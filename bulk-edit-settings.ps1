@@ -7,20 +7,29 @@ param(
   [boolean]$disableEaseCursorMovement = $true, # disables "easing" cursor movement between displays, feels super jank when on
 
   # file explorer settings
-  [boolean]$hideRecentlyUsedFilesInQuickAccess = $true, # prevents windows from showing recently used files in your quick access pin list in file explorer
+  # [boolean]$hideRecentlyUsedFilesInQuickAccess = $true, # prevents windows from showing recently used files in your quick access pin list in file explorer
   [boolean]$hideRecycleBinOnDesktop = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
   [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
   [boolean]$showHiddenFilesAndFolders = $true, # prevents windows from hiding files and folders in file explorer
 
   # network settings
   [boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
-  [boolean]$bypassNetworkOptions = $false, # this variable is for testing purposes, please set it to false if you're not testing the script
+  [boolean]$bypassNetworkOptions = $true, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
 
   # performance settings
-  [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan
+  [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
+  [boolean]$disableMonitorTimeout = $true, # prevents your monitors from turning themselves off after a certain number of inactive minutes
+  [int]$monitorTimeout = 60, # if $disableMonitorTimeout is set to false, this is the number of minutes of inactivity it will take before your monitors turn off
+  [boolean]$disableSleep = $false, # prevents your computer from entering sleep after a certain number of inactive minutes, highly reccomended for desktop computers
+  [int]$standbyTimeout = 15, # if $disableSleep is set to false, this is the number of minutes of inactivity it will take before your computer goes into standby/sleep
+  [boolean]$disableUsbSelectiveSuspend = $true, # this prevents windows from disconnecting usb devices after a certain amount of inactivity from said device
 
   # start menu settings
   [boolean]$showMorePinsOnStartMenu = $true, # gives more space for pinned apps vs suggested apps
+  [boolean]$showRecentlyAddedApps = $true, # puts a entries at the bottom of the start menu for recently installed apps
+  [boolean]$showMostUsedApps = $true, # puts a entries at the bottom of the start menu for most used apps
+  [boolean]$showRecentlyOpenedItems = $true, # this is techinically the setting for start and the task bar, I suggest you leave this enabled
+  [boolean]$showRecomendations = $false, # puts a reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
 
   # task bar settings
   [boolean]$hideChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
@@ -41,10 +50,19 @@ function quit () {
 
 function modifyRegistry($registryTweak) {
   if($registryTweak.delete){
-    if(Test-Path -Path $registryTweak.path){
+    if($null -ne $registryTweak.property) {
+      if(Test-Path -Path $registryTweak.path){
+        $currentPropertyValue = (Get-ItemProperty -Path $registryTweak.path).$($registryTweak.property)
+      }
+  
+      if($null -ne $currentPropertyValue){
+        Remove-ItemProperty -Path $registryTweak.path -Name $registryTweak.property -Force -Verbose
+      }
+    } else {
       Remove-Item -Path $registryTweak.path -Recurse -Force -Verbose
     }
-  } else {
+
+  } elseif ($null -ne $registryTweak.propertyValue) {
     if(!(Test-Path -Path $registryTweak.path)){
       New-Item -Path $registryTweak.path -Force -Verbose
     }
@@ -98,16 +116,24 @@ function editRegistry() {
       propertyValue = $disableEaseCursorMovement ? 0 : 1
     }
     # file explorer settings
-    hideRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-      property = "Start_TrackDocs"
-      propertyType = "DWord"
-      propertyValue = $hideRecentlyUsedFilesInQuickAccess ? 0 : 1
-    }
+    # hideRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
+    #   path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+    #   property = "Start_TrackDocs"
+    #   propertyType = "DWord"
+    #   propertyValue = $hideRecentlyUsedFilesInQuickAccess ? 0 : 1
+    # }
     hideRecycleBinOnDesktop = @(
       [pscustomobject]@{
-        path = "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\Desktop\NameSpace\645FF040-5081-101B-9F08-00AA002F954E"
-        delete = $hideRecycleBinOnDesktop ? $true : $false
+        path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
+        property = "{645FF040-5081-101B-9F08-00AA002F954E}"
+        propertyType = "DWord"
+        propertyValue = $hideRecycleBinOnDesktop ? 1 : 0
+      },
+      [pscustomobject]@{
+        path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu"
+        property = "{645FF040-5081-101B-9F08-00AA002F954E}"
+        propertyType = "DWord"
+        propertyValue = $hideRecycleBinOnDesktop ? 1 : 0
       },
       [pscustomobject]@{
         path = "HKCU:\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}"
@@ -134,6 +160,46 @@ function editRegistry() {
       property = "Start_Layout"
       propertyType = "DWord"
       propertyValue = $showMorePinsOnStartMenu ? 1 : 0
+    }
+    showRecentlyAddedApps = [pscustomobject]@{
+      path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
+      property = "HideRecentlyAddedApps"
+      propertyType = "DWord"
+      propertyValue = $showRecentlyAddedApps ? 0 : 1
+    }
+    showMostUsedApps = @(
+      [pscustomobject]@{
+        path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
+        property = "ShowOrHideMostUsedApps"
+        propertyType = "DWord"
+        propertyValue = $showMostUsedApps ? 1 : 0
+      },
+      [pscustomobject]@{
+        path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
+        property = "NoStartMenuMFUprogramsList"
+        propertyType = "DWord"
+        propertyValue = $showMostUsedApps ? 1 : 0
+        delete = $showMostUsedApps
+      },
+      [pscustomobject]@{
+        path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
+        property = "NoInstrumentation"
+        propertyType = "DWord"
+        propertyValue = $showMostUsedApps ? 1 : 0
+        delete = $showMostUsedApps
+      }
+    )
+    showRecentlyOpenedItems = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "Start_TrackDocs"
+      propertyType = "DWord"
+      propertyValue = $showRecentlyOpenedItems ? 1 : 0
+    }
+    showRecomendations = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "Start_IrisRecommendations"
+      propertyType = "DWord"
+      propertyValue = $showRecomendations ? 1 : 0
     }
     # task bar settings
     hideChatButtonOnTaskBar = [pscustomobject]@{
@@ -211,12 +277,30 @@ function configureOtherSettings(){
     }
   } 
 
-  powercfg -change -monitor-timeout-dc 0
-  powercfg -change -monitor-timeout-ac 0
-  powercfg -change -standby-timeout-dc 0
-  powercfg -change -standby-timeout-ac 0
-  powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
-  powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
+  if($disableMonitorTimeout){
+    powercfg -change -monitor-timeout-dc 0
+    powercfg -change -monitor-timeout-ac 0
+  } else {
+    powercfg -change -monitor-timeout-dc $monitorTimeout
+    powercfg -change -monitor-timeout-ac $monitorTimeout
+  }
+
+  if($disableSleep) {
+    powercfg -change -standby-timeout-dc 0
+    powercfg -change -standby-timeout-ac 0
+  } else {
+    powercfg -change -standby-timeout-dc $standbyTimeout
+    powercfg -change -standby-timeout-ac $standbyTimeout
+  }
+
+  if($disableUsbSelectiveSuspend) {
+    powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
+    powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
+  } else {
+    powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
+    powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
+  }
+
 }
  
 Write-Host "Starting process..."
