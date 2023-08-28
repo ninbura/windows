@@ -139,6 +139,12 @@
 	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
+		- To find application ids to add to your `.install-list.txt`, search for applications via winget in powershell via windows terminal.
+			- example
+				- `winget search chrome`
+				- *take note of or copy id for google chrome* 
+				- `winget install google.chrome`
+    			- see [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below) for details on `--ignore-security-hash` & `--force` winget flags.
   		- required applications (do not remove from `.install-list.txt`)
 			- 7zip.7zip
 			- FinalWire.AIDA64.Extreme
