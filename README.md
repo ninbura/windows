@@ -112,7 +112,7 @@
 				- needlessly update every time you login
 			- you will see this info in windows notification center (click clock on task bar)  
 	- **restart your computer**
-	- wait for winget-autoupdate to update existing packages
+	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
   		- required applications (do not remove from `.install-list.txt`)
