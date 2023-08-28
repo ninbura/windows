@@ -141,21 +141,21 @@
 15. verify that system temperatures are in-check
     	- cpu & gpu
 		- open HWiNFO (installed via wigui, search start)
-	 		- select "show sensors" 
+			- select "show sensors" 
 		- temps are model dependent
-	 	- higher end components run hotter than lower end components
-	  	- lower temp is better but as long as things are generally in below ranges you should be fine 
-	 		- cpu idle temp should be 30-50c 
-	  		- gpu idle temp should be 30-50c
+		- higher end components run hotter than lower end components
+		- lower temp is better but as long as things are generally in below ranges you should be fine 
+			- cpu idle temp should be 30-50c 
+			- gpu idle temp should be 30-50c
 		- open Aida64 Extreme (installed via wigui, search start)
 			- confirm you're okay with app being in trial mode
 			- open system stability test dialog `tools > system stability test`
-	  			- enable everything but "local disks"
+				- enable everything but "local disks"
 				- run test for 5-15 minutes
 					- cpu temp should be 70-100c
-	   				- gpu temp should be 50-80c
+					- gpu temp should be 50-80c
 		- if cpu temps are too high re-read step 1 for fixes
-	 	- if gpu temps are high verify that gpu fans are spinning & set a more aggressive fan curve via msi afterburner
+		- if gpu temps are high verify that gpu fans are spinning & set a more aggressive fan curve via msi afterburner
 	- m.2 drives
 		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
 		- open crystaldiskinfo (search start)
