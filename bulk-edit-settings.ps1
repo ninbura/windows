@@ -21,17 +21,17 @@ param(
   # performance settings
   [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
   [boolean]$disableMonitorTimeout = $true, # prevents your monitors from turning themselves off after a certain number of inactive minutes
-  [int]$monitorTimeout = 60, # if $disableMonitorTimeout is set to false, this is the number of minutes of inactivity it will take before your monitors turn off
-  [boolean]$disableSleep = $false, # prevents your computer from entering sleep after a certain number of inactive minutes, highly reccomended for desktop computers
-  [int]$standbyTimeout = 15, # if $disableSleep is set to false, this is the number of minutes of inactivity it will take before your computer goes into standby/sleep
+  [int]$monitorTimeout = 15, # if $disableMonitorTimeout is set to false, this is the number of minutes of inactivity it will take before your monitors turn off
+  [boolean]$disableSleep = $true, # prevents your computer from entering sleep after a certain number of inactive minutes, highly reccomended for desktop computers
+  [int]$standbyTimeout = 60, # if $disableSleep is set to false, this is the number of minutes of inactivity it will take before your computer goes into standby/sleep
   [boolean]$disableUsbSelectiveSuspend = $true, # this prevents windows from disconnecting usb devices after a certain amount of inactivity from said device
 
   # start menu settings
   [boolean]$showMorePinsOnStartMenu = $true, # gives more space for pinned apps vs suggested apps
-  [boolean]$showRecentlyAddedApps = $true, # puts a entries at the bottom of the start menu for recently installed apps
-  [boolean]$showMostUsedApps = $true, # puts a entries at the bottom of the start menu for most used apps
+  [boolean]$showRecentlyAddedApps = $true, # puts entries at the bottom of the start menu for recently installed apps
+  [boolean]$showMostUsedApps = $true, # puts entries at the bottom of the start menu for most used apps
   [boolean]$showRecentlyOpenedItems = $true, # this is techinically the setting for start and the task bar, I suggest you leave this enabled
-  [boolean]$showRecomendations = $false, # puts a reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
+  [boolean]$showRecomendations = $false, # puts reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
 
   # task bar settings
   [boolean]$hideChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
