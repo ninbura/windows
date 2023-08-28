@@ -27,48 +27,48 @@
 				- putting usb stick in specific port
 				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
-3. purchase/obtain a `windows 11 pro for workstations` product key
+2. purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
-4. create a bootable flash drive & install windows
+3. create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
-5. verify that windows is activated
+4. verify that windows is activated
 	- open settings & navigate to `system > activation`
 	- If it says activation failed, don't panic.
 		- you may need to activate by phone
 		- there should be a button to do this via the `system > activation` screen
-6. update windows
+5. update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
 	- **restart your computer**
 	- check for updates again
 	- If you have more updates and pc requests restarting again, do so.
 	- repeat until windows states that everything is up-to-date 
-7. update windows terminal
+6. update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 		- if update button doesn't appear within 30 seconds it's already up-to-date
-8. install powershell 7
+7. install powershell 7
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
-9. configure windows terminal & winget
+8. configure windows terminal & winget
 	- restart windows terminal
 	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 	- close windows terminal & open it again
 	- confirm that terminal is elevated (should state in tab) & run the following command
 		- `winget settings --enable InstallerHashOverride`
-10. install git
+9. install git
 	- open windows terminal
 	- run the following command
 		- `winget install git.git`
-11. download, configure, & run `bulk-edit-settings` powershell script
+10. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
@@ -79,7 +79,7 @@
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then **restart your computer**
-12. manually configure other windows settings
+11. manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -97,7 +97,7 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
-13. download, install, & run winget-autoupdate (bulk software installer/updater)
+12. download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
@@ -122,7 +122,7 @@
 			- REALiX.HWiNFO
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
-14. configure msi afterburner (gpu fan curve)
+13. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
@@ -138,7 +138,7 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-15. verify that system temperatures are in-check
+14. verify that system temperatures are in-check
 	- cpu & gpu
 		- open HWiNFO (installed via wigui, search start)
 			- select "show sensors" 
@@ -172,10 +172,10 @@
 				- didn't properly install your m.2 drive
 				- need an aftermarket heatsink for your m.2 drive
 				- need to install a fan pointing directly at your m.2 drive   
-16. download/install drivers from the **drivers** list below
+15. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
-17. configure audio settings
+16. configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
 		- right click and disable any device that you wont be using
@@ -190,7 +190,7 @@
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter an audio problem
-18. download/install remaining software as desired from the **software** list below
+17. download/install remaining software as desired from the **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
@@ -221,6 +221,7 @@
 			- set to the correct resolution & refresh rate
 			- set to full rgb color mode
 			- If color mode is partial and greyed out; override settings with "use nvidia color settings".
+   	- after driver install it's likely that your windows audio settings get borked (see "configure audio settings" step in setup instructions for fix)
 - other drivers
 	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
 		- must be installed via **admin elevated** terminal
