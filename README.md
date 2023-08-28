@@ -195,7 +195,7 @@
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
 	- note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below
-	- software in list below is software that is currently not installable via winget/wigui
+	- software in list below is software that is currently not available via winget/wigui
 	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
   		- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
 			- `winget search [software name/id]`
