@@ -13,6 +13,7 @@
 			- didn't plug in your fans / fans are defective & not running
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
+   			- your motherboard is mis-reporting temps
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
