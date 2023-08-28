@@ -78,7 +78,7 @@
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
     - `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
 - Restart wigui, load your install list, click install, & wait for the process to finish.
-    - `c:/repo/install-and-configure-microsoft-windows/.blacklist.txt` 
+	- `c:/repo/install-and-configure-microsoft-windows/.blacklist.txt` 
 	- to modify update blacklist going forward edit the following txt file
 		- blacklist apps the consistently fail to update via winget-autoupdate
 11. configure msi afterburner (gpu fan curve)
