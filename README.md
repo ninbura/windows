@@ -84,7 +84,10 @@
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
   			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt` 
-		- blacklist apps the consistently fail to update via winget-autoupdate (you will see this in windows notification center)
+		- blacklist apps that
+  			- consistently fail to update via winget-autoupdate or
+     			- needlessly update every time you login
+        		- you will see this info in windows notification center (click clock on task bar)  
 	- **restart your computer**
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
