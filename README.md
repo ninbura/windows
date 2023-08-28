@@ -134,26 +134,20 @@
 			- blacklist apps that
 				- consistently fail to update via winget-autoupdate
 				- needlessly update every time you login
-			- you will see this info in windows notification center (click clock on task bar)  
+			- you will see this info in windows notification center (click clock on task bar)
+			- it is *highly recommended* that you save your edited `.blacklist.txt` in a backed up / redundant location and start managing it yourself
 	- **restart your computer**
 	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
-		- To find application ids to add to your `.install-list.txt`, search for applications via winget in powershell via windows terminal.
-			- example
-				- `winget search chrome`
-				- *take note of or copy id for google chrome* 
-				- add `google.chrome --ignore-security-hash --force` to your `.install-list.txt`
-   			- see [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below) for details on the follwing winget flags
-				- `--ignore-security-hash`
-				- `--force`
+		- see [winget basics](#wingetwigui-basics) for info in-relation to finding appliations to add to your `.install-list.txt` via winget
   		- required applications (do not remove from `.install-list.txt`)
 			- 7zip.7zip
 			- FinalWire.AIDA64.Extreme
 			- Guru3D.Afterburner
 			- REALiX.HWiNFO
 		- Pro tip, you can sort txt files in [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
-		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up location and start managing it yourself
+		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
@@ -231,7 +225,7 @@
 	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
 	- software in list below is software that is currently not available via winget/wigui
 	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
-		- see [winget basics](#winget-basics) for instructions on how to use winget/wigui
+		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
 	- If software isn't available via winget, install software the old fashioned way 😭
 18. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
@@ -273,7 +267,7 @@
 			- `winget install google.chromeremotedesktop --ignore-security-hash`
 			- `winget install obsproject.obsstudio --ignore-security-hash --force`
 		- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
-- it is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up location, and start managing it yourself.
+- It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
 	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
 - Pro tip, you can sort txt files in [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 
