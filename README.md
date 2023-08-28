@@ -95,7 +95,7 @@
 13. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
-	- configure msi afterburner's settings
+ 	- configure msi afterburner's settings
 		- open settings (should be a button on the left hand side)
 	 	- enable startup at launch
 			- click on the "general" tab
