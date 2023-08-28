@@ -72,7 +72,7 @@
 		- should be in your user's documents folder after download
 	- click on the "configure WAU tab"
 	  - reference image below for configuration on this tab
-    ![Pasted_image_20230826144011-1](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/cb2b2bad-d395-498f-852e-16483525fe5f)
+          - ![Pasted_image_20230826144011-1](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/cb2b2bad-d395-498f-852e-16483525fe5f)
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
