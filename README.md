@@ -91,7 +91,7 @@
 		- open "multiple displays" dropdown
 			- check "make this my main display"
 		- scroll to bottom of list & select "advanced display"
-			- set refresh rate for each monitor
+			- generally set refresh rate to max for each monitor
 	- network settings
 		- navigate to `network & internet > advanced network settings > advanced sharing settings`
 		- expand "all networks" drop down
