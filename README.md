@@ -89,6 +89,11 @@
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
+  		- required applications (do not remove from `.install-list.txt`)
+			- 7zip.7zip
+			- Guru3D.RTSS
+    			- Guru3D.Afterburner
+			- REALiX.HWiNFO
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
 13. configure msi afterburner (gpu fan curve)
