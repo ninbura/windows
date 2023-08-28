@@ -259,6 +259,7 @@
 	- It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online. 
 # drivers
+- please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
 	- audio driver 
@@ -297,6 +298,7 @@
 	- [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
 	- [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # software
+- please read [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
 - [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
 - appstudio (reporting client)
