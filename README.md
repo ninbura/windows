@@ -30,6 +30,7 @@
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 	- close windows terminal & open it again
 	- run the following command
+		- confirm that terminal is elevated (should state in tab)
 		- `winget settings --enable InstallerHashOverride`
 7. install git
 	- open windows terminal
