@@ -150,7 +150,7 @@
 		- open Aida64 Extreme (installed via wigui, search start)
 			- confirm you're okay with app being in trial mode
 			- open system stability test dialog `tools > system stability test`
-				- enable everything but "local disks"
+				- enable everything except "local disks"
 				- run test for 5-15 minutes
 					- cpu temp should be 70-100c
 					- gpu temp should be 50-80c
