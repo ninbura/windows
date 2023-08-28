@@ -248,26 +248,25 @@
 		- example
 			- `winget install --name "Google Chrome"`
 - Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
-- nuance
-	- some applications must be installed in an admin elevated instance of powershell
-		- In this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
-		- We already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
-	- some applications must be installed in a **non-elevated** instance of powershell
-		- in this case wigui should work
-		- Because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
-	- sometimes apps may require additonal flags to install
-		- use this flag when "application hash doesn't match"
-			- `--ignore-security-hash`
-			- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
-			- Note that there's some security concern with ignoring an application's security hash. A bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. **Use at your own risk** (I do it all the time 😅).
-		- Use this command when winget is being stubborn about versioning, or just stubborn in general.
-			- `--force`
-			- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
-		- examples
-			- `winget install microsoft.dotnet.sdk.6 --force`
-			- `winget install google.chromeremotedesktop --ignore-security-hash`
-			- `winget install obsproject.obsstudio --ignore-security-hash --force`
-		- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
+- some applications must be installed in an admin elevated instance of powershell
+	- In this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
+	- We already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
+- some applications must be installed in a **non-elevated** instance of powershell
+	- in this case wigui should work
+	- Because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
+- sometimes apps may require additonal flags to install
+	- use this flag when "application hash doesn't match"
+		- `--ignore-security-hash`
+		- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
+		- Note that there's some security concern with ignoring an application's security hash. A bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. **Use at your own risk** (I do it all the time 😅).
+	- Use this command when winget is being stubborn about versioning, or just stubborn in general.
+		- `--force`
+		- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
+	- examples
+		- `winget install microsoft.dotnet.sdk.6 --force`
+		- `winget install google.chromeremotedesktop --ignore-security-hash`
+		- `winget install obsproject.obsstudio --ignore-security-hash --force`
+	- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
 - It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
 	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
 - Pro tip, you can sort txt files in [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
