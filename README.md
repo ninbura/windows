@@ -13,7 +13,7 @@
 			- didn't plug in your fans / fans are defective & not running
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
-    			- you're running your pc in a hot environment (90f+) 
+			- you're running your pc in a hot environment (90f+) 
    			- your motherboard is mis-reporting temps
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
