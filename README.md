@@ -172,9 +172,23 @@
 				- didn't properly install your m.2 drive
 				- need an aftermarket heatsink for your m.2 drive
 				- need to install a fan pointing directly at your m.2 drive   
-17. download/install drivers from the **drivers** list below
+16. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
+17. configure audio settings
+	- open control panel & navigate to `hardware & sound > sound`
+ 	- verify you're on the "playback" tab 
+		- right click and disable any device that you wont be using
+		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and stuff)
+		- if you only have one usable/desired output device
+			- select desired device & click the "set default" button below the device list
+		- if you have a fancy pants audio mixer or what have you with multiple usable output devices
+			- right click which audio output you want as your default output device & select "set as default device"
+			- right click which audio output you want as your communication device & select "set as default comunication device"
+	- click on "recording" tab
+		- right click and disable any device that you wont be using
+		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
+		- select desired device & click the "set default" button below the device list
 18. download/install remaining software as desired from the **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
