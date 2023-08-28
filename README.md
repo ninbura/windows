@@ -24,7 +24,7 @@
 5. update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
-	- restart your computer
+	- **restart your computer**
 6. update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal & wait a few seconds
@@ -55,7 +55,7 @@
 	- configure setting parameters at top of file as desired
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
-	- wait for script to finish then restart your computer
+	- wait for script to finish then **restart your computer**
 11. manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
@@ -85,7 +85,7 @@
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
 		- blacklist apps the consistently fail to update via winget-autoupdate
-	- restart your computer
+	- **restart your computer**
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
@@ -172,11 +172,11 @@
 - [wootliltiy](<https://wooting.io/wootility>) (software to configure wooting keyboards)
 - wsa (windows subsystem for android)
 	- download amazon store via windows store
-	- restart your computer
+	- **restart your computer**
 - wsl (windows subsystem for linux)
 	- run in **elevated** console
 	- `wsl --install`
-		- restart your computer
+		- **restart your computer**
 	- `winget search ubuntu`
 	- `winget install Canonical.Ubuntu.2204`
 - xbox accessories (tool for configuring xbox controllers)
