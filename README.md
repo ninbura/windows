@@ -13,7 +13,7 @@
   	11. [manually configure other windows settings](#manually-configure-other-windows-settings)
   	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
   	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
-  	14. [verify that system temperatures are in-check](#verify-that-syste-temperatures-are-in-check)
+  	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
   	15. [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
   	16. [configure audio settings](#configure-audio-settings)
   	17. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
