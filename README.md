@@ -73,14 +73,13 @@
  		- load `.blacklist.txt` 
  			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
 		- reference image below for configuration on this tab
+		- to modify update blacklist going forward edit the following txt file
+		- blacklist apps the consistently fail to update via winget-autoupdate
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
-    - `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
-- Restart wigui, load your install list, click install, & wait for the process to finish.
-	- `c:/repo/install-and-configure-microsoft-windows/.blacklist.txt` 
-	- to modify update blacklist going forward edit the following txt file
-		- blacklist apps the consistently fail to update via winget-autoupdate
+	- Restart wigui, load your install list, click install, & wait for the process to finish.
+		- `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
 11. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
