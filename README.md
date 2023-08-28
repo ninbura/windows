@@ -1,7 +1,7 @@
 # steps
 1. update & configure your motherboard's bios
 	- attach a flash drive to your computer (preferably less than 32gb)
-	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/){:target="_blank"})
+	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
 	- download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
