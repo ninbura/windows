@@ -4,7 +4,7 @@
 	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
 	- download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
-	- enter bios (mash delete while computer is resatarting)
+	- enter bios (mash [delete] key while computer is restarting)
  	- verify that cpu temp isn't anything crazy
   		- should be on bios home page
 		- should be sub 60c  
