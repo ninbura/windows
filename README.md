@@ -71,16 +71,17 @@
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
 	- click on the "configure WAU tab"
-	  - reference image below for configuration on this tab
-          - ![Pasted_image_20230826144011-1](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/cb2b2bad-d395-498f-852e-16483525fe5f)
+ 		- load `.blacklist.txt` 
+ 			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
+		- reference image below for configuration on this tab
+		
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
     - `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
-	- Restart wigui, load your install list, click install, & wait for the process to finish.
+- Restart wigui, load your install list, click install, & wait for the process to finish.
     - `c:/repo/install-and-configure-microsoft-windows/.blacklist.txt` 
 	- to modify update blacklist going forward edit the following txt file
-		- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
 		- blacklist apps the consistently fail to update via winget-autoupdate
 12. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
