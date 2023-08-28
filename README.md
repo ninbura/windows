@@ -49,7 +49,7 @@
 10. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
-		- `New-Item -Path "repos" -ItemType Directory`
+		- `New-Item -Path "/repos" -ItemType Directory`
 		- `cd /repos`
 		- `git clone https://github.com/ninbura/install-and-configure-microsoft-windows`
 	- open `c:/repos/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
