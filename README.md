@@ -139,34 +139,38 @@
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
 15. verify that system temperatures are in-check
-	- open HWiNFO (installed via wigui, search start)
- 		- select "show sensors" 
-	- temps are model dependent
- 	- higher end components run hotter than lower end components
-  	- lower temp is better but as long as things are generally in below ranges you should be fine 
- 		- cpu idle temp should be 30-50c 
-  		- gpu idle temp should be 30-50c
-	- open Aida64 Extreme (installed via wigui, search start)
-		- confirm you're okay with app being in trial mode
-		- open system stability test dialog `tools > system stability test`
-  			- enable everything but "local disks"
-			- run test for 5-15 minutes
-				- cpu temp should be 70-100c
-   				- gpu temp should be 50-80c
-	- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
-	- open crystaldiskinfo (search start)
-		- verify that m.2 idle temp is below 60c
-  		- verify that m.2 drive health is "good"
-		- run another Aida64 Extreme stability test but with only "local disks" enabled
-  			- verify that drive temp remains under 65c
-		- if idle temp is over 60c or stress temp is over 65c you
-			- didn't properly install your m.2 drive
-			- need an aftermarket heatsink for your m.2 drive
-			- need to install a fan pointing directly at your m.2 drive   
-16. download/install drivers from the **drivers** list below
+    	- cpu & gpu
+		- open HWiNFO (installed via wigui, search start)
+	 		- select "show sensors" 
+		- temps are model dependent
+	 	- higher end components run hotter than lower end components
+	  	- lower temp is better but as long as things are generally in below ranges you should be fine 
+	 		- cpu idle temp should be 30-50c 
+	  		- gpu idle temp should be 30-50c
+		- open Aida64 Extreme (installed via wigui, search start)
+			- confirm you're okay with app being in trial mode
+			- open system stability test dialog `tools > system stability test`
+	  			- enable everything but "local disks"
+				- run test for 5-15 minutes
+					- cpu temp should be 70-100c
+	   				- gpu temp should be 50-80c
+		- if cpu temps are too high re-read step 1 for fixes
+	 	- if gpu temps are high verify that gpu fans are spinning & set a more aggressive fan curve via msi afterburner
+	- m.2 drives
+		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
+		- open crystaldiskinfo (search start)
+			- verify that m.2 idle temp is below 60c
+	  		- verify that m.2 drive health is "good"
+			- run another Aida64 Extreme stability test but with only "local disks" enabled
+	  			- verify that drive temp remains under 65c
+			- if idle temp is over 60c or stress temp is over 65c you
+				- didn't properly install your m.2 drive
+				- need an aftermarket heatsink for your m.2 drive
+				- need to install a fan pointing directly at your m.2 drive   
+17. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
-17. download/install remaining software as desired from the **software** list below
+18. download/install remaining software as desired from the **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
