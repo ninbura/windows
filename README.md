@@ -196,7 +196,7 @@
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
  		- For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
-	- It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control, and then work from there.
+	- It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- For each component that can't be controlled via this software, google that exact component for instructions online. 
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
