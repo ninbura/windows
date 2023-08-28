@@ -27,7 +27,7 @@
 	- **restart your computer**
 6. update windows terminal
 	- open the microsoft store & search for windows terminal
-	- click the windows terminal & wait a few seconds
+	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 7. install powershell 7
 	- open windows terminal
