@@ -35,20 +35,18 @@
 	- open windows terminal
 	- run the following command
 		- `winget install git.git`
-8. download `bulk-edit-settings`  powershell script
+8. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `New-Item -Path "repo" -ItemType Directory`
 		- `cd /repo`
-		- `git clone https://github.com/ninbura/bulk-edit-windows-settings`
-9. run `bulk-edit-settings` powershell script
-	- open `c:/repo/bulk-edit-settings` folder 
-	- open `bulk-edit-settings.ps1` in desired text editor
+		- `git clone https://github.com/ninbura/install-and-configure-microsoft-windows`
+	- open `c:/repo/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
 	- configure setting parameters at top of file as desired
 	- save and close file
 	- right click `run-me.bat` & run as administrator
 	- wait for script to finish then restart your computer
-10. manually configure other windows settings
+9. manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -66,7 +64,7 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
-11. download, install, & run winget-autoupdate (bulk software installer/updater)
+10. download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download wigui & run (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
@@ -83,7 +81,7 @@
     - `c:/repo/install-and-configure-microsoft-windows/.blacklist.txt` 
 	- to modify update blacklist going forward edit the following txt file
 		- blacklist apps the consistently fail to update via winget-autoupdate
-12. configure msi afterburner (gpu fan curve)
+11. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- enable startup at launch
@@ -99,8 +97,8 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-13. download/install drivers from the **drivers** list below
-14. download/install remaining software as desired from **software** list below
+12. download/install drivers from the **drivers** list below
+13. download/install remaining software as desired from **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan, & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
