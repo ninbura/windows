@@ -18,7 +18,7 @@
    			- have a motherboard that is misreporting temps (unlikely but happens)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
-		- if motherboard bootloops after this set clock ram clock lower or disable x.m.p (after mobo enters safe mode)
+		- if motherboard bootloops after this set ram clock lower or disable x.m.p (after mobo enters safe mode)
   		- If motherboard never enters safe mode and just continuously bootloops; reflash your bios using your motherboards advanced flash function.
     			- consult manual on exact steps
       			- typically involves
