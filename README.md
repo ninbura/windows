@@ -254,7 +254,7 @@
 				- use this flag when "application hash doesn't match"
 					- `--ignore-security-hash`
 					- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
-					- Note that there's some security concern with ignoring and applications security hash. A bad actor could intercept an applications winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. Use are your own risk.
+					- Note that there's some security concern with ignoring an applications security hash. A bad actor could intercept an applications winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. Use are your own risk.
 				- Use this command when winget is being stubborn about versioning, or just stubborn in general.
 					- `--force`
 					- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in that app. Generally app specific settings/configurations are stored in a separate cache from the install location/data, so typically this should just re-install said app & retain said app's settings/configurations.
