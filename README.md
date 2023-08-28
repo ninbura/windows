@@ -210,9 +210,9 @@
 					- `winget install --name "Google Chrome"`
 		- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
 		- nuance
-			- some applications must be installed in and admin elevated instance of powershell
-				- In this case wigui *will not work* for install, but should work for update.
-				- we already set your windows terminal to run by admin as default
+			- some applications must be installed in an admin elevated instance of powershell
+				- In this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
+				- We already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
 			- some applications must be installed in a **non-elevated** instance of powershell
 				- in this case wigui should work
 				- Because we have powershell 7 as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
