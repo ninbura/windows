@@ -175,7 +175,7 @@
 15. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
- 	- note that every driver you need may not be listed below
+ 	- Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
 16. configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
@@ -194,7 +194,7 @@
 17. download/install remaining software as desired using winget/wigui & the **software** list below
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
-	- note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below
+	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
 	- software in list below is software that is currently not available via winget/wigui
 	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
   		- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
