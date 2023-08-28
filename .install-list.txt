@@ -13,6 +13,7 @@ Git.Git --ignore-security-hash --force
 Google.Chrome --ignore-security-hash --force
 Google.ChromeRemoteDesktop --ignore-security-hash --force
 Google.PlatformTools --ignore-security-hash --force
+Guru3D.Afterburner --ignore-security-hash --force
 Guru3D.RTSS --ignore-security-hash --force
 Logitech.GHUB --ignore-security-hash --force
 Logitech.OptionsPlus --ignore-security-hash --force
