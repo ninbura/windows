@@ -1,6 +1,6 @@
 # steps
 1. update & configure your motherboard's bios
-	- attach any size flash drive to your computer
+	- attach a flash drive to your computer (preferably less than 32gb)
 	- format your flash drive as fat32 ([tutorial](<https://www.asus.com/support/FAQ/1044735/>))
 	- download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
@@ -12,7 +12,7 @@
  	- if you have business grade microsoft account from work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
 3. create a bootable flash drive & install windows
-	- attach an 8gb+ flash drive to your computer
+	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
