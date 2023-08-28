@@ -2,6 +2,7 @@
 - [steps](#steps)
 	1. [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
  	2. [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
+  	3. [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
 - [drivers](#drivers)
 - [software](#software)
 
