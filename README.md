@@ -144,7 +144,7 @@
 				- `winget search chrome`
 				- *take note of or copy id for google chrome* 
 				- `winget install google.chrome`
-    			- see [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below) for details on `--ignore-security-hash` & `--force` winget flags.
+   			- see [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below) for details on `--ignore-security-hash` & `--force` winget flags.
   		- required applications (do not remove from `.install-list.txt`)
 			- 7zip.7zip
 			- FinalWire.AIDA64.Extreme
