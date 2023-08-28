@@ -198,14 +198,14 @@
 		- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
   		- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
 			- `winget search [software name/id]`
-    			- `winget install [software id]`
-         		- example
+			- `winget install [software id]`
+			- example
 				- `winget search chrome`
 				- *take note of or copy id for google chrome* 
 				- `winget install google.chrome`
-       			- Install by id is easiest (listed on search results), but you can also use name if you wrap the name in quotes & use the `--name` flag.
-          			- For example - `winget install --name "Google Chrome"`
-   		- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
+			- Install by id is easiest (listed on search results), but you can also use name if you wrap the name in quotes & use the `--name` flag.
+				- For example - `winget install --name "Google Chrome"`
+		- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
 		- nuance
 			- some applications must be installed in and admin elevated instance of powershell
 				- In this case wigui *will not work* for install, but should work for update.
