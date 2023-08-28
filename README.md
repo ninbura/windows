@@ -7,7 +7,7 @@
 	- enter bios (mash delete while computer is resatarting)
  	- verify that cpu temp isn't anything crazy
   		- should be on bios home page
-    		- should be sub 60c  
+		- should be sub 60c  
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
