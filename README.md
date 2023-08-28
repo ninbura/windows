@@ -145,15 +145,15 @@
 		- temps are model dependent
 		- higher end components run hotter than lower end components
 		- lower temp is better but as long as things are generally in below ranges you should be fine 
-			- cpu idle temp should be 30-50c 
-			- gpu idle temp should be 30-50c
+			- cpu idle temp should be >50c 
+			- gpu idle temp should be >50c
 		- open Aida64 Extreme (installed via wigui, search start)
 			- confirm you're okay with app being in trial mode
 			- open system stability test dialog `tools > system stability test`
 				- enable everything except "local disks"
 				- run test for 5-15 minutes
-					- cpu temp should be 70-100c
-					- gpu temp should be 50-80c
+					- cpu temp should be >=100c
+					- gpu temp should be >=85c
 		- if cpu temps are too high re-read step 1 for fixes
 		- if gpu temps are too high
 			- verify that gpu fans are spinning
