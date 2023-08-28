@@ -9,9 +9,9 @@
   		- should be on bios home page
 		- should be sub 60c
   		- if temps are higher than this you
-    			- mounted your cpu cooler incorrectly
-      			- used an inadequate cpu cooler
-      			- have major air flow problems in your case
+			- mounted your cpu cooler incorrectly
+			- used an inadequate cpu cooler
+			- have major air flow problems in your case
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
