@@ -14,7 +14,7 @@
 			- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve tutorail below).
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
-			- are running your pc in a hot environment (90f+) 
+			- are running your pc in an overly hot environment (90f+) 
    			- have a motherboard that is misreporting temps (unlikely but happens)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
