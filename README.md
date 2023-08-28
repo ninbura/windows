@@ -177,7 +177,7 @@
 				- run test for 5-15 minutes
 					- cpu temp should be >=100c
 					- gpu temp should be >=85c
-		- if cpu temps are too high re-read step 1 for fixes
+		- if cpu temps are too high re-read [update & configure your motherboard's bios](#update--configure-your-motherboards-bios) for fixes
 		- if gpu temps are too high
 			- verify that gpu fans are spinning
 			- verify that nothing is too close to or obstructing gpu fans
@@ -289,7 +289,7 @@
 			- set to the correct resolution & refresh rate
 			- set to full rgb color mode
 			- If color mode is partial and greyed out; override settings with "use nvidia color settings".
-   	- after driver install it's likely that your windows audio settings got borked (see "configure audio settings" step in setup section for fix)
+   	- after driver install it's likely that your windows audio settings got borked (see [configure audio settings](#configure-audio-settings) for fix)
 - other drivers
 	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
 		- must be installed via **admin elevated** terminal
