@@ -17,9 +17,9 @@ Guru3D.RTSS --ignore-security-hash --force
 Logitech.GHUB --ignore-security-hash --force
 Logitech.OptionsPlus --ignore-security-hash --force
 Logitech.UnifyingSoftware --ignore-security-hash --force
+Microsoft.AzureDataStudio --ignore-security-hash --force
 Micorosft.DotNet.SDK.6 --ignore-security-hash --force
 Micorosft.DotNet.SDK.7 --ignore-security-hash --force
-Microsoft.AzureDataStudio --ignore-security-hash --force
 Microsoft.DotNet.SDK.Preview --ignore-security-hash --force
 Microsoft.PowerShell --ignore-security-hash --force
 Microsoft.PowerToys --ignore-security-hash --force
