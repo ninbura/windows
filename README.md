@@ -54,7 +54,7 @@
 	- open `c:/repos/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
 	- configure setting parameters at top of file as desired
 	- save and close file
-	- right click `run-me.bat` & run as administrator
+	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then restart your computer
 11. manually configure other windows settings
 	- theme settings
