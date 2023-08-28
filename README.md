@@ -1,3 +1,8 @@
+# table of contents
+[steps](# steps)
+[drivers](# drivers)
+[software](# software)
+
 # steps
 1. update & configure your motherboard's bios 
 	- attach a flash drive to your computer (preferably less than 32gb)
