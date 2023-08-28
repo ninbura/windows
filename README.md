@@ -3,6 +3,21 @@
 	1. [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
  	2. [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
   	3. [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
+  	4. [verify that windows is activated](#verify-that-windows-is-activated)
+  	5. [update windows](#update-windows)
+  	6. [update windows terminal](#update-windows-terminal)
+  	7. [install powershell 7](#install-powershell-7)
+  	8. [configure windows terminal & winget](#configure-windows-terminal--winget)
+  	9. [install git](#install-git)
+  	10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
+  	11. [manually configure other windows settings](#manually-configure-other-windows-settings)
+  	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
+  	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
+  	14. [verify that system temperatures are in-check](#verify-that-syste-temperatures-are-in-check)
+  	15. [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
+  	16. [configure audio settings](#configure-audio-settings)
+  	17. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
+  	18. [configure rgb lighting](#configure-rgb-lighting)
 - [drivers](#drivers)
 - [software](#software)
 
@@ -236,7 +251,7 @@
 					- `winget install obsproject.obsstudio --ignore-security-hash --force`
 				- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
 	- If software isn't available via winget, install software the old fashioned way 😭
-18. ### configuring rgb lighting
+18. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
