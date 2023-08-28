@@ -144,6 +144,8 @@
 			- FinalWire.AIDA64.Extreme
 			- Guru3D.Afterburner
 			- REALiX.HWiNFO
+    		- Pro tip, you can sort txt files in [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
+        	- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up location and start managing it yourself
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
@@ -251,6 +253,9 @@
 					- `winget install google.chromeremotedesktop --ignore-security-hash`
 					- `winget install obsproject.obsstudio --ignore-security-hash --force`
 				- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
+		- it is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up location, and start managing it yourself.
+  			- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
+		- Pro tip, you can sort txt files in [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 	- If software isn't available via winget, install software the old fashioned way 😭
 18. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
