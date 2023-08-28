@@ -9,7 +9,7 @@
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
 2. purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
- 	- if you have a business grade microsoft account from work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
+ 	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
 3. create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
