@@ -315,7 +315,7 @@
 - [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
 - appstudio (reporting client)
-- [battlenet launcher](<https://us.shop.battle.net/en-us>)
+- [battlenet launcher](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
 - cisco anyconnect (vpn client)
 	- microsoft store
 - [crystaldiskinfo](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
@@ -325,8 +325,8 @@
 - ffmpeg (cli media editor)
 	- run in **elevated** console
 	- `winget install gyan.ffmpeg`
-- [ffxiv launcher](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) 
-- icloud
+- [ffxiv launcher](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
+- icloud (apples icloud desktop application)
 	- microsoft store
 - [ireboot](<https://neosmart.net/iReboot/>) (tool for dual booting)
 - [obs asio](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
