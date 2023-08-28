@@ -7,24 +7,33 @@
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
-2. create a bootable flash drive & install windows
+2. purchase/obtain a windows 11 Pro For Workstations key
+	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
+ 	- if you have business grade microsoft account from work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
+		- *you will need to login with your work/business email before this link will direct you to the proper place*
+3. create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
-3. update windows
+4. verify that windows is activated
+	- navigate to `system > activation`
+	= If it says activation failed, don't panic.
+	= If you purchased a key from the above link, you may need to activate by phone.
+	- there should be a button to do this via the `system > activation` screen
+5. update windows
 	- open windows settings & navigate to updates
 	- check for updates & wait for them to install
 	- restart your computer
-4. update windows terminal
+6. update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal & wait a few seconds
 	- click the update button & wait for the update to complete
-5. install powershell 7
+7. install powershell 7
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
-6. configure windows terminal & winget
+8. configure windows terminal & winget
 	- restart windows terminal
 	- go to settings & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
@@ -32,11 +41,11 @@
 	- run the following command
 		- confirm that terminal is elevated (should state in tab)
 		- `winget settings --enable InstallerHashOverride`
-7. install git
+9. install git
 	- open windows terminal
 	- run the following command
 		- `winget install git.git`
-8. download, configure, & run `bulk-edit-settings` powershell script
+10. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `New-Item -Path "repos" -ItemType Directory`
@@ -47,7 +56,7 @@
 	- save and close file
 	- right click `run-me.bat` & run as administrator
 	- wait for script to finish then restart your computer
-9. manually configure other windows settings
+11. manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -65,7 +74,7 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
-10. download, install, & run winget-autoupdate (bulk software installer/updater)
+12. download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download wigui & run (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
@@ -81,7 +90,7 @@
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
-11. configure msi afterburner (gpu fan curve)
+13. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- enable startup at launch
@@ -97,8 +106,8 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-12. download/install drivers from the **drivers** list below
-13. download/install remaining software as desired from **software** list below
+14. download/install drivers from the **drivers** list below
+15. download/install remaining software as desired from **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan, & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
