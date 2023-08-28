@@ -129,8 +129,8 @@
 	- [intel wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
 - drivers you will need from your motherboard's support page if said devices aren't intel
 	- bluetooth driver
-	- lan driver (ethernet)
-	- wan driver (wifi)
+	- lan driver
+	- wan driver
 - [amd cpu/chipset & gpu drivers](<https://www.amd.com/en/support>)
 - [nvidia drivers](<https://www.nvidia.com/download/index.aspx>)
 	- *click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!*
