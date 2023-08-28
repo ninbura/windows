@@ -173,7 +173,7 @@
 				- need an aftermarket heatsink for your m.2 drive
 				- need to install a fan pointing directly at your m.2 drive   
 15. download/install drivers from the **drivers** list below
-	- you don't need to restart your computer when prompted after a single drive
+	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
 16. configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
