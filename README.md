@@ -1,6 +1,6 @@
 # table of contents
 - [steps](#steps)
-	1. [update & configure your motherboard's bios](#update-&-configure-your-motherboards-bios)
+	1. [update & configure your motherboard's bios](#update-configure-your-motherboards-bios)
 - [drivers](#drivers)
 - [software](#software)
 
