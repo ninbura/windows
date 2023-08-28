@@ -115,10 +115,17 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-14. download/install drivers from the **drivers** list below
+15. verify that temperatures are in-check
+	- open HWiNFO (installed via wigui, search start)
+	- temps or model dependent
+ 	- higher end components run hotter than lower end components
+  	- lower temp is better but as long as things are generally in below ranges you should be fine 
+ 		- cpu idle temp should be 30-50 
+  		- gpu idle temp should be 30-50 
+16. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
-16. download/install remaining software as desired from the **software** list below
+17. download/install remaining software as desired from the **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
