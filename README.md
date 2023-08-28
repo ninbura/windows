@@ -191,7 +191,7 @@
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
-17. download/install remaining software as desired from the **software** list below
+17. download/install remaining software as desired using winget/wigui & the **software** list below
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
 	- note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below
