@@ -39,10 +39,10 @@
 8. download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
-		- `New-Item -Path "repo" -ItemType Directory`
-		- `cd /repo`
+		- `New-Item -Path "repos" -ItemType Directory`
+		- `cd /repos`
 		- `git clone https://github.com/ninbura/install-and-configure-microsoft-windows`
-	- open `c:/repo/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
+	- open `c:/repos/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
 	- configure setting parameters at top of file as desired
 	- save and close file
 	- right click `run-me.bat` & run as administrator
@@ -73,12 +73,13 @@
  		- load `.blacklist.txt` 
  			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
 		- reference image below for configuration on this tab
+		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
 		- blacklist apps the consistently fail to update via winget-autoupdate
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
-		- `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
+		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 11. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
