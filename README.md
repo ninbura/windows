@@ -1,5 +1,5 @@
 # table of contents
-- ### [steps](#steps)
+- [steps](#steps)
 	1. [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
  	2. [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
   	3. [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
@@ -18,8 +18,8 @@
   	16. [configure audio settings](#configure-audio-settings)
   	17. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
   	18. [configure rgb lighting](#configure-rgb-lighting)
-- ### [drivers](#drivers)
-- ### [software](#software)
+- [drivers](#drivers)
+- [software](#software)
 
 # steps
 1. ### update & configure your motherboard's bios 
