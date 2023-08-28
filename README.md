@@ -120,6 +120,7 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
+	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
 12. ### download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
