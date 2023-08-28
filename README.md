@@ -22,7 +22,7 @@
 	- If you purchased a key from the above link, you may need to activate by phone.
 	- there should be a button to do this via the `system > activation` screen
 5. update windows
-	- open windows settings & navigate to updates
+	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to install
 	- restart your computer
 6. update windows terminal
