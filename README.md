@@ -134,7 +134,7 @@
 - [amd cpu/chipset & gpu drivers](<https://www.amd.com/en/support>)
 - [nvidia drivers](<https://www.nvidia.com/download/index.aspx>)
 	- *Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!*
-	- always select **custom install** then **clean install**
+	- always select **custom install** and then **clean install**
 	- open nvidia control panel ([shift+right click] desktop)
 		- select "manage 3d settings" in left hand side menu
 			- set "power management mode" to "prefer maximum performance"
