@@ -11,10 +11,11 @@
   		- if temps are higher than this you
 			- mounted your cpu cooler incorrectly
 			- didn't plug in your fans / fans are defective & not running
+    			- fan curve is misconfigured causing fans/pumps to not run (see fan curve tutorail below)
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
-			- you're running your pc in a hot environment (90f+) 
-   			- your motherboard is misreporting temps
+			- are running your pc in a hot environment (90f+) 
+   			- have a motherboard that is misreporting temps (unlikely but happens)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 		- if motherboard bootloops after this set clock ram clock lower or disable x.m.p (after mobo enters safe mode)
