@@ -251,11 +251,12 @@
 				- in this case wigui should work
 				- Because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
 			- sometimes apps may require additonal flags to install
-				- use this command when "application hash doesn't match"
+				- use this flag when "application hash doesn't match"
 					- `--ignore-security-hash`
-					- must be run in **non-elvated** instance of powershell to work (see last nuance)
-				- use this command when winget says a "newer version of this application is already installed" but you need this addtional verison
+					- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
+				- Use this command when winget is being stubborn about versioning, or just stubborn in general.
 					- `--force`
+					- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lost some settings previously set in that app. Generally app settings are stored in a separate cache, so typically this should just re-install said app & retain said app's settings.
 				- examples
 					- `winget install microsoft.dotnet.sdk.6 --force`
 					- `winget install google.chromeremotedesktop --ignore-security-hash`
