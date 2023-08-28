@@ -78,8 +78,8 @@
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
-	- Restart wigui, load your install list, click install, & wait for the process to finish.
 		- `c:/repo/install-and-configure-microsoft-windows/.install-list.txt`
+	- Restart wigui, load your install list, click install, & wait for the process to finish.
 11. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
