@@ -189,7 +189,7 @@
 		- right click any device that you wont be using & select "disable" (repeat for all unused devices)
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
-	- repeat these steps any time you encounter __***audio problems***__
+	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
 17. download/install remaining software as desired from the **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
