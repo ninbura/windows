@@ -127,7 +127,7 @@
 		- select "change resolution" in left hand side menu & verify that all monitors are
 			- set to the correct resolution & refresh rate
 			- set to full rgb color mode
-				- If color mode is partial and greyed out; override settings with "use nvidia color settings".
+			- If color mode is partial and greyed out; override settings with "use nvidia color settings".
 - other drivers
 	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
 		- must be installed via **admin elevated** terminal
