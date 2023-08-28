@@ -75,7 +75,7 @@
 		- enable "public folder sharing"
 		- enable "password protected sharing"
 12. download, install, & run winget-autoupdate (bulk software installer/updater)
-	- download wigui & run (wigui = gui for winget-autoupdate)
+	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
 	- click on the "configure WAU tab"
