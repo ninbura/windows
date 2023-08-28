@@ -10,6 +10,7 @@
 		- should be sub 60c
   		- if temps are higher than this you
 			- mounted your cpu cooler incorrectly
+    			- didn't plug in your fans / fans are defective & not running
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
