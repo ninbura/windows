@@ -161,7 +161,7 @@
    			- verify that all other fans in case are working
    			- set a more aggressive fan curve via msi afterburner
 	- m.2 drives
-		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
+		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor | get "Shizuku" edition for a good time ☺️)
 		- open crystaldiskinfo (search start)
 			- verify that m.2 idle temp is below 60c
 			- verify that m.2 drive health is "good"
