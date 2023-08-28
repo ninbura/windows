@@ -95,19 +95,18 @@
 13. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
- 	- configure msi afterburner's settings
-		- open settings (should be a button on the left hand side)
-	 	- enable startup at launch
-			- click on the "general" tab
-			- check "start with windows"
-			- check "start minimized"
-			- hit "apply"
-		- enable msi afterburners fan curve
-			- click on the "fan" tab
-			- check "enable user defined software automatic fan control"
-				- Leaving the fan curve in its default state is fine, but feel free to create your own curve if you want.
-			- hit "apply"
-		- hit "ok" to close settings dialog
+	- open settings (should be a button on the left hand side)
+	- enable startup at launch
+		- click on the "general" tab
+		- check "start with windows"
+		- check "start minimized"
+		- hit "apply"
+	- enable msi afterburners fan curve
+		- click on the "fan" tab
+		- check "enable user defined software automatic fan control"
+			- Leaving the fan curve in its default state is fine, but feel free to create your own curve if you want.
+		- hit "apply"
+	- hit "ok" to close settings dialog
 	- minimize msi afterburner
 14. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
