@@ -141,7 +141,7 @@
 15. verify that temperatures are in-check
 	- open HWiNFO (installed via wigui, search start)
  		- select "show sensors" 
-	- temps or model dependent
+	- temps are model dependent
  	- higher end components run hotter than lower end components
   	- lower temp is better but as long as things are generally in below ranges you should be fine 
  		- cpu idle temp should be 30-50c 
