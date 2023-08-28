@@ -249,7 +249,7 @@
 				- We already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
 			- some applications must be installed in a **non-elevated** instance of powershell
 				- in this case wigui should work
-				- Because we have powershell 7 as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
+				- Because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
 			- sometimes apps may require additonal flags to install
 				- use this command when "application hash doesn't match"
 					- `--ignore-security-hash`
