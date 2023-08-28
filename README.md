@@ -95,7 +95,7 @@
   		- required applications (do not remove from `.install-list.txt`)
 			- 7zip.7zip
 			- Guru3D.RTSS
-    			- Guru3D.Afterburner
+			- Guru3D.Afterburner
 			- REALiX.HWiNFO
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
