@@ -165,6 +165,7 @@
 		- open crystaldiskinfo (search start)
 			- verify that m.2 idle temp is below 60c
 			- verify that m.2 drive health is "good"
+				- consider replacing your hard drive if health is poor 
 			- run another Aida64 Extreme stability test but with only "local disks" enabled
 				- verify that drive temp remains under 65c
 			- if idle temp is over 60c or stress temp is over 65c you
