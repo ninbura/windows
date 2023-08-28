@@ -7,7 +7,7 @@
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
-2. purchase/obtain a windows 11 Pro For Workstations key
+2. purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have business grade microsoft account from work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
