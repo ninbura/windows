@@ -18,6 +18,7 @@
   	16. [configure audio settings](#configure-audio-settings)
   	17. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
   	18. [configure rgb lighting](#configure-rgb-lighting)
+- [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 - [software](#software)
 
