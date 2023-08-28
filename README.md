@@ -36,7 +36,7 @@
 		- `winget install microsoft.powershell`
 8. configure windows terminal & winget
 	- restart windows terminal
-	- go to settings & set your default profile as powershell 7 (darker blue powershell)
+	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 	- close windows terminal & open it again
 	- run the following command
