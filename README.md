@@ -221,7 +221,7 @@
 			- set to the correct resolution & refresh rate
 			- set to full rgb color mode
 			- If color mode is partial and greyed out; override settings with "use nvidia color settings".
-   	- after driver install it's likely that your windows audio settings get borked (see "configure audio settings" step in setup instructions for fix)
+   	- after driver install it's likely that your windows audio settings got borked (see "configure audio settings" step in setup section for fix)
 - other drivers
 	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
 		- must be installed via **admin elevated** terminal
