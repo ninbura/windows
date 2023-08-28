@@ -45,6 +45,9 @@
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
 	- **restart your computer**
+	- check for updates again
+	- If you have more updates and pc requests restarting again, do so.
+	- repeat until windows states that everything is up-to-date 
 7. update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal listing & wait a few seconds
