@@ -11,7 +11,7 @@
   		- if temps are higher than this you
 			- mounted your cpu cooler incorrectly
 			- didn't plug in your fans / fans are defective & not running
-    			- fan curve is misconfigured causing fans/pumps to not run (see fan curve tutorail below)
+			- fan curve is misconfigured causing fans/pumps to not run (see fan curve tutorail below)
 			- used an inadequate cpu cooler
 			- have major airflow problems in your case
 			- are running your pc in a hot environment (90f+) 
