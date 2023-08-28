@@ -1,7 +1,7 @@
 # table of contents
-[steps](# steps)
-[drivers](# drivers)
-[software](# software)
+- [steps](# steps)
+- [drivers](# drivers)
+- [software](# software)
 
 # steps
 1. update & configure your motherboard's bios 
