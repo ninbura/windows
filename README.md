@@ -79,12 +79,12 @@
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
 	- click on the "configure WAU tab"
- 		- load `.blacklist.txt` 
- 			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
+ 		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
-		- blacklist apps the consistently fail to update via winget-autoupdate
+  			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt` 
+		- blacklist apps the consistently fail to update via winget-autoupdate (you will see this in windows notification center)
 	- **restart your computer**
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
