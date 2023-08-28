@@ -149,12 +149,7 @@
 	- open Aida64 Extreme (installed via wigui, search start)
 		- confirm you're okay with app being in trial mode
 		- open system stability test dialog `tools > system stability test`
-  			- enable the following devices
-     				- cpu
-       				- fpu
-       				- cache
-       				- system memory
-       				- GPU(s)
+  			- enable everything but "local disks"
 			- run test for 5-15 minutes
 				- cpu temp should be 70-100c
    				- gpu temp should be 50-80c
@@ -162,6 +157,12 @@
 	- open crystaldiskinfo (search start)
 		- verify that m.2 idle temp is below 60c
   		- verify that m.2 drive health is "good"
+		- run another Aida64 Extreme stability test but with only "local disks" enabled
+  			- verify that drive temp remains under 65c
+		- if idle temp is over 60c or stress temp is over 65c you
+			- didn't properly install your m.2 drive
+			- need an aftermarket heatsink for your m.2 drive
+			- need to install a fan pointing directly at your m.2 drive   
 16. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after a single drive
 	- restart your computer after installing all drivers
