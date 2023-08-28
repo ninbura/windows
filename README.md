@@ -138,7 +138,7 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-15. verify that temperatures are in-check
+15. verify that system temperatures are in-check
 	- open HWiNFO (installed via wigui, search start)
  		- select "show sensors" 
 	- temps are model dependent
