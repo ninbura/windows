@@ -139,7 +139,7 @@
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
 15. verify that system temperatures are in-check
-    	- cpu & gpu
+	- cpu & gpu
 		- open HWiNFO (installed via wigui, search start)
 			- select "show sensors" 
 		- temps are model dependent
@@ -160,9 +160,9 @@
 		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor)
 		- open crystaldiskinfo (search start)
 			- verify that m.2 idle temp is below 60c
-	  		- verify that m.2 drive health is "good"
+			- verify that m.2 drive health is "good"
 			- run another Aida64 Extreme stability test but with only "local disks" enabled
-	  			- verify that drive temp remains under 65c
+				- verify that drive temp remains under 65c
 			- if idle temp is over 60c or stress temp is over 65c you
 				- didn't properly install your m.2 drive
 				- need an aftermarket heatsink for your m.2 drive
