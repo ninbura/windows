@@ -18,6 +18,13 @@
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 		- if motherboard bootloops after this set clock ram clock lower or disable x.m.p (after mobo enters safe mode)
+  		- If motherboard never enters safe mode and just continuously bootloops; reflash your bios using your motherboards advanced flash function.
+    			- consult manual on exact steps
+      			- typically involves
+      				- putting bios file on flash drive
+      				- naming bios file something specific
+      				- putting usb stick in specific port
+      				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
 3. purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
