@@ -157,7 +157,7 @@
 		- if cpu temps are too high re-read step 1 for fixes
 		- if gpu temps are too high
 			- verify that gpu fans are spinning
-			- verify that nothing is too close too / obstructing gpu fans
+			- verify that nothing is too close to or obstructing gpu fans
    			- verify that all other fans in case are working
    			- set a more aggressive fan curve via msi afterburner
 	- m.2 drives
