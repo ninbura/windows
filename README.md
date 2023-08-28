@@ -113,7 +113,7 @@
 	- restart your computer after installing all drivers
 16. download/install remaining software as desired from the **software** list below
 # drivers
-- Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan, & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
+- Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
 	- audio driver 
 		- usually labeled as realtek
@@ -125,8 +125,8 @@
 - latest intel device drivers 
 	- check motherboard page to make sure your motherboard uses intel for these devices
 	- [intel bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
-	- [intel lan](<https://www.intel.com/content/www/us/en/download/18293/intel-network-adapter-driver-for-windows-10.html>) (ethernet)
-	- [intel wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>) (wifi)
+	- [intel lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
+	- [intel wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
 - drivers you will need from your motherboard's support page if said devices aren't intel
 	- bluetooth driver
 	- lan driver (ethernet)
