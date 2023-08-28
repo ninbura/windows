@@ -257,7 +257,7 @@
 					- Note that there's some security concern with ignoring an applications security hash. A bad actor could intercept an applications winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. Use at your own risk (I do it all the time 😅).
 				- Use this command when winget is being stubborn about versioning, or just stubborn in general.
 					- `--force`
-					- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in that app. Generally app specific settings/configurations are stored in a separate cache from the install location/data, so typically this should just re-install said app & retain said app's settings/configurations.
+					- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
 				- examples
 					- `winget install microsoft.dotnet.sdk.6 --force`
 					- `winget install google.chromeremotedesktop --ignore-security-hash`
