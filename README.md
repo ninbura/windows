@@ -91,6 +91,7 @@
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
+	- **restart your computer**
 13. configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
@@ -109,7 +110,9 @@
 		- hit "ok" to close settings dialog
 	- minimize msi afterburner
 14. download/install drivers from the **drivers** list below
-15. download/install remaining software as desired from **software** list below
+	- you don't need to restart your computer when prompted after a single drive
+	- restart your computer after installing all drivers
+16. download/install remaining software as desired from **software** list below
 # drivers
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan, & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - drivers you typically need to grab from your motherboards support page
