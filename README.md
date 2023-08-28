@@ -73,7 +73,6 @@
  		- load `.blacklist.txt` 
  			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
 		- reference image below for configuration on this tab
-		
 	- restart your computer
 	- wait for winget-autoupdate to update existing packages
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
