@@ -9,6 +9,7 @@ EpicGames.EpicGamesLauncher --ignore-security-hash --force
 Ferdium.Ferdium --ignore-security-hash --force
 Figma.Figma --ignore-security-hash --force
 Figma.FigmaAgent --ignore-security-hash --force
+FinalWire.AIDA64.Extreme --ignore-security-hash --force
 Google.Chrome --ignore-security-hash --force
 Google.ChromeRemoteDesktop --ignore-security-hash --force
 Google.PlatformTools --ignore-security-hash --force
