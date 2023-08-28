@@ -175,6 +175,7 @@
 15. download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
+ 	- note that every driver you need may not be listed below
 16. configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
@@ -193,6 +194,36 @@
 17. download/install remaining software as desired from the **software** list below
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
+	- note that every piece of software you want may not be listed below
+		- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
+  		- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
+			- `winget search [software name/id]`
+    			- `winget install [software id]`
+         		example
+         			- `winget search chrome`
+				- *take note of or copy id for google chrome* 
+            			- `winget install google.chrome`
+       			- Install by id is easiest (listed on search results), but you can also use name if you wrap the name in quotes & use the `--name` flag.
+          			- For example - `winget install --name "Google Chrome"`
+   		- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
+		- nuance
+			- some applications must be installed in and admin elevated instance of powershell
+				- In this case wigui *will not work* for install, but should work for update.
+				- we already set your windows terminal to run by admin as default
+			- some applications must be installed in a **non-elevated** instance of powershell
+				- in this case wigui should work
+				- Because we have powershell 7 as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
+			- sometimes apps may require additonal flags to install
+				- use this command when "application hash doesn't match"
+					- `--ignore-security-hash`
+					- must be run in **non-elvated** instance of powershell to work (see last nuance)
+				- use this command when winget says a "newer version of this application is already installed" but you need this addtional verison
+					- `--force`
+				- examples
+					- `winget install microsoft.dotnet.sdk.6 --force`
+					- `winget install google.chromeremotedesktop --ignore-security-hash`
+					- `winget install obsproject.obsstudio --ignore-security-hash --force`
+				- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
 18. configuring rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
