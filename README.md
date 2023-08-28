@@ -191,7 +191,9 @@
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
 17. download/install remaining software as desired from the **software** list below
-18. configuring rgb lighting
+	- just like drivers you don't need to restart your computer when prompted after every single install
+	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
+19. configuring rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
