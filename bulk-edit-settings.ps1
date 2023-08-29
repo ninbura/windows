@@ -7,6 +7,7 @@ param(
   [boolean]$disableEaseCursorMovement = $true, # disables "easing" cursor movement between displays, feels super jank when on
 
   # file explorer settings
+  [boolean]$enableCompactView = $true, # this removes a lot of dead space in file explorer returning the way it looked/felt in windows 10
   [boolean]$hideRecycleBinOnDesktop = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
   [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
   [boolean]$showFrequentlyUsedFoldersInQuickAccess = $false, # allows windows to show recently used folders in your quick access pin list in file explorer
@@ -16,7 +17,7 @@ param(
 
   # network settings
   [boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
-  [boolean]$bypassNetworkOptions = $false, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
+  [boolean]$bypassNetworkOptions = $true, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
 
   # performance settings
   [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
@@ -34,7 +35,7 @@ param(
   [boolean]$showRecomendations = $false, # puts reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
 
   # task bar settings
-  [boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar
+  [boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar, $false = left align
   [boolean]$hideChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
   [boolean]$hideSearchOnTaskbar = $true, # hides search ui on windows task bar
   [int]$searchOnTaskbarType = 2, # if you set $hideSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
@@ -91,6 +92,7 @@ function editRegistry() {
       propertyType = "DWord"
       propertyValue = $disableUac ? 0 : 1
     }
+
     # cursor settings
     disableEnhancedPointerPrecision = @(
       [pscustomobject]@{
@@ -118,7 +120,14 @@ function editRegistry() {
       propertyType = "DWord"
       propertyValue = $disableEaseCursorMovement ? 0 : 1
     }
+
     # file explorer settings
+    enableCompactView = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "UseCompactMode"
+      propertyType = "DWord"
+      propertyValue = $enableCompactView ? 1 : 0
+    }
     hideRecycleBinOnDesktop = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
@@ -171,12 +180,6 @@ function editRegistry() {
     }
 
     # start menu settings
-    $centerAlignTaskbar = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-      property = "TaskbarAl"
-      propertyType = "DWord"
-      propertyValue = $centerAlignTaskbar ? 1 : 0
-    }
     showMorePinsOnStartMenu = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
@@ -223,7 +226,14 @@ function editRegistry() {
       propertyType = "DWord"
       propertyValue = $showRecomendations ? 1 : 0
     }
+
     # task bar settings
+    $centerAlignTaskbar = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "TaskbarAl"
+      propertyType = "DWord"
+      propertyValue = $centerAlignTaskbar ? 1 : 0
+    }
     hideChatButtonOnTaskBar = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarMn"
