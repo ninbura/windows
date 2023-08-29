@@ -164,7 +164,7 @@
 					- gpu temp should be >=85c
 		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
-		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software) (
+		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
   			- hard drive monitor & benchmark
 			- get "Shizuku" edition for a good time ☺️
 		- open crystaldiskinfo (search start)
