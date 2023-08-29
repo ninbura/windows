@@ -343,7 +343,7 @@
 	- microsoft store
 # troubleshooting
 - ### troubleshooting high temperatures
-	- if your **cpu** temperatures are too high you
+	- if your ***cpu*** temperatures are too high you
 		- mounted your cpu cooler incorrectly
 		- didn't plug in your fans / fans are defective & not running
 		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
