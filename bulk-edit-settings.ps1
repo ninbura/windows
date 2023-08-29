@@ -34,6 +34,7 @@ param(
   [boolean]$showRecomendations = $false, # puts reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
 
   # task bar settings
+  [boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar
   [boolean]$hideChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
   [boolean]$hideSearchOnTaskbar = $true, # hides search ui on windows task bar
   [int]$searchOnTaskbarType = 2, # if you set $hideSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
@@ -170,6 +171,12 @@ function editRegistry() {
     }
 
     # start menu settings
+    $centerAlignTaskbar = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "TaskbarAl"
+      propertyType = "DWord"
+      propertyValue = $centerAlignTaskbar ? 1 : 0
+    }
     showMorePinsOnStartMenu = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
