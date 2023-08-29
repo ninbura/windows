@@ -359,6 +359,7 @@
 		- have major airflow problems in your case
 		- are running your pc in an overly hot environment (90f+) 
 		- have a motherboard that is misreporting temps (unlikely but happens)
+  		- have a defective cpu or cpu cooler and need to rme / exchange it 
 	- if your ***gpu*** temperatures are too high
 		- verify that gpu fans are spinning
 		- verify that nothing is too close to or obstructing gpu fans
