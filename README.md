@@ -63,7 +63,7 @@
 		- if update button doesn't appear within 30 seconds it's already up-to-date
 7. ### install powershell 7 & git
 	- open windows terminal
-	- run the following command
+	- run the following commands
 		- `winget install microsoft.powershell`
 		- `winget install git.git`
 8. ### configure windows terminal
