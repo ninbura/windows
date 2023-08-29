@@ -38,40 +38,40 @@
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 		- if computer no longer boots or bootloops after enabling x.m.p see [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards)
-3. ### purchase/obtain a `windows 11 pro for workstations` product key
+2. ### purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
-4. ### create a bootable flash drive & install windows
+3. ### create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
-5. ### verify that windows is activated
+4. ### verify that windows is activated
 	- open settings & navigate to `system > activation`
 	- If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-6. ### update windows
+5. ### update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
 	- **restart your computer**
 	- check for updates again
 	- If you have more updates and pc requests restarting again, do so.
 	- repeat until windows states that everything is up-to-date 
-7. ### update windows terminal
+6. ### update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 		- if update button doesn't appear within 30 seconds it's already up-to-date
-8. ### install powershell 7 & git
+7. ### install powershell 7 & git
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
 		- `winget install git.git`
-9. ### configure windows terminal
+8. ### configure windows terminal
 	- restart windows terminal
 	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-10. ### download, configure, & run `bulk-edit-settings` powershell script
+9. ### download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
@@ -82,7 +82,7 @@
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then **restart your computer**
-11. ### manually configure other windows settings
+10. ### manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -101,9 +101,9 @@
 		- enable "public folder sharing"
 		- enable "password protected sharing"
 	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
-12. ### download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
+11. ### download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
-	- move `wigui.exe` to your documents folder
+	- move `wigui.exe` to your documents folder & run it
 	- click on the "configure wau" tab
  		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
@@ -116,6 +116,8 @@
 			- you will see this info in windows notification center (click clock on task bar)
 			- it is *highly recommended* that you save your edited `.blacklist.txt` in a backed up / redundant location and start managing it yourself
 	- **restart your computer**
+	- open windows terminal & run the following command
+		- `winget settings --enable InstallerHashOverride`
 	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
@@ -129,7 +131,7 @@
 		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
-14. ### configure msi afterburner (gpu fan curve)
+12. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
@@ -145,7 +147,7 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-15. ### verify that system temperatures are in-check
+13. ### verify that system temperatures are in-check
 	- cpu & gpu
 		- open HWiNFO (installed via wigui, search start)
 			- select "show sensors" 
@@ -172,11 +174,11 @@
 			- verify that drive temp remains under 65c
 		- if idle temp or stress temp is above listed temps see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 
-16. ### download/install drivers from the **drivers** list below
+14. ### download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
  	- Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
-17. ### configure audio settings
+15. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
 		- right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -191,7 +193,7 @@
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
-18. ### download/install remaining software as desired using winget/wigui & the **software** list below
+16. ### download/install remaining software as desired using winget/wigui & the **software** list below
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
 	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
@@ -199,7 +201,7 @@
 	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
 		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
 	- If software isn't available via winget, install software the old fashioned way 😭
-19. ### configure rgb lighting
+17. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
