@@ -158,10 +158,10 @@
 		- open Aida64 Extreme (installed via wigui, search start)
 			- confirm you're okay with app being in trial mode
 			- open system stability test dialog `tools > system stability test`
-				- enable everything except "local disks"
-				- run test for 5-15 minutes
-					- cpu temp should be >=100c
-					- gpu temp should be >=85c
+			- enable everything except "local disks"
+			- run test for 5-15 minutes
+			- cpu temp should be >=100c
+			- gpu temp should be >=85c
 		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
 		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
