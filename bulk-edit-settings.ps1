@@ -17,7 +17,7 @@ param(
 
   # network settings
   [boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
-  [boolean]$bypassNetworkOptions = $true, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
+  [boolean]$bypassNetworkOptions = $false, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
 
   # performance settings
   [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
