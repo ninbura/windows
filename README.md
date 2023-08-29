@@ -360,6 +360,3 @@
   		- note that you want your ram to be at the highest possible clock for best performance
   	   	- if ram is a reasonable speed 5600-6800Mhz and can't achive x.m.p you should consider returning it for different ram
   	   	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
-
-				- putting usb stick in specific port
-				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
