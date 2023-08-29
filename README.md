@@ -104,6 +104,7 @@
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
 	- move `wigui.exe` to your documents folder & run it
 	- click on the "configure wau" tab (wau = winget-autoupdate)
+ 		- wau aka winget-autoupdate updates all winget packages that have updates every time you login. Long story short, you almost never have to manually update software again.
  		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
