@@ -324,7 +324,7 @@
 - ### troubleshooting bootloop / boot problems
   	- if computer is bootlooping
   		- re-flash bios using advanced flashing utility
-  	   	- Consult motherboard manual for exact steps, show mention the word "flash" and describe a process for updating your bios without having access to the bios.
+  	   	- Consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
 		- typically involves
 			- putting bios file on flash drive
 			- naming bios file something specific
