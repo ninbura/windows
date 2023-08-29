@@ -40,7 +40,7 @@
 			- have major airflow problems in your case
 			- are running your pc in an overly hot environment (90f+) 
    			- have a motherboard that is misreporting temps (unlikely but happens)
-	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>))
+	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>) | should be similar for most motherboards)
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 		- if motherboard bootloops after this set ram clock lower or disable x.m.p (after mobo enters safe mode)
   		- If motherboard never enters safe mode and just continuously bootloops; reflash your bios using your motherboards advanced flash function.
