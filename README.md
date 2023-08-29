@@ -31,15 +31,8 @@
 	- enter bios (mash [delete] key while computer is restarting)
  	- verify that cpu temp isn't anything crazy
   		- should be on bios home page
-		- should be sub 60c
-  		- if temps are higher than this you
-			- mounted your cpu cooler incorrectly
-			- didn't plug in your fans / fans are defective & not running
-			- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve tutorail below).
-			- used an inadequate cpu cooler
-			- have major airflow problems in your case
-			- are running your pc in an overly hot environment (90f+) 
-   			- have a motherboard that is misreporting temps (unlikely but happens)
+		- should be sub 50c
+  		- if temps are higher than this see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>) | should be similar for most motherboards)
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
 		- if motherboard bootloops after this set ram clock lower or disable x.m.p (after mobo enters safe mode)
@@ -348,3 +341,13 @@
 	- `winget install Canonical.Ubuntu.2204`
 - xbox accessories (tool for configuring xbox controllers)
 	- microsoft store
+# troubleshooting
+- ### troubleshooting high temperature
+	- if your **cpu** temperatures are too high you
+		- mounted your cpu cooler incorrectly
+		- didn't plug in your fans / fans are defective & not running
+		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve tutorail below).
+		- used an inadequate cpu cooler
+		- have major airflow problems in your case
+		- are running your pc in an overly hot environment (90f+) 
+		- have a motherboard that is misreporting temps (unlikely but happens)
