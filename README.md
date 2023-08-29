@@ -21,6 +21,7 @@
 - [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 - [software](#software)
+- [troubleshooting](#troubleshooting)
 # steps
 1. ### update & configure your motherboard's bios
 	- attach a flash drive to your computer (preferably less than 32gb)
@@ -35,14 +36,7 @@
   		- if temps are higher than this see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>) | should be similar for most motherboards)
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
-		- if motherboard bootloops after this set ram clock lower or disable x.m.p (after mobo enters safe mode)
-  		- If motherboard never enters safe mode and just continuously bootloops; reflash your bios using your motherboards advanced flash function.
-			- consult manual for exact steps
-			- typically involves
-				- putting bios file on flash drive
-				- naming bios file something specific
-				- putting usb stick in specific port
-				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
+		- if computer no longer boots or bootloops after enabling x.m.p see [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards)
 3. ### purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
@@ -351,3 +345,21 @@
 		- have major airflow problems in your case
 		- are running your pc in an overly hot environment (90f+) 
 		- have a motherboard that is misreporting temps (unlikely but happens)
+- ### troubleshooting bootloop / boot problems
+  	- if computer is bootlooping
+  		- re-flash bios using advanced flashing utility
+  	   	- Consult motherboard manual for exact steps, show mention the word "flash" and describe a process for updating your bios without having access to the bios.
+		- typically involves
+			- putting bios file on flash drive
+			- naming bios file something specific
+			- putting usb stick in specific port
+			- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
+  	- if computer failed to boot bios after enabling x.m.p and now you're stuck in "safe mode"
+		- try setting ram clock at a lower clock
+		- if setting the clock speed lower multiple time fails simply disable x.m.p
+  		- note that you want your ram to be at the highest possible clock for best performance
+  	   	- if ram is a reasonable speed 5600-6800Mhz and can't achive x.m.p you should consider returning it for different ram
+  	   	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
+
+				- putting usb stick in specific port
+				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
