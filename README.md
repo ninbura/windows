@@ -123,7 +123,6 @@
 		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
 		- see [winget basics](#wingetwigui-basics) for info in-relation to finding appliations to add to your `.install-list.txt` via winget
   		- required applications (do not remove from `.install-list.txt`)
-			- 7zip.7zip
 			- FinalWire.AIDA64.Extreme
 			- Guru3D.Afterburner
 			- REALiX.HWiNFO
