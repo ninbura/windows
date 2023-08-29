@@ -366,3 +366,12 @@
 		- have major airflow problems in your case
 		- are running your pc in an overly hot environment (90f+) 
 		- have a motherboard that is misreporting temps (unlikely but happens)
+	- if your ***gpu*** temperatures are too high
+		- verify that gpu fans are spinning
+		- verify that nothing is too close to or obstructing gpu fans
+		- verify that all other fans in case are working
+		- set a more aggressive fan curve via msi afterburner
+		- if temps are still too high your gpu's heatsink may have a poor factory mount, at which point you can
+  			- rma / exchange the gpu
+     			- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
+
