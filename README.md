@@ -43,7 +43,7 @@
 				- naming bios file something specific
 				- putting usb stick in specific port
 				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
-	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
+	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards)
 3. ### purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
@@ -346,7 +346,7 @@
 	- if your **cpu** temperatures are too high you
 		- mounted your cpu cooler incorrectly
 		- didn't plug in your fans / fans are defective & not running
-		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve tutorail below).
+		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
 		- used an inadequate cpu cooler
 		- have major airflow problems in your case
 		- are running your pc in an overly hot environment (90f+) 
