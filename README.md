@@ -168,12 +168,7 @@
 				- run test for 5-15 minutes
 					- cpu temp should be >=100c
 					- gpu temp should be >=85c
-		- if cpu temps are too high re-read [update & configure your motherboard's bios](#update--configure-your-motherboards-bios) for fixes
-		- if gpu temps are too high
-			- verify that gpu fans are spinning
-			- verify that nothing is too close to or obstructing gpu fans
-   			- verify that all other fans in case are working
-   			- set a more aggressive fan curve via msi afterburner
+		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
 		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor | get "Shizuku" edition for a good time ☺️)
 		- open crystaldiskinfo (search start)
