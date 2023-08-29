@@ -342,7 +342,7 @@
 - xbox accessories (tool for configuring xbox controllers)
 	- microsoft store
 # troubleshooting
-- ### troubleshooting high temperature
+- ### troubleshooting high temperatures
 	- if your **cpu** temperatures are too high you
 		- mounted your cpu cooler incorrectly
 		- didn't plug in your fans / fans are defective & not running
