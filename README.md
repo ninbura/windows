@@ -49,7 +49,7 @@
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
 5. ### verify that windows is activated
 	- open settings & navigate to `system > activation`
-	- If it says activation failed don't panic, see [troubleshooting failed windows activation](troubleshooting-failed-windows-activation).
+	- If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
 6. ### update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
