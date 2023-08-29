@@ -128,7 +128,7 @@
 			- REALiX.HWiNFO
 		- Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
-	- Restart wigui, load your install list, click install, & wait for the process to finish.
+	- Open wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
 12. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
@@ -164,13 +164,13 @@
 					- gpu temp should be >=85c
 		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
-		- download & install [crystaldiskinfo](https://crystalmark.info/en/software/crystaldiskinfo/) (hard drive monitor | get "Shizuku" edition for a good time ☺️)
+		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software) (hard drive monitor & benchmark | get "Shizuku" edition for a good time ☺️)
 		- open crystaldiskinfo (search start)
 			- verify that m.2 idle temp is below 60c
 			- verify that m.2 drive health is "good"
 				- consider replacing your hard drive if health is poor 
-		- run another Aida64 Extreme stability test but with only "local disks" enabled
-			- verify that drive temp remains under 65c
+		- open crystaldiskmark and hit the giant "all" button
+			- verify that drive temp remains under 65c during benchmark
 		- if idle temp or stress temp is above listed temps see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 
 14. ### download/install drivers from the **drivers** list below
