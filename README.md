@@ -10,8 +10,8 @@
   	8. [configure windows terminal & winget](#configure-windows-terminal--winget)
   	9. [install git](#install-git)
   	10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
-  	11. [manually configure other windows settings](#manually-configure-other-windows-settings)
-  	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
+  	11. [manually configure other windows settings](#manually-configure-other-windows-settings) download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
+  	12. [download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)](#download-install--run-winget-autoupdate-bulk-software-installerupdater--gui-for-winget-autoupdate)
   	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
   	15. [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
@@ -62,22 +62,16 @@
 	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 		- if update button doesn't appear within 30 seconds it's already up-to-date
-8. ### install powershell 7
+8. ### install powershell 7 & git
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
-9. ### configure windows terminal & winget
+		- `winget install git.git`
+9. ### configure windows terminal
 	- restart windows terminal
 	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-	- close windows terminal & open it again
-	- confirm that terminal is elevated (should state in tab) & run the following command
-		- `winget settings --enable InstallerHashOverride`
-10. ### install git
-	- open windows terminal
-	- run the following command
-		- `winget install git.git`
-11. ### download, configure, & run `bulk-edit-settings` powershell script
+10. ### download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
@@ -88,7 +82,7 @@
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then **restart your computer**
-12. ### manually configure other windows settings
+11. ### manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -107,10 +101,9 @@
 		- enable "public folder sharing"
 		- enable "password protected sharing"
 	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
-13. ### download, install, & run winget-autoupdate (bulk software installer/updater)
-	- download & run wigui (wigui = gui for winget-autoupdate)
-		- `winget install wigui --location documents`
-		- should be in your user's documents folder after download
+12. ### download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
+	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
+	- move `wigui.exe` to your documents folder
 	- click on the "configure wau" tab
  		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
