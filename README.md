@@ -175,12 +175,10 @@
 			- verify that m.2 idle temp is below 60c
 			- verify that m.2 drive health is "good"
 				- consider replacing your hard drive if health is poor 
-			- run another Aida64 Extreme stability test but with only "local disks" enabled
-				- verify that drive temp remains under 65c
-			- if idle temp is over 60c or stress temp is over 65c you
-				- didn't properly install your m.2 drive
-				- need an aftermarket heatsink for your m.2 drive
-				- need to install a fan pointing directly at your m.2 drive   
+		- run another Aida64 Extreme stability test but with only "local disks" enabled
+			- verify that drive temp remains under 65c
+		- if idle temp or stress temp is above listed temps see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
+
 16. ### download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
@@ -369,4 +367,8 @@
 		- if temps are still too high your gpu's heatsink may have a poor factory mount, at which point you can
 			- rma / exchange the gpu
 			- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
-
+	- if your ***m.2 ssd*** temperatures are too high you
+		- didn't properly install your m.2 drive
+		- need an aftermarket heatsink for your m.2 drive
+		- need to install a fan pointing directly at your m.2 drive   
+		- have a defective drive and need to rma / exchange it
