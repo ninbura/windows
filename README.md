@@ -49,9 +49,7 @@
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
 5. ### verify that windows is activated
 	- open settings & navigate to `system > activation`
-	- If it says activation failed, don't panic.
-		- you may need to activate by phone
-		- there should be a button to do this via the `system > activation` screen
+	- If it says activation failed don't panic, see [troubleshooting failed windows activation](troubleshooting-failed-windows-activation).
 6. ### update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
@@ -336,15 +334,6 @@
 - xbox accessories (tool for configuring xbox controllers)
 	- microsoft store
 # troubleshooting
-- ### troubleshooting high temperatures
-	- if your ***cpu*** temperatures are too high you
-		- mounted your cpu cooler incorrectly
-		- didn't plug in your fans / fans are defective & not running
-		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
-		- used an inadequate cpu cooler
-		- have major airflow problems in your case
-		- are running your pc in an overly hot environment (90f+) 
-		- have a motherboard that is misreporting temps (unlikely but happens)
 - ### troubleshooting bootloop / boot problems
   	- if computer is bootlooping
   		- re-flash bios using advanced flashing utility
@@ -360,3 +349,20 @@
   		- note that you want your ram to be at the highest possible clock for best performance
   	   	- if ram is a reasonable speed 5600-6800Mhz and can't achive x.m.p you should consider returning it for different ram
   	   	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
+- ### troubleshooting failed windows activation
+	- verify that the activation key you entered matches the one you purchased/obtained earlier
+  	- if key matches but windows still failed to activatge you may need to activate by phone
+		- there should be a button to do this via the `system > activation` screen
+  		- follow on-screen instructions
+  	 	- involves calling a number and answering prompts by voice and dial pad
+		- I typically start spamming "represnetative" by voice to try to get to someone as soon as possible. But I believe you can only do this after stating that you're having trouble with activating windows.
+	- I've never had phone activiation fail, but if it did somehow you may have purchased a key that's already been used and will need to get a new one.
+- ### troubleshooting high temperatures
+	- if your ***cpu*** temperatures are too high you
+		- mounted your cpu cooler incorrectly
+		- didn't plug in your fans / fans are defective & not running
+		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
+		- used an inadequate cpu cooler
+		- have major airflow problems in your case
+		- are running your pc in an overly hot environment (90f+) 
+		- have a motherboard that is misreporting temps (unlikely but happens)
