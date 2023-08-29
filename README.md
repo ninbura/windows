@@ -354,7 +354,7 @@
 			- naming bios file something specific
 			- putting usb stick in specific port
 			- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
-  	- if computer failed to boot bios after enabling x.m.p and now you're stuck in "safe mode"
+  	- if computer failed to boot into bios after enabling x.m.p and now you're stuck in "safe mode"
 		- try setting ram clock at a lower clock
 		- if setting the clock speed lower multiple time fails simply disable x.m.p
   		- note that you want your ram to be at the highest possible clock for best performance
