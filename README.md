@@ -10,7 +10,7 @@
   	8. [configure windows terminal & winget](#configure-windows-terminal--winget)
   	9. [install git](#install-git)
   	10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
-  	11. [manually configure other windows settings](#manually-configure-other-windows-settings) download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
+  	11. [manually configure other windows settings](#manually-configure-other-windows-settings)
   	12. [download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)](#download-install--run-winget-autoupdate-bulk-software-installerupdater--gui-for-winget-autoupdate)
   	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
