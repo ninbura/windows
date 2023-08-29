@@ -21,12 +21,12 @@
 - [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 - [software](#software)
-
 # steps
-1. ### update & configure your motherboard's bios 
+1. ### update & configure your motherboard's bios
 	- attach a flash drive to your computer (preferably less than 32gb)
 	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
-	- download the latest bios file from your motherboard's support page
+ 	- Take note of your motherboard's model number, should be listed on the box it came in.
+	- Search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
 	- enter bios (mash [delete] key while computer is restarting)
  	- verify that cpu temp isn't anything crazy
@@ -51,48 +51,48 @@
 				- putting usb stick in specific port
 				- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
 	- set fan curves in bios if desired ([tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | different per motherboard)
-2. ### purchase/obtain a `windows 11 pro for workstations` product key
+3. ### purchase/obtain a `windows 11 pro for workstations` product key
 	- buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
-3. ### create a bootable flash drive & install windows
+4. ### create a bootable flash drive & install windows
 	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- undergo the windows setup process ([tutorial](<https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117>) | start video at 1:57)
-4. ### verify that windows is activated
+5. ### verify that windows is activated
 	- open settings & navigate to `system > activation`
 	- If it says activation failed, don't panic.
 		- you may need to activate by phone
 		- there should be a button to do this via the `system > activation` screen
-5. ### update windows
+6. ### update windows
 	- open windows settings & navigate to `windows updates`
 	- check for updates & wait for them to download/install
 	- **restart your computer**
 	- check for updates again
 	- If you have more updates and pc requests restarting again, do so.
 	- repeat until windows states that everything is up-to-date 
-6. ### update windows terminal
+7. ### update windows terminal
 	- open the microsoft store & search for windows terminal
 	- click the windows terminal listing & wait a few seconds
 	- click the update button & wait for the update to complete
 		- if update button doesn't appear within 30 seconds it's already up-to-date
-7. ### install powershell 7
+8. ### install powershell 7
 	- open windows terminal
 	- run the following command
 		- `winget install microsoft.powershell`
-8. ### configure windows terminal & winget
+9. ### configure windows terminal & winget
 	- restart windows terminal
 	- open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
 	- select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 	- close windows terminal & open it again
 	- confirm that terminal is elevated (should state in tab) & run the following command
 		- `winget settings --enable InstallerHashOverride`
-9. ### install git
+10. ### install git
 	- open windows terminal
 	- run the following command
 		- `winget install git.git`
-10. ### download, configure, & run `bulk-edit-settings` powershell script
+11. ### download, configure, & run `bulk-edit-settings` powershell script
 	- restart windows terminal
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
@@ -103,7 +103,7 @@
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
 	- wait for script to finish then **restart your computer**
-11. ### manually configure other windows settings
+12. ### manually configure other windows settings
 	- theme settings
 		- navigate to `personalization > colors`
 		- change "choose your mode" to dark
@@ -122,7 +122,7 @@
 		- enable "public folder sharing"
 		- enable "password protected sharing"
 	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
-12. ### download, install, & run winget-autoupdate (bulk software installer/updater)
+13. ### download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run wigui (wigui = gui for winget-autoupdate)
 		- `winget install wigui --location documents`
 		- should be in your user's documents folder after download
@@ -151,7 +151,7 @@
 		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
 	- Restart wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
-13. ### configure msi afterburner (gpu fan curve)
+14. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
@@ -167,7 +167,7 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-14. ### verify that system temperatures are in-check
+15. ### verify that system temperatures are in-check
 	- cpu & gpu
 		- open HWiNFO (installed via wigui, search start)
 			- select "show sensors" 
@@ -201,11 +201,11 @@
 				- didn't properly install your m.2 drive
 				- need an aftermarket heatsink for your m.2 drive
 				- need to install a fan pointing directly at your m.2 drive   
-15. ### download/install drivers from the **drivers** list below
+16. ### download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
  	- Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
-16. ### configure audio settings
+17. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
 		- right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -220,7 +220,7 @@
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
-17. ### download/install remaining software as desired using winget/wigui & the **software** list below
+18. ### download/install remaining software as desired using winget/wigui & the **software** list below
 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
 	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
@@ -228,7 +228,7 @@
 	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
 		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
 	- If software isn't available via winget, install software the old fashioned way 😭
-18. ### configure rgb lighting
+19. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
@@ -270,10 +270,11 @@
 - It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
 	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
 - Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
-
 # drivers
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
+- Take note of your motherboard's model number, should be listed on the box it came in.
+- search for your motherboard via it's model number on google & locate the support page
 - drivers you typically need to grab from your motherboards support page
 	- audio driver 
 		- usually labeled as realtek
