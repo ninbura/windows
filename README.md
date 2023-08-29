@@ -372,6 +372,6 @@
 		- verify that all other fans in case are working
 		- set a more aggressive fan curve via msi afterburner
 		- if temps are still too high your gpu's heatsink may have a poor factory mount, at which point you can
-  			- rma / exchange the gpu
-     			- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
+			- rma / exchange the gpu
+			- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
 
