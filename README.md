@@ -10,7 +10,7 @@
   	8. [configure windows terminal](#configure-windows-terminal)
   	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
   	10. [manually configure other windows settings](#manually-configure-other-windows-settings)
-  	11. [download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)](#download-install--run-winget-autoupdate-bulk-software-installerupdater--gui-for-winget-autoupdate)
+  	11. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
   	12. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   	13. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
   	14. [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
@@ -100,10 +100,10 @@
 		- enable "public folder sharing"
 		- enable "password protected sharing"
 	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
-11. ### download, install, & run winget-autoupdate (bulk software installer/updater | gui for winget-autoupdate)
+11. ### download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
 	- move `wigui.exe` to your documents folder & run it
-	- click on the "configure wau" tab
+	- click on the "configure wau" tab (wau = winget-autoupdate)
  		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
