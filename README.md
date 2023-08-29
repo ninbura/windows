@@ -6,7 +6,7 @@
   	4. [verify that windows is activated](#verify-that-windows-is-activated)
   	5. [update windows](#update-windows)
   	6. [update windows terminal](#update-windows-terminal)
-  	7. [install powershell 7](#install-powershell-7)
+  	7. [install powershell 7 & git](#install-powershell-7--git)
   	8. [configure windows terminal](#configure-windows-terminal)
   	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
   	10. [manually configure other windows settings](#manually-configure-other-windows-settings)
