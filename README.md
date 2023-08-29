@@ -164,14 +164,16 @@
 					- gpu temp should be >=85c
 		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
-		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software) (hard drive monitor & benchmark | get "Shizuku" edition for a good time ☺️)
+		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software) (
+  			- hard drive monitor & benchmark
+			- get "Shizuku" edition for a good time ☺️
 		- open crystaldiskinfo (search start)
 			- verify that m.2 idle temp is below 60c
 			- verify that m.2 drive health is "good"
-				- consider replacing your hard drive if health is poor 
+			- consider replacing your hard drive if health is poor 
 		- open crystaldiskmark and hit the giant "all" button
-			- verify that drive temp remains under 65c during benchmark
-		- if idle temp or stress temp is above listed temps see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
+			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
+		- If you see your m.2 temperature go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 
 14. ### download/install drivers from the **drivers** list below
 	- you don't need to restart your computer when prompted after every single driver
