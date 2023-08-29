@@ -160,7 +160,9 @@
 			- open system stability test dialog `tools > system stability test`
 			- enable everything except "local disks"
 			- run test for 5-15 minutes
-			- cpu temp should be >=100c
+			- cpu temp should be
+   				- >=100c on air
+				- >=90 on water
 			- gpu temp should be >=85c
 		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- m.2 drives
