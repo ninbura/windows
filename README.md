@@ -340,7 +340,7 @@
 - wsa (windows subsystem for android)
 	- download amazon store via windows store
 	- **restart your computer**
-- wsl (windows subsystem for linux)
+- ubuntu via wsl (windows subsystem for linux)
 	- run in **elevated** console
 	- `wsl --install`
 		- **restart your computer**
