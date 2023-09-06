@@ -19,8 +19,6 @@ Logitech.GHUB --ignore-security-hash
 Logitech.OptionsPlus --ignore-security-hash
 Logitech.UnifyingSoftware --ignore-security-hash
 Microsoft.AzureDataStudio --ignore-security-hash
-Micorosft.DotNet.SDK.6 --ignore-security-hash
-Micorosft.DotNet.SDK.7 --ignore-security-hash
 Microsoft.DotNet.SDK.Preview --ignore-security-hash
 Microsoft.PowerToys --ignore-security-hash
 Microsoft.Teams --ignore-security-hash
