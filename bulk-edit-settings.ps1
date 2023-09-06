@@ -86,12 +86,26 @@ function editRegistry() {
 
   $registryTweaks = [ordered]@{
     # administrative settings 
-    disableUac = [pscustomobject]@{
-      path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
-      property = "EnableLUA"
-      propertyType = "DWord"
-      propertyValue = $disableUac ? 0 : 1
-    }
+    disableUac = @(
+      [pscustomobject]@{
+        path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
+        property = "ConsentPromptBehaviorAdmin"
+        propertyType = "DWord"
+        propertyValue = $disableUac ? 0 : 1
+      },
+      [pscustomobject]@{
+        path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
+        property = "EnableLUA"
+        propertyType = "DWord"
+        propertyValue = 1
+      },
+      [pscustomobject]@{
+        path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
+        property = "PromptOnSecureDesktop"
+        propertyType = "DWord"
+        propertyValue = $disableUac ? 0 : 1
+      }
+    )
 
     # cursor settings
     disableEnhancedPointerPrecision = @(
