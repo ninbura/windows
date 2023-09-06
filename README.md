@@ -291,8 +291,8 @@
 - please read [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
 - .net SDKs
 	- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
-	- `winget install micorosft.dotnet.sdk.7 --ignore-security-hash --force`
-	- `winget install micorosft.dotnet.sdk.6 --ignore-security-hash --force`
+	- `winget install micorsoft.dotnet.sdk.7 --ignore-security-hash --force`
+	- `winget install micorsoft.dotnet.sdk.6 --ignore-security-hash --force`
 - [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
 - appstudio (reporting client)
