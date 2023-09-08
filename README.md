@@ -303,49 +303,47 @@
 		- **restart your computer**
 - ### winget
 	- admin elevated terminal required
-  		- ffmpeg 
+  		- ffmpeg (cli media tool)
 			- `winget install gyan.ffmpeg --ignore-security-hash`
-      		- proton vpn
+      		- proton vpn (vpn client)
 			- `winget install protontechnologies.protonvpn --ignore-security-hash`
-      		- rufus
+      		- rufus (image mounter)
 			- `winget install rufus.rufus --ignore-security-hash`
- 		- tailwindcss
+ 		- tailwindcss (css library for dev)
 			- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
 	- standard terminal
-	  	- .net SDKs
+	  	- .net SDKs (micorosft .net runtime(s) for dev)
 			- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
 			- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
 			- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
-		- docker
-			- **wsl must be installed/configured first (see [wsl](#wsl-windows-subsytem-for-linux))**
+		- docker (running docker images for dev)
+			- **wsl must be installed/configured first (see [wsl](#wsl-windows-subsystem-for-linux))**
 			- `winget install docker.dockerdesktop --ignore-security-hash`
+- ### microsoft store
+	- icloud (apples icloud desktop application)
+	- cisco anyconnect (vpn client)
+	- wsa (windows subsystem for android)
+		- download amazon store via microsoft store
+		- **restart your computer**
+	- xbox accessories (tool for configuring xbox controllers)
 - ### old school
-- [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
-- [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
-- appstudio (reporting client)
-- [battlenet launcher](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
-- cisco anyconnect (vpn client)
-	- microsoft store
-- [crystaldiskinfo](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
-- [crystaldiskmark](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
-- [davinci resolve](<https://www.blackmagicdesign.com/products/davinciresolve>) (download link near the bottom of the page)
-- [easybcd](<https://neosmart.net/EasyBCD/>) (tool for dual booting)
-- [ffxiv launcher](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
-- icloud (apples icloud desktop application)
-	- microsoft store
-- [ireboot](<https://neosmart.net/iReboot/>) (tool for dual booting)
-- [obs asio](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
-- [synergy](<https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload>) (tool for sharing single mouse & keyboard with multiple computers)
-- [rode central](<https://rode.com/en-us/software/rode-central>) (Rodecaster Pro II & Rodecaster Duo)
-- [via](<https://www.caniusevia.com/>) (tool for configuring many keyboard models)
-- [vlc 4.0](<https://artifacts.videolan.org/vlc/nightly-win64/>) (video player, plays all codecs including the new av1 codec)
-- [window-switcher](<https://github.com/sigoden/window-switcher/releases>) (macOS style window switching for windows 11)
-- [wootliltiy](<https://wooting.io/wootility>) (software to configure wooting keyboards)
-- wsa (windows subsystem for android)
-	- download amazon store via windows store
-	- **restart your computer**
-- xbox accessories (tool for configuring xbox controllers)
-	- microsoft store
+	- [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
+	- [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
+	- appstudio (reporting client)
+	- [battlenet launcher](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
+	- [crystaldiskinfo](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
+	- [crystaldiskmark](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
+	- [davinci resolve](<https://www.blackmagicdesign.com/products/davinciresolve>) (download link near the bottom of the page)
+	- [easybcd](<https://neosmart.net/EasyBCD/>) (tool for dual booting)
+	- [ffxiv launcher](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
+	- [ireboot](<https://neosmart.net/iReboot/>) (tool for dual booting)
+	- [obs asio](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
+	- [synergy](<https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload>) (tool for sharing single mouse & keyboard with multiple computers)
+	- [rode central](<https://rode.com/en-us/software/rode-central>) (Rodecaster Pro II & Rodecaster Duo)
+	- [via](<https://www.caniusevia.com/>) (tool for configuring many keyboard models)
+	- [vlc 4.0](<https://artifacts.videolan.org/vlc/nightly-win64/>) (video player, plays all codecs including the new av1 codec)
+	- [window-switcher](<https://github.com/sigoden/window-switcher/releases>) (macOS style window switching for windows 11)
+	- [wootliltiy](<https://wooting.io/wootility>) (software to configure wooting keyboards)
 # troubleshooting
 - ### troubleshooting bootloop / boot problems
   	- if computer is bootlooping
