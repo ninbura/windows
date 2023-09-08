@@ -307,6 +307,8 @@
 	- admin elevated terminal required
 		- **ffmpeg** (cli media tool)
 			- `winget install gyan.ffmpeg --ignore-security-hash`
+		- **itunes**
+ 			- `winget install apple.itunes --ignore-security-hash`
 		- **proton vpn** (vpn client)
 			- `winget install protontechnologies.protonvpn --ignore-security-hash`
 		- **rufus** (image mounter)
