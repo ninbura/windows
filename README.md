@@ -303,16 +303,16 @@
 		- **restart your computer**
 - ### winget
 	- admin elevated terminal required
-  		- ffmpeg (cli media tool)
+		- ffmpeg (cli media tool)
 			- `winget install gyan.ffmpeg --ignore-security-hash`
-      		- proton vpn (vpn client)
+		- proton vpn (vpn client)
 			- `winget install protontechnologies.protonvpn --ignore-security-hash`
-      		- rufus (image mounter)
+		- rufus (image mounter)
 			- `winget install rufus.rufus --ignore-security-hash`
- 		- tailwindcss (css library for dev)
+		- tailwindcss (css library for dev)
 			- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
 	- standard terminal
-	  	- .net SDKs (micorosft .net runtime(s) for dev)
+		- .net SDKs (micorosft .net runtime(s) for dev)
 			- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
 			- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
 			- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
