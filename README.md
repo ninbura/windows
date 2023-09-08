@@ -290,14 +290,14 @@
 # software
 - please read [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
 - ### **wsl** (windows subsystem for linux)
-	- install wsl the hard way (required for ssh capability)
-		- download & isntall the [wsl2 exe](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+	- install **wsl** the hard way (required for ssh capability)
+		- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 		- **restart your pc**
 		- `winget search ubuntu`
 		- take note of the id of the linux distribution you want to install & install via winget
 		- for exmample  
 			- `winget install ubuntu-2204 --ignore-security-hash`  
-	- installing wsl the easy way
+	- installing **wsl** the easy way
 		- run the following command in an **elevated** powershelkl  console
 		- `wsl --install`
 		- **restart your computer**
