@@ -293,6 +293,12 @@
 	- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
 	- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
 	- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
+- admin elevated winget software
+	- all applications in this section require your terminal be *elevated*
+	- `winget install gyan.ffmpeg --ignore-security-hash`
+	- `winget install protontechnologies.protonvpn --ignore-security-hash`
+	- `winget install rufus.rufus --ignore-security-hash`
+	- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
 - [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
 - appstudio (reporting client)
@@ -303,9 +309,6 @@
 - [crystaldiskmark](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
 - [davinci resolve](<https://www.blackmagicdesign.com/products/davinciresolve>) (download link near the bottom of the page)
 - [easybcd](<https://neosmart.net/EasyBCD/>) (tool for dual booting)
-- ffmpeg (cli media editor)
-	- run in **elevated** console
-	- `winget install gyan.ffmpeg`
 - [ffxiv launcher](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
 - icloud (apples icloud desktop application)
 	- microsoft store
@@ -320,12 +323,18 @@
 - wsa (windows subsystem for android)
 	- download amazon store via windows store
 	- **restart your computer**
-- ubuntu via wsl (windows subsystem for linux)
-	- run in **elevated** console
-	- `wsl --install`
+- wsl (windows subsystem for linux)
+	- install wsl the hard way (required for ssh capability)
+  		- download & isntall the [wsl2 exe](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+    		- **restart your pc**
+		- `winget search ubuntu`
+		- take note of the id of the linux distribution you want to install & install via winget
+  		- for exmample  
+  			- `winget install ubuntu-2204 --ignore-security-hash`  
+	- installing wsl the easy way
+		- run the following command in an **elevated** powershelkl  console
+		- `wsl --install`
 		- **restart your computer**
-	- `winget search ubuntu`
-	- `winget install Canonical.Ubuntu.2204`
 - xbox accessories (tool for configuring xbox controllers)
 	- microsoft store
 # troubleshooting
