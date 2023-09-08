@@ -298,7 +298,7 @@
 		- `winget search ubuntu`
 		- take note of the id of the linux distribution you want to install & install via winget
 		- for exmample  
-			- `winget install ubuntu-2204 --ignore-security-hash`  
+			- `winget canonical.ubuntu.2204 --ignore-security-hash`  
 	- installing **wsl** the easy way
 		- run the following command in an **elevated** powershelkl  console
 		- `wsl --install`
