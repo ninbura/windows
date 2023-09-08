@@ -289,16 +289,37 @@
 	- [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # software
 - please read [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
-- .net SDKs
-	- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
-	- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
-	- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
-- admin elevated winget software
-	- all applications in this section require your terminal be *elevated*
-	- `winget install gyan.ffmpeg --ignore-security-hash`
-	- `winget install protontechnologies.protonvpn --ignore-security-hash`
-	- `winget install rufus.rufus --ignore-security-hash`
-	- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
+- ### wsl (windows subsystem for linux)
+	- install wsl the hard way (required for ssh capability)
+		- download & isntall the [wsl2 exe](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+		- **restart your pc**
+		- `winget search ubuntu`
+		- take note of the id of the linux distribution you want to install & install via winget
+		- for exmample  
+			- `winget install ubuntu-2204 --ignore-security-hash`  
+	- installing wsl the easy way
+		- run the following command in an **elevated** powershelkl  console
+		- `wsl --install`
+		- **restart your computer**
+- ### winget
+	- admin elevated terminal required
+  		- ffmpeg 
+			- `winget install gyan.ffmpeg --ignore-security-hash`
+      		- proton vpn
+			- `winget install protontechnologies.protonvpn --ignore-security-hash`
+      		- rufus
+			- `winget install rufus.rufus --ignore-security-hash`
+ 		- tailwindcss
+			- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
+	- standard terminal
+	  	- .net SDKs
+			- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
+			- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
+			- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
+		- docker
+			- **wsl must be installed/configured first (see [wsl](#wsl-windows-subsytem-for-linux))**
+			- `winget install docker.dockerdesktop --ignore-security-hash`
+- ### old school
 - [adobe creative cloud](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [advanced scene switcher](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
 - appstudio (reporting client)
@@ -323,18 +344,6 @@
 - wsa (windows subsystem for android)
 	- download amazon store via windows store
 	- **restart your computer**
-- wsl (windows subsystem for linux)
-	- install wsl the hard way (required for ssh capability)
-  		- download & isntall the [wsl2 exe](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-    		- **restart your pc**
-		- `winget search ubuntu`
-		- take note of the id of the linux distribution you want to install & install via winget
-  		- for exmample  
-  			- `winget install ubuntu-2204 --ignore-security-hash`  
-	- installing wsl the easy way
-		- run the following command in an **elevated** powershelkl  console
-		- `wsl --install`
-		- **restart your computer**
 - xbox accessories (tool for configuring xbox controllers)
 	- microsoft store
 # troubleshooting
