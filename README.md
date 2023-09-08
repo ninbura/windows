@@ -314,7 +314,7 @@
 		- **rufus** (image mounter)
 			- `winget install rufus.rufus --ignore-security-hash`
 		- **tailwindcss** (css library for dev)
-			- `winget install tailwindlabs.tailwindcss --ingnore-security-hash`
+			- `winget install tailwindlabs.tailwindcss --ignore-security-hash`
 	- standard terminal
 		- **.net sdks** (micorosft .net runtime(s) for dev)
 			- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
