@@ -342,6 +342,7 @@
 	- [**ffxiv launcher**](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
 	- [**ireboot**](<https://neosmart.net/iReboot/>) (tool for dual booting)
 	- [**obs asio**](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
+  	- [**obs ndi**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
 	- [**synergy**](<https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload>) (tool for sharing single mouse & keyboard with multiple computers)
 	- [**rode central**](<https://rode.com/en-us/software/rode-central>) (Rodecaster Pro II & Rodecaster Duo)
 	- [**via**](<https://www.caniusevia.com/>) (tool for configuring many keyboard models)
