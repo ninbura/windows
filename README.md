@@ -75,8 +75,8 @@
 	- run the following commands
 		- `new-item -path "/repos" -itemtype directory`
 		- `cd /repos`
-		- `git clone https://github.com/ninbura/install-and-configure-microsoft-windows`
-	- open `c:/repos/install-and-configure-microsoft-windows/bulk-edit-settings.ps1` in desired text editor 
+		- `git clone https://github.com/ninbura/windows`
+	- open `c:/repos/windows/bulk-edit-settings.ps1` in desired text editor 
 	- configure setting parameters at top of file as desired
 	- save and close file
 	- right click `run-me.bat` & select "run as administrator"
@@ -105,7 +105,7 @@
 	- move `wigui.exe` to your documents folder & run it
 	- click on the "configure wau" tab (wau = winget-autoupdate)
  		- wau aka winget-autoupdate updates all winget packages that have updates every time you login. Long story short, you almost never have to manually update software again.
- 		- load `c:/repos/install-and-configure-microsoft-windows/.blacklist.txt`
+ 		- load `c:/repos/windows/.blacklist.txt`
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
@@ -120,7 +120,7 @@
 		- `winget settings --enable InstallerHashOverride`
 	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
 	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
-		- `c:/repos/install-and-configure-microsoft-windows/.install-list.txt`
+		- `c:/repos/windows/.install-list.txt`
 		- see [winget basics](#wingetwigui-basics) for info in-relation to finding appliations to add to your `.install-list.txt` via winget
   		- required applications (do not remove from `.install-list.txt`)
 			- FinalWire.AIDA64.Extreme
