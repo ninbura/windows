@@ -292,6 +292,8 @@
 - ### **wsl** (windows subsystem for linux)
 	- install **wsl** the hard way (required for ssh capability)
 		- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+   		- run the following command in powershell
+			- `wsl --set-default-version 2`
 		- **restart your pc**
 		- `winget search ubuntu`
 		- take note of the id of the linux distribution you want to install & install via winget
