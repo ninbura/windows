@@ -4,6 +4,7 @@ CrystalDewWorld.CrystalDiskInfo.ShizukuEdition
 CrystalDewWorld.CrystalDiskMark
 CrystalDewWorld.CrystalDiskMark.ShizukuEdition
 Discord.Discord
+Docker.DockerDesktop
 Elgato.CameraHub
 EpicGames.EpicGamesLauncher
 Google.GoogleChrome
@@ -26,6 +27,7 @@ Microsoft.VCRedist.2013.x86
 Mozilla.Firefox
 Mozilla.Firefox.DeveloperEdition
 Mozilla.Firefox.Nightly
+Obsidian.Obsidian
 OBSProject.OBSStudio
 REALiX.HWiNFO
 RiotGames.LeagueOfLegends.NA
