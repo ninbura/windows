@@ -32,4 +32,5 @@ OBSProject.OBSStudio
 REALiX.HWiNFO
 RiotGames.LeagueOfLegends.NA
 RiotGames.Valorant.NA
+Spotify.Spotify
 Valve.Steam
