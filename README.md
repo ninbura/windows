@@ -51,6 +51,7 @@
 	- If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
 5. ### update windows
 	- open windows settings & navigate to `windows updates`
+ 	- optionally - toggle "Get the latest updates as soon asy they're available"; I personally suggest doing this.
 	- check for updates & wait for them to download/install
 	- **restart your computer**
 	- check for updates again
