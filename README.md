@@ -149,23 +149,27 @@
 	- minimize msi afterburner
 13. ### verify that system temperatures are in-check
 	- cpu & gpu
-		- open HWiNFO (installed via wigui, search start)
-			- select "show sensors" 
 		- temps are model dependent
 		- higher end components run hotter than lower end components
-		- lower temp is better but as long as things are generally in below ranges you should be fine 
-			- cpu idle temp should be >50c 
-			- gpu idle temp should be >50c
+		- lower temp is better but as long as things are generally within listed ranges you should be fine
+		- open HWiNFO (installed via wigui, search start)
+			- select "show sensors" 
+			- cpu & gpu idle temp should be >60c 
 		- open Aida64 Extreme (installed via wigui, search start)
 			- confirm you're okay with app being in trial mode
 			- open system stability test dialog `tools > system stability test`
 			- enable everything except "local disks"
 			- run test for 5-15 minutes
-			- cpu temp should be
-   				- >=100c on air
-				- >=90 on water
-			- gpu temp should be >=85c
-		- if temps for cpu or gpu are too high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
+			- to prevent throttling your
+   				- cpu load temp should be >=98c
+				- gpu load temp should be >=85c
+		- with modern amd & intel cpus with even high end cooling you can still reach 100c
+		- while this is technically safe because they'll throttle, it's best if you stay below 100c
+		- there are all in one water coolers large enough to prevent even the highest end CPUs from throttling
+		- I suggest Artic's "liquid freezer line"
+  			- 360mm for intel i7 & amd x700
+     			- 420mm for intel i9 & amd X900 
+		- if temps for cpu or gpu are high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures) 
 	- m.2 drives
 		- download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
   			- hard drive monitor & benchmark
