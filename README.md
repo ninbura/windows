@@ -5,7 +5,7 @@
   	3. [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
   	4. [verify that windows is activated](#verify-that-windows-is-activated)
   	5. [update windows](#update-windows)
-  	6. [update windows terminal](#update-windows-terminal)
+  	6. [update windows terminal](#update-microsoft-store-apps)
   	7. [install powershell 7 & git](#install-powershell-7--git)
   	8. [configure windows terminal](#configure-windows-terminal)
   	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
@@ -56,11 +56,12 @@
 	- check for updates again
 	- If you have more updates and pc requests restarting again, do so.
 	- repeat until windows states that everything is up-to-date 
-6. ### update windows terminal
-	- open the microsoft store & search for windows terminal
-	- click the windows terminal listing & wait a few seconds
-	- click the update button & wait for the update to complete
-		- if update button doesn't appear within 30 seconds it's already up-to-date
+6. ### update microsoft store apps
+	- open the microsoft store
+	- click the "library" button in the bottom right corner of the window
+ 	- select "get updates" in the top right hand corner of the window
+	- select "update all" just left of the "get updates" button
+ 	- wait for all microsoft store applications to update before proceeding to step 7 
 7. ### install powershell 7 & git
 	- open windows terminal
 	- run the following commands
