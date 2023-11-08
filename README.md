@@ -258,11 +258,10 @@
 - Take note of your motherboard's model number, should be listed on the box it came in.
 - search for your motherboard via it's model number on google & locate the support page
 - drivers you typically need to grab from your motherboards support page
-	- audio driver 
-		- usually labeled as realtek
+	- audio driver (usually labeled as realtek)
 	- intel chipset driver (intel cpus only)
-  		- there may be multiple "chipset" style drivers
-    		- look for drivers titled as so
+		- there may be multiple "chipset" style drivers
+		- look for drivers titled as so
 			- intel serial i/o
 			- intel management engine
 			- intel me
