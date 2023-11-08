@@ -59,7 +59,7 @@
 	- repeat until windows states that everything is up-to-date 
 6. ### update microsoft store apps
 	- open the microsoft store via your start menu
-	- click the "library" button in the bottom right corner of the window
+	- click the "library" button in the bottom left hand corner of the window
  	- select "get updates" in the top right hand corner of the window
 	- select "update all" just left of the "get updates" button
  	- wait for all microsoft store applications to update before proceeding to step 7 
