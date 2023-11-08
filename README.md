@@ -258,7 +258,9 @@
 - Take note of your motherboard's model number, should be listed on the box it came in.
 - search for your motherboard via it's model number on google & locate the support page
 - drivers you typically need to grab from your motherboards support page
-	- audio driver (usually labeled as realtek)
+	- audio driver
+		- usually labeled as realtek
+		- only grab latest version, don't need mulitple motherboard audio drivers 
 	- intel chipset driver (intel cpus only)
 		- there may be multiple "chipset" style drivers
 		- look for drivers titled as so
@@ -271,7 +273,7 @@
 		- you should see one or many of the aformentioned intel chipset drivers   
 	- sata driver
 		- only required if you're using sata based storage
-		- typically labeled as "intel rapid storage technology"
+		- typically labeled as "intel rapid storage technology" 
 - latest intel device drivers 
 	- check motherboard page to make sure your motherboard uses intel for these devices
 	- [intel bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
