@@ -264,11 +264,11 @@
   		- there may be multiple "chipset" style drivers
     		- look for drivers titled as so
 			- intel serial i/o
-    			- intel management engine
+			- intel management engine
 			- intel me
-    			- intel mei  
-         		- intel inf
-           		- intel hid
+			- intel mei  
+			- intel inf
+			- intel hid
 		- you should see one or many of the aformentioned intel chipset drivers   
 	- sata driver
 		- only required if you're using sata based storage
