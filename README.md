@@ -5,7 +5,7 @@
   	3. [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
   	4. [verify that windows is activated](#verify-that-windows-is-activated)
   	5. [update windows](#update-windows)
-  	6. [update windows terminal](#update-microsoft-store-apps)
+  	6. [update microsoft store apps](#update-microsoft-store-apps)
   	7. [install powershell 7 & git](#install-powershell-7--git)
   	8. [configure windows terminal](#configure-windows-terminal)
   	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
