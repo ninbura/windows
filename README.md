@@ -381,11 +381,11 @@
 		- try setting ram clock at a lower clock
 		- if setting the clock speed lower multiple time fails simply disable x.m.p
   		- note that you want your ram to be at the highest possible clock for best performance
-  	   	- if ram is a reasonable speed 5600-6800Mhz and can't achive x.m.p you should consider returning it for different ram
+  	   	- if ram is a reasonable speed (DDR5 5600-6800Mhz | DDR4 2600-3600) and can't achive x.m.p you should consider returning it for different ram
   	   	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
 - ### troubleshooting failed windows activation
 	- verify that the activation key you entered matches the one you purchased/obtained earlier
-  	- if key matches but windows still failed to activatge you may need to activate by phone
+  	- if key matches but windows still failed to activate you may need to activate by phone
 		- there should be a button to do this via the `system > activation` screen
   		- follow on-screen instructions
   	 	- involves calling a number and answering prompts by voice and dial pad
