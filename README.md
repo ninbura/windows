@@ -169,7 +169,7 @@
 		- while this is technically safe because they'll throttle, it's best if you stay below 100c
 		- there are all in one water coolers large enough to prevent even the highest end CPUs from throttling
 		- I suggest Artic's "liquid freezer line"
-			- 360mm for intel i7 & amd x700
+			- 360/420mm for intel i7 & amd x700
 			- 420mm for intel i9 & amd X900
    		- for i5 cpus & below I suggest purchasing the thermalright peerless assassin air cooler
 		- if temps for cpu or gpu are high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures) 
