@@ -25,8 +25,8 @@
 1. ### update & configure your motherboard's bios
 	- attach a >=32GB USB 2.0 flash drive to your computer
 	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
- 	- Take note of your motherboard's model number, should be listed on the box it came in.
-	- Search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
+ 	- take note of your motherboard's model number, should be listed on the box it came in.
+	- search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
 	- enter bios (mash [delete] key while computer is restarting)
  	- verify that cpu temp isn't anything crazy
@@ -55,7 +55,7 @@
 	- check for updates & wait for them to download/install
 	- **restart your computer**
 	- check for updates again
-	- If you have more updates and pc requests restarting again, do so.
+	- if you have more updates and pc requests restarting again, do so.
 	- repeat until windows states that everything is up-to-date 
 6. ### update microsoft store apps
 	- open the microsoft store via your start menu
@@ -140,7 +140,7 @@
 	- **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
-	- This program should have been installed via wigui, just search for it in start and open it.
+	- this program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
 	- enable startup at launch
 		- click on the "general" tab
@@ -188,15 +188,16 @@
 			- consider replacing your hard drive if health is poor 
 		- open crystaldiskmark and hit the giant "all" button
 			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
-		- If you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
+		- if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 15. ### download/install remaining software as desired using winget/wigui & the **software** list below
-	- just like drivers you don't need to restart your computer when prompted after every single install
+	- see [software](#software) list below
+ 	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
-	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
+	- note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. said lists are composed of items relevant to me and my direct peers.
 	- software in list below is software that can not currently be installed properly via wigui
-	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
+	- it is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
 		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
-	- If software isn't available via winget, install software the old fashioned way 😭
+	- if software isn't available via winget, install software the old fashioned way 😭
 16. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
@@ -216,9 +217,9 @@
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
 	- other times you need a specific program for a specific component
- 		- For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
-	- It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
-	- For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online. 
+ 		- for exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
+	- it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
+	- for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online. 
 # winget/wigui basics
 - use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
 	- `winget search [software name/id]`
@@ -227,37 +228,37 @@
 		- `winget search chrome`
 		- *take note of or copy id for google chrome* 
 		- `winget install google.chrome`
-	- Installing by id (listed on search results) is easiest, as exampled above.
+	- installing by id (listed on search results) is easiest, as exampled above.
 	- but you can also use name if you wrap the name in quotes & use the `--name` flag.
 		- example
 			- `winget install --name "Google Chrome"`
 - Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
 - some applications must be installed in an admin elevated instance of powershell
-	- In this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
-	- We already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
+	- in this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
+	- we already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
 - some applications must be installed in a **non-elevated** instance of powershell
 	- in this case wigui should work
-	- Because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
+	- because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
 - sometimes apps may require additonal flags to install
 	- use this flag when "application hash doesn't match"
 		- `--ignore-security-hash`
 		- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
-		- Note that there's some security concern with ignoring an application's security hash. A bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. But with this flag you're bypassing that check. **Use at your own risk** (I do it all the time 😅).
-	- Use this command when winget is being stubborn about versioning, or just stubborn in general.
+		- note that there's some security concern with ignoring an application's security hash. a bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. but with this flag you're bypassing that check. **wse at your own risk** (I do it all the time 😅).
+	- use this command when winget is being stubborn about versioning, or just stubborn in general.
 		- `--force`
-		- Note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
+		- note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
 	- examples
 		- `winget install microsoft.dotnet.sdk.6 --force`
 		- `winget install google.chromeremotedesktop --ignore-security-hash`
 		- `winget install obsproject.obsstudio --ignore-security-hash --force`
-	- These flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
+	- these flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
 - It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
 	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
-- Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
+- pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 # drivers
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
-- Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
-- Take note of your motherboard's model number, should be listed on the box it came in.
+- some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
+- take note of your motherboard's model number, should be listed on the box it came in.
 - search for your motherboard via it's model number on google & locate the support page
 - drivers you typically need to grab from your motherboards support page
 	- audio driver
@@ -295,7 +296,7 @@
 		- select "change resolution" in left hand side menu & verify that all monitors are
 			- set to the correct resolution & refresh rate
 			- set to full rgb color mode
-			- If color mode is partial and greyed out; override settings with "use nvidia color settings".
+			- if color mode is partial and greyed out; override settings with "use nvidia color settings".
    	- after driver install it's likely that your windows audio settings got borked (see [configure audio settings](#configure-audio-settings) for fix)
 - other drivers
 	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
@@ -334,7 +335,7 @@
 			- `winget install tailwindlabs.tailwindcss --ignore-security-hash`
 	- standard terminal
 		- **.net sdks** (micorosft .net runtime(s) for dev)
-			- You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
+			- you have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. for example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
 			- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
 			- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
 		- **docker desktop** (running docker images for dev)
@@ -370,7 +371,7 @@
 - ### troubleshooting bootloop / boot problems
   	- if computer is bootlooping
   		- re-flash bios using advanced flashing utility
-  	   	- Consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
+  	   	- consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
 		- typically involves
 			- putting bios file on flash drive
 			- naming bios file something specific
