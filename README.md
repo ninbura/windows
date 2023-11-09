@@ -10,10 +10,10 @@
   	8. [configure windows terminal](#configure-windows-terminal)
   	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
   	10. [manually configure other windows settings](#manually-configure-other-windows-settings)
-  	11. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
-  	12. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
-  	13. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-  	14. [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
+  	11. [download/install system drivers](#downloadinstall-system-drivers)
+  	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
+  	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
+  	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
   	15. [configure audio settings](#configure-audio-settings)
   	16. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
   	17. [configure rgb lighting](#configure-rgb-lighting)
@@ -102,8 +102,13 @@
 		- expand "all networks" drop down
 		- enable "public folder sharing"
 		- enable "password protected sharing"
-	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script. 
-11. ### download, install, & run winget-autoupdate (bulk software installer/updater)
+	- configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
+11. ### download/install system drivers
+	- see [drivers](#drivers) list below
+	- note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
+ 	- you don't need to restart your computer when prompted after every single driver
+	- restart your computer after installing all drivers
+12. ### download, install, & run winget-autoupdate (bulk software installer/updater)
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
 	- move `wigui.exe` to your documents folder & run it
 	- click on the "configure wau" tab (wau = winget-autoupdate)
@@ -133,7 +138,7 @@
 		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
 	- Open wigui, load your install list, click install, & wait for the process to finish.
 	- **restart your computer**
-12. ### configure msi afterburner (gpu fan curve)
+13. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- This program should have been installed via wigui, just search for it in start and open it.
 	- open settings (should be a button on the left hand side)
@@ -149,7 +154,7 @@
 		- hit "apply"
 	- hit "ok" to close settings dialog
 	- minimize msi afterburner
-13. ### verify that system temperatures are in-check
+14. ### verify that system temperatures are in-check
 	- cpu & gpu
 		- temps are model dependent
 		- higher end components run hotter than lower end components
@@ -184,11 +189,6 @@
 		- open crystaldiskmark and hit the giant "all" button
 			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
 		- If you see your m.2 temperature go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-
-14. ### download/install drivers from the **drivers** list below
-	- you don't need to restart your computer when prompted after every single driver
-	- restart your computer after installing all drivers
- 	- Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
 15. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
