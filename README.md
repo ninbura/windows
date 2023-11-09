@@ -188,7 +188,7 @@
 			- consider replacing your hard drive if health is poor 
 		- open crystaldiskmark and hit the giant "all" button
 			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
-		- If you see your m.2 temperature go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
+		- If you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 15. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
