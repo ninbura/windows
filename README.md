@@ -14,7 +14,7 @@
   	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
   	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-  	15. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
+  	15. [download/install remaining software](#downloadinstall-remaining-software)
   	16. [configure audio settings](#configure-audio-settings)
   	17. [configure rgb lighting](#configure-rgb-lighting)
 - [winget/wigui basics](#wingetwigui-basics)
@@ -189,7 +189,7 @@
 		- open crystaldiskmark and hit the giant "all" button
 			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
 		- if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-15. ### download/install remaining software as desired using winget/wigui & the **software** list below
+15. ### download/install remaining software
 	- see [software](#software) list below
  	- just like drivers you don't need to restart your computer when prompted after every single install
 	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -306,7 +306,7 @@
 	- [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
 	- [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # software
-- please read [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
+- please read [download/install remaining software](#downloadinstall-remaining-software)
 - ### **wsl** (windows subsystem for linux)
 	- install **wsl** the hard way (required for ssh capability)
 		- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
