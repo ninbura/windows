@@ -31,7 +31,7 @@
 	- enter bios (mash [delete] key while computer is restarting)
  	- verify that cpu temp isn't anything crazy
   		- should be on bios home page
-		- should be sub 50c
+		- should be sub 60c
   		- if temps are higher than this see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 	- undergo the bios update process ([tutorial](<https://www.youtube.com/watch?v=n6ZAMrjRudg>) | should be similar for most motherboards)
 	- enable x.m.p ([tutorial](<https://www.youtube.com/watch?v=qCnGQPlY6pE>) | should be similar for most motherboards)
