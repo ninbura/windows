@@ -163,7 +163,7 @@
 			- enable everything except "local disks"
 			- run test for 5-15 minutes
 			- to prevent throttling your
-   				- cpu load temp should be >=98c
+				- cpu load temp should be >=98c
 				- gpu load temp should be >=85c
 		- with modern amd & intel cpus with even high end cooling you can still reach 100c
 		- while this is technically safe because they'll throttle, it's best if you stay below 100c
