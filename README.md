@@ -14,8 +14,8 @@
   	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
   	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-  	15. [configure audio settings](#configure-audio-settings)
-  	16. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
+  	15. [download/install remaining software as desired using winget/wigui & the software list below](#downloadinstall-remaining-software-as-desired-using-wingetwigui--the-software-list-below)
+  	16. [configure audio settings](#configure-audio-settings)
   	17. [configure rgb lighting](#configure-rgb-lighting)
 - [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
@@ -189,7 +189,15 @@
 		- open crystaldiskmark and hit the giant "all" button
 			- verify that drive temp remains under 65c via crystaldiskinfo during benchmark
 		- If you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-15. ### configure audio settings
+15. ### download/install remaining software as desired using winget/wigui & the **software** list below
+	- just like drivers you don't need to restart your computer when prompted after every single install
+	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
+	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
+	- software in list below is software that can not currently be installed properly via wigui
+	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
+		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
+	- If software isn't available via winget, install software the old fashioned way 😭
+16. ### configure audio settings
 	- open control panel & navigate to `hardware & sound > sound`
  	- verify you're on the "playback" tab 
 		- right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -204,14 +212,6 @@
 		- right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
 		- select desired device & click the "set default" button below the device list
 	- repeat these steps any time you encounter ***(😔((((audio problems))))😔)***
-16. ### download/install remaining software as desired using winget/wigui & the **software** list below
-	- just like drivers you don't need to restart your computer when prompted after every single install
-	- restart your computer after installing all desired software (if you were prompted at somepoint to do so)
-	- Note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. Said lists are composed of items relevant to me and my direct peers.
-	- software in list below is software that can not currently be installed properly via wigui
-	- It is *always* preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
-		- see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
-	- If software isn't available via winget, install software the old fashioned way 😭
 17. ### configure rgb lighting
 	- this is a very inconsistent process not only by motherboard but often by sepcific components
 	- often times your motherboard will have a single piece of software that allows for configuring all rgb
