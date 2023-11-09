@@ -61,6 +61,7 @@
 	- open the microsoft store via your start menu
 	- click the "library" button in the bottom left hand corner of the window
  	- select "get updates" in the top right hand corner of the window
+	- wait until all updates have been retreived, should be a little loading symbol to reference
 	- select "update all" just left of the "get updates" button
  	- wait for all microsoft store applications to update before proceeding to step 7 
 7. ### install powershell 7 & git
