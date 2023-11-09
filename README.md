@@ -23,7 +23,7 @@
 - [troubleshooting](#troubleshooting)
 # steps
 1. ### update & configure your motherboard's bios
-	- attach a flash drive to your computer (preferably less than 32gb)
+	- attach a >=32GB USB 2.0 flash drive to your computer
 	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
  	- Take note of your motherboard's model number, should be listed on the box it came in.
 	- Search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
