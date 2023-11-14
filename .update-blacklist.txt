@@ -11,9 +11,7 @@ Google.GoogleChrome
 Guru3D.RTSS
 Gyan.FFmpeg
 Microsoft.AzureDataStudio
-Microsoft.DotNet.SDK.7
-Microsoft.DotNet.SDK.6
-Microsoft.DotNet.SDK.5
+Microsoft.DotNet.SDK.Preview
 Microsoft.Office
 Microsoft.Teams
 Microsoft.VCRedist.2005.x64
