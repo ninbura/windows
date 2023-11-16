@@ -24,8 +24,8 @@ Microsoft.VCRedist.2012.x64
 Microsoft.VCRedist.2012.x86
 Microsoft.VCRedist.2013.x64
 Microsoft.VCRedist.2013.x86
-Microsoft.VisualStudio.2022.Pro
-Microsoft.VisualStudio.2022.Pro.Preview
+Microsoft.VisualStudio.2022.Professional
+Microsoft.VisualStudio.2022.Professional.Preview
 Microsoft.VisualStudio.2022.Community
 Microsoft.VisualStudio.2022.Community.Preview
 Microsoft.WindowsAppRuntime.1.3
