@@ -322,7 +322,7 @@
 	- `winget install Google.GoogleChrome`
 	- `winget install Discord.Discord`
 	- `winget install Valve.Steam`
-- When installing applications with winget, some applications will need to be installed in an elevated terminal, while others you can / should use an non-elevated terminal.
+- When installing applications with winget, some applications will need to be installed in an elevated terminal, while others you can / should install in an non-elevated terminal.
 	- elevated = run as administrator
 - while it's not always needed, there are some useful flags you can tack onto then end of `winget install` commands.
 	- `--ignore-security-hash` 
@@ -341,6 +341,15 @@
 	- `winget install Microsoft.DotNet.SDK.6 --force`
 	- `winget install Microsoft.DotNet.SDK.7 --ignore-security-hash --force`
 ### updating apps
+- Note that if you installed winget auto update via wigui earlier in the tutorial you don't have to worry about updating applications via winget manually. This applies to any application that *is not* on your update blacklist. Those applications are typically blacklisted because they either update automatically via the app themselves, or there's a problem with updating them via winget auto update.
+- to update applications using winget you use the `update` keyword
+	- `winget update [app id]`
+- update examples
+	- `winget update Google.GoogleChrome`
+	- `winget update Discord.Discord`
+	- `winget update Valve.Steam`
+- When updating applications with winget, some applications will need to be updated in an elevated terminal, while others you can / should update in an non-elevated terminal.
+	- elevated = run as administrator
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
 ### **wsl** (windows subsystem for linux)
