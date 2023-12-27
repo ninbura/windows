@@ -1,6 +1,6 @@
 param(
   # administrative settings 
-  [boolean]$disableUac = $true, # removes the "are you sure" popup when you doing anything that requires admin privileges
+  [boolean]$disableUacPopups = $true, # removes the "are you sure" popup when you doing anything that requires admin privileges
 
   # cursor settings
   [boolean]$disableEnhancedPointerPrecision = $true, # disabled enhanced pointer precision, good for gaming, and everything else tbh
@@ -8,7 +8,7 @@ param(
 
   # file explorer settings
   [boolean]$enableCompactView = $true, # this removes a lot of dead space in file explorer returning the way it looked/felt in windows 10
-  [boolean]$hideRecycleBinOnDesktop = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
+  [boolean]$moveRecycleBinToFileExplorer = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
   [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
   [boolean]$showFrequentlyUsedFoldersInQuickAccess = $false, # allows windows to show recently used folders in your quick access pin list in file explorer
   [boolean]$showHiddenFilesAndFolders = $true, # prevents windows from hiding files and folders in file explorer
@@ -36,11 +36,11 @@ param(
 
   # task bar settings
   [boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar, $false = left align
-  [boolean]$hideChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
-  [boolean]$hideSearchOnTaskbar = $true, # hides search ui on windows task bar
-  [int]$searchOnTaskbarType = 2, # if you set $hideSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
-  [boolean]$hideTaskViewButtonOnTaskbar = $true, # hides the task view button on windows task bar
-  [boolean]$hideWidgetButtonOnTaskBar = $true, # hides the widgets button on windows task bar
+  [boolean]$showChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
+  [boolean]$showSearchOnTaskbar = $false, # hides search ui on windows task bar
+  [int]$searchOnTaskbarType = 2, # if you set $showSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
+  [boolean]$showTaskViewButtonOnTaskbar = $false, # hides the task view button on windows task bar
+  [boolean]$showWidgetButtonOnTaskBar = $false, # hides the widgets button on windows task bar
   [boolean]$showSecondsOnClock = $true, # shows seconds on system clock in the left had corner of the windows taskbar
   [boolean]$showTaskbarOnAllDisplays = $false # hides taskbar on secondary displays
 )
@@ -81,7 +81,7 @@ function modifyRegistry($registryTweak) {
   }
 }
 
-function editRegistry() {
+function editRegistry($config) {
   Write-Host "Configuring settings..."
 
   $registryTweaks = [ordered]@{
@@ -91,7 +91,7 @@ function editRegistry() {
         path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
         property = "ConsentPromptBehaviorAdmin"
         propertyType = "DWord"
-        propertyValue = $disableUac ? 0 : 1
+        propertyValue = $config.Administrative.DisableUacPopups ? 0 : 1
       },
       [pscustomobject]@{
         path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
@@ -103,7 +103,7 @@ function editRegistry() {
         path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
         property = "PromptOnSecureDesktop"
         propertyType = "DWord"
-        propertyValue = $disableUac ? 0 : 1
+        propertyValue = $config.Administrative.DisableUacPopups ? 0 : 1
       }
     )
 
@@ -113,26 +113,26 @@ function editRegistry() {
         path = "HKCU:\Control Panel\Mouse"
         property = "MouseSpeed"
         propertyType = "String"
-        propertyValue = $disableEnhancedPointerPrecision ? 0 : 1
+        propertyValue = $config.Cursor.DisableEnhancedPointerPrecision ? 0 : 1
       },
       [pscustomobject]@{
         path = "HKCU:\Control Panel\Mouse"
         property = "MouseThreshold1"
         propertyType = "String"
-        propertyValue = $disableEnhancedPointerPrecision ? 0 : 6
+        propertyValue = $config.Cursor.DisableEnhancedPointerPrecision ? 0 : 6
       },
       [pscustomobject]@{
         path = "HKCU:\Control Panel\Mouse"
         property = "MouseThreshold2"
         propertyType = "String"
-        propertyValue = $disableEnhancedPointerPrecision ? 0 : 10
+        propertyValue = $config.Cursor.DisableEnhancedPointerPrecision ? 0 : 10
       }
     )
     disableEaseCursorMovement = [pscustomobject]@{
       path = "HKCU:\Control Panel\Cursors"
       property = "CursorDeadzoneJumpingSetting"
       propertyType = "DWord"
-      propertyValue = $disableEaseCursorMovement ? 0 : 1
+      propertyValue = $config.Cursor.DisableEaseCursorMovement ? 0 : 1
     }
 
     # file explorer settings
@@ -140,57 +140,57 @@ function editRegistry() {
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "UseCompactMode"
       propertyType = "DWord"
-      propertyValue = $enableCompactView ? 1 : 0
+      propertyValue = $config.FileExplorer.EnableCompactView ? 1 : 0
     }
-    hideRecycleBinOnDesktop = @(
+    moveRecycleBinToFileExplorer = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
         property = "{645FF040-5081-101B-9F08-00AA002F954E}"
         propertyType = "DWord"
-        propertyValue = $hideRecycleBinOnDesktop ? 1 : 0
+        propertyValue = $config.FileExplorer.MoveRecycleBinToFileExplorer ? 1 : 0
       },
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\ClassicStartMenu"
         property = "{645FF040-5081-101B-9F08-00AA002F954E}"
         propertyType = "DWord"
-        propertyValue = $hideRecycleBinOnDesktop ? 1 : 0
+        propertyValue = $config.FileExplorer.MoveRecycleBinToFileExplorer ? 1 : 0
       },
       [pscustomobject]@{
         path = "HKCU:\Software\Classes\CLSID\{645FF040-5081-101B-9F08-00AA002F954E}"
         property = "System.IsPinnedToNameSpaceTree"
         propertyType = "DWord"
-        propertyValue = $hideRecycleBinOnDesktop ? 1 : 0
+        propertyValue = $config.FileExplorer.MoveRecycleBinToFileExplorer ? 1 : 0
       }
     )
     showFileExtensionsForKnownFileTypes = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "HideFileExt"
       propertyType = "DWord"
-      propertyValue = $showFileExtensionsForKnownFileTypes ? 0 : 1
+      propertyValue = $config.FileExplorer.ShowFileExtensionsForKnownFileTypes ? 0 : 1
     }
     showFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
       propertyType = "DWord"
-      propertyValue = $showFrequentlyUsedFoldersInQuickAccess ? 1 : 0
+      propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInQuickAccess ? 1 : 0
     }
     showHiddenFilesAndFolders = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Hidden"
       propertyType = "DWord"
-      propertyValue = $showHiddenFilesAndFolders ? 1 : 0
+      propertyValue = $config.FileExplorer.ShowHiddenFilesAndFolders ? 1 : 0
     }
     showOfficeCloudFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowCloudFilesInQuickAccess"
       propertyType = "DWord"
-      propertyValue = $showOfficeCloudFilesInQuickAccess ? 1 : 0
+      propertyValue = $config.FileExplorer.ShowOfficeCloudFilesInQuickAccess ? 1 : 0
     }
     showRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
       propertyType = "DWord"
-      propertyValue = $showRecentlyUsedFilesInQuickAccess ? 1 : 0
+      propertyValue = $config.FileExplorer.ShowRecentlyUsedFilesInQuickAccess ? 1 : 0
     }
 
     # start menu settings
@@ -198,33 +198,33 @@ function editRegistry() {
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
       propertyType = "DWord"
-      propertyValue = $showMorePinsOnStartMenu ? 1 : 0
+      propertyValue = $config.StartMenu.ShowMorePinsOnStartMenu ? 1 : 0
     }
     showRecentlyAddedApps = [pscustomobject]@{
       path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
       property = "HideRecentlyAddedApps"
       propertyType = "DWord"
-      propertyValue = $showRecentlyAddedApps ? 0 : 1
+      propertyValue = $config.StartMenu.ShowRecentlyAddedApps ? 0 : 1
     }
     showMostUsedApps = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
         property = "ShowOrHideMostUsedApps"
         propertyType = "DWord"
-        propertyValue = $showMostUsedApps ? 1 : 0
+        propertyValue = $config.StartMenu.ShowMostUsedApps ? 1 : 0
       },
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
         property = "NoStartMenuMFUprogramsList"
         propertyType = "DWord"
-        propertyValue = $showMostUsedApps ? 1 : 0
+        propertyValue = $config.StartMenu.ShowMostUsedApps ? 1 : 0
         delete = $showMostUsedApps
       },
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Policies\Explorer"
         property = "NoInstrumentation"
         propertyType = "DWord"
-        propertyValue = $showMostUsedApps ? 1 : 0
+        propertyValue = $config.StartMenu.ShowMostUsedApps ? 1 : 0
         delete = $showMostUsedApps
       }
     )
@@ -232,57 +232,59 @@ function editRegistry() {
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_TrackDocs"
       propertyType = "DWord"
-      propertyValue = $showRecentlyOpenedItems ? 1 : 0
+      propertyValue = $config.StartMenu.ShowRecentlyOpenedItems ? 1 : 0
     }
     showRecomendations = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_IrisRecommendations"
       propertyType = "DWord"
-      propertyValue = $showRecomendations ? 1 : 0
+      propertyValue = $config.StartMenu.ShowRecomendations ? 1 : 0
     }
 
+    # services settings
+
     # task bar settings
+    showTaskbarOnAllDisplays = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "MMTaskbarEnabled"
+      propertyType = "DWord"
+      propertyValue = $config.Taskbar.ShowTaskbarOnAllDisplays ? 1 : 0
+    }
     $centerAlignTaskbar = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarAl"
       propertyType = "DWord"
-      propertyValue = $centerAlignTaskbar ? 1 : 0
+      propertyValue = $config.Taskbar.CenterAlignTaskbar ? 1 : 0
     }
-    hideChatButtonOnTaskBar = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-      property = "TaskbarMn"
-      propertyType = "DWord"
-      propertyValue = $hideChatButtonOnTaskBar ? 0 : 1
-    }
-    hideSearchOnTaskbar = [pscustomobject]@{
+    showSearchOnTaskbar = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
       property = "SearchboxTaskbarMode"
       propertyType = "DWord"
-      propertyValue = $hideSearchOnTaskbar ? 0 : $searchOnTaskbarType
+      propertyValue = $config.Taskbar.ShowSearchOnTaskbar ? $searchOnTaskbarType : 0
     }
-    hideTaskViewButtonOnTaskbar = [pscustomobject]@{
+    showTaskViewButtonOnTaskbar = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowTaskViewButton"
       propertyType = "DWord"
-      propertyValue = $hideTaskViewButtonOnTaskbar ? 0 : 1
+      propertyValue = $config.Taskbar.ShowTaskViewButtonOnTaskbar ? 1 : 0
     }
-    hideWidgetButtonOnTaskBar = [pscustomobject]@{
+    showWidgetButtonOnTaskBar = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarDa"
       propertyType = "DWord"
-      propertyValue = $hideWidgetButtonOnTaskBar ? 0 : 1
+      propertyValue = $config.Taskbar.ShowWidgetButtonOnTaskBar ? 1 : 0
+    }
+    showChatButtonOnTaskBar = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+      property = "TaskbarMn"
+      propertyType = "DWord"
+      propertyValue = $config.Taskbar.ShowChatButtonOnTaskBar ? 1 : 0
     }
     showSecondsOnClock = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowSecondsInSystemClock"
       propertyType = "DWord"
-      propertyValue = $showSecondsOnClock ? 1 : 0
-    }
-    showTaskbarOnAllDisplays = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
-      property = "MMTaskbarEnabled"
-      propertyType = "DWord"
-      propertyValue = $showTaskbarOnAllDisplays ? 1 : 0
+      propertyValue = $config.Taskbar.ShowSecondsOnClock ? 1 : 0
     }
   }
 
@@ -299,10 +301,10 @@ function editRegistry() {
   }
 }
 
-function configureOtherSettings(){
+function configureOtherSettings($config) {
   # network settings
-  if(!$bypassNetworkOptions){
-    if($enableNetworkDiscovery){
+  if(!$config.Network.BypassNetworkOptions){
+    if($config.Network.EnableNetworkDiscovery){
       Set-NetFirewallRule -DisplayGroup "Network Discovery" -Enabled True -Profile Any
       Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True -Profile Any
     } else {
@@ -312,7 +314,7 @@ function configureOtherSettings(){
   }
 
   # performance settings
-  if($enableUltimatePerformance) {
+  if($config.Performance.EnableUltimatePerformance) {
     powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
 
     $currentPowerPlan = powercfg /GetActiveScheme
@@ -323,23 +325,23 @@ function configureOtherSettings(){
     }
   } 
 
-  if($disableMonitorTimeout){
+  if($config.Performance.DisableMonitorTimeout){
     powercfg -change -monitor-timeout-dc 0
     powercfg -change -monitor-timeout-ac 0
   } else {
-    powercfg -change -monitor-timeout-dc $monitorTimeout
-    powercfg -change -monitor-timeout-ac $monitorTimeout
+    powercfg -change -monitor-timeout-dc $config.Performance.MonitorTimeout
+    powercfg -change -monitor-timeout-ac $config.Performance.MonitorTimeout
   }
 
-  if($disableSleep) {
+  if($config.Performance.DisableSleep) {
     powercfg -change -standby-timeout-dc 0
     powercfg -change -standby-timeout-ac 0
   } else {
-    powercfg -change -standby-timeout-dc $standbyTimeout
-    powercfg -change -standby-timeout-ac $standbyTimeout
+    powercfg -change -standby-timeout-dc $config.Performance.StandbyTimeout
+    powercfg -change -standby-timeout-ac $config.Performance.StandbyTimeout
   }
 
-  if($disableUsbSelectiveSuspend) {
+  if($config.Performance.DisableUsbSelectiveSuspend) {
     powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
     powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
   } else {
@@ -348,9 +350,14 @@ function configureOtherSettings(){
   }
 
 }
+
+function main {
+  Write-Host "Starting process..."
+  $config = Get-Content -Raw -Path "$PSScriptRoot\config.json" | ConvertFrom-Json
+  editRegistry $config
+  configureOtherSettings $config
+  Write-Host "`n`nSettings have been configured, please restart your computer." -ForegroundColor green
+  quit
+}
  
-Write-Host "Starting process..."
-editRegistry
-configureOtherSettings
-Write-Host "`n`nSettings have been configured, please restart your computer." -ForegroundColor green
-quit
+main
