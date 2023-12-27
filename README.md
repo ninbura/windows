@@ -607,8 +607,8 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - task bar
   - `ShowTaskbarOnAllDisplays` - shows task bar on all connected displays
   - `CenterAlignTaskbarItems` - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
-  - `ShowSearchOnTaskBar` [true/false] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
-  - `SearchOnTaskbarType` [1-3] -
+  - `ShowSearchOnTaskBar` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
+  - `SearchOnTaskbarType` [`1-3`] -
 
 ## config.json example
 
