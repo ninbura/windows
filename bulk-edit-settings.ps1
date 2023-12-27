@@ -140,12 +140,12 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $($config)?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
-    $registryTweaks.ShowFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
+  if($null -ne $($config)?.FileExplorer?.ShowFrequentlyUsedFoldersInHome){
+    $registryTweaks.ShowFrequentlyUsedFoldersInHome = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowFrequent"
       propertyType = "DWord"
-      propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInQuickAccess ? 1 : 0
+      propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInHome ? 1 : 0
     }
   }
 
