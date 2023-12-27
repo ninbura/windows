@@ -137,36 +137,46 @@
 		- wigui is a an application that 
 			- uses winget (cli application tool) in the background via a user interface
 			- Installs winget auto update. Once winget auto updated is installed it'll keep most applications installed via wigui/winget automatically updated.
+	- #### create an application update blacklist
+		- you need to create an update blacklist that you load before installing winget auto update in wigui
+			1. open file explorer
+			2. Open documents or where ever you to keep your blacklist. It can be a good idea store this in a network/online drive to keep it backed up.
+			3. right click in whatever directory you chose to create the black list and select New > Text Document
+			4. name this new text document "update-blacklist" or something similar
+			5. Open your new text document, paste the list found at [here](#update-blacklist) into it, and save it.
+		- You can choose to maintain this blacklist document yourself, or just piggyback off of the one in this readme.
+		- you want to blacklist apps that consistently fail to update via winget-autoupdate
+		- note that once loaded, you need to modify the following file to add applications to your currently active blacklist
+			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
+		- It can be a chore, but I recommend you update both your active and backed up list for later use.
 	- #### install winget auto update
-	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
-	- move `wigui.exe` to your documents folder & run it
-	- click on the "configure wau" tab (wau = winget-autoupdate)
- 		- wau aka winget-autoupdate updates all winget packages that have updates every time you login. Long story short, you almost never have to manually update software again.
- 		- you'll want to create and load an update blacklist 
-		- reference image below for configuration on this tab
+		- download [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
+		- move `wigui.exe` to your documents folder & run it
+		- click on the "configure wau" tab (wau = winget-autoupdate)
+		- Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
-		- to modify update blacklist going forward edit the following txt file
-  			- `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt` 
-			- blacklist apps that
-				- consistently fail to update via winget-autoupdate
-				- needlessly update every time you login
-			- you will see this info in windows notification center (click clock on task bar)
-			- it is *highly recommended* that you save your edited `.blacklist.txt` in a backed up / redundant location and start managing it yourself
-	- **restart your computer**
-	- open windows terminal & run the following command
-		- `winget settings --enable InstallerHashOverride`
-	- wait for winget-autoupdate to update existing packages (wait until you're no longer receiving notifcations from wigui)
-	- open `install-list.txt` in your text editor of choice and remove/add entries per your desires
-		- `c:/repos/windows/.install-list.txt`
-		- see [winget basics](#wingetwigui-basics) for info in-relation to finding appliations to add to your `.install-list.txt` via winget
-  		- required applications (do not remove from `.install-list.txt`)
-			- FinalWire.AIDA64.Extreme
-			- Guru3D.Afterburner
-			- REALiX.HWiNFO
-		- Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
-		- it is *highly recommended* that you save your edited `.install-list.txt` in a backed up / redundant location and start managing it yourself
-	- Open wigui, load your install list, click install, & wait for the process to finish.
-	- **restart your computer**
+		- **restart your computer**
+	- #### create an application install list
+ 		- you need to create an install list that you load in wigui to bulk install applications
+			1. open file explorer
+			2. Open documents or where ever you to keep your install list. It can be a good idea store this in a network/online drive to keep it backed up.
+			3. right click in whatever directory you chose to create the black list and select New > Text Document
+			4. name this new text document "install-list" or something similar
+			5. Open your new text document, paste the list found at [here](#install-list) into it.
+			6. Add and remove applications from this list as you see fit, then save the documnet and exit your editor. 
+				- see [winget basics](#wingetwigui-basics) for more details on this step
+				- do not remove the following applications from your install list for the sake of later steps in this tutorial
+					- FinalWire.AIDA64.Extreme
+					- Guru3D.Afterburner
+					- REALiX.HWiNFO
+		- Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending". 
+	- #### bulk install applications
+  		- wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
+		- Before you can bulk install applications, you need to enable a setting in winget.
+		  	- open windows terminal & run the following command
+			- `winget settings --enable InstallerHashOverride`
+		- Open wigui, load your install list, click install, & wait for the process to finish.
+		- **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
 	- *this is not applicable if your gpu is water cooled*
 	- this program should have been installed via wigui, just search for it in start and open it.
