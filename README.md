@@ -1,55 +1,3 @@
-[boolean]$disableUacPopups = $true, # removes the "are you sure" popup when you doing anything that requires admin privileges
-
-# cursor settings
-
-[boolean]$disableEnhancedPointerPrecision = $true, # disabled enhanced pointer precision, good for gaming, and everything else tbh
-  [boolean]$disableEaseCursorMovement = $true, # disables "easing" cursor movement between displays, feels super jank when on
-
-# file explorer settings
-
-[boolean]$enableCompactView = $true, # this removes a lot of dead space in file explorer returning the way it looked/felt in windows 10
-  [boolean]$moveRecycleBinToFileExplorer = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
-  [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
-  [boolean]$showFrequentlyUsedFoldersInQuickAccess = $false, # allows windows to show recently used folders in your quick access pin list in file explorer
-  [boolean]$showHiddenFilesAndFolders = $true, # prevents windows from hiding files and folders in file explorer
-  [boolean]$showOfficeCloudFilesInQuickAccess = $false, # allows windows to show cloud files from office.com in your quick access pin list in file explorer
-  [boolean]$showRecentlyUsedFilesInQuickAccess = $false, # allows windows to show recently used files in your quick access pin list in file explorer
-
-# network settings
-
-[boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
-  [boolean]$bypassNetworkOptions = $false, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
-
-# performance settings
-
-[boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
-  [boolean]$disableMonitorTimeout = $true, # prevents your monitors from turning themselves off after a certain number of inactive minutes
-  [int]$monitorTimeout = 15, # if $disableMonitorTimeout is set to false, this is the number of minutes of inactivity it will take before your monitors turn off
-  [boolean]$disableSleep = $true, # prevents your computer from entering sleep after a certain number of inactive minutes, highly reccomended for desktop computers
-  [int]$standbyTimeout = 60, # if $disableSleep is set to false, this is the number of minutes of inactivity it will take before your computer goes into standby/sleep
-  [boolean]$disableUsbSelectiveSuspend = $true, # this prevents windows from disconnecting usb devices after a certain amount of inactivity from said device
-
-# start menu settings
-
-[boolean]$showMorePinsOnStartMenu = $true, # gives more space for pinned apps vs suggested apps
-  [boolean]$showRecentlyAddedApps = $true, # puts entries at the bottom of the start menu for recently installed apps
-  [boolean]$showMostUsedApps = $true, # puts entries at the bottom of the start menu for most used apps
-  [boolean]$showRecentlyOpenedItems = $true, # this is techinically the setting for start and the task bar, I suggest you leave this enabled
-  [boolean]$showRecomendations = $false, # puts reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
-
-# task bar settings
-
-[boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar, $false = left align
-  [boolean]$showChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
-  [boolean]$showSearchOnTaskbar = $false, # hides search ui on windows task bar
-  [int]$searchOnTaskbarType = 2, # if you set $showSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
-  [boolean]$showTaskViewButtonOnTaskbar = $false, # hides the task view button on windows task bar
-  [boolean]$showWidgetButtonOnTaskBar = $false, # hides the widgets button on windows task bar
-  [boolean]$showSecondsOnClock = $true, # shows seconds on system clock in the left had corner of the windows taskbar
-  [boolean]$showTaskbarOnAllDisplays = $false # hides taskbar on secondary displays
-
-# table of contents
-
 - [steps](#steps)
   1.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
   2.  [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
@@ -575,38 +523,38 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ## setting descriptions
 
 - administrative
-  - `DisableUacPopups` - removes the "are you sure" popup when you doing anything that requires admin privileges
+  - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
 - cursor
-  - `DisableEnhancedPointerPrecision` - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
-  - `DisableEaseCursorMovement` - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
+  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
+  - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
 - file explorer
-  - `EnableCompactView` - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
-  - `MoveRecycleBinToFileExplorer` - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
-  - `ShowFileExtensionsForKnownFileTypes` - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
-  - `ShowFrequentlyUsedFoldersInQuickAccess` - Makes it so frequently used folders show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-  - `ShowHiddenFilesAndFolders` - prevents windows from hiding files and folders in file explorer
-  - `ShowOfficeCloudFilesInQuickAccess` - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-  - `ShowRecentlyUsedFilesInQuickAccess`- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
+  - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
+  - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
+  - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
+  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Makes it so frequently used folders show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
+  - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
+  - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
+  - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
 - network
-  - `EnableNetworkDiscovery` - enables network discovery on all networking interfaces
+  - `EnableNetworkDiscovery` [`true`/`false`] - enables network discovery on all networking interfaces
 - performance
-  - `EnableUltimatePerformance` - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
-  - `DisableMonitorTimeout` - prevents windows from turning off your display after a period of inactivity
-  - `MonitorTimeout` - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
-  - `DisableSleep` - prevents windows from putting your computer into sleep/hybernation after a certain period of inactivity. In my experience sleep can break a lot of things, after which I'm required to reboot. I much prefer that my computer simply never enters a hybernated state.
-  - `StandbyTimeout` - If `DisableSleep` is set to `false`; this will set the number of minutes before you computer will enter sleep/hybernation due to inactivity.
-  - `DisableUsbSelectiveSuspend` - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
+  - `EnableUltimatePerformance` [`true`/`false`] - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
+  - `DisableMonitorTimeout` [`true`/`false`] - prevents windows from turning off your display after a period of inactivity
+  - `MonitorTimeout` [`1-9999`] - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
+  - `DisableSleep` [`true`/`false`] - prevents windows from putting your computer into sleep/hybernation after a certain period of inactivity. In my experience sleep can break a lot of things, after which I'm required to reboot. I much prefer that my computer simply never enters a hybernated state.
+  - `StandbyTimeout` [`1-9999`] - If `DisableSleep` is set to `false`; this will set the number of minutes before you computer will enter sleep/hybernation due to inactivity.
+  - `DisableUsbSelectiveSuspend` [`true`/`false`] - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
     -services
-  - `DisableTelemetry` - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
+  - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
 - start menu
-  - `ShowMorPins` - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
-  - `ShowRecentlyAddedApps` - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
-  - `ShowMostUsedApps` - shows most used apps within the recommendations section of the start menu
-  - `ShowRecentlyOpenedItems` - shows recently opened files within the recommendations section of the start menu
-  - `ShowRecommendations` - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
+  - `ShowMorPins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
+  - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
+  - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
+  - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
+  - `ShowRecommendations` [`true`/`false`] - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
 - task bar
-  - `ShowTaskbarOnAllDisplays` - shows task bar on all connected displays
-  - `CenterAlignTaskbarItems` - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
+  - `ShowTaskbarOnAllDisplays` [`true`/`false`] - shows task bar on all connected displays
+  - `CenterAlignTaskbarItems` [`true`/`false`] - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
   - `ShowSearchOnTaskBar` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
   - `SearchOnTaskbarType` [`1-3`] -
 
