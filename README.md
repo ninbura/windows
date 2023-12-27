@@ -18,13 +18,13 @@
 	16. [configure audio settings](#configure-audio-settings)
 	17. [configure rgb lighting](#configure-rgb-lighting)
 	[winget/wigui basics](#wingetwigui-basics)
-- [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 	- [preface](#preface)
 	- [intel](#intel)
 	- [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
 	- [nvidia](#nvidia)
 	- [other drivers](#other-drivers)
+- [winget basics](#wingetwigui-basics)
 - [software](#software)
 	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
 	- [winget](#winget)
@@ -239,41 +239,6 @@
  		- for exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
 	- it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
-# winget/wigui basics
-- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
-	- `winget search [software name/id]`
-	- `winget install [software id]`
-	- example
-		- `winget search chrome`
-		- *take note of or copy id for google chrome* 
-		- `winget install google.chrome`
-	- installing by id (listed on search results) is easiest, as exampled above.
-	- but you can also use name if you wrap the name in quotes & use the `--name` flag.
-		- example
-			- `winget install --name "Google Chrome"`
-- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
-- some applications must be installed in an admin elevated instance of powershell
-	- in this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
-	- we already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
-- some applications must be installed in a **non-elevated** instance of powershell
-	- in this case wigui should work
-	- because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
-- sometimes apps may require additonal flags to install
-	- use this flag when "application hash doesn't match"
-		- `--ignore-security-hash`
-		- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
-		- note that there's some security concern with ignoring an application's security hash. a bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. but with this flag you're bypassing that check. **wse at your own risk** (I do it all the time 😅).
-	- use this command when winget is being stubborn about versioning, or just stubborn in general.
-		- `--force`
-		- note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
-	- examples
-		- `winget install microsoft.dotnet.sdk.6 --force`
-		- `winget install google.chromeremotedesktop --ignore-security-hash`
-		- `winget install obsproject.obsstudio --ignore-security-hash --force`
-	- these flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
-- It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
-	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
-- pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 # drivers
 ### preface
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
@@ -326,6 +291,41 @@
 - [magewell pro capture](<https://www.magewell.com/downloads/pro-capture>) (magewell capture pro cards)
 - [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
 - [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
+# winget/wigui basics
+- use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
+	- `winget search [software name/id]`
+	- `winget install [software id]`
+	- example
+		- `winget search chrome`
+		- *take note of or copy id for google chrome* 
+		- `winget install google.chrome`
+	- installing by id (listed on search results) is easiest, as exampled above.
+	- but you can also use name if you wrap the name in quotes & use the `--name` flag.
+		- example
+			- `winget install --name "Google Chrome"`
+- Or you can search for and install software with winget via wigui on the "select apps" tab, which you used earlier ([tutorial](https://github.com/Romanitho/Winget-Install-GUI)).
+- some applications must be installed in an admin elevated instance of powershell
+	- in this case wigui *will not work* for install, but apps should still automatically update via winget-autoupdate at login.
+	- we already set your powershell 7 profile to run as admin by default, and we set powershell 7 as your default windows terminal profile. So, to spawn an admin elevated instance of powershell you just have to open windows terminal.
+- some applications must be installed in a **non-elevated** instance of powershell
+	- in this case wigui should work
+	- because we have powershell 7 set as your default profile in windows terminal, and said profile is set to launch as admin by default; you'll need to launch powershell 5 to install apps that require a non-elevated instance of powershell. Simply search "powershell" in start and launch the powershell listing that has the lighter blue icon.
+- sometimes apps may require additonal flags to install
+	- use this flag when "application hash doesn't match"
+		- `--ignore-security-hash`
+		- this flag must be run via winget in a **non-elvated** instance of powershell to work (see last nuance)
+		- note that there's some security concern with ignoring an application's security hash. a bad actor could intercept an application's winget pipeline and inject malicious code, which would typically trip the security hash check. but with this flag you're bypassing that check. **wse at your own risk** (I do it all the time 😅).
+	- use this command when winget is being stubborn about versioning, or just stubborn in general.
+		- `--force`
+		- note that when using `--force` to install an app that's already installed, said app will be re-installed and you may lose some configurations previously set in said app. Generally app specific settings/configurations are stored in a separate cache from the install location/data. So, typically this should just re-install said app & retain said app's settings/configurations.
+	- examples
+		- `winget install microsoft.dotnet.sdk.6 --force`
+		- `winget install google.chromeremotedesktop --ignore-security-hash`
+		- `winget install obsproject.obsstudio --ignore-security-hash --force`
+	- these flags can be used in wingui by appending them to the end of entries, as seen in `.install-list.txt`.
+- It is *highly recommended* that you add any aditional software you install to your `.install-list.txt`, save it off in a backed up / redundant location, and start managing it yourself.
+	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
+- pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
 ### **wsl** (windows subsystem for linux)
