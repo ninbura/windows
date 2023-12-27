@@ -436,33 +436,33 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ### winget
 
 - admin elevated terminal required
-  - **ffmpeg** (cli media tool)
+  - **FFmpeg** (cli media tool)
     - `winget install gyan.ffmpeg --ignore-security-hash`
-  - **itunes**
+  - **iTunes**
     - `winget install apple.itunes --ignore-security-hash`
-  - **proton vpn** (vpn client)
+  - **Proton VPN** (vpn client)
     - `winget install protontechnologies.protonvpn --ignore-security-hash`
-  - **rufus** (image mounter)
+  - **Rufus** (image mounter)
     - `winget install rufus.rufus --ignore-security-hash`
-  - **tailwindcss** (css library for dev)
+  - **Tailwind CSS** (css library for dev)
     - `winget install tailwindlabs.tailwindcss --ignore-security-hash`
 - standard terminal
-  - **.net sdks** (micorosft .net runtime(s) for dev)
+  - **.Net SDKs** (micorosft .net runtime(s) for dev)
     - You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
     - `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
     - `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
-  - **docker desktop** (running docker images for dev)
+  - **Docker Desktop** (running docker images for dev)
     - **wsl must be installed/configured first (see [wsl](#wsl-windows-subsystem-for-linux))**
     - `winget install docker.dockerdesktop --ignore-security-hash`
 
 ### microsoft store
 
-- **icloud** (apples icloud desktop application)
-- **cisco anyconnect** (vpn client)
-- **wsa** (windows subsystem for android)
+- **iCloud** (apples icloud desktop application)
+- **Cisco AnyConnect** (vpn client)
+- **WSA** (windows subsystem for android)
   - download amazon store via microsoft store
   - **restart your computer**
-- **xbox accessories** (tool for configuring xbox controllers)
+- **Xbox Accessories** (tool for configuring xbox controllers)
 
 ### old school
 
