@@ -52,7 +52,7 @@
 	- attach any usb flash drive to your computer
 	- format your flash drive as fat32
  		- if your flash drive is over 32GB you will need to use [this tool](http://ridgecrop.co.uk/index.htm?guiformat.htm)
-   		- otherwise, just follow [this tutorial](https://www.asus.com/support/FAQ/1044735/) 	
+   		- Otherwise, just follow [this tutorial](https://www.asus.com/support/FAQ/1044735/).
  	- take note of your motherboard's model number, should be listed on the box it came in.
 	- search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
