@@ -606,8 +606,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
     "ShowRecentlyUsedFilesInQuickAccess": false
   },
   "Network": {
-    "EnableNetworkDiscovery": true,
-    "BypassNetworkOptions": false
+    "EnableNetworkDiscovery": true
   },
   "Performance": {
     "EnableUltimatePerformance": true,

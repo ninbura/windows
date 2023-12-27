@@ -140,21 +140,31 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $($config)?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
-    $registryTweaks.ShowFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
-      property = "ShowFrequent"
-      propertyType = "DWord"
-      propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInQuickAccess ? 1 : 0
-    }
-  }
-
   if($null -ne $($config)?.FileExplorer?.ShowHiddenFilesAndFolders){
     $registryTweaks.ShowHiddenFilesAndFolders = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Hidden"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowHiddenFilesAndFolders ? 1 : 0
+    }
+  }
+  
+  
+  if($null -ne $($config)?.FileExplorer?.ShowRecentlyUsedFilesInQuickAccess){
+    $registryTweaks.ShowRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
+      property = "ShowRecent"
+      propertyType = "DWord"
+      propertyValue = $config.FileExplorer.ShowRecentlyUsedFilesInQuickAccess ? 1 : 0
+    }
+  }
+  
+  if($null -ne $($config)?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
+    $registryTweaks.ShowFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
+      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
+      property = "ShowFrequent"
+      propertyType = "DWord"
+      propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInQuickAccess ? 1 : 0
     }
   }
 
@@ -166,16 +176,6 @@ function editRegistry($config) {
       propertyValue = $config.FileExplorer.ShowOfficeCloudFilesInQuickAccess ? 1 : 0
     }
   }
-
-  if($null -ne $($config)?.FileExplorer?.ShowRecentlyUsedFilesInQuickAccess){
-    $registryTweaks.ShowRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
-      path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
-      property = "ShowRecent"
-      propertyType = "DWord"
-      propertyValue = $config.FileExplorer.ShowRecentlyUsedFilesInQuickAccess ? 1 : 0
-    }
-  }
-
 
   # start menu settings
   if($null -ne $($config)?.StartMenu?.ShowMorePins){
