@@ -293,6 +293,11 @@
       - intel inf
       - intel hid
     - you should see one or many of the aformentioned intel chipset drivers
+  - communication drivers
+    - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
+    - bluetooth
+    - lan
+    - wan
   - sata driver
     - only required if you're using sata based storage
     - typically labeled as "intel rapid storage technology"
@@ -304,10 +309,6 @@
 - [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
 - [wan](https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html)
 - [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
-- drivers you will need from your motherboard's support page if said devices aren't intel
-  - bluetooth driver
-  - lan driver
-  - wan driver
 
 ### [amd cpu/chipset & gpu](https://www.amd.com/en/support)
 - I would uncheck installing amd's powerplan when install AMD chipset/cpu drivers
