@@ -21,6 +21,7 @@
 - [drivers](#drivers)
 - [software](#software)
 - [troubleshooting](#troubleshooting)
+	- [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 # steps
 1. ### update & configure your motherboard's bios
 	- attach a >=32GB USB 2.0 flash drive to your computer
