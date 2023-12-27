@@ -22,7 +22,7 @@
 	- [preface](#preface)
 	- [intel](#intel)
 	- [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
-	- [nvidia](#nvida)
+	- [nvidia](#nvidia)
 	- [other drivers](#other-drivers)
 - [software](#software)
 	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
