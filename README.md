@@ -177,7 +177,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - move `wigui.exe` to your documents folder & run it
       - click on the "configure wau" tab (wau = winget-autoupdate)
       - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
-      - ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
+      - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
       - **restart your computer**
     - #### populate application install list
       - we already created `.install-list.txt` in step #9
