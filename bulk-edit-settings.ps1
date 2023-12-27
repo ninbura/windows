@@ -40,7 +40,7 @@ function editRegistry($config) {
   $registryTweaks = [ordered]@{}
 
   # administrative settings 
-  if($null -ne $config?.Administrative?.DisableUacPopups){
+  if($null -ne $($config)?.Administrative?.DisableUacPopups){
     $registryTweaks.DisableUacPopups = @(
       [pscustomobject]@{
         path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
@@ -65,7 +65,7 @@ function editRegistry($config) {
 
 
   # cursor settings
-  if($null -ne $config?.Cursor?.DisableEnhancedPointerPrecision){
+  if($null -ne $($config)?.Cursor?.DisableEnhancedPointerPrecision){
     $registryTweaks.DisableEnhancedPointerPrecision = @(
       [pscustomobject]@{
         path = "HKCU:\Control Panel\Mouse"
@@ -88,7 +88,7 @@ function editRegistry($config) {
     )
   }
 
-  if($null -ne $config?.Cursor?.DisableEaseCursorMovement){
+  if($null -ne $($config)?.Cursor?.DisableEaseCursorMovement){
     $registryTweaks.DisableEaseCursorMovement = [pscustomobject]@{
       path = "HKCU:\Control Panel\Cursors"
       property = "CursorDeadzoneJumpingSetting"
@@ -99,7 +99,7 @@ function editRegistry($config) {
 
 
   # file explorer settings
-  if($null -ne $config?.FileExplorer?.EnableCompactView){
+  if($null -ne $($config)?.FileExplorer?.EnableCompactView){
     $registryTweaks.EnableCompactView = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "UseCompactMode"
@@ -108,7 +108,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.FileExplorer?.MoveRecycleBinToFileExplorer){
+  if($null -ne $($config)?.FileExplorer?.MoveRecycleBinToFileExplorer){
     $registryTweaks.MoveRecycleBinToFileExplorer = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
@@ -131,7 +131,7 @@ function editRegistry($config) {
     )
   }
 
-  if($null -ne $config?.FileExplorer?.ShowFileExtensionsForKnownFileTypes){
+  if($null -ne $($config)?.FileExplorer?.ShowFileExtensionsForKnownFileTypes){
     $registryTweaks.ShowFileExtensionsForKnownFileTypes = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "HideFileExt"
@@ -140,7 +140,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
+  if($null -ne $($config)?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
     $registryTweaks.ShowFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
@@ -149,7 +149,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.FileExplorer?.ShowHiddenFilesAndFolders){
+  if($null -ne $($config)?.FileExplorer?.ShowHiddenFilesAndFolders){
     $registryTweaks.ShowHiddenFilesAndFolders = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Hidden"
@@ -158,7 +158,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.FileExplorer?.ShowOfficeCloudFilesInQuickAccess){
+  if($null -ne $($config)?.FileExplorer?.ShowOfficeCloudFilesInQuickAccess){
     $registryTweaks.ShowOfficeCloudFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowCloudFilesInQuickAccess"
@@ -167,7 +167,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.FileExplorer?.ShowRecentlyUsedFilesInQuickAccess){
+  if($null -ne $($config)?.FileExplorer?.ShowRecentlyUsedFilesInQuickAccess){
     $registryTweaks.ShowRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
@@ -178,7 +178,7 @@ function editRegistry($config) {
 
 
   # start menu settings
-  if($null -ne $config?.StartMenu?.ShowMorePins){
+  if($null -ne $($config)?.StartMenu?.ShowMorePins){
     $registryTweaks.ShowMorePins = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
@@ -187,7 +187,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.StartMenu?.ShowRecentlyAddedApps){
+  if($null -ne $($config)?.StartMenu?.ShowRecentlyAddedApps){
     $registryTweaks.ShowRecentlyAddedApps = [pscustomobject]@{
       path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
       property = "HideRecentlyAddedApps"
@@ -196,7 +196,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.StartMenu?.ShowMostUsedApps){
+  if($null -ne $($config)?.StartMenu?.ShowMostUsedApps){
     $registryTweaks.ShowMostUsedApps = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
@@ -221,7 +221,7 @@ function editRegistry($config) {
     )
   }
 
-  if($null -ne $config?.StartMenu?.ShowRecentlyOpenedItems){
+  if($null -ne $($config)?.StartMenu?.ShowRecentlyOpenedItems){
     $registryTweaks.ShowRecentlyOpenedItems = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_TrackDocs"
@@ -230,7 +230,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.StartMenu?.ShowRecomendations){
+  if($null -ne $($config)?.StartMenu?.ShowRecomendations){
     $registryTweaks.ShowRecomendations = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_IrisRecommendations"
@@ -241,7 +241,7 @@ function editRegistry($config) {
 
 
   # services settings
-  if($null -ne $config?.Services?.DisableTelemetry){
+  if($null -ne $($config)?.Services?.DisableTelemetry){
     $registryTweaks.DisableTelemetry = [pscustomobject]@{
       path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
       property = "AllowTelemetry"
@@ -252,7 +252,7 @@ function editRegistry($config) {
 
 
   # task bar settings
-  if($null -ne $config?.Taskbar?.ShowTaskbarOnAllDisplays){
+  if($null -ne $($config)?.Taskbar?.ShowTaskbarOnAllDisplays){
     $registryTweaks.ShowTaskbarOnAllDisplays = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "MMTaskbarEnabled"
@@ -261,7 +261,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.CenterAlignTaskbarItems){
+  if($null -ne $($config)?.Taskbar?.CenterAlignTaskbarItems){
     $registryTweaks.CenterAlignTaskbarItems = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarAl"
@@ -270,7 +270,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.ShowSearch){
+  if($null -ne $($config)?.Taskbar?.ShowSearch){
     $searchStyle = $null -ne $config.Taskbar?.SearchStyle ? $config.Taskbar.SearchStyle : 2
 
     $registryTweaks.ShowSearch = [pscustomobject]@{
@@ -281,7 +281,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.ShowTaskViewButton){
+  if($null -ne $($config)?.Taskbar?.ShowTaskViewButton){
     $registryTweaks.ShowTaskViewButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowTaskViewButton"
@@ -290,7 +290,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.ShowWidgetsButton){
+  if($null -ne $($config)?.Taskbar?.ShowWidgetsButton){
     $registryTweaks.ShowWidgetsButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarDa"
@@ -299,7 +299,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.ShowChatButton){
+  if($null -ne $($config)?.Taskbar?.ShowChatButton){
     $registryTweaks.ShowChatButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarMn"
@@ -308,7 +308,7 @@ function editRegistry($config) {
     }
   }
 
-  if($null -ne $config?.Taskbar?.ShowSecondsOnClock){
+  if($null -ne $($config)?.Taskbar?.ShowSecondsOnClock){
     $registryTweaks.ShowSecondsOnClock = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowSecondsInSystemClock"
@@ -334,7 +334,7 @@ function editRegistry($config) {
 
 function configureOtherSettings($config) {
   # network settings
-  if($null -ne $config?.Network?.EnableNetworkDiscovery) {
+  if($null -ne $($config)?.Network?.EnableNetworkDiscovery) {
     if($config.Network.EnableNetworkDiscovery){
       Set-NetFirewallRule -DisplayGroup "Network Discovery" -Enabled True -Profile Any
       Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True -Profile Any
@@ -345,7 +345,7 @@ function configureOtherSettings($config) {
   }
 
   # performance settings
-  if($null -ne $config?.Performance?.EnableUltimatePerformance) {
+  if($null -ne $($config)?.Performance?.EnableUltimatePerformance) {
     if($config.Performance.EnableUltimatePerformance) {
       powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
   
@@ -358,7 +358,7 @@ function configureOtherSettings($config) {
     } 
   }
 
-  if($null -ne $config?.Performance?.DisableMonitorTimeout) {
+  if($null -ne $($config)?.Performance?.DisableMonitorTimeout) {
     if($config.Performance.DisableMonitorTimeout){
       powercfg -change -monitor-timeout-dc 0
       powercfg -change -monitor-timeout-ac 0
@@ -370,7 +370,7 @@ function configureOtherSettings($config) {
     }
   }
 
-  if($null -ne $config?.Performance?.DisableSleep) {
+  if($null -ne $($config)?.Performance?.DisableSleep) {
     if($config.Performance.DisableSleep) {
       powercfg -change -standby-timeout-dc 0
       powercfg -change -standby-timeout-ac 0
@@ -382,7 +382,7 @@ function configureOtherSettings($config) {
     }
   }
 
-  if($null -ne $config?.Performance?.DisableUsbSelectiveSuspend) {
+  if($null -ne $($config)?.Performance?.DisableUsbSelectiveSuspend) {
     if($config.Performance.DisableUsbSelectiveSuspend) {
       powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
       powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
@@ -396,6 +396,11 @@ function configureOtherSettings($config) {
 function main {
   Write-Host "Starting process..."
   $config = Get-Content -Raw -Path "$PSScriptRoot\config.json" | ConvertFrom-Json
+
+  write-host $config
+  write-host $($config)?.Administrative
+  quit
+
   editRegistry $config
   configureOtherSettings $config
   Write-Host "`n`nSettings have been configured, please restart your computer." -ForegroundColor green
