@@ -522,12 +522,12 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### setting descriptions
 
-- administrative
+- #### administrative
   - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
-- cursor
+- #### cursor
   - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
   - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
-- file explorer
+- #### file explorer
   - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
   - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
   - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
@@ -535,9 +535,9 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
   - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
   - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-- network
+- #### network
   - `EnableNetworkDiscovery` [`true`/`false`] - enables network discovery on all networking interfaces
-- performance
+- #### performance
   - `EnableUltimatePerformance` [`true`/`false`] - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
   - `DisableMonitorTimeout` [`true`/`false`] - prevents windows from turning off your display after a period of inactivity
   - `MonitorTimeout` [`1-9999`] - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
@@ -546,13 +546,13 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - `DisableUsbSelectiveSuspend` [`true`/`false`] - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
     -services
   - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
-- start menu
+- #### start menu
   - `ShowMorPins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
   - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
   - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
   - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
   - `ShowRecommendations` [`true`/`false`] - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
-- task bar
+- #### task bar
   - `ShowTaskbarOnAllDisplays` [`true`/`false`] - shows task bar on all connected displays
   - `CenterAlignTaskbarItems` [`true`/`false`] - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
   - `ShowSearch` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
