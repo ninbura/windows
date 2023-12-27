@@ -381,7 +381,7 @@
 	- `winget uninstall Discord.Discord`
 	- `winget uninstall Valve.Steam`
 # software
-- please read [download/install remaining software](#downloadinstall-remaining-software)
+please read [download/install remaining software](#downloadinstall-remaining-software)
 ### **wsl** (windows subsystem for linux)
 - run the following command in an **elevated** powershelkl  console
 	- `wsl --install`
