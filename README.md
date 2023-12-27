@@ -49,8 +49,10 @@
 	- [install list](#install-list)
 # steps
 1. ### update & configure your motherboard's bios
-	- attach a >=32GB USB 2.0 flash drive to your computer
-	- format your flash drive as fat32 ([tutorial](https://www.asus.com/support/FAQ/1044735/))
+	- attach any usb flash drive to your computer
+	- format your flash drive as fat32
+ 		- if your flash drive is over 32GB you will need to use [this tool](http://ridgecrop.co.uk/index.htm?guiformat.htm)
+   		- otherwise, just follow [this tutorial](https://www.asus.com/support/FAQ/1044735/) 	
  	- take note of your motherboard's model number, should be listed on the box it came in.
 	- search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
 	- copy the bios file to the flash drive
@@ -68,7 +70,7 @@
  	- if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
 		- *you will need to login with your work/business email before this link will direct you to the proper place*
 3. ### create a bootable flash drive & install windows
-	- attach an 8gb+ flash drive to your computer (preferably less than 32gb)
+	- attach an 8gb+ flash drive to your computer
 	- download & install [rufus](<https://rufus.ie/en/>)
 	- use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](<https://pureinfotech.com/rufus-create-bootable-windows-11-usb/>))
 	- before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
