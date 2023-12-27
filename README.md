@@ -22,6 +22,7 @@
 - [software](#software)
 	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
 	- [winget](#winget)
+ 	- [microsoft store](#microsoft-store) 
 - [troubleshooting](#troubleshooting)
 	- [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 	- [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
