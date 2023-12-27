@@ -194,11 +194,11 @@ function editRegistry($config) {
     }
 
     # start menu settings
-    showMorePinsOnStartMenu = [pscustomobject]@{
+    showMorePins = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
       propertyType = "DWord"
-      propertyValue = $config.StartMenu.ShowMorePinsOnStartMenu ? 1 : 0
+      propertyValue = $config.StartMenu.ShowMorePins ? 1 : 0
     }
     showRecentlyAddedApps = [pscustomobject]@{
       path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
