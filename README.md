@@ -491,6 +491,7 @@
 	- `MoveRecycleBinToFileExplorer` - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
 	- `ShowFileExtensionsForKnownFileTypes` - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
 	- `ShowFrequentlyUsedFoldersInQuickAccess` - This setting make it so frequently used folders show up in the quick access menu within the left hand side menu of file explorer. I personally like to disable this, I pin things manually, and only want to see things that I pinned manually.
+	- `ShowHiddenFilesAndFolders` - prevents windows from hiding files and folders in file explorer
 ## config.json example
 ```
 {
