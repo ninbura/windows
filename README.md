@@ -378,7 +378,7 @@
   - `--force`
     - Sometimes winget refuses to install an app because it thinks it's already installed, or it thinks a newer version is installed. Sometimes this is true, sometimes it's not.
     - Using this flag bypasses issues like this, and forces winget to install the specified application.
-    - Note that this will re-install an application 100% of the time. So, backup your settings in an app you already have installed if you're going to use this flag.
+    - Note that this will re-install an application 100% of the time, if it's already installed. So, backup your settings in an app you already have installed if you're going to use this flag.
 - flag usage examples
   - `winget install Mozilla.Firefox.Nightly --ignore-security-hash`
   - `winget install Microsoft.DotNet.SDK.6 --force`
