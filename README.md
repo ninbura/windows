@@ -478,6 +478,71 @@
 	- need an aftermarket heatsink for your m.2 drive
 	- need to install a fan pointing directly at your m.2 drive   
 	- have a defective drive and need to rma / exchange it
+# bulk-edit-settings configuration example / setting descriptions
+## setting descriptions
+- administrative
+	- `DisableUacPopups` - removes the "are you sure" popup when you doing anything that requires admin privileges
+- cursor
+	- `DisableEnhancedPointerPrecision` - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
+ 	-  `DisableEaseCursorMovement` - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
+- file explorer
+	- `EnableCompactView` - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
+	- `MoveRecycleBinToFileExplorer` - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
+	- `ShowFileExtensionsForKnownFileTypes` - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
+	- `ShowFrequentlyUsedFoldersInQuickAccess` - This setting make it so frequently used folders show up in the quick access menu within the left hand side menu of file explorer. I personally like to disable this, I pin things manually, and only want to see things that I pinned manually.
+## config.json example
+```
+{
+  "Administrative": {
+    "DisableUacPopups": true
+  },
+  "Cursor": {
+    "DisableEnhancedPointerPrecision": true,
+    "DisableEaseCursorMovement": true
+  },
+  "FileExplorer": {
+    "EnableCompactView": true,
+    "MoveRecycleBinToFileExplorer": true,
+    "ShowFileExtensionsForKnownFileTypes": true,
+    "ShowFrequentlyUsedFoldersInQuickAccess": false,
+    "ShowHiddenFilesAndFolders": true,
+    "ShowOfficeCloudFilesInQuickAccess": false,
+    "ShowRecentlyUsedFilesInQuickAccess": false
+  },
+  "Network": {
+    "EnableNetworkDiscovery": true,
+    "BypassNetworkOptions": false
+  },
+  "Performance": {
+    "EnableUltimatePerformance": true,
+    "DisableMonitorTimeout": true,
+    "MonitorTimeout": 15,
+    "DisableSleep": true,
+    "StandbyTimeout": 60,
+    "DisableUsbSelectiveSuspend": true
+  },
+  "Services": {
+    "DisableTelemetry": true
+  },
+  "StartMenu": {
+    "ShowMorePinsOnStartMenu": true,
+    "ShowRecentlyAddedApps": true,
+    "ShowMostUsedApps": true,
+    "ShowRecentlyOpenedItems": true,
+    "ShowRecomendations": false
+  },
+  "Taskbar": {
+    "ShowTaskbarOnAllDisplays": false,
+    "CenterAlignTaskbar": true,
+    "ShowSearchOnTaskbar": false,
+    "SearchOnTaskbarType": 2,
+    "ShowTaskViewButtonOnTaskbar": false,
+    "ShowWidgetButtonOnTaskBar": false,
+    "ShowChatButtonOnTaskBar": true,
+    "ShowSecondsOnClock": true
+  }
+}
+```
 # wigui lists
 ### update blacklist
 ```
