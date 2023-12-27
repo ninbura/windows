@@ -267,33 +267,33 @@
 - pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 # drivers
 ## preface
-	- please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
-	- some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
-	- take note of your motherboard's model number, should be listed on the box it came in.
-	- search for your motherboard via it's model number on google & locate the support page
-	- drivers you typically need to grab from your motherboards support page
-		- audio driver
-			- usually labeled as realtek
-			- only grab latest version, don't need mulitple motherboard audio drivers 
-		- intel chipset driver (intel cpus only)
-			- there may be multiple "chipset" style drivers
-			- look for drivers titled as so
-				- intel serial i/o
-				- intel management engine
-				- intel me
-				- intel mei  
-				- intel inf
-				- intel hid
-			- you should see one or many of the aformentioned intel chipset drivers   
-		- sata driver
-			- only required if you're using sata based storage
-			- typically labeled as "intel rapid storage technology" 
+- please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
+- some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
+- take note of your motherboard's model number, should be listed on the box it came in.
+- search for your motherboard via it's model number on google & locate the support page
+- drivers you typically need to grab from your motherboards support page
+	- audio driver
+		- usually labeled as realtek
+		- only grab latest version, don't need mulitple motherboard audio drivers 
+	- intel chipset driver (intel cpus only)
+		- there may be multiple "chipset" style drivers
+		- look for drivers titled as so
+			- intel serial i/o
+			- intel management engine
+			- intel me
+			- intel mei  
+			- intel inf
+			- intel hid
+		- you should see one or many of the aformentioned intel chipset drivers   
+	- sata driver
+		- only required if you're using sata based storage
+		- typically labeled as "intel rapid storage technology" 
 ## intel
-	- check motherboard page to make sure your motherboard uses intel for these devices
-	- [bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
-	- [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
-	- [wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
-	- [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
+- check motherboard page to make sure your motherboard uses intel for these devices
+- [bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
+- [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
+- [wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
+- [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
 - drivers you will need from your motherboard's support page if said devices aren't intel
 	- bluetooth driver
 	- lan driver
