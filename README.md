@@ -298,7 +298,10 @@
 - [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # winget/wigui basics
 ### winget preface
-You can call winget in cmd, powershell, and powershell 7 terminals. I would recommend installing and using powershell 7 as it is the most modern shell for Windows. If you don't already have powershell 7 you can install it using winget in powershell. If you've followed the steps higher up in this readme you would have already done that 😅
+- You can call winget in cmd, powershell, and powershell 7 terminals. I would recommend installing and using powershell 7 as it is the most modern shell for Windows. If you don't already have powershell 7 you can install it using winget in powershell. If you've followed the steps higher up in this readme you would have already done that 😅
+- wigui, which we use earlier in this guide, is just a winget with a user interface.
+- Some applications aren't compatible with wigui for one reason or another, so you have to interact with those apps manually with winget.
+- Appliations installed with winget or wigui will automatically update so long as you installed winget auto update via wigui as explained earlier in the tutorial. Note that some apps won't update properly through winget auto update, and that's why they've landed a spot on the update black list at the bottom of this readme.
 ### searching for apps
 - to search for applications you can install with winget you use the `search` keyword
 	- `winget search [app name]`
