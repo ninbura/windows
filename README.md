@@ -589,9 +589,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   "Performance": {
     "EnableUltimatePerformance": true,
     "DisableMonitorTimeout": true,
-    "MonitorTimeout": 15,
     "DisableSleep": true,
-    "StandbyTimeout": 60,
     "DisableUsbSelectiveSuspend": true
   },
   "Services": {
@@ -606,12 +604,11 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   },
   "Taskbar": {
     "ShowTaskbarOnAllDisplays": false,
-    "CenterAlignTaskbar": true,
+    "CenterAlignTaskbarItems": true,
     "ShowSearchOnTaskbar": false,
-    "SearchOnTaskbarType": 2,
-    "ShowTaskViewButtonOnTaskbar": false,
-    "ShowWidgetButtonOnTaskBar": false,
-    "ShowChatButtonOnTaskBar": true,
+    "ShowTaskViewButton": false,
+    "ShowWidgetButton": false,
+    "ShowChatButton": true,
     "ShowSecondsOnClock": true
   }
 }
