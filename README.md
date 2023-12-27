@@ -11,7 +11,7 @@
 	9. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
 	10. [manually configure other windows settings](#manually-configure-other-windows-settings)
 	11. [download/install system drivers](#downloadinstall-system-drivers)
-	12. [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater)
+	12. [wigui - install winget auto update & bulk install applications](#wigui---install-winget-auto-update--bulk-install-applications)
 	13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
 	14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
 	15. [download/install remaining software](#downloadinstall-remaining-software)
@@ -132,7 +132,7 @@
 	- note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
  	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
-12. ### download, install, & run winget-autoupdate (bulk software installer/updater)
+12. ### wigui - install winget auto update & bulk install applications
 	- #### preface
 		- wigui is a an application that uses winget (cli application tool) in the background via a user interface
 		- winget auto update can be installed via wigui, and once installed it'll keep most applications installed via wigui/winget automatically updated.
