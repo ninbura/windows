@@ -279,28 +279,30 @@
 - Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - Take note of your motherboard's model number, should be listed on the box it came in.
 - search for your motherboard via it's model number on google & locate the support page
-- drivers you typically need to grab from your motherboards support page
-  - audio driver
-    - usually labeled as realtek
-    - only grab latest version, don't need mulitple motherboard audio drivers
-  - intel chipset driver (intel cpus only)
-    - there may be multiple "chipset" style drivers
-    - look for drivers titled as so
-      - intel serial i/o
-      - intel management engine
-      - intel me
-      - intel mei
-      - intel inf
-      - intel hid
-    - you should see one or many of the aformentioned intel chipset drivers
-  - communication drivers
-    - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
-    - bluetooth
-    - lan
-    - wan
-  - sata driver
-    - only required if you're using sata based storage
-    - typically labeled as "intel rapid storage technology"
+
+### motherboard specific drivers
+- look for the following drivers on your motherboard's support/driver page
+- audio drivers
+  - usually labeled as realtek
+  - only grab latest version, don't need mulitple motherboard audio drivers
+- intel chipset drivers (intel cpus only)
+  - there may be multiple "chipset" style drivers
+  - look for drivers titled as so
+    - intel serial i/o
+    - intel management engine
+    - intel me
+    - intel mei
+    - intel inf
+    - intel hid
+  - you should see one or many of the aformentioned intel chipset drivers
+- communication drivers
+  - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
+  - bluetooth
+  - lan
+  - wan
+- sata drivers
+  - only required if you're using sata based storage
+  - typically labeled as "intel rapid storage technology"
 
 ### intel
 
