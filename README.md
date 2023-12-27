@@ -133,9 +133,10 @@
  	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
 12. ### wigui - install winget auto update & bulk install applications
-	- #### preface
-		- wigui is a an application that uses winget (cli application tool) in the background via a user interface
-		- winget auto update can be installed via wigui, and once installed it'll keep most applications installed via wigui/winget automatically updated.
+	- #### wigui preface
+		- wigui is a an application that 
+			- uses winget (cli application tool) in the background via a user interface
+			- Installs winget auto update. Once winget auto updated is installed it'll keep most applications installed via wigui/winget automatically updated.
 	- #### install winget auto update
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
 	- move `wigui.exe` to your documents folder & run it
