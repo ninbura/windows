@@ -22,6 +22,8 @@
 - [software](#software)
 - [troubleshooting](#troubleshooting)
 	- [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
+	- [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
+	- [troubleshooting high temperatures](#troubleshooting-high-temperatures) 
 # steps
 1. ### update & configure your motherboard's bios
 	- attach a >=32GB USB 2.0 flash drive to your computer
