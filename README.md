@@ -266,7 +266,7 @@
 	- see [download, install, & run winget-autoupdate (bulk software installer/updater)](#download-install--run-winget-autoupdate-bulk-software-installerupdater) for more details 
 - pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
 # drivers
-## preface
+### preface
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
 - some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - take note of your motherboard's model number, should be listed on the box it came in.
@@ -288,7 +288,7 @@
 	- sata driver
 		- only required if you're using sata based storage
 		- typically labeled as "intel rapid storage technology" 
-## intel
+### intel
 - check motherboard page to make sure your motherboard uses intel for these devices
 - [bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
 - [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
@@ -298,132 +298,132 @@
 	- bluetooth driver
 	- lan driver
 	- wan driver
-- [amd cpu/chipset & gpu drivers](<https://www.amd.com/en/support>)
-- [nvidia drivers](<https://www.nvidia.com/download/index.aspx>)
-	- *Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!*
-	- always select **custom install** and then **clean install**
-	- open nvidia control panel ([shift+right click] desktop)
-		- select "manage 3d settings" in left hand side menu
-			- set "power management mode" to "prefer maximum performance"
-		- select "change resolution" in left hand side menu & verify that all monitors are
-			- set to the correct resolution & refresh rate
-			- set to full rgb color mode
-			- if color mode is partial and greyed out; override settings with "use nvidia color settings".
-   	- after driver install it's likely that your windows audio settings got borked (see [configure audio settings](#configure-audio-settings) for fix)
-- other drivers
-	- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
-		- must be installed via **admin elevated** terminal
-		- `start-process -path [releativepath]/Silabs_Driver_v3/Silabs_Driver_v3/USBXpressInstaller.exe`
-	- [magewell pro capture](<https://www.magewell.com/downloads/pro-capture>) (magewell capture pro cards)
-	- [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
-	- [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
+### [amd cpu/chipset & gpu drivers](<https://www.amd.com/en/support>)
+### [nvidia drivers](<https://www.nvidia.com/download/index.aspx>)
+- *Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!*
+- always select **custom install** and then **clean install**
+- open nvidia control panel ([shift+right click] desktop)
+	- select "manage 3d settings" in left hand side menu
+		- set "power management mode" to "prefer maximum performance"
+	- select "change resolution" in left hand side menu & verify that all monitors are
+		- set to the correct resolution & refresh rate
+		- set to full rgb color mode
+		- if color mode is partial and greyed out; override settings with "use nvidia color settings".
+- after driver install it's likely that your windows audio settings got borked (see [configure audio settings](#configure-audio-settings) for fix)
+### other drivers
+- [silabs 3.9.2](<https://hdfury.com/product/integral-2/>) (hdfury integral 2)
+	- must be installed via **admin elevated** terminal
+	- `start-process -path [releativepath]/Silabs_Driver_v3/Silabs_Driver_v3/USBXpressInstaller.exe`
+- [magewell pro capture](<https://www.magewell.com/downloads/pro-capture>) (magewell capture pro cards)
+- [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
+- [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
-- ### **wsl** (windows subsystem for linux)
-	- install **wsl** the hard way (required for ssh capability)
-		- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-   		- run the following command in powershell
-			- `wsl --set-default-version 2`
-		- **restart your pc**
-		- `winget search ubuntu`
-		- take note of the id of the linux distribution you want to install & install via winget
-		- for exmample  
-			- `winget canonical.ubuntu.2204 --ignore-security-hash`  
-	- installing **wsl** the easy way
-		- run the following command in an **elevated** powershelkl  console
-		- `wsl --install`
-		- **restart your computer**
-- ### winget
-	- admin elevated terminal required
-		- **ffmpeg** (cli media tool)
-			- `winget install gyan.ffmpeg --ignore-security-hash`
-		- **itunes**
- 			- `winget install apple.itunes --ignore-security-hash`
-		- **proton vpn** (vpn client)
-			- `winget install protontechnologies.protonvpn --ignore-security-hash`
-		- **rufus** (image mounter)
-			- `winget install rufus.rufus --ignore-security-hash`
-		- **tailwindcss** (css library for dev)
-			- `winget install tailwindlabs.tailwindcss --ignore-security-hash`
-	- standard terminal
-		- **.net sdks** (micorosft .net runtime(s) for dev)
-			- you have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. for example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
-			- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
-			- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
-		- **docker desktop** (running docker images for dev)
-			- **wsl must be installed/configured first (see [wsl](#wsl-windows-subsystem-for-linux))**
-			- `winget install docker.dockerdesktop --ignore-security-hash`
-- ### microsoft store
-	- **icloud** (apples icloud desktop application)
-	- **cisco anyconnect** (vpn client)
-	- **wsa** (windows subsystem for android)
-		- download amazon store via microsoft store
-		- **restart your computer**
-	- **xbox accessories** (tool for configuring xbox controllers)
-- ### old school
-	- [**adobe creative cloud**](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
-	- [**advanced scene switcher**](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
-	- **appstudio** (reporting client)
-	- [**battlenet launcher**](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
-	- [**crystaldiskinfo**](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
-	- [**crystaldiskmark**](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
-	- [**davinci resolve**](<https://www.blackmagicdesign.com/products/davinciresolve>) (download link near the bottom of the page)
-	- [**easybcd**](<https://neosmart.net/EasyBCD/>) (tool for dual booting)
-	- [**ffxiv launcher**](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
-	- [**ireboot**](<https://neosmart.net/iReboot/>) (tool for dual booting)
-	- [**obs asio**](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
-  	- [**obs ndi**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
-	- [**synergy**](<https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload>) (tool for sharing single mouse & keyboard with multiple computers)
-	- [**rode central**](<https://rode.com/en-us/software/rode-central>) (Rodecaster Pro II & Rodecaster Duo)
-	- [**via**](<https://www.caniusevia.com/>) (tool for configuring many keyboard models)
-	- [**vlc 4.0**](<https://artifacts.videolan.org/vlc/nightly-win64/>) (video player, plays all codecs including the new av1 codec)
-	- [**window-switcher**](<https://github.com/sigoden/window-switcher/releases>) (macOS style window switching for windows 11)
-	- [**wootliltiy**](<https://wooting.io/wootility>) (software to configure wooting keyboards)
+### **wsl** (windows subsystem for linux)
+- install **wsl** the hard way (required for ssh capability)
+	- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
+	- run the following command in powershell
+		- `wsl --set-default-version 2`
+	- **restart your pc**
+	- `winget search ubuntu`
+	- take note of the id of the linux distribution you want to install & install via winget
+	- for exmample  
+		- `winget canonical.ubuntu.2204 --ignore-security-hash`  
+- installing **wsl** the easy way
+	- run the following command in an **elevated** powershelkl  console
+	- `wsl --install`
+	- **restart your computer**
+### winget
+- admin elevated terminal required
+	- **ffmpeg** (cli media tool)
+		- `winget install gyan.ffmpeg --ignore-security-hash`
+	- **itunes**
+		- `winget install apple.itunes --ignore-security-hash`
+	- **proton vpn** (vpn client)
+		- `winget install protontechnologies.protonvpn --ignore-security-hash`
+	- **rufus** (image mounter)
+		- `winget install rufus.rufus --ignore-security-hash`
+	- **tailwindcss** (css library for dev)
+		- `winget install tailwindlabs.tailwindcss --ignore-security-hash`
+- standard terminal
+	- **.net sdks** (micorosft .net runtime(s) for dev)
+		- you have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. for example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
+		- `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
+		- `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
+	- **docker desktop** (running docker images for dev)
+		- **wsl must be installed/configured first (see [wsl](#wsl-windows-subsystem-for-linux))**
+		- `winget install docker.dockerdesktop --ignore-security-hash`
+### microsoft store
+- **icloud** (apples icloud desktop application)
+- **cisco anyconnect** (vpn client)
+- **wsa** (windows subsystem for android)
+	- download amazon store via microsoft store
+	- **restart your computer**
+- **xbox accessories** (tool for configuring xbox controllers)
+### old school
+- [**adobe creative cloud**](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
+- [**advanced scene switcher**](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
+- **appstudio** (reporting client)
+- [**battlenet launcher**](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
+- [**crystaldiskinfo**](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
+- [**crystaldiskmark**](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
+- [**davinci resolve**](<https://www.blackmagicdesign.com/products/davinciresolve>) (download link near the bottom of the page)
+- [**easybcd**](<https://neosmart.net/EasyBCD/>) (tool for dual booting)
+- [**ffxiv launcher**](<https://na.finalfantasyxiv.com/lodestone/playguide/#returner>) (square enix's final fantasy 14 launcher)
+- [**ireboot**](<https://neosmart.net/iReboot/>) (tool for dual booting)
+- [**obs asio**](<https://github.com/Andersama/obs-asio/releases>) (obs plugin)
+- [**obs ndi**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
+- [**synergy**](<https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload>) (tool for sharing single mouse & keyboard with multiple computers)
+- [**rode central**](<https://rode.com/en-us/software/rode-central>) (Rodecaster Pro II & Rodecaster Duo)
+- [**via**](<https://www.caniusevia.com/>) (tool for configuring many keyboard models)
+- [**vlc 4.0**](<https://artifacts.videolan.org/vlc/nightly-win64/>) (video player, plays all codecs including the new av1 codec)
+- [**window-switcher**](<https://github.com/sigoden/window-switcher/releases>) (macOS style window switching for windows 11)
+- [**wootliltiy**](<https://wooting.io/wootility>) (software to configure wooting keyboards)
 # troubleshooting
-- ### troubleshooting bootloop / boot problems
-  	- if computer is bootlooping
-  		- re-flash bios using advanced flashing utility
-  	   	- consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
-		- typically involves
-			- putting bios file on flash drive
-			- naming bios file something specific
-			- putting usb stick in specific port
-			- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
-  	- if computer failed to boot into bios after enabling x.m.p and now you're stuck in "safe mode"
-		- try setting ram clock at a lower clock
-		- if setting the clock speed lower multiple time fails simply disable x.m.p
-  		- note that you want your ram to be at the highest possible clock for best performance
-  	   	- if ram is a reasonable speed (DDR5 5600-6800Mhz | DDR4 2600-3600) and can't achive x.m.p you should consider returning it for different ram
-  	   	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
-- ### troubleshooting failed windows activation
-	- verify that the activation key you entered matches the one you purchased/obtained earlier
-  	- if key matches but windows still failed to activate you may need to activate by phone
-		- there should be a button to do this via the `system > activation` screen
-  		- follow on-screen instructions
-  	 	- involves calling a number and answering prompts by voice and dial pad
-		- I typically start spamming "represnetative" by voice to try to get to someone as soon as possible. But I believe you can only do this after stating that you're having trouble with activating windows.
-	- I've never had phone activiation fail, but if it did somehow you may have purchased a key that's already been used and will need to get a new one.
-- ### troubleshooting high temperatures
-	- if your ***cpu*** temperatures are too high you
-		- mounted your cpu cooler incorrectly
-  			- clean, re-paste, and re-seat the heatsink / water block
-		- didn't plug in your fans / fans are defective & not running
-		- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
-		- used an inadequate cpu cooler
-		- have major airflow problems in your case
-		- are running your pc in an overly hot environment (90f+) 
-		- have a motherboard that is misreporting temps (unlikely but happens)
-  		- have a defective cpu or cpu cooler and need to rma / exchange one or the other
-	- if your ***gpu*** temperatures are too high
-		- verify that gpu fans are spinning
-		- verify that nothing is too close to or obstructing gpu fans
-		- verify that all other fans in case are working
-		- set a more aggressive fan curve via msi afterburner
-		- if temps are still too high your gpu's heatsink may have a poor factory mount, at which point you can
-			- rma / exchange the gpu
-			- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
-	- if your ***m.2 ssd*** temperatures are too high you
-		- didn't properly install your m.2 drive
-		- need an aftermarket heatsink for your m.2 drive
-		- need to install a fan pointing directly at your m.2 drive   
-		- have a defective drive and need to rma / exchange it
+### troubleshooting bootloop / boot problems
+- if computer is bootlooping
+	- re-flash bios using advanced flashing utility
+	- consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
+	- typically involves
+		- putting bios file on flash drive
+		- naming bios file something specific
+		- putting usb stick in specific port
+		- pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
+- if computer failed to boot into bios after enabling x.m.p and now you're stuck in "safe mode"
+	- try setting ram clock at a lower clock
+	- if setting the clock speed lower multiple time fails simply disable x.m.p
+	- note that you want your ram to be at the highest possible clock for best performance
+	- if ram is a reasonable speed (DDR5 5600-6800Mhz | DDR4 2600-3600) and can't achive x.m.p you should consider returning it for different ram
+	- if new ram of similar speed has the same issues you may have a defective cpu or motherboard and will need to replace it
+### troubleshooting failed windows activation
+- verify that the activation key you entered matches the one you purchased/obtained earlier
+- if key matches but windows still failed to activate you may need to activate by phone
+	- there should be a button to do this via the `system > activation` screen
+	- follow on-screen instructions
+	- involves calling a number and answering prompts by voice and dial pad
+	- I typically start spamming "represnetative" by voice to try to get to someone as soon as possible. But I believe you can only do this after stating that you're having trouble with activating windows.
+- I've never had phone activiation fail, but if it did somehow you may have purchased a key that's already been used and will need to get a new one.
+### troubleshooting high temperatures
+- if your ***cpu*** temperatures are too high you
+	- mounted your cpu cooler incorrectly
+		- clean, re-paste, and re-seat the heatsink / water block
+	- didn't plug in your fans / fans are defective & not running
+	- have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](<https://www.youtube.com/watch?v=ZoWlNIzOO0E>) | should be similar for most motherboards).
+	- used an inadequate cpu cooler
+	- have major airflow problems in your case
+	- are running your pc in an overly hot environment (90f+) 
+	- have a motherboard that is misreporting temps (unlikely but happens)
+	- have a defective cpu or cpu cooler and need to rma / exchange one or the other
+- if your ***gpu*** temperatures are too high
+	- verify that gpu fans are spinning
+	- verify that nothing is too close to or obstructing gpu fans
+	- verify that all other fans in case are working
+	- set a more aggressive fan curve via msi afterburner
+	- if temps are still too high your gpu's heatsink may have a poor factory mount, at which point you can
+		- rma / exchange the gpu
+		- clean, re-paste, and re-seat the heatsink ([tutorial](https://www.youtube.com/watch?v=n7NMeu0QiYk))
+- if your ***m.2 ssd*** temperatures are too high you
+	- didn't properly install your m.2 drive
+	- need an aftermarket heatsink for your m.2 drive
+	- need to install a fan pointing directly at your m.2 drive   
+	- have a defective drive and need to rma / exchange it
