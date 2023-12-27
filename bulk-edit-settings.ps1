@@ -250,7 +250,7 @@ function editRegistry($config) {
     }
   }
 
-  
+
   # task bar settings
   if($null -ne $config?.Taskbar?.ShowTaskbarOnAllDisplays){
     $registryTweaks.ShowTaskbarOnAllDisplays = [pscustomobject]@{
@@ -271,11 +271,13 @@ function editRegistry($config) {
   }
 
   if($null -ne $config?.Taskbar?.ShowSearch){
+    $searchStyle = $null -ne $config.Taskbar?.SearchStyle ? $config.Taskbar.SearchStyle : 2
+
     $registryTweaks.ShowSearch = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
       property = "SearchboxTaskbarMode"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowSearch ? $config.Taskbar.SearchStyle : 0
+      propertyValue = $config.Taskbar.ShowSearch ? $searchStyle : 0
     }
   }
 
@@ -332,7 +334,7 @@ function editRegistry($config) {
 
 function configureOtherSettings($config) {
   # network settings
-  if(!$config.Network.BypassNetworkOptions){
+  if($null -ne $config?.Network?.EnableNetworkDiscovery) {
     if($config.Network.EnableNetworkDiscovery){
       Set-NetFirewallRule -DisplayGroup "Network Discovery" -Enabled True -Profile Any
       Set-NetFirewallRule -DisplayGroup "File And Printer Sharing" -Enabled True -Profile Any
@@ -343,41 +345,52 @@ function configureOtherSettings($config) {
   }
 
   # performance settings
-  if($config.Performance.EnableUltimatePerformance) {
-    powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
-
-    $currentPowerPlan = powercfg /GetActiveScheme
-    
-    if($currentPowerPlan -notlike "*e9a42b02-d5df-448d-aa00-03f14749eb61*"){
-      powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+  if($null -ne $config?.Performance?.EnableUltimatePerformance) {
+    if($config.Performance.EnableUltimatePerformance) {
       powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
+  
+      $currentPowerPlan = powercfg /GetActiveScheme
+      
+      if($currentPowerPlan -notlike "*e9a42b02-d5df-448d-aa00-03f14749eb61*"){
+        powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+        powercfg /setactive e9a42b02-d5df-448d-aa00-03f14749eb61
+      }
+    } 
+  }
+
+  if($null -ne $config?.Performance?.DisableMonitorTimeout) {
+    if($config.Performance.DisableMonitorTimeout){
+      powercfg -change -monitor-timeout-dc 0
+      powercfg -change -monitor-timeout-ac 0
+    } else {
+      $monitorTimeout = $null -ne $config.Performance?.MonitorTimeout ? $config.Performance.MonitorTimeout : 15
+
+      powercfg -change -monitor-timeout-dc $monitorTimeout
+      powercfg -change -monitor-timeout-ac $monitorTimeout
     }
-  } 
-
-  if($config.Performance.DisableMonitorTimeout){
-    powercfg -change -monitor-timeout-dc 0
-    powercfg -change -monitor-timeout-ac 0
-  } else {
-    powercfg -change -monitor-timeout-dc $config.Performance.MonitorTimeout
-    powercfg -change -monitor-timeout-ac $config.Performance.MonitorTimeout
   }
 
-  if($config.Performance.DisableSleep) {
-    powercfg -change -standby-timeout-dc 0
-    powercfg -change -standby-timeout-ac 0
-  } else {
-    powercfg -change -standby-timeout-dc $config.Performance.StandbyTimeout
-    powercfg -change -standby-timeout-ac $config.Performance.StandbyTimeout
+  if($null -ne $config?.Performance?.DisableSleep) {
+    if($config.Performance.DisableSleep) {
+      powercfg -change -standby-timeout-dc 0
+      powercfg -change -standby-timeout-ac 0
+    } else {
+      $standbyTimeout = $null -ne $config.Performance?.StandbyTimeout ? $config.Performance.StandbyTimeout : 15
+
+      powercfg -change -standby-timeout-dc $standbyTimeout
+      powercfg -change -standby-timeout-ac $standbyTimeout
+    }
   }
 
-  if($config.Performance.DisableUsbSelectiveSuspend) {
-    powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
-    powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
-  } else {
-    powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
-    powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
+  if($null -ne $config?.Performance?.DisableUsbSelectiveSuspend) {
+    if($config.Performance.DisableUsbSelectiveSuspend) {
+      powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
+      powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 0
+    } else {
+      powercfg /SETDCVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
+      powercfg /SETACVALUEINDEX SCHEME_CURRENT 2a737441-1930-4402-8d77-b2bebba308a3 48e6b7a6-50f5-4782-a5d4-53bb8f07e226 1
+    }
   }
-
 }
 
 function main {
