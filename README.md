@@ -43,7 +43,9 @@
   - [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
   - [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
   - [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-- [bulk-edit-settings configuration example / setting descriptions](#bulk-edit-settings-configuration-example--setting-descriptions)
+- [bulk edit settings configuration](#bulk-edit-settings-configuration)
+  - [setting descriptions](#setting-descriptions)
+  - [config.json example](#config.json-example)
 - [wigui lists](#wigui-lists)
   - [update blacklist](#update-blacklist)
   - [install list](#install-list)
@@ -518,7 +520,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - need to install a fan pointing directly at your m.2 drive
   - have a defective drive and need to rma / exchange it
 
-# bulk-edit-settings configuration example / setting descriptions
+# bulk-edit-settings configuration
 
 ### setting descriptions
 
