@@ -18,7 +18,7 @@
       - [install winget auto update](#install-winget-auto-update)
       - [create an application install list](#create-an-application-install-list)
       - [bulk install applications](#bulk-install-applications)
-      13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
+      - [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   13. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
   14. [download/install remaining software](#downloadinstall-remaining-software)
   15. [configure audio settings](#configure-audio-settings)
