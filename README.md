@@ -1,3 +1,5 @@
+# table of contents
+
 - [steps](#steps)
   1.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
   2.  [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
