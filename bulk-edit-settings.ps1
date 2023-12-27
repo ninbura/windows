@@ -1,50 +1,3 @@
-param(
-  # administrative settings 
-  [boolean]$disableUacPopups = $true, # removes the "are you sure" popup when you doing anything that requires admin privileges
-
-  # cursor settings
-  [boolean]$disableEnhancedPointerPrecision = $true, # disabled enhanced pointer precision, good for gaming, and everything else tbh
-  [boolean]$disableEaseCursorMovement = $true, # disables "easing" cursor movement between displays, feels super jank when on
-
-  # file explorer settings
-  [boolean]$enableCompactView = $true, # this removes a lot of dead space in file explorer returning the way it looked/felt in windows 10
-  [boolean]$moveRecycleBinToFileExplorer = $true, # removes the recycle bin shortcut from your desktop & places it in the navigation pane of file explorer
-  [boolean]$showFileExtensionsForKnownFileTypes = $true, # prevents windows from hiding file extensions for "known" file types
-  [boolean]$showFrequentlyUsedFoldersInQuickAccess = $false, # allows windows to show recently used folders in your quick access pin list in file explorer
-  [boolean]$showHiddenFilesAndFolders = $true, # prevents windows from hiding files and folders in file explorer
-  [boolean]$showOfficeCloudFilesInQuickAccess = $false, # allows windows to show cloud files from office.com in your quick access pin list in file explorer
-  [boolean]$showRecentlyUsedFilesInQuickAccess = $false, # allows windows to show recently used files in your quick access pin list in file explorer
-
-  # network settings
-  [boolean]$enableNetworkDiscovery = $true, # enables network discovery on private & public networks
-  [boolean]$bypassNetworkOptions = $false, # if $true network options are skipped, this greatly increases run time of this script, you only need to run network options once for them to take
-
-  # performance settings
-  [boolean]$enableUltimatePerformance = $true, # enables windows' ultimate performance power plan, give you best possible performance but at the expense of power consumption
-  [boolean]$disableMonitorTimeout = $true, # prevents your monitors from turning themselves off after a certain number of inactive minutes
-  [int]$monitorTimeout = 15, # if $disableMonitorTimeout is set to false, this is the number of minutes of inactivity it will take before your monitors turn off
-  [boolean]$disableSleep = $true, # prevents your computer from entering sleep after a certain number of inactive minutes, highly reccomended for desktop computers
-  [int]$standbyTimeout = 60, # if $disableSleep is set to false, this is the number of minutes of inactivity it will take before your computer goes into standby/sleep
-  [boolean]$disableUsbSelectiveSuspend = $true, # this prevents windows from disconnecting usb devices after a certain amount of inactivity from said device
-
-  # start menu settings
-  [boolean]$showMorePinsOnStartMenu = $true, # gives more space for pinned apps vs suggested apps
-  [boolean]$showRecentlyAddedApps = $true, # puts entries at the bottom of the start menu for recently installed apps
-  [boolean]$showMostUsedApps = $true, # puts entries at the bottom of the start menu for most used apps
-  [boolean]$showRecentlyOpenedItems = $true, # this is techinically the setting for start and the task bar, I suggest you leave this enabled
-  [boolean]$showRecomendations = $false, # puts reccomended entries at the bottom of the start menu (tips, shortcuts, new apps, etc.)
-
-  # task bar settings
-  [boolean]$centerAlignTaskbar = $true, # center aligns icons and start on the task bar, $false = left align
-  [boolean]$showChatButtonOnTaskBar = $true, # hides the chat button on windows task bar
-  [boolean]$showSearchOnTaskbar = $false, # hides search ui on windows task bar
-  [int]$searchOnTaskbarType = 2, # if you set $showSearchOnTaskbar to $false it will use this version of search (1=compact | 2=search icon + label + box icon | 3=search icon + label)
-  [boolean]$showTaskViewButtonOnTaskbar = $false, # hides the task view button on windows task bar
-  [boolean]$showWidgetButtonOnTaskBar = $false, # hides the widgets button on windows task bar
-  [boolean]$showSecondsOnClock = $true, # shows seconds on system clock in the left had corner of the windows taskbar
-  [boolean]$showTaskbarOnAllDisplays = $false # hides taskbar on secondary displays
-)
-
 function quit () {
   write-host('closing program, press [enter] to exit...') -NoNewLine
   $Host.UI.ReadLine()
@@ -250,35 +203,35 @@ function editRegistry($config) {
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowTaskbarOnAllDisplays ? 1 : 0
     }
-    $centerAlignTaskbar = [pscustomobject]@{
+    $centerAlignTaskbarItems = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarAl"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.CenterAlignTaskbar ? 1 : 0
+      propertyValue = $config.Taskbar.CenterAlignTaskbarItems ? 1 : 0
     }
-    showSearchOnTaskbar = [pscustomobject]@{
+    showSearch = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
       property = "SearchboxTaskbarMode"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowSearchOnTaskbar ? $searchOnTaskbarType : 0
+      propertyValue = $config.Taskbar.ShowSearch ? $config.Taskbar.SearchStyle : 0
     }
-    showTaskViewButtonOnTaskbar = [pscustomobject]@{
+    showTaskViewButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowTaskViewButton"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowTaskViewButtonOnTaskbar ? 1 : 0
+      propertyValue = $config.Taskbar.ShowTaskViewButton ? 1 : 0
     }
-    showWidgetButtonOnTaskBar = [pscustomobject]@{
+    showWidgetButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarDa"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowWidgetButtonOnTaskBar ? 1 : 0
+      propertyValue = $config.Taskbar.ShowWidgetButton ? 1 : 0
     }
-    showChatButtonOnTaskBar = [pscustomobject]@{
+    showChatButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarMn"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowChatButtonOnTaskBar ? 1 : 0
+      propertyValue = $config.Taskbar.ShowChatButton ? 1 : 0
     }
     showSecondsOnClock = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
