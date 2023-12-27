@@ -240,7 +240,7 @@
 	- it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
 # wigui lists
-### updated blacklist
+### update blacklist
 ```
 CrystalDewWorld.CrystalDiskInfo
 CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
