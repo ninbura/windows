@@ -20,6 +20,7 @@
 - [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 - [software](#software)
+	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
 - [troubleshooting](#troubleshooting)
 	- [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 	- [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
