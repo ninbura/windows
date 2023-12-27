@@ -558,7 +558,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - `ShowSearch` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
   - `SearchStyle` [`1-3`] - If `ShowSearchOnTaskBar` is set to `true`, this will determine what style your search bar will display as (1=compact | 2=search icon + label + box icon | 3=search icon + label).
   - `ShowTaskViewButton` [`true`/`false`] - shows the taskview button on task bar
-  - `ShowWidgetButton` [`true`/`false`] - shows the widget button on task bar
+  - `ShowWidgetsButton` [`true`/`false`] - shows the widget button on task bar
   - `ShowChatButton` [`true`/`false`] - shows the chat button on your (through Microsoft Teams)
   - `ShowSecondsOnClock`- displays seconds on your system clock
 
@@ -607,7 +607,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
     "CenterAlignTaskbarItems": true,
     "ShowSearchOnTaskbar": false,
     "ShowTaskViewButton": false,
-    "ShowWidgetButton": false,
+    "ShowWidgetsButton": false,
     "ShowChatButton": true,
     "ShowSecondsOnClock": true
   }

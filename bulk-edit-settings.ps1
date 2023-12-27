@@ -37,9 +37,11 @@ function modifyRegistry($registryTweak) {
 function editRegistry($config) {
   Write-Host "Configuring settings..."
 
-  $registryTweaks = [ordered]@{
-    # administrative settings 
-    disableUac = @(
+  $registryTweaks = [ordered]@{}
+
+  # administrative settings 
+  if($null -ne $config?.Administrative?.DisableUacPopups){
+    $registryTweaks.DisableUacPopups = @(
       [pscustomobject]@{
         path = "HKLM:\Software\Microsoft\Windows\CurrentVersion\Policies\System"
         property = "ConsentPromptBehaviorAdmin"
@@ -59,9 +61,12 @@ function editRegistry($config) {
         propertyValue = $config.Administrative.DisableUacPopups ? 0 : 1
       }
     )
+  }
 
-    # cursor settings
-    disableEnhancedPointerPrecision = @(
+
+  # cursor settings
+  if($null -ne $config?.Cursor?.DisableEnhancedPointerPrecision){
+    $registryTweaks.DisableEnhancedPointerPrecision = @(
       [pscustomobject]@{
         path = "HKCU:\Control Panel\Mouse"
         property = "MouseSpeed"
@@ -81,21 +86,30 @@ function editRegistry($config) {
         propertyValue = $config.Cursor.DisableEnhancedPointerPrecision ? 0 : 10
       }
     )
-    disableEaseCursorMovement = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Cursor?.DisableEaseCursorMovement){
+    $registryTweaks.DisableEaseCursorMovement = [pscustomobject]@{
       path = "HKCU:\Control Panel\Cursors"
       property = "CursorDeadzoneJumpingSetting"
       propertyType = "DWord"
       propertyValue = $config.Cursor.DisableEaseCursorMovement ? 0 : 1
     }
+  }
 
-    # file explorer settings
-    enableCompactView = [pscustomobject]@{
+
+  # file explorer settings
+  if($null -ne $config?.FileExplorer?.EnableCompactView){
+    $registryTweaks.EnableCompactView = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "UseCompactMode"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.EnableCompactView ? 1 : 0
     }
-    moveRecycleBinToFileExplorer = @(
+  }
+
+  if($null -ne $config?.FileExplorer?.MoveRecycleBinToFileExplorer){
+    $registryTweaks.MoveRecycleBinToFileExplorer = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HideDesktopIcons\NewStartPanel"
         property = "{645FF040-5081-101B-9F08-00AA002F954E}"
@@ -115,51 +129,75 @@ function editRegistry($config) {
         propertyValue = $config.FileExplorer.MoveRecycleBinToFileExplorer ? 1 : 0
       }
     )
-    showFileExtensionsForKnownFileTypes = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.FileExplorer?.ShowFileExtensionsForKnownFileTypes){
+    $registryTweaks.ShowFileExtensionsForKnownFileTypes = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "HideFileExt"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowFileExtensionsForKnownFileTypes ? 0 : 1
     }
-    showFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.FileExplorer?.ShowFrequentlyUsedFoldersInQuickAccess){
+    $registryTweaks.ShowFrequentlyUsedFoldersInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowFrequentlyUsedFoldersInQuickAccess ? 1 : 0
     }
-    showHiddenFilesAndFolders = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.FileExplorer?.ShowHiddenFilesAndFolders){
+    $registryTweaks.ShowHiddenFilesAndFolders = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Hidden"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowHiddenFilesAndFolders ? 1 : 0
     }
-    showOfficeCloudFilesInQuickAccess = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.FileExplorer?.ShowOfficeCloudFilesInQuickAccess){
+    $registryTweaks.ShowOfficeCloudFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowCloudFilesInQuickAccess"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowOfficeCloudFilesInQuickAccess ? 1 : 0
     }
-    showRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.FileExplorer?.ShowRecentlyUsedFilesInQuickAccess){
+    $registryTweaks.ShowRecentlyUsedFilesInQuickAccess = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer"
       property = "ShowRecent"
       propertyType = "DWord"
       propertyValue = $config.FileExplorer.ShowRecentlyUsedFilesInQuickAccess ? 1 : 0
     }
+  }
 
-    # start menu settings
-    showMorePins = [pscustomobject]@{
+
+  # start menu settings
+  if($null -ne $config?.StartMenu?.ShowMorePins){
+    $registryTweaks.ShowMorePins = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_Layout"
       propertyType = "DWord"
       propertyValue = $config.StartMenu.ShowMorePins ? 1 : 0
     }
-    showRecentlyAddedApps = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.StartMenu?.ShowRecentlyAddedApps){
+    $registryTweaks.ShowRecentlyAddedApps = [pscustomobject]@{
       path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
       property = "HideRecentlyAddedApps"
       propertyType = "DWord"
       propertyValue = $config.StartMenu.ShowRecentlyAddedApps ? 0 : 1
     }
-    showMostUsedApps = @(
+  }
+
+  if($null -ne $config?.StartMenu?.ShowMostUsedApps){
+    $registryTweaks.ShowMostUsedApps = @(
       [pscustomobject]@{
         path = "HKCU:\Software\Policies\Microsoft\Windows\Explorer"
         property = "ShowOrHideMostUsedApps"
@@ -181,66 +219,104 @@ function editRegistry($config) {
         delete = $showMostUsedApps
       }
     )
-    showRecentlyOpenedItems = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.StartMenu?.ShowRecentlyOpenedItems){
+    $registryTweaks.ShowRecentlyOpenedItems = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_TrackDocs"
       propertyType = "DWord"
       propertyValue = $config.StartMenu.ShowRecentlyOpenedItems ? 1 : 0
     }
-    showRecomendations = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.StartMenu?.ShowRecomendations){
+    $registryTweaks.ShowRecomendations = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "Start_IrisRecommendations"
       propertyType = "DWord"
       propertyValue = $config.StartMenu.ShowRecomendations ? 1 : 0
     }
+  }
 
-    # services settings
 
-    # task bar settings
-    showTaskbarOnAllDisplays = [pscustomobject]@{
+  # services settings
+  if($null -ne $config?.Services?.DisableTelemetry){
+    $registryTweaks.DisableTelemetry = [pscustomobject]@{
+      path = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection"
+      property = "AllowTelemetry"
+      propertyType = "DWord"
+      propertyValue = $config.Services.DisableTelemetry ? 0 : 1
+    }
+  }
+
+  
+  # task bar settings
+  if($null -ne $config?.Taskbar?.ShowTaskbarOnAllDisplays){
+    $registryTweaks.ShowTaskbarOnAllDisplays = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "MMTaskbarEnabled"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowTaskbarOnAllDisplays ? 1 : 0
     }
-    $centerAlignTaskbarItems = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.CenterAlignTaskbarItems){
+    $registryTweaks.CenterAlignTaskbarItems = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarAl"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.CenterAlignTaskbarItems ? 1 : 0
     }
-    showSearch = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.ShowSearch){
+    $registryTweaks.ShowSearch = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
       property = "SearchboxTaskbarMode"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowSearch ? $config.Taskbar.SearchStyle : 0
     }
-    showTaskViewButton = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.ShowTaskViewButton){
+    $registryTweaks.ShowTaskViewButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowTaskViewButton"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowTaskViewButton ? 1 : 0
     }
-    showWidgetButton = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.ShowWidgetsButton){
+    $registryTweaks.ShowWidgetsButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarDa"
       propertyType = "DWord"
-      propertyValue = $config.Taskbar.ShowWidgetButton ? 1 : 0
+      propertyValue = $config.Taskbar.ShowWidgetsButton ? 1 : 0
     }
-    showChatButton = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.ShowChatButton){
+    $registryTweaks.ShowChatButton = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "TaskbarMn"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowChatButton ? 1 : 0
     }
-    showSecondsOnClock = [pscustomobject]@{
+  }
+
+  if($null -ne $config?.Taskbar?.ShowSecondsOnClock){
+    $registryTweaks.ShowSecondsOnClock = [pscustomobject]@{
       path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
       property = "ShowSecondsInSystemClock"
       propertyType = "DWord"
       propertyValue = $config.Taskbar.ShowSecondsOnClock ? 1 : 0
     }
   }
+  
 
+  # apply registry tweaks
   foreach ($key in $registryTweaks.keys) {
     $registryTweak = $registryTweaks[$Key]
 
