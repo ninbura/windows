@@ -18,9 +18,6 @@
 	16. [configure audio settings](#configure-audio-settings)
 	17. [configure rgb lighting](#configure-rgb-lighting)
 	[winget/wigui basics](#wingetwigui-basics)
-- [wigui lists](#wigui-lists)
-	- [update blacklist](#update-blacklist)
-	- [install list](#install-list)
 - [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 	- [preface](#preface)
@@ -37,6 +34,9 @@
 	- [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
 	- [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
 	- [troubleshooting high temperatures](#troubleshooting-high-temperatures) 
+- [wigui lists](#wigui-lists)
+	- [update blacklist](#update-blacklist)
+	- [install list](#install-list)
 # steps
 1. ### update & configure your motherboard's bios
 	- attach a >=32GB USB 2.0 flash drive to your computer
@@ -239,105 +239,6 @@
  		- for exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
 	- it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
-# wigui lists
-### update blacklist
-```
-CrystalDewWorld.CrystalDiskInfo
-CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
-CrystalDewWorld.CrystalDiskInfo.ShizukuEdition
-CrystalDewWorld.CrystalDiskMark
-CrystalDewWorld.CrystalDiskMark.ShizukuEdition
-Discord.Discord
-Docker.DockerDesktop
-Elgato.CameraHub
-EpicGames.EpicGamesLauncher
-Google.GoogleChrome
-Guru3D.RTSS
-Microsoft.AzureDataStudio
-Microsoft.DotNet.SDK.6
-Microsoft.DotNet.SDK.7
-Microsoft.Office
-Microsoft.Teams
-Microsoft.VCRedist.2005.x64
-Microsoft.VCRedist.2005.x86
-Microsoft.VCRedist.2008.x64
-Microsoft.VCRedist.2008.x86
-Microsoft.VCRedist.2010.x64
-Microsoft.VCRedist.2010.x86
-Microsoft.VCRedist.2012.x64
-Microsoft.VCRedist.2012.x86
-Microsoft.VCRedist.2013.x64
-Microsoft.VCRedist.2013.x86
-Mozilla.Firefox
-Mozilla.Firefox.DeveloperEdition
-Mozilla.Firefox.Nightly
-Obsidian.Obsidian
-OBSProject.OBSStudio
-REALiX.HWiNFO
-RiotGames.LeagueOfLegends.NA
-RiotGames.Valorant.NA
-Valve.Steam
-
-```
-### install list
-```
-7zip.7zip --ignore-security-hash
-Apple.iTunes --ignore-security-hash
-Discord.Discord --ignore-security-hash
-Docker.DockerDesktop --ignore-security-hash
-Elgato.4KCaptureUtility --ignore-security-hash
-Elgato.CameraHub --ignore-security-hash
-Elgato.StreamDeck --ignore-security-hash
-EpicGames.EpicGamesLauncher --ignore-security-hash
-Ferdium.Ferdium --ignore-security-hash
-Figma.Figma --ignore-security-hash
-Figma.FigmaAgent --ignore-security-hash
-FinalWire.AIDA64.Extreme --ignore-security-hash
-Google.Chrome --ignore-security-hash
-Google.ChromeRemoteDesktop --ignore-security-hash
-Google.PlatformTools --ignore-security-hash
-Guru3D.Afterburner --ignore-security-hash
-Guru3D.RTSS --ignore-security-hash
-Logitech.GHUB --ignore-security-hash
-Logitech.OptionsPlus --ignore-security-hash
-Logitech.UnifyingSoftware --ignore-security-hash
-Microsoft.AzureDataStudio --ignore-security-hash
-Microsoft.DotNet.SDK.Preview --ignore-security-hash
-Microsoft.PowerToys --ignore-security-hash
-Microsoft.Teams --ignore-security-hash
-Microsoft.VCRedist.2005.x64 --ignore-security-hash
-Microsoft.VCRedist.2005.x86 --ignore-security-hash
-Microsoft.VCRedist.2008.x64 --ignore-security-hash
-Microsoft.VCRedist.2008.x86 --ignore-security-hash
-Microsoft.VCRedist.2010.x64 --ignore-security-hash
-Microsoft.VCRedist.2010.x86 --ignore-security-hash
-Microsoft.VCRedist.2012.x64 --ignore-security-hash
-Microsoft.VCRedist.2012.x86 --ignore-security-hash
-Microsoft.VCRedist.2013.x64 --ignore-security-hash
-Microsoft.VCRedist.2013.x86 --ignore-security-hash
-Microsoft.VCRedist.2015+.x64 --ignore-security-hash
-Microsoft.VCRedist.2015+.x86 --ignore-security-hash
-Microsoft.VisualStudio.2022.Professional --ignore-security-hash
-Microsoft.VisualStudio.2022.Professional.Preview --ignore-security-hash
-Microsoft.VisualStudioCode --ignore-security-hash
-Mozilla.Firefox --ignore-security-hash
-Mozilla.Firefox.DeveloperEdition --ignore-security-hash
-Mozilla.Firefox.Nightly --ignore-security-hash
-NDI.NDI5Tools --ignore-security-hash
-Notion.Notion --ignore-security-hash
-Obsidian.Obsidian --ignore-security-hash
-OBSProject.OBSStudio --ignore-security-hash
-Proton.ProtonDrive --ignore-security-hash
-ProtonTechnologies.ProtonVPN --ignore-security-hash
-REALiX.HWiNFO --ignore-security-hash
-RiotGames.LeagueOfLegends.NA --ignore-security-hash
-RiotGames.Valorant.NA --ignore-security-hash
-Rufus.Rufus --ignore-security-hash
-Spotify.Spotify --ignore-security-hash
-TailwindLabs.TailwindCSS --ignore-security-hash
-TeamViewer.TeamViewer --ignore-security-hash
-Valve.Steam --ignore-security-hash
-```
 # winget/wigui basics
 - use the following powershell commands via windows terminal to search for & install software with winget (minus the brackets[])
 	- `winget search [software name/id]`
@@ -535,3 +436,102 @@ Valve.Steam --ignore-security-hash
 	- need an aftermarket heatsink for your m.2 drive
 	- need to install a fan pointing directly at your m.2 drive   
 	- have a defective drive and need to rma / exchange it
+# wigui lists
+### update blacklist
+```
+CrystalDewWorld.CrystalDiskInfo
+CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
+CrystalDewWorld.CrystalDiskInfo.ShizukuEdition
+CrystalDewWorld.CrystalDiskMark
+CrystalDewWorld.CrystalDiskMark.ShizukuEdition
+Discord.Discord
+Docker.DockerDesktop
+Elgato.CameraHub
+EpicGames.EpicGamesLauncher
+Google.GoogleChrome
+Guru3D.RTSS
+Microsoft.AzureDataStudio
+Microsoft.DotNet.SDK.6
+Microsoft.DotNet.SDK.7
+Microsoft.Office
+Microsoft.Teams
+Microsoft.VCRedist.2005.x64
+Microsoft.VCRedist.2005.x86
+Microsoft.VCRedist.2008.x64
+Microsoft.VCRedist.2008.x86
+Microsoft.VCRedist.2010.x64
+Microsoft.VCRedist.2010.x86
+Microsoft.VCRedist.2012.x64
+Microsoft.VCRedist.2012.x86
+Microsoft.VCRedist.2013.x64
+Microsoft.VCRedist.2013.x86
+Mozilla.Firefox
+Mozilla.Firefox.DeveloperEdition
+Mozilla.Firefox.Nightly
+Obsidian.Obsidian
+OBSProject.OBSStudio
+REALiX.HWiNFO
+RiotGames.LeagueOfLegends.NA
+RiotGames.Valorant.NA
+Valve.Steam
+
+```
+### install list
+```
+7zip.7zip --ignore-security-hash
+Apple.iTunes --ignore-security-hash
+Discord.Discord --ignore-security-hash
+Docker.DockerDesktop --ignore-security-hash
+Elgato.4KCaptureUtility --ignore-security-hash
+Elgato.CameraHub --ignore-security-hash
+Elgato.StreamDeck --ignore-security-hash
+EpicGames.EpicGamesLauncher --ignore-security-hash
+Ferdium.Ferdium --ignore-security-hash
+Figma.Figma --ignore-security-hash
+Figma.FigmaAgent --ignore-security-hash
+FinalWire.AIDA64.Extreme --ignore-security-hash
+Google.Chrome --ignore-security-hash
+Google.ChromeRemoteDesktop --ignore-security-hash
+Google.PlatformTools --ignore-security-hash
+Guru3D.Afterburner --ignore-security-hash
+Guru3D.RTSS --ignore-security-hash
+Logitech.GHUB --ignore-security-hash
+Logitech.OptionsPlus --ignore-security-hash
+Logitech.UnifyingSoftware --ignore-security-hash
+Microsoft.AzureDataStudio --ignore-security-hash
+Microsoft.DotNet.SDK.Preview --ignore-security-hash
+Microsoft.PowerToys --ignore-security-hash
+Microsoft.Teams --ignore-security-hash
+Microsoft.VCRedist.2005.x64 --ignore-security-hash
+Microsoft.VCRedist.2005.x86 --ignore-security-hash
+Microsoft.VCRedist.2008.x64 --ignore-security-hash
+Microsoft.VCRedist.2008.x86 --ignore-security-hash
+Microsoft.VCRedist.2010.x64 --ignore-security-hash
+Microsoft.VCRedist.2010.x86 --ignore-security-hash
+Microsoft.VCRedist.2012.x64 --ignore-security-hash
+Microsoft.VCRedist.2012.x86 --ignore-security-hash
+Microsoft.VCRedist.2013.x64 --ignore-security-hash
+Microsoft.VCRedist.2013.x86 --ignore-security-hash
+Microsoft.VCRedist.2015+.x64 --ignore-security-hash
+Microsoft.VCRedist.2015+.x86 --ignore-security-hash
+Microsoft.VisualStudio.2022.Professional --ignore-security-hash
+Microsoft.VisualStudio.2022.Professional.Preview --ignore-security-hash
+Microsoft.VisualStudioCode --ignore-security-hash
+Mozilla.Firefox --ignore-security-hash
+Mozilla.Firefox.DeveloperEdition --ignore-security-hash
+Mozilla.Firefox.Nightly --ignore-security-hash
+NDI.NDI5Tools --ignore-security-hash
+Notion.Notion --ignore-security-hash
+Obsidian.Obsidian --ignore-security-hash
+OBSProject.OBSStudio --ignore-security-hash
+Proton.ProtonDrive --ignore-security-hash
+ProtonTechnologies.ProtonVPN --ignore-security-hash
+REALiX.HWiNFO --ignore-security-hash
+RiotGames.LeagueOfLegends.NA --ignore-security-hash
+RiotGames.Valorant.NA --ignore-security-hash
+Rufus.Rufus --ignore-security-hash
+Spotify.Spotify --ignore-security-hash
+TailwindLabs.TailwindCSS --ignore-security-hash
+TeamViewer.TeamViewer --ignore-security-hash
+Valve.Steam --ignore-security-hash
+```
