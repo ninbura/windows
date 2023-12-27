@@ -24,7 +24,7 @@
 	17. [configure rgb lighting](#configure-rgb-lighting)
 	[winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
-	- [preface](#preface)
+	- [drivers preface](#drivers-preface)
 	- [intel](#intel)
 	- [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
 	- [nvidia](#nvidia)
@@ -267,7 +267,7 @@
 	- it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
 	- for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
 # drivers
-### preface
+### drivers preface
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
 - some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
 - take note of your motherboard's model number, should be listed on the box it came in.
