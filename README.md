@@ -21,7 +21,9 @@
 - [drivers](#drivers)
 	- [preface](#preface)
 	- [intel](#intel)
-	- [amd cpu/chipset & gpu drivers](#amd-cpuchipset--gpu-drivers)
+	- [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
+	- [nvidia](#nvida)
+	- [other drivers](#other-drivers)
 - [software](#software)
 	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
 	- [winget](#winget)
@@ -301,8 +303,8 @@
 	- bluetooth driver
 	- lan driver
 	- wan driver
-### [amd cpu/chipset & gpu drivers](<https://www.amd.com/en/support>)
-### [nvidia drivers](<https://www.nvidia.com/download/index.aspx>)
+### [amd cpu/chipset & gpu](<https://www.amd.com/en/support>)
+### [nvidia](<https://www.nvidia.com/download/index.aspx>)
 - *Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!*
 - always select **custom install** and then **clean install**
 - open nvidia control panel ([shift+right click] desktop)
