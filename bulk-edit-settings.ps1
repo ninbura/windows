@@ -396,11 +396,6 @@ function configureOtherSettings($config) {
 function main {
   Write-Host "Starting process..."
   $config = Get-Content -Raw -Path "$PSScriptRoot\config.json" | ConvertFrom-Json
-
-  write-host $config
-  write-host $($config)?.Administrative
-  quit
-
   editRegistry $config
   configureOtherSettings $config
   Write-Host "`n`nSettings have been configured, please restart your computer." -ForegroundColor green
