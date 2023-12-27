@@ -18,6 +18,7 @@
 	16. [configure audio settings](#configure-audio-settings)
 	17. [configure rgb lighting](#configure-rgb-lighting)
 	[winget/wigui basics](#wingetwigui-basics)
+- [winget/wigui basics](#wingetwigui-basics)
 - [drivers](#drivers)
 	- [preface](#preface)
 	- [intel](#intel)
