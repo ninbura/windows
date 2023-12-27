@@ -393,7 +393,6 @@
 ### old school
 - [**adobe creative cloud**](<https://www.adobe.com/creativecloud.html>) (photoshop, premiere, etc.)
 - [**advanced scene switcher**](<https://github.com/WarmUpTill/SceneSwitcher/releases>) (obs plugin)
-- **appstudio** (reporting client)
 - [**battlenet launcher**](<https://us.shop.battle.net/en-us>) (blizzard's game launcher)
 - [**crystaldiskinfo**](<https://crystalmark.info/en/software/crystaldiskinfo/>) (check disk hard drive health)
 - [**crystaldiskmark**](<https://crystalmark.info/en/software/crystaldiskmark/>) (test hard drive speed)
