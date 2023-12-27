@@ -372,7 +372,7 @@
     - before using this flag you must first run `winget settings --enable InstallerHashOverride` in an elevated console
     - ignores an apps "security hash"
     - sometimes a app developer's application building pipeline erros on the winget step, so the hash is not updated.
-    - You can tell winget that you don't care that the hash doesn't match, and install anyways.
+    - You can tell winget that you don't care that the hash doesn't match, and install the application anyways.
     - Note that this is techinically a security risk as someone could hijack a developer's pipeline and inject their own application.
     - I use it all the time 😅
   - `--force`
