@@ -298,6 +298,7 @@
   - you should see one or many of the aformentioned intel chipset drivers
 - communication drivers
   - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
+  - Should go without saying but... if your motherboard doesn't have bluetooth or wifi capabilities, you aren't going to see drivers listed for them.
   - bluetooth
   - lan (ethernet / wired internet driver)
   - wan (wifi driver)
