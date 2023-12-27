@@ -292,6 +292,8 @@
 - [rme drivers](<https://www.rme-usa.com/downloads.html>) (rme audio interfaces)
 - [tx401](<https://www.tp-link.com/us/support/download/tx401/>) (10g ethernet pcie card)
 # winget/wigui basics
+### winget preface
+You can call winget in cmd, powershell, and powershell 7 terminals. I would recommend installing and using powershell 7 as it is the most modern shell for Windows. If you don't already have powershell 7 you can install it using winget in powershell. If you've followed the steps higher up in this readme you would have already done that 😅
 ### searching for apps
 - to search for applications you can install with winget you use the `search` keyword
 	- `winget search [app name]`
@@ -305,6 +307,31 @@
 	- `Discord.Discord`
 	- `Valve.Steam`
 ### installing apps
+- to install applications using winget you use the `install` keyword
+	- `winget install [app id]`
+	- you can technically use the `name` of an application instead of the `id`. But things get complicated with spaces in app names, so I wouldn't recommend it.
+- install examples
+	- `winget install Google.GoogleChrome`
+	- `winget install Discord.Discord`
+	- `winget install Valve.Steam`
+- When installing applications with winget, some applications will need to be installed in an elevated terminal, while others you can / should use an non-elevated terminal.
+	- elevated = run as administrator
+- while it's not always needed, there are some useful flags you can tack onto then end of `winget install` commands.
+	- `--ignore-security-hash` 
+		- before using this flag you must first run `winget settings --enable InstallerHashOverride` in an elevated console
+		- ignores an apps "security hash"
+		- sometimes a app developers application building pipeline erros on the winget step, so the hash is not updated.
+		- You can tell winget that you don't care that the hash doesn't match, and install anyways.
+		- Note that this is techinically a security risk as someone could hijack a developers pipeline and inject their own application.
+		- I use it all the time 😅
+	- `--force`
+		- Sometimes winget refuses to install an app because it thinks it's already installed, or it thinks a newer version is installed. Sometimes the above is true, sometimes it's not.
+		- Using this flag bypasses issues like this, and forces winget to install the specified application.
+		- Note that this will re-install an application 100% of the time. So, backup your settings in an app you already have installed if you're going to use this flag.
+- flag usage examples
+	- `winget install Mozilla.Firefox.Nightly --ignore-security-hash`
+	- `winget install Microsoft.DotNet.SDK.6 --force`
+	- `winget install Microsoft.DotNet.SDK.7 --ignore-security-hash --force`
 ### updating apps
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
