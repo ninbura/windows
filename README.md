@@ -371,9 +371,9 @@
   - `--ignore-security-hash`
     - before using this flag you must first run `winget settings --enable InstallerHashOverride` in an elevated console
     - ignores an apps "security hash"
-    - sometimes a app developers application building pipeline erros on the winget step, so the hash is not updated.
+    - sometimes a app developer's application building pipeline erros on the winget step, so the hash is not updated.
     - You can tell winget that you don't care that the hash doesn't match, and install anyways.
-    - Note that this is techinically a security risk as someone could hijack a developers pipeline and inject their own application.
+    - Note that this is techinically a security risk as someone could hijack a developer's pipeline and inject their own application.
     - I use it all the time 😅
   - `--force`
     - Sometimes winget refuses to install an app because it thinks it's already installed, or it thinks a newer version is installed. Sometimes the above is true, sometimes it's not.
