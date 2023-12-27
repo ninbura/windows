@@ -112,14 +112,16 @@
 9. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
    - run the following commands
-     - `new-item -path "/repos" -itemtype directory`
+     - `new-item -path "/repos" -itemtype "directory"`
      - `cd /repos`
      - `git clone https://github.com/ninbura/windows`
-   - open `c:/repos/windows/bulk-edit-settings.ps1` in desired text editor
-   - configure setting parameters at top of file as desired
-   - save and close file
-   - right click `run-me.bat` & select "run as administrator"
-   - wait for script to finish then **restart your computer**
+     - `new-item -path "/repos/windows/config.json" -itemtype "file"`
+   - open `c:/repos/windows/config.json` in desired text editor
+   - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
+   - save and close `config.json`
+   - Note that it is advandtageous to maintain and backup your `config.json` files somewhere, so you can easily load it in the future.
+   - right click `/repos/windows/run-me.bat` & select "run as administrator"
+   - Wait for the script to finish running, then **restart your computer**.
 10. ### manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
