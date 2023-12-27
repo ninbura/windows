@@ -520,7 +520,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 # bulk-edit-settings configuration example / setting descriptions
 
-## setting descriptions
+### setting descriptions
 
 - administrative
   - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
@@ -558,7 +558,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - `ShowSearchOnTaskBar` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
   - `SearchOnTaskbarType` [`1-3`] -
 
-## config.json example
+### config.json example
 
 ```
 {
