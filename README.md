@@ -360,19 +360,9 @@
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
 ### **wsl** (windows subsystem for linux)
-- install **wsl** the hard way (required for ssh capability)
-	- download & install the [**wsl2 exe**](https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
-	- run the following command in powershell
-		- `wsl --set-default-version 2`
-	- **restart your pc**
-	- `winget search ubuntu`
-	- take note of the id of the linux distribution you want to install & install via winget
-	- for exmample  
-		- `winget canonical.ubuntu.2204 --ignore-security-hash`  
-- installing **wsl** the easy way
-	- run the following command in an **elevated** powershelkl  console
+- run the following command in an **elevated** powershelkl  console
 	- `wsl --install`
-	- **restart your computer**
+- **restart your computer**
 ### winget
 - admin elevated terminal required
 	- **ffmpeg** (cli media tool)
