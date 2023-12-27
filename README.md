@@ -29,7 +29,7 @@
   - [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
   - [nvidia](#nvidia)
   - [other drivers](#other-drivers)
-- [winget basics](#wingetwigui-basics)
+- [winget basics](#winget-basics)
   - [winget preface](#winget-preface)
   - [searching for apps](#searching-for-apps)
   - [install apps](#installing-apps)
@@ -58,7 +58,7 @@
    - format your flash drive as fat32
      - if your flash drive is over 32GB you will need to use [this tool](http://ridgecrop.co.uk/index.htm?guiformat.htm)
      - Otherwise, just follow [this tutorial](https://www.asus.com/support/FAQ/1044735/).
-   - take note of your motherboard's model number, should be listed on the box it came in.
+   - Take note of your motherboard's model number, should be listed on the box it came in.
    - search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
    - copy the bios file to the flash drive
    - enter bios (mash [delete] key while computer is restarting)
@@ -78,9 +78,9 @@
    - attach an 8gb+ flash drive to your computer
    - download & install [rufus](https://rufus.ie/en/)
    - use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](https://pureinfotech.com/rufus-create-bootable-windows-11-usb/))
-   - before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
-   - despite what the following video says, you **do** want to provide the product key up front so the correct version of windows is installed.
-   - if you don't have a product key yet you might be able to manually select windows 11 pro for workstations as the target operating system. But I've come accross times where "for workstations" isn't in the operating system list.
+   - Before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
+   - Despite what the following video says, you **do** want to provide the product key up front so the correct version of windows is installed.
+   - If you don't have a product key yet you might be able to manually select windows 11 pro for workstations as the target operating system. But I've come accross times where "for workstations" isn't in the operating system list.
    - undergo the windows setup process ([tutorial](https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117) | start video at 1:57)
 4. ### verify that windows is activated
    - open settings & navigate to `system > activation`
@@ -91,7 +91,7 @@
    - check for updates & wait for them to download/install
    - **restart your computer**
    - check for updates again
-   - if you have more updates and pc requests restarting again, do so.
+   - If you have more updates and pc requests restarting again, do so.
    - repeat until windows states that everything is up-to-date
 6. ### update microsoft store apps
    - open the microsoft store via your start menu
@@ -138,10 +138,10 @@
       - expand "all networks" drop down
       - enable "public folder sharing"
       - enable "password protected sharing"
-    - configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
+    - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
 11. ### download/install system drivers
     - see [drivers](#drivers) list below
-    - note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
+    - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
 12. ### wigui - install winget auto update & bulk install applications
@@ -190,7 +190,7 @@
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
-    - this program should have been installed via wigui, just search for it in start and open it.
+    - This program should have been installed via wigui, just search for it in start and open it.
     - open settings (should be a button on the left hand side)
     - enable startup at launch
       - click on the "general" tab
@@ -221,7 +221,7 @@
           - cpu load temp should be >=98c
           - gpu load temp should be >=85c
       - with modern amd & intel cpus with even high end cooling you can still reach 100c
-      - while this is technically safe because they'll throttle, it's best if you stay below 100c.
+      - While this is technically safe because they'll throttle, it's best if you stay below 100c.
       - there are all in one water coolers large enough to prevent even the highest end CPUs from throttling
       - I suggest Artic's "liquid freezer line"
         - 360/420mm for intel i7 & amd x700
@@ -240,14 +240,14 @@
         - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
       - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 15. ### download/install remaining software
-    - see [software](#software) list below
+    - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
-    - note that every piece of software you want may not have been included in `.install-list.txt` and or may not be listed below. said lists are composed of items relevant to me and my direct peers.
-    - software in list below is software that can not currently be installed properly via wigui
-    - it is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
-      - see [winget basics](#wingetwigui-basics) for instructions on how to use winget/wigui
-    - if software isn't available via winget, install software the old fashioned way 😭
+    - Note that every piece of software you want may not have been included in your install list, and or may not be listed in the [software](#software) section below. Said lists are composed of items relevant to me and my direct peers.
+    - software in the [software](#software) section below is software that can not currently be installed properly via wigui
+    - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
+      - see [winget basics](#winget-basics) for instructions on how to use winget
+    - If software isn't available via winget, install software the old fashioned way 😭
 16. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
@@ -267,17 +267,17 @@
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
-      - for exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
-    - it's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
-    - for each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
+      - For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
+    - It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
+    - For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
 
 # drivers
 
 ### drivers preface
 
 - please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
-- some drivers will need be downloaded from your motherboard's support page, others are typically universal. if your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
-- take note of your motherboard's model number, should be listed on the box it came in.
+- Some drivers will need be downloaded from your motherboard's support page, others are typically universal. If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions. To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
+- Take note of your motherboard's model number, should be listed on the box it came in.
 - search for your motherboard via it's model number on google & locate the support page
 - drivers you typically need to grab from your motherboards support page
   - audio driver
@@ -321,7 +321,7 @@
   - select "change resolution" in left hand side menu & verify that all monitors are
     - set to the correct resolution & refresh rate
     - set to full rgb color mode
-    - if color mode is partial and greyed out; override settings with "use nvidia color settings".
+    - If color mode is partial and greyed out; override settings with "use nvidia color settings".
 - after driver install it's likely that your windows audio settings got borked (see [configure audio settings](#configure-audio-settings) for fix)
 
 ### other drivers
@@ -333,7 +333,7 @@
 - [rme drivers](https://www.rme-usa.com/downloads.html) (rme audio interfaces)
 - [tx401](https://www.tp-link.com/us/support/download/tx401/) (10g ethernet pcie card)
 
-# winget/wigui basics
+# winget basics
 
 ### winget preface
 
@@ -367,11 +367,11 @@
   - `winget install Valve.Steam`
 - When installing applications with winget, some applications will need to be installed in an elevated terminal, while others you can / should install in an non-elevated terminal.
   - elevated = run as administrator
-- while it's not always needed, there are some useful flags you can tack onto then end of `winget install` commands.
+- While it's not always needed, there are some useful flags you can tack onto then end of `winget install` commands.
   - `--ignore-security-hash`
     - before using this flag you must first run `winget settings --enable InstallerHashOverride` in an elevated console
     - ignores an apps "security hash"
-    - sometimes a app developer's application building pipeline erros on the winget step, so the hash is not updated.
+    - Sometimes a app developer's application building pipeline erros on the winget step, so the hash is not updated.
     - You can tell winget that you don't care that the hash doesn't match, and install the application anyways.
     - Note that this is techinically a security risk as someone could hijack a developer's pipeline and inject their own application.
     - I use it all the time 😅
@@ -430,7 +430,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
     - `winget install tailwindlabs.tailwindcss --ignore-security-hash`
 - standard terminal
   - **.net sdks** (micorosft .net runtime(s) for dev)
-    - you have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. for example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
+    - You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
     - `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
     - `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
   - **docker desktop** (running docker images for dev)
@@ -472,7 +472,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 - if computer is bootlooping
   - re-flash bios using advanced flashing utility
-  - consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
+  - Consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
   - typically involves
     - putting bios file on flash drive
     - naming bios file something specific
@@ -501,7 +501,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - mounted your cpu cooler incorrectly
     - clean, re-paste, and re-seat the heatsink / water block
   - didn't plug in your fans / fans are defective & not running
-  - have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](https://www.youtube.com/watch?v=ZoWlNIzOO0E) | should be similar for most motherboards).
+  - Have your fan curve misconfigured, causing fans/pumps to not run (see fan curve [tutorial](https://www.youtube.com/watch?v=ZoWlNIzOO0E) | should be similar for most motherboards).
   - used an inadequate cpu cooler
   - have major airflow problems in your case
   - are running your pc in an overly hot environment (90f+)
