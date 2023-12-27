@@ -299,8 +299,8 @@
 - communication drivers
   - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
   - bluetooth
-  - lan
-  - wan
+  - lan (ethernet / wired internet driver)
+  - wan (wifi driver)
 - sata drivers
   - only required if you're using sata based storage
   - typically labeled as "intel rapid storage technology"
