@@ -47,7 +47,7 @@
   - [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 - [bulk edit settings configuration](#bulk-edit-settings-configuration)
   - [setting descriptions](#setting-descriptions)
-  - [config.json example](#config.json-example)
+  - [config.json example](#configjson-example)
 - [wigui lists](#wigui-lists)
   - [update blacklist](#update-blacklist)
   - [install list](#install-list)
