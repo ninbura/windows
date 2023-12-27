@@ -27,6 +27,7 @@
   17. [configure rgb lighting](#configure-rgb-lighting)
 - [drivers](#drivers)
   - [drivers preface](#drivers-preface)
+  - [motherboard specific drivers](#motherboard-specific-drivers)
   - [intel](#intel)
   - [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
   - [nvidia](#nvidia)
