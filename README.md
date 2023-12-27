@@ -21,7 +21,7 @@
 - [drivers](#drivers)
 	- [preface](#preface)
 	- [intel](#intel)
-	- [amd cpu/chipset & gpu drivers](#amd-cpu-chipset-gpu-drivers)
+	- [amd cpu/chipset & gpu drivers](#amd-cpuchipset--gpu-drivers)
 - [software](#software)
 	- [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
 	- [winget](#winget)
