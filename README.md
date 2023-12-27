@@ -310,6 +310,8 @@
   - wan driver
 
 ### [amd cpu/chipset & gpu](https://www.amd.com/en/support)
+- I would uncheck installing amd's powerplan when install AMD chipset/cpu drivers
+- you'll also want to select the "clean install" option when installing AMD gpu drivers.
 
 ### [nvidia](https://www.nvidia.com/download/index.aspx)
 
