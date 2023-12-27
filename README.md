@@ -289,9 +289,10 @@
 		- typically labeled as "intel rapid storage technology" 
 - latest intel device drivers 
 	- check motherboard page to make sure your motherboard uses intel for these devices
-	- [intel bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
-	- [intel lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
-	- [intel wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
+	- [bluetooth](<https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html>)
+	- [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
+	- [wan](<https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html>)
+	- [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
 - drivers you will need from your motherboard's support page if said devices aren't intel
 	- bluetooth driver
 	- lan driver
