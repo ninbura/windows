@@ -1,4 +1,5 @@
 # summary
+
 This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructinos properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. For applications that fall out of winget's domain, I've provided convenient linked lists for popular applications. As well as linked lists for many drivers.
 
 # table of contents
@@ -129,7 +130,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - save and close `config.json`
    - Note that it is advandtageous to maintain and backup your `config.json` files somewhere, so you can easily load it in the future.
    - right click `/repos/windows/run-me.bat` & select "run as administrator"
-   - Note that I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements. To update the `bulk-edit-settings.ps1` script to hand said new options, you simply need to pull the repository in its existing location on your pc.
+   - Note that I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements. To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull`` the repository in its existing location on your pc using git.
      - `cd /repos/windows`
      - `git pull`
    - Wait for the script to finish running, then **restart your computer**.
@@ -288,6 +289,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
 - search for your motherboard via it's model number on google & locate the support page
 
 ### motherboard specific drivers
+
 - look for the following drivers on your motherboard's support/driver page
 - audio drivers
   - usually labeled as realtek
@@ -303,7 +305,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
     - intel hid
   - you should see one or many of the aformentioned intel chipset drivers
 - communication drivers
-  - notes 
+  - notes
     - If your motherboards support/driver page states that the following drivers are Intel drivers; see below in the Intel section for the latest Intel communication drivers, as opposed to downloading the outdated ones on your motherboards support/driver page.
     - Should go without saying but... if your motherboard doesn't have bluetooth or wifi capabilities, you aren't going to see drivers listed for them.
   - drivers
@@ -323,6 +325,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
 - [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
 
 ### [amd cpu/chipset & gpu](https://www.amd.com/en/support)
+
 - I would uncheck installing amd's powerplan when install AMD chipset/cpu drivers
 - you'll also want to select the "clean install" option when installing AMD gpu drivers.
 
