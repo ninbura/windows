@@ -350,6 +350,13 @@
 	- `winget update Valve.Steam`
 - When updating applications with winget, some applications will need to be updated in an elevated terminal, while others you can / should update in an non-elevated terminal.
 	- elevated = run as administrator
+### uninstalling apps
+- to uninstall applications using winget you use the `uninstall` keyword
+	- `winget uninstall [app id]`
+- uninstall examples
+	- `winget uninstall Google.GoogleChrome`
+	- `winget uninstall Discord.Discord`
+	- `winget uninstall Valve.Steam`
 # software
 - please read [download/install remaining software](#downloadinstall-remaining-software)
 ### **wsl** (windows subsystem for linux)
