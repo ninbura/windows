@@ -20,6 +20,8 @@
       - [bulk install applications](#bulk-install-applications)
   13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
+      - [cpu & gpu](#cpu--gpu)
+      - [m.2 drives](#m2-drives)
   15. [download/install remaining software](#downloadinstall-remaining-software)
   16. [configure audio settings](#configure-audio-settings)
   17. [configure rgb lighting](#configure-rgb-lighting)
@@ -203,7 +205,7 @@
     - hit "ok" to close settings dialog
     - minimize msi afterburner
 14. ### verify that system temperatures are in-check
-    - cpu & gpu
+    - #### cpu & gpu
       - temps are model dependent
       - higher end components run hotter than lower end components
       - lower temp is better but as long as things are generally within listed ranges you should be fine
@@ -226,7 +228,7 @@
         - 420mm for intel i9 & amd X900
       - for i5 cpus & below I suggest purchasing the **thermalright peerless assassin** air cooler
       - if temps for cpu or gpu are high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-    - m.2 drives
+    - #### m.2 drives
       - download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
         - hard drive monitor & benchmark
         - get "Shizuku" edition for a good time ☺️
