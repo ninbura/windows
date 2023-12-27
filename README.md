@@ -564,6 +564,8 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### config.json example
 
+Note that if a setting is ommited from the configuration it will simply skip the logic to set that setting. So, you don't necessarily have to set everything to true or false, if you want to use Windows' default configuration for any given setting, simly omit it from `config.json`.
+
 ```
 {
   "Administrative": {
