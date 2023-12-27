@@ -133,11 +133,15 @@
  	- you don't need to restart your computer when prompted after every single driver
 	- restart your computer after installing all drivers
 12. ### download, install, & run winget-autoupdate (bulk software installer/updater)
+	- #### preface
+		- wigui is a an application that uses winget (cli application tool) in the background via a user interface
+		- winget auto update can be installed via wigui, and once installed it'll keep most applications installed via wigui/winget automatically updated.
+	- #### install winget auto update
 	- download & run [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
 	- move `wigui.exe` to your documents folder & run it
 	- click on the "configure wau" tab (wau = winget-autoupdate)
  		- wau aka winget-autoupdate updates all winget packages that have updates every time you login. Long story short, you almost never have to manually update software again.
- 		- load `c:/repos/windows/.blacklist.txt`
+ 		- you'll want to create and load an update blacklist 
 		- reference image below for configuration on this tab
 		- ![image](https://github.com/ninbura/install-and-configure-microsoft-windows/assets/58058942/acbfc1f2-0846-466e-ab07-a00b26a4cb7a)
 		- to modify update blacklist going forward edit the following txt file
