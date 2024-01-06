@@ -26,9 +26,7 @@ function modifyRegistry($registryTweak) {
 
     $currentPropertyValue = (Get-ItemProperty -Path $registryTweak.path).$($registryTweak.property)
     
-    if($currentPropertyValue -ne $registryTweak.propertyValue) {
-      New-ItemProperty -Path $registryTweak.path -Name $registryTweak.property -PropertyType $registryTweak.propertyType -Value $registryTweak.propertyValue -Force -Verbose
-    } elseif($null -eq $currentPropertyValue) {
+    if($currentPropertyValue -ne $registryTweak.propertyValue -or $null -eq $currentPropertyValue) {
       New-ItemProperty -Path $registryTweak.path -Name $registryTweak.property -PropertyType $registryTweak.propertyType -Value $registryTweak.propertyValue -Force -Verbose
     }
   }
@@ -176,6 +174,14 @@ function editRegistry($config) {
       propertyValue = $config.FileExplorer.ShowOfficeCloudFilesInQuickAccess ? 1 : 0
     }
   }
+
+  # if($null -ne $($config)?.FileExplorer?.ShowQuickAccessInHome) {
+  #   $registryTweaks.ShowQuickAccessInHome = [pscustomobject]@{
+  #     path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\HomeFolderMSGraph_WithRecommendations\NameSpace\DelegateFolders\{3936E9E4-D92C-4EEE-A85A-BC16D5EA0819}"
+  #     property = "(Default)"
+  #     propertyValue = "Frequent Places Folder"
+  #   }
+  # }
 
   # start menu settings
   if($null -ne $($config)?.StartMenu?.ShowMorePins){
