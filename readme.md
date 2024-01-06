@@ -130,7 +130,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - save and close `config.json`
    - right click `/repos/windows/run-me.bat` & select "run as administrator"
    - Wait for the script to finish running, then **restart your computer**.
-   - some notes that 
+   - ### some notes
      - It's advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
      - I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements.
      - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
