@@ -553,7 +553,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
   - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
   - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
-  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Supposed to make it so pinned folders show in the File Explorer Home, but kinda bugged.
+  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Supposed to make it so pinned folders show in the File Explorer Home, but kinda it's kind of bugged. May require interaction with the gui to get working properly.
   - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
   - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
   - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
