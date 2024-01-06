@@ -128,12 +128,14 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - open `c:/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
-   - Note that it is advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
    - right click `/repos/windows/run-me.bat` & select "run as administrator"
    - Wait for the script to finish running, then **restart your computer**.
-   - Note that I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements. To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
-     - `cd /repos/windows`
-     - `git pull`
+   - some notes that 
+     - It's advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
+     - I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements.
+     - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
+       - `cd /repos/windows`
+       - `git pull`
 10. ### manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
