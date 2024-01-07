@@ -327,7 +327,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
 
 ### [amd cpu/chipset & gpu](https://www.amd.com/en/support)
 
-- I would uncheck installing amd's powerplan when install AMD chipset/cpu drivers
+- I would uncheck installing amd's powerplan when installing AMD chipset/cpu drivers
 - you'll also want to select the "clean install" option when installing AMD gpu drivers.
 
 ### [nvidia](https://www.nvidia.com/download/index.aspx)
