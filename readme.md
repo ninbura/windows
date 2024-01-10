@@ -205,12 +205,12 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - right click the WiGui exe & select "Run as administrator"
         - click the "Import from file" button & select your `.admin-install-list.txt`
         - click "Install"
-        - wait for the process to finish
+        - wait for the process to finish & close WiGui
       - installing standard install list applications
         - double click the WiGui exe
         - click the "Import from file" button & select your `.standard-install-list.txt`
         - click "Install"
-        - wait for the process to finish
+        - wait for the process to finish & close WiGui
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
