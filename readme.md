@@ -178,9 +178,9 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - Add and remove applications from these lists as you see fit, then save the files, and close them if you please.
           - see [winget basics](#wingetwigui-basics) for more details on this step
           - do not remove the following applications from your install list for the sake of later steps in this tutorial
-            - FinalWire.AIDA64.Extreme
-            - Guru3D.Afterburner
-            - REALiX.HWiNFO
+            - `FinalWire.AIDA64.Extreme`
+            - `Guru3D.Afterburner`
+            - `REALiX.HWiNFO`
       - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
     - #### install winget auto update
       - download [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
