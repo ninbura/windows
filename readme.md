@@ -1,6 +1,6 @@
 # summary
 
-This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructinos properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. I've provided convenient linked lists for popular applications, for applications that fall out of winget's domain. As well as linked lists for many common drivers.
+This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructions properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. I've provided convenient linked lists for popular applications, for applications that fall out of winget's domain. As well as linked lists for many common drivers.
 
 # table of contents
 
@@ -167,7 +167,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
     - #### populate application update blacklist
       - we already created `.update-blacklist.txt` in step #9
       - said blacklist is located at `/repos/windows/.update-blacklist.txt` unless you changed directories per your preference
-      - Open `.update-blacklist.txt`, paste the list found at [here](#update-blacklist) into it, and save it.
+      - Open `.update-blacklist.txt`, paste the list found [here](#update-blacklist) into it, and save it.
       - You can choose to maintain this blacklist document yourself, or just piggyback off of the one in this readme.
       - you want to blacklist apps that consistently fail to update via winget-autoupdate
       - note that once loaded, you need to modify the following file to add applications to your currently active blacklist
@@ -183,7 +183,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
     - #### populate application install list
       - we already created `.install-list.txt` in step #9
       - said install list is located at `/repos/windows/.install-list.txt` unless you changed directories per your preference
-      - Open your `.install-list.txt`, and paste the list found at [here](#install-list) into it.
+      - Open your `.install-list.txt`, and paste the list found [here](#install-list) into it.
       - Add and remove applications from this list as you see fit, then save the documnet.
         - see [winget basics](#wingetwigui-basics) for more details on this step
         - do not remove the following applications from your install list for the sake of later steps in this tutorial
