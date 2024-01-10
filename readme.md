@@ -458,16 +458,16 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### microsoft store
 
-- [iCloud](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
-- [Cisco AnyConnect](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
+- [**Adobe Creative Cloud**](https://apps.microsoft.com/store/detail/XPDLPKWG9SW2WD?ocid=pdpshare) (photoshop, premiere, etc.)
+- [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
+- [**Cisco AnyConnect**](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
 - **WSA** (windows subsystem for android)
   - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
-- [Xbox Accessories](https://www.microsoft.com/store/productId/9NBLGGH30XJ3?ocid=pdpshare) (tool for configuring Xbox controllers)
+- [**Xbox Accessories**](https://www.microsoft.com/store/productId/9NBLGGH30XJ3?ocid=pdpshare) (tool for configuring Xbox controllers)
 
 ### old school
 
-- [**Adobe Creative Cloud**](https://www.adobe.com/creativecloud.html) (photoshop, premiere, etc.)
 - [**Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
 - [**Battlenet Launcher**](https://us.shop.battle.net/en-us) (blizzard's game launcher)
 - [**Crystaldiskinfo**](https://crystalmark.info/en/software/crystaldiskinfo/) (check disk hard drive health)
