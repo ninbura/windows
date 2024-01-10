@@ -651,6 +651,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
 CrystalDewWorld.CrystalDiskInfo
 CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
 CrystalDewWorld.CrystalDiskInfo.ShizukuEdition
+CrystalDewWorld.CrystalDiskInfo.AoiEdition
 CrystalDewWorld.CrystalDiskMark
 CrystalDewWorld.CrystalDiskMark.ShizukuEdition
 Discord.Discord
