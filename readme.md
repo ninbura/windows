@@ -661,8 +661,6 @@ EpicGames.EpicGamesLauncher
 Google.GoogleChrome
 Guru3D.RTSS
 Microsoft.AzureDataStudio
-Microsoft.DotNet.SDK.6
-Microsoft.DotNet.SDK.7
 Microsoft.Office
 Microsoft.Teams
 Microsoft.VCRedist.2005.x64
