@@ -459,8 +459,15 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ### microsoft store
 
 - [**Adobe Creative Cloud**](https://apps.microsoft.com/store/detail/XPDLPKWG9SW2WD?ocid=pdpshare) (photoshop, premiere, etc.)
-- [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
 - [**Cisco AnyConnect**](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
+- [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
+- **Crystaldiskinfo** (check disk hard drive health)
+  - [Standard Edition](https://apps.microsoft.com/store/detail/XP8K4RGX25G3GM?ocid=pdpshare) (lame)
+  - [Shizuku Edition](https://apps.microsoft.com/store/detail/XPFP35NT4K8RWK?ocid=pdpshare)
+  - [Aoi Edition](https://apps.microsoft.com/store/detail/XPDNKFM52KNR94?ocid=pdpshare)
+- **Crystaldiskmark** (test hard drive speed)
+  - [Standard Edition](https://www.microsoft.com/store/productId/9NBLGGH4Z6F2?ocid=pdpshare) (lame)
+  - [Shizuku Edition](https://www.microsoft.com/store/productId/9NBLGGH536CC?ocid=pdpshare)
 - **WSA** (Windows Subsystem for Android)
   - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
@@ -470,8 +477,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 - [**Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
 - [**Battlenet Launcher**](https://us.shop.battle.net/en-us) (blizzard's game launcher)
-- [**Crystaldiskinfo**](https://crystalmark.info/en/software/crystaldiskinfo/) (check disk hard drive health)
-- [**Crystaldiskmark**](https://crystalmark.info/en/software/crystaldiskmark/) (test hard drive speed)
 - [**Davinci Resolve**](https://www.blackmagicdesign.com/products/davinciresolve) (download link near the bottom of the page)
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
