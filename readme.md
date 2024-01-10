@@ -453,7 +453,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
     - `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
     - `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
   - **Docker Desktop** (running docker images for dev)
-    - **wsl must be installed/configured first (see [wsl](#wsl-windows-subsystem-for-linux))**
+    - it is recommended that wsl be installed/configured first → (see [wsl](#wsl-windows-subsystem-for-linux))
     - `winget install docker.dockerdesktop --ignore-security-hash`
 
 ### microsoft store
