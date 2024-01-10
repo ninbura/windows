@@ -435,26 +435,22 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - **restart your computer**
 
 ### winget
-
-- admin elevated terminal required
-  - **FFmpeg** (cli media tool)
-    - `winget install gyan.ffmpeg --ignore-security-hash`
-  - **iTunes**
-    - `winget install apple.itunes --ignore-security-hash`
-  - **Proton VPN** (vpn client)
-    - `winget install protontechnologies.protonvpn --ignore-security-hash`
-  - **Rufus** (image mounter)
-    - `winget install rufus.rufus --ignore-security-hash`
-  - **Tailwind CSS** (css library for dev)
-    - `winget install tailwindlabs.tailwindcss --ignore-security-hash`
-- standard terminal
-  - **.Net SDKs** (micorosft .net runtime(s) for dev)
-    - You have to install .net sdks in decending order or it'll prompt you to update pre-existing installations to later versions. For example, if you have dotnet 6 sdk installed, and try to install .net sdk7; you'll be prompted to update .net 6 to 7. In many cases you need multiple .net SDKs installed, keep this in mind.
-    - `winget install microsoft.dotnet.sdk.7 --ignore-security-hash --force`
-    - `winget install microsoft.dotnet.sdk.6 --ignore-security-hash --force`
-  - **Docker Desktop** (running docker images for dev)
-    - it is recommended that wsl be installed/configured first → (see [wsl](#wsl-windows-subsystem-for-linux))
-    - `winget install docker.dockerdesktop --ignore-security-hash`
+#### manual winget installation preface
+Applications listed in this section must be installed in an admin elevated terminal.
+#### applications
+- **FFmpeg** (cli media tool)
+  - `winget install gyan.ffmpeg --ignore-security-hash`
+- **iTunes**
+  - `winget install apple.itunes --ignore-security-hash`
+- **Proton VPN** (vpn client)
+  - `winget install protontechnologies.protonvpn --ignore-security-hash`
+- **Rufus** (image mounter)
+  - `winget install rufus.rufus --ignore-security-hash`
+- **Tailwind CSS** (css library for dev)
+  - `winget install tailwindlabs.tailwindcss --ignore-security-hash`
+- **Docker Desktop** (running docker images for dev)
+  - it is recommended that wsl be installed/configured first → (see [wsl](#wsl-windows-subsystem-for-linux))
+  - `winget install docker.dockerdesktop --ignore-security-hash`
 
 ### microsoft store
 
