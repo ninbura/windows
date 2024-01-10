@@ -458,12 +458,12 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### microsoft store
 
-- **iCloud** (apples icloud desktop application)
-- **Cisco AnyConnect** (vpn client)
+- [iCloud](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
+- [Cisco AnyConnect](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
 - **WSA** (windows subsystem for android)
-  - download amazon store via microsoft store
+  - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
-- **Xbox Accessories** (tool for configuring xbox controllers)
+- [Xbox Accessories](https://www.microsoft.com/store/productId/9NBLGGH30XJ3?ocid=pdpshare) (tool for configuring Xbox controllers)
 
 ### old school
 
