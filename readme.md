@@ -44,7 +44,6 @@ This repository aims to assist anyone attempting to install and configure/optimi
   - [uninstalling apps](#uninstalling-apps)
 - [software](#software)
   - [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
-  - [winget](#winget)
   - [microsoft store](#microsoft-store)
   - [old-school](#old-school)
 - [troubleshooting](#troubleshooting)
@@ -442,22 +441,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - run the following command in an **elevated** powershell console
   - `wsl --install`
 - **restart your computer**
-
-### winget
-Applications listed in this section must be installed in an admin elevated terminal.
-- **FFmpeg** (cli media tool)
-  - `winget install gyan.ffmpeg --ignore-security-hash`
-- **iTunes**
-  - `winget install apple.itunes --ignore-security-hash`
-- **Proton VPN** (vpn client)
-  - `winget install protontechnologies.protonvpn --ignore-security-hash`
-- **Rufus** (image mounter)
-  - `winget install rufus.rufus --ignore-security-hash`
-- **Tailwind CSS** (css library for dev)
-  - `winget install tailwindlabs.tailwindcss --ignore-security-hash`
-- **Docker Desktop** (running docker images for dev)
-  - it is recommended that wsl be installed/configured first → (see [wsl](#wsl-windows-subsystem-for-linux))
-  - `winget install docker.dockerdesktop --ignore-security-hash`
 
 ### microsoft store
 
