@@ -435,9 +435,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - **restart your computer**
 
 ### winget
-#### manual winget installation preface
 Applications listed in this section must be installed in an admin elevated terminal.
-#### applications
 - **FFmpeg** (cli media tool)
   - `winget install gyan.ffmpeg --ignore-security-hash`
 - **iTunes**
