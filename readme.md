@@ -631,7 +631,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
     "ShowSearchOnTaskbar": false,
     "ShowTaskViewButton": false,
     "ShowWidgetsButton": false,
-    "ShowChatButton": true,
+    "ShowChatButton": false,
     "ShowSecondsOnClock": true
   }
 }
