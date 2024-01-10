@@ -242,14 +242,14 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - enable everything except "local disks"
         - run test for 5-15 minutes
         - to prevent throttling your
-          - cpu load temp should be >=98c
-          - gpu load temp should be >=85c
-      - with modern amd & intel cpus with even high end cooling you can still reach 100c
-      - While this is technically safe because they'll throttle, it's best if you stay below 100c.
+          - cpu load temp should be >=99c
+          - gpu load temp should be >=84c
+      - Even high-end cooling, modern amd & intel cpus can easily reach 100c.
+      - While this is technically safe because they'll throttle, you won't get maximum performance unless you stay below 100c.
       - there are all in one water coolers large enough to prevent even the highest end CPUs from throttling
       - I suggest Artic's "liquid freezer line"
-        - 360/420mm for intel i7 & amd x700
-        - 420mm for intel i9 & amd X900
+        - 360/420mm for intel i7 & AMD x700
+        - 420mm for intel i9 & AMD X900
       - for i5 cpus & below I suggest purchasing the **thermalright peerless assassin** air cooler
       - if temps for cpu or gpu are high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
     - #### m.2 drives
