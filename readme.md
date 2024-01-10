@@ -123,7 +123,8 @@ This repository aims to assist anyone attempting to install and configure/optimi
      - `git clone https://github.com/ninbura/windows`
      - `new-item -path "/repos/windows/config.json" -itemtype "file"`
      - `new-item -path "/repos/windows/.update-blacklist.txt" -itemtype "file"`
-     - `new-item -path "/repos/windows/.install-list.txt" -itemtype "file"`
+     - `new-item -path "/repos/windows/.admin-install-list.txt" -itemtype "file"`
+     - `new-item -path "/repos/windows/.standard-install-list.txt" -itemtype "file"`
    - open `c:/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
