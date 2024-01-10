@@ -1,8 +1,46 @@
-function quit () {
+param(
+  [string]$testRelativePath = "c:\repos\windows"
+)
+
+function quit() {
   write-host('closing program, press [enter] to exit...') -NoNewLine
   $Host.UI.ReadLine()
 
   exit
+}
+
+function startup() {
+  Write-Host "Starting process..."
+}
+
+function getRelativePath(){
+  try{
+    if($null -eq $relativePath){
+      throw "Could not get relative path."
+    }
+
+    $relativePath = $PSScriptRoot
+  } catch {
+    $relativePath = $testRelativePath
+  }
+
+  write-host "$relativePath" -ForegroundColor Magenta
+
+  return $relativePath
+}
+
+function createListFiles($relativePath) {
+  $listsPath = "$relativePath/wigui-lists"
+
+  if(!(Test-Path $listsPath)) { New-Item -Path "$listsPath" -ItemType Directory }
+
+  $listNames = @("update-blacklist", "admin-install-list", "standard-install-list")
+
+  foreach ($listName in $listNames) {
+    $listPath = "$listsPath/$listName.txt"
+
+    if(!(test-path $listPath)) { New-Item -Path "$listPath" -ItemType File }
+  }
 }
 
 function modifyRegistry($registryTweak) {
@@ -400,8 +438,10 @@ function configureOtherSettings($config) {
 }
 
 function main {
-  Write-Host "Starting process..."
-  $config = Get-Content -Raw -Path "$PSScriptRoot\config.json" | ConvertFrom-Json
+  startup
+  $relativePath = getRelativePath
+  createListFiles $relativePath
+  $config = Get-Content -Raw -Path "$relativePath\config.json" | ConvertFrom-Json
   editRegistry $config
   configureOtherSettings $config
   Write-Host "`n`nSettings have been configured, please restart your computer." -ForegroundColor green
