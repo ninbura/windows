@@ -197,14 +197,16 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - **restart your computer**
     - #### bulk install applications
       - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
-      - Before you can bulk install applications, you need to enable a setting in winget. - open windows terminal & run the following command
+      - Before you can bulk install applications, you need to enable a setting in winget.
+      - open windows terminal & run the following command
         - `winget settings --enable InstallerHashOverride`
-      - admin install list
+        - Note that this command must be run in an elevated instance of PowerShell. If you followed [step #8](#configure-windows-terminal) correctly, when you open Windows Terminal it should open an admin elevated instance of PowerShell 7 by default.
+      - installing admin install list applications
         - right click the WiGui exe & select "Run as administrator"
         - click the "Import from file" button & select your `.admin-install-list.txt`
         - click "Install"
         - wait for the process to finish
-      - standard install list
+      - installing standard install list applications
         - double click the WiGui exe
         - click the "Import from file" button & select your `.standard-install-list.txt`
         - click "Install"
