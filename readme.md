@@ -684,7 +684,7 @@ apple.itunes --ignore-security-hash
 docker.dockerdesktop --ignore-security-hash
 gyan.ffmpeg --ignore-security-hash
 protontechnologies.protonvpn --ignore-security-hash
-rufus.rufus --ignore-security-hash
+rufus.rufus --ignore-security-hash --location documents
 tailwindlabs.tailwindcss --ignore-security-hash
 ```
 
