@@ -428,7 +428,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
 
 please read [download/install remaining software](#downloadinstall-remaining-software)
 
-### **WSL** (Windows Subsystem for Linux)
+### **wsl** (windows subsystem for linux)
 
 - run the following command in an **elevated** powershell console
   - `wsl --install`
