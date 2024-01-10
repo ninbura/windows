@@ -428,9 +428,9 @@ This repository aims to assist anyone attempting to install and configure/optimi
 
 please read [download/install remaining software](#downloadinstall-remaining-software)
 
-### **wsl** (windows subsystem for linux)
+### **WSL** (Windows Subsystem for Linux)
 
-- run the following command in an **elevated** powershelkl console
+- run the following command in an **elevated** powershell console
   - `wsl --install`
 - **restart your computer**
 
@@ -461,7 +461,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**Adobe Creative Cloud**](https://apps.microsoft.com/store/detail/XPDLPKWG9SW2WD?ocid=pdpshare) (photoshop, premiere, etc.)
 - [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
 - [**Cisco AnyConnect**](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
-- **WSA** (windows subsystem for android)
+- **WSA** (Windows Subsystem for Android)
   - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
 - [**Xbox Accessories**](https://www.microsoft.com/store/productId/9NBLGGH30XJ3?ocid=pdpshare) (tool for configuring Xbox controllers)
