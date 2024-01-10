@@ -183,8 +183,13 @@ This repository aims to assist anyone attempting to install and configure/optimi
             - `REALiX.HWiNFO`
       - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
     - #### install winget auto update
-      - download [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
-      - move `wigui.exe` to your documents folder & run it
+      - run the following command in PowerShell
+        - `winget install Romanitho.WiGUI --location Documents`
+      - navigate to your documents folder and run the WiGui `exe` (double click)
+        - If you're prompted to update WiGui, do so.
+        - after the update is complete there should be a new WiGui exe with a later version number
+        - you may delete the original WiGui `exe` after updating
+        - Once you've got this sorted, run the latest/new WiGui exe file by double clicking it.
       - click on the "configure wau" tab (wau = winget-autoupdate)
       - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
       - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
