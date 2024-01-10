@@ -122,9 +122,6 @@ This repository aims to assist anyone attempting to install and configure/optimi
      - `cd /repos`
      - `git clone https://github.com/ninbura/windows`
      - `new-item -path "/repos/windows/config.json" -itemtype "file"`
-     - `new-item -path "/repos/windows/.update-blacklist.txt" -itemtype "file"`
-     - `new-item -path "/repos/windows/.admin-install-list.txt" -itemtype "file"`
-     - `new-item -path "/repos/windows/.standard-install-list.txt" -itemtype "file"`
    - open `c:/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
@@ -165,15 +162,27 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - wigui is a an application that
         - uses winget (cli application tool) in the background via a user interface
         - Installs winget auto update. Once winget auto updated is installed it'll keep most applications installed via wigui/winget automatically updated.
-    - #### populate application update blacklist
-      - we already created `.update-blacklist.txt` in step #9
-      - said blacklist is located at `/repos/windows/.update-blacklist.txt` unless you changed directories per your preference
-      - Open `.update-blacklist.txt`, paste the list found [here](#update-blacklist) into it, and save it.
-      - You can choose to maintain this blacklist document yourself, or just piggyback off of the one in this readme.
-      - you want to blacklist apps that consistently fail to update via winget-autoupdate
-      - note that once loaded, you need to modify the following file to add applications to your currently active blacklist
-        - `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
-      - It can be a chore, but I recommend you update both your active and backed up list for later use.
+    - #### populate wigui lists
+      - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder with three `.txt` files should have been created in `/repos/windows`.
+        1. `admin-install-list.txt`
+        2. `standard-install-list.txt`
+        3. `update-blacklist.txt`
+      - populate update blacklist
+        - open `update-blacklist.txt`
+        - paste the list found [here](#update-blacklist) into the file
+        - save the file & close it if you please
+        - you want to blacklist apps that consistently fail to update via winget-autoupdate
+        - note that once loaded, you need to modify the following file to add applications to your currently active blacklist
+          - `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
+      - populate install lists
+        - Open `admin-install-list.txt` & `standard-install-list.txt`, and paste the lists found in [admin install list](#admin-install-list) & [standard install list](#standard-install-list) into each file respectively.
+        - Add and remove applications from these lists as you see fit, then save the files, and close them if you please.
+          - see [winget basics](#wingetwigui-basics) for more details on this step
+          - do not remove the following applications from your install list for the sake of later steps in this tutorial
+            - FinalWire.AIDA64.Extreme
+            - Guru3D.Afterburner
+            - REALiX.HWiNFO
+      - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
     - #### install winget auto update
       - download [wigui](https://github.com/Romanitho/Winget-Install-GUI/releases)
       - move `wigui.exe` to your documents folder & run it
@@ -181,16 +190,6 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
       - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
       - **restart your computer**
-    - #### populate application install lists
-      - we already created `.admin-install-list.txt` & `.standard-install-list.txt` in step #9
-      - said install lists are located in `/repos/windows` unless you changed directories per your preference
-      - Open `.admin-install-list.txt` & `.standard-install-list.txt`, and paste the lists found in [admin install list](#admin-install-list) & [standard install list](#standard-install-list) into each file respectively.
-      - Add and remove applications from thes lists as you see fit, then save the files.
-        - see [winget basics](#wingetwigui-basics) for more details on this step
-        - do not remove the following applications from your install list for the sake of later steps in this tutorial
-          - FinalWire.AIDA64.Extreme
-          - Guru3D.Afterburner
-          - REALiX.HWiNFO
     - #### bulk install applications
       - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
       - Before you can bulk install applications, you need to enable a setting in winget. - open windows terminal & run the following command
