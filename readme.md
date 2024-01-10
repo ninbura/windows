@@ -735,7 +735,6 @@ Notion.Notion --ignore-security-hash
 Obsidian.Obsidian --ignore-security-hash
 OBSProject.OBSStudio --ignore-security-hash
 Proton.ProtonDrive --ignore-security-hash
-ProtonTechnologies.ProtonVPN --ignore-security-hash
 REALiX.HWiNFO --ignore-security-hash
 RiotGames.LeagueOfLegends.NA --ignore-security-hash
 RiotGames.Valorant.NA --ignore-security-hash
