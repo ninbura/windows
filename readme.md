@@ -56,7 +56,8 @@ This repository aims to assist anyone attempting to install and configure/optimi
   - [config.json example](#configjson-example)
 - [wigui lists](#wigui-lists)
   - [update blacklist](#update-blacklist)
-  - [install list](#install-list)
+  - [admin install list](#admin-install-list)
+  - [standard install list](#standard-install-list)
 
 # steps
 
@@ -180,22 +181,30 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
       - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
       - **restart your computer**
-    - #### populate application install list
-      - we already created `.install-list.txt` in step #9
-      - said install list is located at `/repos/windows/.install-list.txt` unless you changed directories per your preference
-      - Open your `.install-list.txt`, and paste the list found [here](#install-list) into it.
-      - Add and remove applications from this list as you see fit, then save the documnet.
+    - #### populate application install lists
+      - we already created `.admin-install-list.txt` & `.standard-install-list.txt` in step #9
+      - said install lists are located in `/repos/windows` unless you changed directories per your preference
+      - Open `.admin-install-list.txt` & `.standard-install-list.txt`, and paste the lists found in [admin install list](#admin-install-list) & [standard install list](#standard-install-list) into each file respectively.
+      - Add and remove applications from thes lists as you see fit, then save the files.
         - see [winget basics](#wingetwigui-basics) for more details on this step
         - do not remove the following applications from your install list for the sake of later steps in this tutorial
           - FinalWire.AIDA64.Extreme
           - Guru3D.Afterburner
           - REALiX.HWiNFO
-      - Pro tip, you can sort lines in `.txt` files via [vscode](https://code.visualstudio.com/) by hitting the run hotkey ([f1] or [ctrl+shit+p]) and running "sort lines ascending".
     - #### bulk install applications
       - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
       - Before you can bulk install applications, you need to enable a setting in winget. - open windows terminal & run the following command
         - `winget settings --enable InstallerHashOverride`
-      - Open wigui, load your install list, click install, & wait for the process to finish.
+      - admin install list
+        - right click the WiGui exe & select "Run as administrator"
+        - click the "Import from file" button & select your `.admin-install-list.txt`
+        - click "Install"
+        - wait for the process to finish
+      - standard install list
+        - double click the WiGui exe
+        - click the "Import from file" button & select your `.standard-install-list.txt`
+        - click "Install"
+        - wait for the process to finish
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
@@ -676,11 +685,21 @@ REALiX.HWiNFO
 RiotGames.LeagueOfLegends.NA
 RiotGames.Valorant.NA
 Valve.Steam
-
 ```
 
-### install list
+### admin install list
+the application list below must be installed in an *admin elevated* instance of WiGui
+```
+apple.itunes --ignore-security-hash
+docker.dockerdesktop --ignore-security-hash
+gyan.ffmpeg --ignore-security-hash
+protontechnologies.protonvpn --ignore-security-hash
+rufus.rufus --ignore-security-hash
+tailwindlabs.tailwindcss --ignore-security-hash
+```
 
+### standard install list
+it is recommended that the application list below is installed in a *non-elevated* instance of WiGui
 ```
 7zip.7zip --ignore-security-hash
 BurntSushi.ripgrep.GNU --ignore-security-hash
@@ -731,9 +750,7 @@ Proton.ProtonDrive --ignore-security-hash
 REALiX.HWiNFO --ignore-security-hash
 RiotGames.LeagueOfLegends.NA --ignore-security-hash
 RiotGames.Valorant.NA --ignore-security-hash
-Rufus.Rufus --ignore-security-hash
 Spotify.Spotify --ignore-security-hash
-TailwindLabs.TailwindCSS --ignore-security-hash
 TeamViewer.TeamViewer --ignore-security-hash
 Touchbyte.PhotoSync --ignore-security-hash
 Valve.Steam --ignore-security-hash
