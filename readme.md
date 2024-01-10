@@ -162,7 +162,8 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - uses winget (cli application tool) in the background via a user interface
         - Installs winget auto update. Once winget auto updated is installed it'll keep most applications installed via wigui/winget automatically updated.
     - #### populate wigui lists
-      - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder with three `.txt` files should have been created in `/repos/windows`.
+      - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder should have been created in `/repos/windows` called `wigui-lists`.
+      - contained within `/repos/windows/wigui-lists` there should be 3 `.txt` list files
         1. `admin-install-list.txt`
         2. `standard-install-list.txt`
         3. `update-blacklist.txt`
