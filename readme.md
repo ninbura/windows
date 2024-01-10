@@ -686,6 +686,7 @@ Valve.Steam
 ```
 7zip.7zip --ignore-security-hash
 Apple.iTunes --ignore-security-hash
+BurntSushi.ripgrep.GNU --ignore-security-hash
 Discord.Discord --ignore-security-hash
 Docker.DockerDesktop --ignore-security-hash
 Elgato.4KCaptureUtility --ignore-security-hash
@@ -739,5 +740,6 @@ Rufus.Rufus --ignore-security-hash
 Spotify.Spotify --ignore-security-hash
 TailwindLabs.TailwindCSS --ignore-security-hash
 TeamViewer.TeamViewer --ignore-security-hash
+Touchbyte.PhotoSync --ignore-security-hash
 Valve.Steam --ignore-security-hash
 ```
