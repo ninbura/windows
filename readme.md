@@ -203,12 +203,12 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - Note that this command must be run in an elevated instance of PowerShell. If you followed [step #8](#configure-windows-terminal) correctly, when you open Windows Terminal it should open an admin elevated instance of PowerShell 7 by default.
       - installing admin install list applications
         - right click the WiGui exe & select "Run as administrator"
-        - click the "Import from file" button & select your `.admin-install-list.txt`
+        - click the "Import from file" button & select your `admin-install-list.txt`
         - click "Install"
         - wait for the process to finish & close WiGui
       - installing standard install list applications
         - double click the WiGui exe
-        - click the "Import from file" button & select your `.standard-install-list.txt`
+        - click the "Import from file" button & select your `standard-install-list.txt`
         - click "Install"
         - wait for the process to finish & close WiGui
       - **restart your computer**
