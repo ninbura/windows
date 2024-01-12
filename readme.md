@@ -451,7 +451,9 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ### **wsl** (windows subsystem for linux)
 
 - run the following command in an **elevated** powershell console
-  - `wsl --install`
+  - ```
+    wsl --install
+    ```
 - **restart your computer**
 
 ### microsoft store
