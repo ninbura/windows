@@ -106,10 +106,11 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - select "update all" just left of the "get updates" button
    - wait for all microsoft store applications to update before proceeding to step 7
 7. ### install powershell 7 & git
-   - open windows terminal
-   - run the following commands
-     - `winget install microsoft.powershell`
-     - `winget install git.git`
+   - right click start button on taskbar & select "Terminal (Admin)"
+   - run the following command
+     - ```powershell
+       winget install jazzdelightsme.WingetPathUpdater microsoft.powershell git.git
+       ```
 8. ### configure windows terminal
    - restart windows terminal
    - open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
@@ -117,10 +118,12 @@ This repository aims to assist anyone attempting to install and configure/optimi
 9. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
    - run the following commands
-     - `new-item -path "/repos" -itemtype "directory"`
-     - `cd /repos`
-     - `git clone https://github.com/ninbura/windows`
-     - `new-item -path "/repos/windows/config.json" -itemtype "file"`
+     - ```powershell
+       new-item -path "/repos" -itemtype "directory"`
+       cd /repos
+       git clone https://github.com/ninbura/windows
+       new-item -path "/repos/windows/config.json" -itemtype "file"
+       ```
    - open `/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
@@ -199,7 +202,9 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
       - Before you can bulk install applications, you need to enable a setting in winget.
       - open windows terminal & run the following command
-        - `winget settings --enable InstallerHashOverride`
+        - ```powershell
+          winget settings --enable InstallerHashOverride
+          ```
         - Note that this command must be run in an elevated instance of PowerShell. If you followed [step #8](#configure-windows-terminal) correctly, when you open Windows Terminal it should open an admin elevated instance of PowerShell 7 by default.
       - installing admin install list applications
         - right click the WiGui exe & select "Run as administrator"
