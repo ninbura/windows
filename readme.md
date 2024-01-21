@@ -649,6 +649,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
 ### update blacklist
 
 ```
+BurntSushi.ripgrep.GNU
 CrystalDewWorld.CrystalDiskInfo
 CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
 CrystalDewWorld.CrystalDiskInfo.ShizukuEdition
