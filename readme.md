@@ -702,6 +702,23 @@ rufus.rufus --ignore-security-hash --location documents
 tailwindlabs.tailwindcss --ignore-security-hash
 ```
 
+### dependency install list
+```
+Microsoft.DirectX --ignore-security-hash
+Microsoft.VCRedist.2005.x64 --ignore-security-hash
+Microsoft.VCRedist.2005.x86 --ignore-security-hash
+Microsoft.VCRedist.2008.x64 --ignore-security-hash
+Microsoft.VCRedist.2008.x86 --ignore-security-hash
+Microsoft.VCRedist.2010.x64 --ignore-security-hash
+Microsoft.VCRedist.2010.x86 --ignore-security-hash
+Microsoft.VCRedist.2012.x64 --ignore-security-hash
+Microsoft.VCRedist.2012.x86 --ignore-security-hash
+Microsoft.VCRedist.2013.x64 --ignore-security-hash
+Microsoft.VCRedist.2013.x86 --ignore-security-hash
+Microsoft.VCRedist.2015+.x64 --ignore-security-hash
+Microsoft.VCRedist.2015+.x86 --ignore-security-hash
+```
+
 ### standard install list
 it is recommended that the application list below is installed in a *non-elevated* instance of WiGui
 ```
@@ -728,18 +745,6 @@ Microsoft.AzureDataStudio --ignore-security-hash
 Microsoft.DotNet.SDK.Preview --ignore-security-hash
 Microsoft.PowerToys --ignore-security-hash
 Microsoft.Teams --ignore-security-hash
-Microsoft.VCRedist.2005.x64 --ignore-security-hash
-Microsoft.VCRedist.2005.x86 --ignore-security-hash
-Microsoft.VCRedist.2008.x64 --ignore-security-hash
-Microsoft.VCRedist.2008.x86 --ignore-security-hash
-Microsoft.VCRedist.2010.x64 --ignore-security-hash
-Microsoft.VCRedist.2010.x86 --ignore-security-hash
-Microsoft.VCRedist.2012.x64 --ignore-security-hash
-Microsoft.VCRedist.2012.x86 --ignore-security-hash
-Microsoft.VCRedist.2013.x64 --ignore-security-hash
-Microsoft.VCRedist.2013.x86 --ignore-security-hash
-Microsoft.VCRedist.2015+.x64 --ignore-security-hash
-Microsoft.VCRedist.2015+.x86 --ignore-security-hash
 Microsoft.VisualStudio.2022.Professional --ignore-security-hash
 Microsoft.VisualStudio.2022.Professional.Preview --ignore-security-hash
 Microsoft.VisualStudioCode --ignore-security-hash
