@@ -482,7 +482,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
 - [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (obs plugin)
-- [**OBS Audio Monitor](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
+- [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
 - [**Recitfy11**](https://rectify11.net/) (Windows 11 themeing tool)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
