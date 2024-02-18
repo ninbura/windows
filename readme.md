@@ -677,6 +677,7 @@ Microsoft.VCRedist.2012.x86
 Microsoft.VCRedist.2013.x64
 Microsoft.VCRedist.2013.x86
 Microsoft.VSTOR
+Microsoft.WindowsAppRuntime.1.4
 Mozilla.Firefox
 Mozilla.Firefox.DeveloperEdition
 Mozilla.Firefox.Nightly
