@@ -1,4 +1,4 @@
-# summary
+;;# summary
 
 This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructions properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. I've provided convenient linked lists for popular applications that fall out of winget's domain. As well as linked lists for many common drivers.
 
@@ -488,7 +488,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
 - [**Synergy 3**](https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload) (tool for sharing single mouse & keyboard with multiple computers)
 - [**VIA**](https://www.caniusevia.com/) (tool for configuring many keyboard models)
-- [**VLC 4.0**](https://artifacts.videolan.org/vlc/nightly-win64/) (video player, plays all codecs including the new av1 codec)
 - [**window-switcher**](https://github.com/sigoden/window-switcher/releases) (macOS style window switching for windows 11)
 - [**Wootliltiy**](https://wooting.io/wootility) (software to configure wooting keyboards)
 
