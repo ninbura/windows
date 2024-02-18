@@ -691,17 +691,6 @@ TeamViewer.TeamViewer
 Valve.Steam
 ```
 
-### admin install list
-the application list below must be installed in an *admin elevated* instance of WiGui
-```
-apple.itunes --ignore-security-hash
-docker.dockerdesktop --ignore-security-hash
-gyan.ffmpeg --ignore-security-hash
-protontechnologies.protonvpn --ignore-security-hash
-rufus.rufus --ignore-security-hash --location documents
-tailwindlabs.tailwindcss --ignore-security-hash
-```
-
 ### dependency install list
 ```
 Microsoft.DirectX --ignore-security-hash
@@ -717,6 +706,17 @@ Microsoft.VCRedist.2013.x64 --ignore-security-hash
 Microsoft.VCRedist.2013.x86 --ignore-security-hash
 Microsoft.VCRedist.2015+.x64 --ignore-security-hash
 Microsoft.VCRedist.2015+.x86 --ignore-security-hash
+```
+
+### admin install list
+the application list below must be installed in an *admin elevated* instance of WiGui
+```
+apple.itunes --ignore-security-hash
+docker.dockerdesktop --ignore-security-hash
+gyan.ffmpeg --ignore-security-hash
+protontechnologies.protonvpn --ignore-security-hash
+rufus.rufus --ignore-security-hash --location documents
+tailwindlabs.tailwindcss --ignore-security-hash
 ```
 
 ### standard install list
