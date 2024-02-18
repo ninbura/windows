@@ -750,7 +750,7 @@ Microsoft.VisualStudioCode --ignore-security-hash
 Mozilla.Firefox --ignore-security-hash
 Mozilla.Firefox.DeveloperEdition --ignore-security-hash
 Mozilla.Firefox.Nightly --ignore-security-hash
-NDI.NDI5Tools --ignore-security-hash
+NewTek.NDI5Tools --ignore-security-hash
 Notion.Notion --ignore-security-hash
 Obsidian.Obsidian --ignore-security-hash
 OBSProject.OBSStudio --ignore-security-hash
