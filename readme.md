@@ -762,6 +762,7 @@ REALiX.HWiNFO --ignore-security-hash
 RiotGames.LeagueOfLegends.NA --ignore-security-hash
 RiotGames.Valorant.NA --ignore-security-hash
 Spotify.Spotify --ignore-security-hash
+VideoLAN.VLC --ignore-security-hash
 TeamViewer.TeamViewer --ignore-security-hash
 Touchbyte.PhotoSync --ignore-security-hash
 Valve.Steam --ignore-security-hash
