@@ -724,6 +724,7 @@ it is recommended that the application list below is installed in a *non-elevate
 ```
 7zip.7zip --ignore-security-hash
 BurntSushi.ripgrep.GNU --ignore-security-hash
+coreybutler.nvmforwindows --ignore-security-hash
 Discord.Discord --ignore-security-hash
 Elgato.4KCaptureUtility --ignore-security-hash
 Elgato.CameraHub --ignore-security-hash
@@ -738,6 +739,7 @@ Google.ChromeRemoteDesktop --ignore-security-hash
 Google.PlatformTools --ignore-security-hash
 Guru3D.Afterburner --ignore-security-hash
 Guru3D.RTSS --ignore-security-hash
+llvm.llvm --ignore-security-hash
 Logitech.GHUB --ignore-security-hash
 Logitech.OptionsPlus --ignore-security-hash
 Logitech.UnifyingSoftware --ignore-security-hash
