@@ -711,12 +711,12 @@ Microsoft.VCRedist.2015+.x86 --ignore-security-hash
 ### admin install list
 the application list below must be installed in an *admin elevated* instance of WiGui
 ```
-apple.itunes --ignore-security-hash
-docker.dockerdesktop --ignore-security-hash
-gyan.ffmpeg --ignore-security-hash
-protontechnologies.protonvpn --ignore-security-hash
-rufus.rufus --ignore-security-hash --location documents
-tailwindlabs.tailwindcss --ignore-security-hash
+Apple.iTunes --ignore-security-hash
+Docker.DockerDesktop --ignore-security-hash
+Gyan.FFmpeg --ignore-security-hash
+ProtonTechnologies.ProtonVPN --ignore-security-hash
+Rufus.Rufus --ignore-security-hash --location documents
+TailwindLabs.TailwindCSS --ignore-security-hash
 ```
 
 ### standard install list
