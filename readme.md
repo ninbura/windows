@@ -188,7 +188,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
     - #### install winget auto update
       - run the following command in PowerShell
-        - `winget install Romanitho.WiGUI --location documents`
+        - `winget install Romanitho.WiGUI --location Documents`
       - navigate to your documents folder and run the WiGui `.exe` (double click)
         - If you're prompted to update WiGui, do so.
         - after the update is complete there should be a new WiGui exe with a later version number
@@ -715,7 +715,7 @@ Apple.iTunes --ignore-security-hash
 Docker.DockerDesktop --ignore-security-hash
 Gyan.FFmpeg --ignore-security-hash
 ProtonTechnologies.ProtonVPN --ignore-security-hash
-Rufus.Rufus --ignore-security-hash --location documents
+Rufus.Rufus --ignore-security-hash --location Documents
 TailwindLabs.TailwindCSS --ignore-security-hash
 ```
 
