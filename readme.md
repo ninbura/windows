@@ -1,4 +1,4 @@
-;;# summary
+# summary
 
 This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructions properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. I've provided convenient linked lists for popular applications that fall out of winget's domain. As well as linked lists for many common drivers.
 
