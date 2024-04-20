@@ -469,6 +469,8 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - **Crystaldiskmark** (test hard drive speed)
   - [Standard Edition](https://www.microsoft.com/store/productId/9NBLGGH4Z6F2?ocid=pdpshare) (lame)
   - [Shizuku Edition](https://www.microsoft.com/store/productId/9NBLGGH536CC?ocid=pdpshare)
+- [**HEIF Image Extensions**](https://apps.microsoft.com/detail/9pmmsr1cgpwg?hl=en-us&gl=US) (allows for viewing HEIF encoded iPhone photos in the Windows Photos app)
+- [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players)
 - **WSA** (Windows Subsystem for Android)
   - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
