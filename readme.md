@@ -489,6 +489,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (obs plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
+- [**PlayStation Remote Play**](https://remoteplay.dl.playstation.net/remoteplay/lang/gb/1100007.html) (allows for remoting into your PS4/PS5)
 - [**Recitfy11**](https://rectify11.net/) (Windows 11 themeing tool)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
 - [**Synergy 3**](https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload) (tool for sharing single mouse & keyboard with multiple computers)
