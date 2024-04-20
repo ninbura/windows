@@ -482,6 +482,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
+- [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
 - [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (obs plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
