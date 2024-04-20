@@ -471,6 +471,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - [Shizuku Edition](https://www.microsoft.com/store/productId/9NBLGGH536CC?ocid=pdpshare)
 - [**HEIF Image Extensions**](https://apps.microsoft.com/detail/9pmmsr1cgpwg?hl=en-us&gl=US) (allows for viewing HEIF encoded iPhone photos in the Windows Photos app)
 - [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players)
+- [**Minecraft Launcher**](https://www.xbox.com/en-US/games/store/minecraft-launcher/9pgw18npbzv5) (launcher for Minecraft Java & Bedrock Editions) 
 - **WSA** (Windows Subsystem for Android)
   - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
   - **restart your computer**
