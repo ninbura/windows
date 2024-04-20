@@ -119,15 +119,16 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - restart windows terminal
    - run the following commands
      - ```powershell
-       new-item -path "/repos" -itemtype "directory"`
+       new-item -path "~/repos" -itemtype "directory"`
        cd /repos
        git clone https://github.com/ninbura/windows
        new-item -path "/repos/windows/config.json" -itemtype "file"
        ```
+     - not that `~` represents your user's directory (ie `C:/Users/gabri/`)
    - open `/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
-   - right click `/repos/windows/run-me.bat` & select "run as administrator"
+   - right click `~/repos/windows/run-me.bat` & select "run as administrator"
    - Wait for the script to finish running, then **restart your computer**.
    - ### some notes
      - It's advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
