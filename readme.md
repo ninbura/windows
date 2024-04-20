@@ -120,12 +120,12 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - run the following commands
      - ```powershell
        new-item -path "~/repos" -itemtype "directory"`
-       cd /repos
+       cd ~/repos
        git clone https://github.com/ninbura/windows
-       new-item -path "/repos/windows/config.json" -itemtype "file"
+       new-item -path "~/repos/windows/config.json" -itemtype "file"
        ```
      - not that `~` represents your user's directory (ie `C:/Users/gabri/`)
-   - open `/repos/windows/config.json` in desired text editor
+   - open `~/repos/windows/config.json` in desired text editor
    - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
    - save and close `config.json`
    - right click `~/repos/windows/run-me.bat` & select "run as administrator"
@@ -134,7 +134,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
      - It's advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
      - I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements.
      - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
-       - `cd /repos/windows`
+       - `cd ~/repos/windows`
        - `git pull`
 10. ### manually configure other windows settings
     - theme settings
@@ -166,8 +166,8 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - uses winget (cli application tool) in the background via a user interface
         - Installs winget auto update. Once winget auto updated is installed it'll keep most applications installed via wigui/winget automatically updated.
     - #### populate wigui lists
-      - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder should have been created in `/repos/windows` called `wigui-lists`.
-      - contained within `/repos/windows/wigui-lists` there should be 3 `.txt` list files
+      - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder should have been created in `~/repos/windows` called `wigui-lists`.
+      - contained within `~/repos/windows/wigui-lists` there should be 3 `.txt` list files
         1. `admin-install-list.txt`
         2. `standard-install-list.txt`
         3. `update-blacklist.txt`
@@ -177,7 +177,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - save the file & close it if you please
         - you want to blacklist apps that consistently fail to update via winget-autoupdate
         - note that once loaded, you need to modify the following file to add applications to your currently active blacklist
-          - `C:\ProgramData\Winget-AutoUpdate\excluded_apps.txt`
+          - `C:/ProgramData/Winget-AutoUpdate/excluded_apps.txt`
       - populate install lists
         - Open `admin-install-list.txt` & `standard-install-list.txt`, and paste the lists found in [admin install list](#admin-install-list) & [standard install list](#standard-install-list) into each file respectively.
         - Add and remove applications from these lists as you see fit, then save the files, and close them if you please.
