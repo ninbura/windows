@@ -266,7 +266,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
     - #### m.2 drives
       - download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
         - hard drive monitor & benchmark
-        - get "Shizuku" edition for a good time ☺️
+        - get "Shizuku" editions for a good time ☺️
       - open crystaldiskinfo (search start)
         - verify that m.2 idle temp is below 60c
         - verify that m.2 drive health is "good"
