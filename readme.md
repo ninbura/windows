@@ -221,7 +221,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - navigate to your documents folder and run the WiGui `.exe` (double click)
       - click on the "configure wau" tab (wau = winget-autoupdate)
       - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
-      - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
+      - ![image](https://github.com/ninbura/windows/assets/58058942/59a51424-b4cf-4f8d-be81-c62d54c9c406)
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
