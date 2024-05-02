@@ -1,5 +1,5 @@
 param(
-  [string]$testRelativePath = "c:\repos\windows"
+  [string]$testRelativePath = "~\repos\windows"
 )
 
 function quit() {
@@ -34,7 +34,7 @@ function createListFiles($relativePath) {
 
   if(!(Test-Path $listsPath)) { New-Item -Path "$listsPath" -ItemType Directory }
 
-  $listNames = @("update-blacklist", "admin-install-list", "standard-install-list")
+  $listNames = @("update-blacklist", "admin-install-list", "dependency-install-list", "standard-install-list")
 
   foreach ($listName in $listNames) {
     $listPath = "$listsPath/$listName.txt"
