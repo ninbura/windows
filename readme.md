@@ -169,8 +169,9 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder should have been created in `~/repos/windows` called `wigui-lists`.
       - contained within `~/repos/windows/wigui-lists` there should be 3 `.txt` list files
         1. `admin-install-list.txt`
-        2. `standard-install-list.txt`
-        3. `update-blacklist.txt`
+        2. `dependency-install-list.txt`
+        3. `standard-install-list.txt`
+        4. `update-blacklist.txt`
       - populate update blacklist
         - open `update-blacklist.txt`
         - paste the list found [here](#update-blacklist) into the file
@@ -187,26 +188,25 @@ This repository aims to assist anyone attempting to install and configure/optimi
             - `Guru3D.Afterburner`
             - `REALiX.HWiNFO`
       - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
-    - #### install winget auto update
-      - run the following command in PowerShell
-        - `winget install Romanitho.WiGUI --location Documents`
-      - navigate to your documents folder and run the WiGui `.exe` (double click)
-        - If you're prompted to update WiGui, do so.
-        - after the update is complete there should be a new WiGui exe with a later version number
-        - you may delete the original WiGui `.exe` after updating
-        - Once you've got this sorted, run the latest/new WiGui `.exe` file by double clicking it.
-      - click on the "configure wau" tab (wau = winget-autoupdate)
-      - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
-      - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
-      - **restart your computer**
     - #### bulk install applications
-      - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
       - Before you can bulk install applications, you need to enable a setting in winget.
       - open windows terminal & run the following command
         - ```powershell
           winget settings --enable InstallerHashOverride
           ```
         - Note that this command must be run in an elevated instance of PowerShell. If you followed [step #8](#configure-windows-terminal) correctly, when you open Windows Terminal it should open an admin elevated instance of PowerShell 7 by default.
+      - install & launch WiGui
+        1. run the following command in PowerShell
+          - `winget install Romanitho.WiGUI --location Documents`
+        2. open `WiGui.exe` located within your user's Documents folder (`C:/Users/[your user]/Documents`)
+          - if prompted to update accept & update
+          - after you update the new exe should automatically open and be placed in your Documents folder
+          - Feel free to delete the older `WiGui.exe` file, it should either have no version number or a lower version number than the other one.
+      - installing dependency install list applications
+        - double click the WiGui exe
+        - click the "Import from file" button & select your `dependency-install-list.txt`
+        - click "Install"
+        - wait for the process to finish & close WiGui
       - installing admin install list applications
         - right click the WiGui exe & select "Run as administrator"
         - click the "Import from file" button & select your `admin-install-list.txt`
@@ -217,6 +217,11 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - click the "Import from file" button & select your `standard-install-list.txt`
         - click "Install"
         - wait for the process to finish & close WiGui
+    - #### install winget auto update
+      - navigate to your documents folder and run the WiGui `.exe` (double click)
+      - click on the "configure wau" tab (wau = winget-autoupdate)
+      - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
+      - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
@@ -721,7 +726,7 @@ Apple.iTunes --ignore-security-hash
 Docker.DockerDesktop --ignore-security-hash
 Gyan.FFmpeg --ignore-security-hash
 ProtonTechnologies.ProtonVPN --ignore-security-hash
-Rufus.Rufus --ignore-security-hash --location Documents
+Rufus.Rufus --ignore-security-hash
 TailwindLabs.TailwindCSS --ignore-security-hash
 ```
 
