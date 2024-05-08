@@ -119,7 +119,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - restart windows terminal
    - run the following commands
      - ```powershell
-       new-item -path "~/repos" -itemtype "directory"`
+       new-item -path "~/repos" -itemtype "directory"
        cd ~/repos
        git clone https://github.com/ninbura/windows
        new-item -path "~/repos/windows/config.json" -itemtype "file"
