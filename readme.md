@@ -659,6 +659,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
 ### update blacklist
 
 ```
+45313CrystalDewWorld.CrystalDiskMark5ShizukuEditio_kfjz01bcdaj9c
 BurntSushi.ripgrep.GNU
 CrystalDewWorld.CrystalDiskInfo
 CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
@@ -700,6 +701,7 @@ RiotGames.Valorant.NA
 Romanitho.WiGUI
 TeamViewer.TeamViewer
 Valve.Steam
+XPFP35NT4K8RWK
 ```
 
 ### dependency install list
