@@ -50,8 +50,8 @@ This repository aims to assist anyone attempting to install and configure/optimi
   - [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation)
   - [troubleshooting high temperatures](#troubleshooting-high-temperatures)
 - [bulk edit settings configuration](#bulk-edit-settings-configuration)
-  - [setting descriptions](#setting-descriptions)
   - [config.json example](#configjson-example)
+  - [setting descriptions](#setting-descriptions)
 - [wigui lists](#wigui-lists)
   - [update blacklist](#update-blacklist)
   - [admin install list](#admin-install-list)
@@ -119,7 +119,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - restart windows terminal
    - run the following commands
      - ```powershell
-       new-item -path "~/repos" -itemtype "directory"`
+       new-item -path "~/repos" -itemtype "directory"
        cd ~/repos
        git clone https://github.com/ninbura/windows
        new-item -path "~/repos/windows/config.json" -itemtype "file"
@@ -169,8 +169,9 @@ This repository aims to assist anyone attempting to install and configure/optimi
       - After running `bulk-edit-settings.ps1` as part of [step #9]((#download-configure--run-bulk-edit-settings-powershell-script)), a folder should have been created in `~/repos/windows` called `wigui-lists`.
       - contained within `~/repos/windows/wigui-lists` there should be 3 `.txt` list files
         1. `admin-install-list.txt`
-        2. `standard-install-list.txt`
-        3. `update-blacklist.txt`
+        2. `dependency-install-list.txt`
+        3. `standard-install-list.txt`
+        4. `update-blacklist.txt`
       - populate update blacklist
         - open `update-blacklist.txt`
         - paste the list found [here](#update-blacklist) into the file
@@ -187,26 +188,25 @@ This repository aims to assist anyone attempting to install and configure/optimi
             - `Guru3D.Afterburner`
             - `REALiX.HWiNFO`
       - It can be a chore, but I recommend you maintain each of these lists and back them up somewhere for future use.
-    - #### install winget auto update
-      - run the following command in PowerShell
-        - `winget install Romanitho.WiGUI --location Documents`
-      - navigate to your documents folder and run the WiGui `.exe` (double click)
-        - If you're prompted to update WiGui, do so.
-        - after the update is complete there should be a new WiGui exe with a later version number
-        - you may delete the original WiGui `.exe` after updating
-        - Once you've got this sorted, run the latest/new WiGui `.exe` file by double clicking it.
-      - click on the "configure wau" tab (wau = winget-autoupdate)
-      - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
-      - ![image](https://github.com/ninbura/windows/assets/58058942/e84ff19d-d0ab-4bc3-895d-b48b5f9304db)
-      - **restart your computer**
     - #### bulk install applications
-      - wait for winget-autoupdate to finish updating existing packages (wait until you're no longer receiving notifcations from wigui)
       - Before you can bulk install applications, you need to enable a setting in winget.
       - open windows terminal & run the following command
         - ```powershell
           winget settings --enable InstallerHashOverride
           ```
         - Note that this command must be run in an elevated instance of PowerShell. If you followed [step #8](#configure-windows-terminal) correctly, when you open Windows Terminal it should open an admin elevated instance of PowerShell 7 by default.
+      - install & launch WiGui
+        1. run the following command in PowerShell
+          - `winget install Romanitho.WiGUI --location Documents`
+        2. open `WiGui.exe` located within your user's Documents folder (`C:/Users/[your user]/Documents`)
+          - if prompted to update accept & update
+          - after you update the new exe should automatically open and be placed in your Documents folder
+          - Feel free to delete the older `WiGui.exe` file, it should either have no version number or a lower version number than the other one.
+      - installing dependency install list applications
+        - double click the WiGui exe
+        - click the "Import from file" button & select your `dependency-install-list.txt`
+        - click "Install"
+        - wait for the process to finish & close WiGui
       - installing admin install list applications
         - right click the WiGui exe & select "Run as administrator"
         - click the "Import from file" button & select your `admin-install-list.txt`
@@ -217,6 +217,11 @@ This repository aims to assist anyone attempting to install and configure/optimi
         - click the "Import from file" button & select your `standard-install-list.txt`
         - click "Install"
         - wait for the process to finish & close WiGui
+    - #### install winget auto update
+      - navigate to your documents folder and run the WiGui `.exe` (double click)
+      - click on the "configure wau" tab (wau = winget-autoupdate)
+      - Reference image below for configuration on this tab, don't forget to load your previously created blacklist.
+      - ![image](https://github.com/ninbura/windows/assets/58058942/31ada67f-ef10-47bd-a330-897d4f40c8fc)
       - **restart your computer**
 13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
@@ -261,7 +266,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
     - #### m.2 drives
       - download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
         - hard drive monitor & benchmark
-        - get "Shizuku" edition for a good time ☺️
+        - get "Shizuku" editions for a good time ☺️
       - open crystaldiskinfo (search start)
         - verify that m.2 idle temp is below 60c
         - verify that m.2 drive health is "good"
@@ -554,48 +559,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 # bulk-edit-settings configuration
 
-### setting descriptions
-
-- #### administrative
-  - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
-- #### cursor
-  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
-  - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
-- #### file explorer
-  - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
-  - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
-  - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
-  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Supposed to make it so pinned folders show in the File Explorer Home, but kinda it's kind of bugged. May require interaction with the gui to get working properly.
-  - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
-  - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-  - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-- #### network
-  - `EnableNetworkDiscovery` [`true`/`false`] - enables network discovery on all networking interfaces
-- #### performance
-  - `EnableUltimatePerformance` [`true`/`false`] - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
-  - `DisableMonitorTimeout` [`true`/`false`] - prevents windows from turning off your display after a period of inactivity
-  - `MonitorTimeout` [`1-9999`] - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
-  - `DisableSleep` [`true`/`false`] - prevents windows from putting your computer into sleep/hybernation after a certain period of inactivity. In my experience sleep can break a lot of things, after which I'm required to reboot. I much prefer that my computer simply never enters a hybernated state.
-  - `StandbyTimeout` [`1-9999`] - If `DisableSleep` is set to `false`; this will set the number of minutes before you computer will enter sleep/hybernation due to inactivity.
-  - `DisableUsbSelectiveSuspend` [`true`/`false`] - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
-- #### services
-  - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
-- #### start menu
-  - `ShowMorPins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
-  - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
-  - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
-  - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
-  - `ShowRecommendations` [`true`/`false`] - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
-- #### task bar
-  - `ShowTaskbarOnAllDisplays` [`true`/`false`] - shows task bar on all connected displays
-  - `CenterAlignTaskbarItems` [`true`/`false`] - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
-  - `ShowSearch` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
-  - `SearchStyle` [`1-3`] - If `ShowSearchOnTaskBar` is set to `true`, this will determine what style your search bar will display as (1=compact | 2=search icon + label + box icon | 3=search icon + label).
-  - `ShowTaskViewButton` [`true`/`false`] - shows the taskview button on task bar
-  - `ShowWidgetsButton` [`true`/`false`] - shows the widget button on task bar
-  - `ShowChatButton` [`true`/`false`] - shows the chat button on your (through Microsoft Teams)
-  - `ShowSecondsOnClock`- displays seconds on your system clock
-
 ### config.json example
 
 Note that if a setting is ommited from the configuration it will simply skip the logic to set that setting. So, you don't necessarily have to set everything to true or false. If you want to use Windows' default configuration for any given setting, simply omit it from `config.json`.
@@ -649,11 +612,54 @@ Note that if a setting is ommited from the configuration it will simply skip the
 }
 ```
 
+### setting descriptions
+
+- #### administrative
+  - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
+- #### cursor
+  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
+  - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
+- #### file explorer
+  - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
+  - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
+  - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
+  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Supposed to make it so pinned folders show in the File Explorer Home, but kinda it's kind of bugged. May require interaction with the gui to get working properly.
+  - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
+  - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
+  - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
+- #### network
+  - `EnableNetworkDiscovery` [`true`/`false`] - enables network discovery on all networking interfaces
+- #### performance
+  - `EnableUltimatePerformance` [`true`/`false`] - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
+  - `DisableMonitorTimeout` [`true`/`false`] - prevents windows from turning off your display after a period of inactivity
+  - `MonitorTimeout` [`1-9999`] - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
+  - `DisableSleep` [`true`/`false`] - prevents windows from putting your computer into sleep/hybernation after a certain period of inactivity. In my experience sleep can break a lot of things, after which I'm required to reboot. I much prefer that my computer simply never enters a hybernated state.
+  - `StandbyTimeout` [`1-9999`] - If `DisableSleep` is set to `false`; this will set the number of minutes before you computer will enter sleep/hybernation due to inactivity.
+  - `DisableUsbSelectiveSuspend` [`true`/`false`] - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
+- #### services
+  - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
+- #### start menu
+  - `ShowMorPins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
+  - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
+  - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
+  - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
+  - `ShowRecommendations` [`true`/`false`] - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
+- #### task bar
+  - `ShowTaskbarOnAllDisplays` [`true`/`false`] - shows task bar on all connected displays
+  - `CenterAlignTaskbarItems` [`true`/`false`] - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
+  - `ShowSearch` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
+  - `SearchStyle` [`1-3`] - If `ShowSearchOnTaskBar` is set to `true`, this will determine what style your search bar will display as (1=compact | 2=search icon + label + box icon | 3=search icon + label).
+  - `ShowTaskViewButton` [`true`/`false`] - shows the taskview button on task bar
+  - `ShowWidgetsButton` [`true`/`false`] - shows the widget button on task bar
+  - `ShowChatButton` [`true`/`false`] - shows the chat button on your (through Microsoft Teams)
+  - `ShowSecondsOnClock`- displays seconds on your system clock
+
 # wigui lists
 
 ### update blacklist
 
 ```
+45313CrystalDewWorld.CrystalDiskMark5ShizukuEditio_kfjz01bcdaj9c
 BurntSushi.ripgrep.GNU
 CrystalDewWorld.CrystalDiskInfo
 CrystalDewWorld.CrystalDiskInfo.KureiKeiEdition
@@ -695,6 +701,7 @@ RiotGames.Valorant.NA
 Romanitho.WiGUI
 TeamViewer.TeamViewer
 Valve.Steam
+XPFP35NT4K8RWK
 ```
 
 ### dependency install list
@@ -721,7 +728,7 @@ Apple.iTunes --ignore-security-hash
 Docker.DockerDesktop --ignore-security-hash
 Gyan.FFmpeg --ignore-security-hash
 ProtonTechnologies.ProtonVPN --ignore-security-hash
-Rufus.Rufus --ignore-security-hash --location Documents
+Rufus.Rufus --ignore-security-hash
 TailwindLabs.TailwindCSS --ignore-security-hash
 ```
 
