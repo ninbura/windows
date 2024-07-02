@@ -464,8 +464,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### microsoft store
 
-- [**HEIF Image Extensions**](https://apps.microsoft.com/detail/9pmmsr1cgpwg?hl=en-us&gl=US) (allows for viewing HEIF encoded iPhone photos in the Windows Photos app)
-- [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players)
+- [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players | paid app)
 
 ### old school
 
@@ -480,7 +479,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
-- [**VIA**](https://www.caniusevia.com/) (tool for configuring many keyboard models)
 - [**window-switcher**](https://github.com/sigoden/window-switcher/releases) (macOS style window switching for windows 11)
 - [**Wootliltiy**](https://wooting.io/wootility) (software to configure wooting keyboards)
 
