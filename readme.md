@@ -465,22 +465,9 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ### microsoft store
 
 - [**Adobe Creative Cloud**](https://apps.microsoft.com/store/detail/XPDLPKWG9SW2WD?ocid=pdpshare) (photoshop, premiere, etc.)
-- [**Cisco AnyConnect**](https://www.microsoft.com/store/productId/9WZDNCRDJ8LH?ocid=pdpshare) (vpn client)
 - [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
-- **Crystaldiskinfo** (check disk hard drive health)
-  - [Standard Edition](https://apps.microsoft.com/store/detail/XP8K4RGX25G3GM?ocid=pdpshare) (lame)
-  - [Shizuku Edition](https://apps.microsoft.com/store/detail/XPFP35NT4K8RWK?ocid=pdpshare)
-  - [Aoi Edition](https://apps.microsoft.com/store/detail/XPDNKFM52KNR94?ocid=pdpshare)
-- **Crystaldiskmark** (test hard drive speed)
-  - [Standard Edition](https://www.microsoft.com/store/productId/9NBLGGH4Z6F2?ocid=pdpshare) (lame)
-  - [Shizuku Edition](https://www.microsoft.com/store/productId/9NBLGGH536CC?ocid=pdpshare)
 - [**HEIF Image Extensions**](https://apps.microsoft.com/detail/9pmmsr1cgpwg?hl=en-us&gl=US) (allows for viewing HEIF encoded iPhone photos in the Windows Photos app)
 - [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players)
-- [**Minecraft Launcher**](https://www.xbox.com/en-US/games/store/minecraft-launcher/9pgw18npbzv5) (launcher for Minecraft Java & Bedrock Editions) 
-- **WSA** (Windows Subsystem for Android)
-  - install [Amazon Appstore](https://www.microsoft.com/store/productId/9NJHK44TTKSX?ocid=pdpshare) via the Microsoft Store
-  - **restart your computer**
-- [**Xbox Accessories**](https://www.microsoft.com/store/productId/9NBLGGH30XJ3?ocid=pdpshare) (tool for configuring Xbox controllers)
 
 ### old school
 
@@ -494,10 +481,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (obs plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
-- [**PlayStation Remote Play**](https://remoteplay.dl.playstation.net/remoteplay/lang/gb/1100007.html) (allows for remoting into your PS4/PS5)
-- [**Recitfy11**](https://rectify11.net/) (Windows 11 themeing tool)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
-- [**Synergy 3**](https://symless.com/synergy/account-login?redirect=https%3A%2F%2Fsymless.com%2Fsynergy%2Fdownload) (tool for sharing single mouse & keyboard with multiple computers)
 - [**VIA**](https://www.caniusevia.com/) (tool for configuring many keyboard models)
 - [**window-switcher**](https://github.com/sigoden/window-switcher/releases) (macOS style window switching for windows 11)
 - [**Wootliltiy**](https://wooting.io/wootility) (software to configure wooting keyboards)
