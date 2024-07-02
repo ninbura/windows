@@ -464,8 +464,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### microsoft store
 
-- [**Adobe Creative Cloud**](https://apps.microsoft.com/store/detail/XPDLPKWG9SW2WD?ocid=pdpshare) (photoshop, premiere, etc.)
-- [**iCloud**](https://www.microsoft.com/store/productId/9PKTQ5699M62?ocid=pdpshare) (Apple's iCloud desktop application)
 - [**HEIF Image Extensions**](https://apps.microsoft.com/detail/9pmmsr1cgpwg?hl=en-us&gl=US) (allows for viewing HEIF encoded iPhone photos in the Windows Photos app)
 - [**HEVC Video Extensions**](https://apps.microsoft.com/detail/9nmzlz57r3t7?hl=en-us&gl=US) (allows for playing H265 videos via Windows' media players)
 
