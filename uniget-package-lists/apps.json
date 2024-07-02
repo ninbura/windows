@@ -523,7 +523,9 @@
         "RunAsAdministrator": false,
         "Architecture": "",
         "InstallationScope": "",
-        "CustomParameters": [],
+        "CustomParameters": [
+          ""
+        ],
         "PreRelease": false,
         "CustomInstallLocation": "",
         "Version": ""
@@ -823,50 +825,6 @@
       "Id": "Microsoft.VisualStudio.2022.Professional",
       "Name": "Visual Studio Professional 2022",
       "Version": "17.10.1",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Mozilla.Firefox.DeveloperEdition",
-      "Name": "Firefox Developer Edition",
-      "Version": "127.0",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "Mozilla.Firefox",
-      "Name": "Mozilla Firefox",
-      "Version": "126.0.1",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -1287,6 +1245,28 @@
       "Id": "Olivia.VIA",
       "Name": "VIA",
       "Version": "3.0.0.0",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Symless.Synergy",
+      "Name": "Synergy (64-bit)",
+      "Version": "3.0.80.1-rc3",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
