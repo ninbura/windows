@@ -115,10 +115,10 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - restart windows terminal
    - run the following commands
      - ```powershell
-       new-item -path "~/repos" -itemtype "directory"
-       cd ~/repos
+       if (!(Test-Path "~/repos")) { New-Item -path "~/repos" -ItemType "Directory" }
+       Set-Location -Path "~/repos"
        git clone https://github.com/ninbura/windows
-       new-item -path "~/repos/windows/config.json" -itemtype "file"
+       New-Item -Path "~/repos/windows/config.json" -ItemType "File"
        ```
      - not that `~` represents your user's directory (ie `C:/Users/gabri/`)
    - open `~/repos/windows/config.json` in desired text editor
