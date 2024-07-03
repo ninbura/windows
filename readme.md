@@ -113,7 +113,7 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
 9. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
-   - run the following commands
+   - run the following commands (you may have to hit enter multiple times if you copy/paste the full block)
      - ```powershell
        if (!(Test-Path "~/repos")) { New-Item -path "~/repos" -ItemType "Directory" }
        Set-Location -Path "~/repos"
