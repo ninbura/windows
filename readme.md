@@ -101,11 +101,31 @@ This repository aims to assist anyone attempting to install and configure/optimi
    - wait until all updates have been retreived, should be a little loading symbol to reference
    - select "update all" just left of the "get updates" button
    - wait for all microsoft store applications to update before proceeding to step 7
-7. ### install powershell 7 & git
-   - right click start button on taskbar & select "Terminal (Admin)"
-   - run the following command
-     - ```powershell
-       winget install jazzdelightsme.WingetPathUpdater microsoft.powershell git.git
+7. ### Use winget to install a few prerequisite applications
+   1. right click the start button on taskbar & select "Terminal (Admin)"
+   2. run the following command
+     - ```PowerShell
+       winget install jazzdelightsme.WingetPathUpdater
+       ```
+   3. Close Windows Terminal
+   4. Right click the start button on the taskbar & select "Terminal"
+   5. run the following command
+     - ```PowerShell
+       winget install Microsoft.PowerShell Git.Git
+       ```
+   6. Install your internet browser of choice
+     - Run one of the following commands, unless you plan on using Microsoft Edge which should already be installed.
+     - ```PowerShell
+       winget install TheBrowserCompany.Arc
+       ```
+     - ```PowerShell
+       winget install Mozilla.Firefox
+       ```
+     - ```PowerShell
+       winget install Brave.Brave
+       ```
+     - ```PowerShell
+       winget install Google.Chrome
        ```
 8. ### configure windows terminal
    - restart windows terminal
