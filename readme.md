@@ -2,7 +2,7 @@
 
 First off, there is a [companion video](https://google.com) that goes along with this written tutorial. If at anypoint you feel the written instructions are hard to follow, please view the companion video. Next to each step there will be a link to the specific timestamp in said video regarding said step. This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install, configure/optimize, and maintain Microsoft Windows. 
 
-# table of contents
+# Table of Contents
 
 - [steps](#steps)
   1.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
