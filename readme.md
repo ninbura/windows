@@ -1,6 +1,6 @@
-# summary
+# Preface
 
-This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install and configure/optimize Windows. Maybe most noteably, if you follow the instructions properly you will never have to manually update 90% of your apps again. They will update automatically via Winget Auto Update. I've provided convenient linked lists for popular applications that fall out of winget's domain. As well as linked lists for many common drivers.
+First off, there is a [companion video](https://google.com) that goes along with this written tutorial. If at anypoint you feel the written instructions are hard to follow, please view the companion video. Next to each step there will be a link to the specific timestamp in said video regarding said step. This repository aims to assist anyone attempting to install and configure/optimize Microsoft Windows. Through automation via PowerShell & Winget, as well as other third party tools; you can greatly decrease the time required to install, configure/optimize, and maintain Microsoft Windows. 
 
 # table of contents
 
@@ -52,6 +52,13 @@ This repository aims to assist anyone attempting to install and configure/optimi
 - [bulk edit settings configuration](#bulk-edit-settings-configuration)
   - [config.json example](#configjson-example)
   - [setting descriptions](#setting-descriptions)
+
+# Suggested Prerequisites
+- 1x USB 2.0 flash drive under 32GB
+- 1x USB 3.0 flash drive under 32GB
+- 1x Windows 11 Pro For Workstations product key
+  - You may have access to free keys [here](https://my.visualstudio.com/Downloads?q=Windows%2011) if you have a Microsoft account through your employer.
+  - You can buy cheap keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/).
 
 # steps
 
