@@ -111,9 +111,9 @@ First off, there is a [companion video](https://google.com) that goes along with
 8. ### Use winget to manually install a few applications
     1. right click the start button on taskbar & select "Terminal (Admin)"
     2. run the following command
-     - ```PowerShell
-       winget install jazzdelightsme.WingetPathUpdater
-       ```
+        - ```PowerShell
+          winget install jazzdelightsme.WingetPathUpdater
+          ```
     3. Close Windows Terminal
     4. Right click the start button on the taskbar & select "Terminal"
     5. run the following command
