@@ -139,7 +139,7 @@ First off, there is a [companion video](https://google.com) that goes along with
             - ```PowerShell
               winget install Google.Chrome
               ```
-        - At this point I would recommend openning this tutorial on the computer your configuring via the browser you just installed. This will make running commands much easier as you can just copy & paste them.
+        - At this point I would recommend opening this tutorial on the computer your configuring via the browser you just installed. This will make running commands much easier as you can just copy & paste them.
 9. ### Configure Windows Terminal
     - Restart Windows Terminal
     - Open Windows Terminal settings (dropdown near tabs) & set your "Default profile" as PowerShell 7 (darker blue PowerShell).
