@@ -17,14 +17,8 @@ First off, there is a [companion video](https://google.com) that goes along with
   10. [manually configure other windows settings](#manually-configure-other-windows-settings)
   11. [download/install system drivers](#downloadinstall-system-drivers)
   12. [wigui - install winget auto update & bulk install applications](#wigui---install-winget-auto-update--bulk-install-applications)
-      - [wigui preface](#wigui-preface)
-      - [populate wigui lists](#populate-wigui-lists)
-      - [install winget auto update](#install-winget-auto-update)
-      - [bulk install applications](#bulk-install-applications)
   13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
   14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-      - [cpu & gpu](#cpu--gpu)
-      - [m.2 drives](#m2-drives)
   15. [download/install remaining software](#downloadinstall-remaining-software)
   16. [configure audio settings](#configure-audio-settings)
   17. [configure rgb lighting](#configure-rgb-lighting)
@@ -35,12 +29,6 @@ First off, there is a [companion video](https://google.com) that goes along with
   - [amd cpu/chipset & gpu](#amd-cpuchipset--gpu)
   - [nvidia](#nvidia)
   - [other drivers](#other-drivers)
-- [winget basics](#winget-basics)
-  - [winget preface](#winget-preface)
-  - [searching for apps](#searching-for-apps)
-  - [install apps](#installing-apps)
-  - [updating apps](#updating-apps)
-  - [uninstalling apps](#uninstalling-apps)
 - [software](#software)
   - [**wsl** (windows subsystem for linux)](#wsl-windows-subsystem-for-linux)
   - [microsoft store](#microsoft-store)
@@ -62,12 +50,24 @@ First off, there is a [companion video](https://google.com) that goes along with
 
 # steps
 
-1. ### update & configure your motherboard's bios
-   - attach any usb flash drive to your computer
-   - format your flash drive as fat32
-     - if your flash drive is over 32GB you will need to use [this tool](http://ridgecrop.co.uk/index.htm?guiformat.htm)
-     - Otherwise, just follow [this tutorial](https://www.asus.com/support/FAQ/1044735/).
-   - Take note of your motherboard's model number, should be listed on the box it came in, or via an online order.
+1. ### Update & Configure Your Motherboard's BIOS
+  - ### BIOS Update Preface
+    You may need to reference 
+  - ### Prepping Flash Drive
+    1. Plug your <32GB USB 2.0 flash drive to a USB port on a computer running Windows.
+    2. Format said flash drive as FAT32 using File Explorer.
+    3. Locate your Motherboard's model number.
+    4. Search for your motherboard's product page, and navigate to the "support" page for said product.
+    5. Download the latest BIOS version available, and extract the contents to the root of your flash drive.
+      - If specified on the support page, please verify that your *current BIOS* version meets the minimum required BIOS version to upgrade to the latest BIOS version.
+  - ### Updating Via Existing BIOS
+    1. Plug the flash drive that now contains the desired BIOS into a USB port on the computer you're trying to update.
+      - It is preferred that you use a port directly attached to your motherboard on a desktop computer, ie on the back of your computer.
+    2. Boot into your current BIOS by mashing the BIOS key as your computer boots (typically the `delete` key).
+    3. Navigate to the BIOS flashing tool, usually located in "Advanced" settings and named something with "flash" in its name.
+    
+  - ### Updating Via "Flashback"
+  - ### Configuring BIOS
    - search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
    - copy the bios file to the flash drive
    - enter bios (mash [delete] key while computer is restarting)
@@ -79,21 +79,21 @@ First off, there is a [companion video](https://google.com) that goes along with
    - enable x.m.p ([tutorial](https://www.youtube.com/watch?v=qCnGQPlY6pE) | should be similar for most motherboards)
      - if computer no longer boots or bootloops after enabling x.m.p see [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
    - set fan curves in bios if desired ([tutorial](https://www.youtube.com/watch?v=ZoWlNIzOO0E) | should be similar for most motherboards)
-2. ### purchase/obtain a `windows 11 pro for workstations` product key
+3. ### purchase/obtain a `windows 11 pro for workstations` product key
    - buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
    - if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
      - _you will need to login with your work/business email before this link will direct you to the proper place_
-3. ### create a bootable flash drive & install windows
+4. ### create a bootable flash drive & install windows
    - attach an 8gb+ flash drive to your computer
    - download & install [rufus](https://rufus.ie/en/)
    - use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](https://pureinfotech.com/rufus-create-bootable-windows-11-usb/))
    - Before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
    - If you don't have a product key yet you might be able to manually select windows 11 pro for workstations as the target operating system. But I've come accross times where "for workstations" isn't in the operating system list.
    - undergo the windows setup process ([tutorial](https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117) | start video at 1:57)
-4. ### verify that windows is activated
+5. ### verify that windows is activated
    - open settings & navigate to `system > activation`
    - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-5. ### update windows
+6. ### update windows
    - open windows settings & navigate to `windows updates`
    - optionally - toggle "Get the latest updates as soon asy they're available"; I personally suggest doing this.
    - check for updates & wait for them to download/install
@@ -101,14 +101,14 @@ First off, there is a [companion video](https://google.com) that goes along with
    - check for updates again
    - If you have more updates and pc requests restarting again, do so.
    - repeat until windows states that everything is up-to-date
-6. ### update microsoft store apps
+7. ### update microsoft store apps
    - open the microsoft store via your start menu
    - click the "library" button in the bottom left hand corner of the window
    - select "get updates" in the top right hand corner of the window
    - wait until all updates have been retreived, should be a little loading symbol to reference
    - select "update all" just left of the "get updates" button
    - wait for all microsoft store applications to update before proceeding to step 7
-7. ### Use winget to install a few prerequisite applications
+8. ### Use winget to install a few prerequisite applications
    1. right click the start button on taskbar & select "Terminal (Admin)"
    2. run the following command
      - ```PowerShell
@@ -134,11 +134,11 @@ First off, there is a [companion video](https://google.com) that goes along with
      - ```PowerShell
        winget install Google.Chrome
        ```
-8. ### configure windows terminal
+9. ### configure windows terminal
    - restart windows terminal
    - open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
    - select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-9. ### download, configure, & run `bulk-edit-settings` powershell script
+10. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
    - run the following commands (you may have to hit enter multiple times if you copy/paste the full block)
      - ```powershell
@@ -159,7 +159,7 @@ First off, there is a [companion video](https://google.com) that goes along with
      - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
        - `cd ~/repos/windows`
        - `git pull`
-10. ### manually configure other windows settings
+11. ### manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
@@ -178,14 +178,14 @@ First off, there is a [companion video](https://google.com) that goes along with
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-11. ### download/install system drivers
+12. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-12. ### UniGetUI - bulk install/update applications
+13. ### UniGetUI - bulk install/update applications
     - #### under construction
-13. ### configure msi afterburner (gpu fan curve)
+14. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
     - This program should have been installed via wigui, just search for it in start and open it.
     - open settings (should be a button on the left hand side)
@@ -201,7 +201,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - hit "apply"
     - hit "ok" to close settings dialog
     - minimize msi afterburner
-14. ### verify that system temperatures are in-check
+15. ### verify that system temperatures are in-check
     - #### cpu & gpu
       - temps are model dependent
       - higher end components run hotter than lower end components
@@ -236,7 +236,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - open crystaldiskmark and hit the giant "all" button
         - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
       - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-15. ### download/install remaining software
+16. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -245,7 +245,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
       - see [winget basics](#winget-basics) for instructions on how to use winget
     - If software isn't available via winget, install software the old fashioned way 😭
-16. ### configure audio settings
+17. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -260,7 +260,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-17. ### configure rgb lighting
+18. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
