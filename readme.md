@@ -86,26 +86,29 @@ First off, there is a [companion video](https://google.com) that goes along with
         3. Enable XMP.
         4. Adjust system fan curves as desired.
 3. ### Install Windows
-   - Under construction
-4. ### verify that windows is activated
-   - open settings & navigate to `system > activation`
-   - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-5. ### update windows
-   - open windows settings & navigate to `windows updates`
-   - optionally - toggle "Get the latest updates as soon asy they're available"; I personally suggest doing this.
-   - check for updates & wait for them to download/install
-   - **restart your computer**
-   - check for updates again
-   - If you have more updates and pc requests restarting again, do so.
-   - repeat until windows states that everything is up-to-date
-6. ### update microsoft store apps
-   - open the microsoft store via your start menu
-   - click the "library" button in the bottom left hand corner of the window
-   - select "get updates" in the top right hand corner of the window
-   - wait until all updates have been retreived, should be a little loading symbol to reference
-   - select "update all" just left of the "get updates" button
-   - wait for all microsoft store applications to update before proceeding to step 7
-7. ### Use winget to install a few prerequisite applications
+    - Under construction
+4. ### Verify that Windows is Activated
+    - open settings & navigate to `system > activation`
+    - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
+5. ### Update Windows
+    - Open the Settings app & navigate to `Windows Updates`.
+    - Optionally, toggle "Get the latest updates as soon as they're available"; I personally suggest doing this.
+    - Check for updates & wait for them to download/install.
+    - Restart your computer.
+    - Check for updates again.
+    - If you have more updates and pc requests restarting again, do so.
+    - Repeat until Windows states that everything is up-to-date.
+6. ### Update Microsoft Store Apps
+    - #### Preface
+        - Completion of this step is often required before winget will function properly, which is a big component of this tutorial.
+    - #### Steps
+        1. Open the Microsoft Store via your Start Menu.
+        2. Click the "library" button in the bottom left hand corner of the window.
+        3. Select "Get Updates" in the top right hand corner of the window.
+        4. Wait until all updates have been retreived, should be a little loading symbol to reference.
+        5. Select "Update All" just left of the "Get Updates" button.
+        6. Wait for all Microsoft Store applications to update before proceeding.
+8. ### Use winget to install a few prerequisite applications
    1. right click the start button on taskbar & select "Terminal (Admin)"
    2. run the following command
      - ```PowerShell
@@ -131,11 +134,11 @@ First off, there is a [companion video](https://google.com) that goes along with
      - ```PowerShell
        winget install Google.Chrome
        ```
-8. ### configure windows terminal
+9. ### configure windows terminal
    - restart windows terminal
    - open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
    - select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-9. ### download, configure, & run `bulk-edit-settings` powershell script
+10. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
    - run the following commands (you may have to hit enter multiple times if you copy/paste the full block)
      - ```powershell
@@ -156,7 +159,7 @@ First off, there is a [companion video](https://google.com) that goes along with
      - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
        - `cd ~/repos/windows`
        - `git pull`
-10. ### manually configure other windows settings
+11. ### manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
@@ -175,14 +178,14 @@ First off, there is a [companion video](https://google.com) that goes along with
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-11. ### download/install system drivers
+12. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-12. ### UniGetUI - bulk install/update applications
+13. ### UniGetUI - bulk install/update applications
     - #### under construction
-13. ### configure msi afterburner (gpu fan curve)
+14. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
     - This program should have been installed via wigui, just search for it in start and open it.
     - open settings (should be a button on the left hand side)
@@ -198,7 +201,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - hit "apply"
     - hit "ok" to close settings dialog
     - minimize msi afterburner
-14. ### verify that system temperatures are in-check
+15. ### verify that system temperatures are in-check
     - #### cpu & gpu
       - temps are model dependent
       - higher end components run hotter than lower end components
@@ -233,7 +236,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - open crystaldiskmark and hit the giant "all" button
         - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
       - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-15. ### download/install remaining software
+16. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -242,7 +245,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
       - see [winget basics](#winget-basics) for instructions on how to use winget
     - If software isn't available via winget, install software the old fashioned way 😭
-16. ### configure audio settings
+17. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -257,7 +260,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-17. ### configure rgb lighting
+18. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
