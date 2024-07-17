@@ -52,7 +52,11 @@ First off, there is a [companion video](https://google.com) that goes along with
 
 1. ### Update & Configure Your Motherboard's BIOS
   - ### BIOS Update Preface
-    You may need to reference 
+    - I *highly* recommend viewing the companion video for this section.
+    - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
+    - Not every motherboard has "Flashback" functionality, which allows you to update your BIOS without access to the current BIOS.
+    - You do not need to update your BIOS via both the existing BIOS & Flashback, choose one or the other.
+    - If you're attempting to update your BIOS to udpate support for a new CPU you will need to use the Flashback option if avaialble. As this typically does not require that you have a CPU, or even RAM installed.
   - ### Prepping Flash Drive
     1. Plug your <32GB USB 2.0 flash drive to a USB port on a computer running Windows.
     2. Format said flash drive as FAT32 using File Explorer.
@@ -63,22 +67,29 @@ First off, there is a [companion video](https://google.com) that goes along with
   - ### Updating Via Existing BIOS
     1. Plug the flash drive that now contains the desired BIOS into a USB port on the computer you're trying to update.
       - It is preferred that you use a port directly attached to your motherboard on a desktop computer, ie on the back of your computer.
-    2. Boot into your current BIOS by mashing the BIOS key as your computer boots (typically the `delete` key).
+    2. Boot into your current BIOS by mashing the BIOS access key as your computer boots (typically the `delete` key).
     3. Navigate to the BIOS flashing tool, usually located in "Advanced" settings and named something with "flash" in its name.
-    
+    4. Select the flash drive & the BIOS file on said flash drive to begin the update process.
+    5. Wait for the BIOS to complete flashing, and follow any prompt thereafter. Typically, your computer will automatically restart multiple times after this point, as it updates the firmware of multiple on-board devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS".
   - ### Updating Via "Flashback"
+    1. Re-name the BIOS file on your USB 2.0 flash drive to what is specified via your motherboard's manual.
+      - In some cases there will be a program that was extracted with your BIOS that will automatically rename the BIOS.
+    2. Plug your USB 2.0 flash drive into the specified USB flashback port on your motherboard.
+    3. In most cases, your manual will now instruct you to press and hold a BIOS flashback button for a couple seconds.
+      - This button is sometimes located on the IO of your motherboard next to the USB ports, other times it is located on the front of the of the motherboard and must be accessed by opening your computer case.
+      - Please refer to your motherboard's manual for specifics.
+    4. In most cases, there should now be a flashing light, and the update process is complete when that light has finished flashing.
+    5. Once the light is done flashing, turn your computer on via the power button. At this point your computer may restart multiple times as it updates the firmware of onboard devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS". 
   - ### Configuring BIOS
-   - search for your motherboard via it's model number on google & download the latest bios file from your motherboard's support page
-   - copy the bios file to the flash drive
-   - enter bios (mash [delete] key while computer is restarting)
-   - verify that cpu temp isn't anything crazy
-     - should be on bios home page
-     - should be sub 60c
-     - if temps are higher than this see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-   - undergo the bios update process ([tutorial](https://www.youtube.com/watch?v=n6ZAMrjRudg) | should be similar for most motherboards)
-   - enable x.m.p ([tutorial](https://www.youtube.com/watch?v=qCnGQPlY6pE) | should be similar for most motherboards)
-     - if computer no longer boots or bootloops after enabling x.m.p see [troubleshooting bootloop / boot problems](#troubleshooting-bootloop--boot-problems)
-   - set fan curves in bios if desired ([tutorial](https://www.youtube.com/watch?v=ZoWlNIzOO0E) | should be similar for most motherboards)
+    - There are 4 main tasks you want to accomplish in your newly updated BIOS.
+      1. Verify that your virtual or physical TPM is enabled (usually on by default).
+      3. Verify that secure boot is *enabled and active*.
+      4. Verify that XMP is enabled.
+        - If your memory is clocked far above the specified max clock rate for your motherboard, your computer may fail to boot after enabling this setting.
+        - IMO it is best to use memory that has the same clock spec as your motherboard has specified.
+        - If the clock is above the specified clock speed, I would lower it to the one specified. But feel free to experiment as higher is typically better.
+      4. Adjust system fan curves as desired.
+    - As the process for much of this is highly relative to your motherboard, I would highly suggest reviewing the companion video for this step.
 3. ### purchase/obtain a `windows 11 pro for workstations` product key
    - buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
    - if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
