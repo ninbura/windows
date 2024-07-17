@@ -36,7 +36,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 
 # steps
-1. Mount the Windows 11 ISO/Installer to a Bootable Flash Drive
+1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive
     1. Plug your USB 3.0 flash drive of 8GB or greater into a computer running Windows.
     2. Install [Rufus](https://rufus.ie/en/) on said PC.
        - Running the following command in PowerShell is the easiest way to install Rufus.
