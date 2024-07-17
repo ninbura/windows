@@ -63,21 +63,20 @@ First off, there is a [companion video](https://google.com) that goes along with
         3. Verify that secure boot is *enabled and active*.
         3. Verify that XMP is enabled.
         4. Adjust system fan curves as desired.
-3. ### purchase/obtain a `windows 11 pro for workstations` product key
-   - buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
-   - if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
-     - _you will need to login with your work/business email before this link will direct you to the proper place_
-4. ### create a bootable flash drive & install windows
+2. ### purchase/obtain a `windows 11 pro for workstations` product key
+   - If you have a business grade microsoft account for work, you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011).
+   - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
+3. ### create a bootable flash drive & install windows
    - attach an 8gb+ flash drive to your computer
    - download & install [rufus](https://rufus.ie/en/)
    - use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](https://pureinfotech.com/rufus-create-bootable-windows-11-usb/))
    - Before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
    - If you don't have a product key yet you might be able to manually select windows 11 pro for workstations as the target operating system. But I've come accross times where "for workstations" isn't in the operating system list.
    - undergo the windows setup process ([tutorial](https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117) | start video at 1:57)
-5. ### verify that windows is activated
+4. ### verify that windows is activated
    - open settings & navigate to `system > activation`
    - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-6. ### update windows
+5. ### update windows
    - open windows settings & navigate to `windows updates`
    - optionally - toggle "Get the latest updates as soon asy they're available"; I personally suggest doing this.
    - check for updates & wait for them to download/install
@@ -85,14 +84,14 @@ First off, there is a [companion video](https://google.com) that goes along with
    - check for updates again
    - If you have more updates and pc requests restarting again, do so.
    - repeat until windows states that everything is up-to-date
-7. ### update microsoft store apps
+6. ### update microsoft store apps
    - open the microsoft store via your start menu
    - click the "library" button in the bottom left hand corner of the window
    - select "get updates" in the top right hand corner of the window
    - wait until all updates have been retreived, should be a little loading symbol to reference
    - select "update all" just left of the "get updates" button
    - wait for all microsoft store applications to update before proceeding to step 7
-8. ### Use winget to install a few prerequisite applications
+7. ### Use winget to install a few prerequisite applications
    1. right click the start button on taskbar & select "Terminal (Admin)"
    2. run the following command
      - ```PowerShell
@@ -118,11 +117,11 @@ First off, there is a [companion video](https://google.com) that goes along with
      - ```PowerShell
        winget install Google.Chrome
        ```
-9. ### configure windows terminal
+8. ### configure windows terminal
    - restart windows terminal
    - open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
    - select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-10. ### download, configure, & run `bulk-edit-settings` powershell script
+9. ### download, configure, & run `bulk-edit-settings` powershell script
    - restart windows terminal
    - run the following commands (you may have to hit enter multiple times if you copy/paste the full block)
      - ```powershell
@@ -143,7 +142,7 @@ First off, there is a [companion video](https://google.com) that goes along with
      - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
        - `cd ~/repos/windows`
        - `git pull`
-11. ### manually configure other windows settings
+10. ### manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
@@ -162,14 +161,14 @@ First off, there is a [companion video](https://google.com) that goes along with
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-12. ### download/install system drivers
+11. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-13. ### UniGetUI - bulk install/update applications
+12. ### UniGetUI - bulk install/update applications
     - #### under construction
-14. ### configure msi afterburner (gpu fan curve)
+13. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
     - This program should have been installed via wigui, just search for it in start and open it.
     - open settings (should be a button on the left hand side)
@@ -185,7 +184,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - hit "apply"
     - hit "ok" to close settings dialog
     - minimize msi afterburner
-15. ### verify that system temperatures are in-check
+14. ### verify that system temperatures are in-check
     - #### cpu & gpu
       - temps are model dependent
       - higher end components run hotter than lower end components
@@ -220,7 +219,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - open crystaldiskmark and hit the giant "all" button
         - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
       - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-16. ### download/install remaining software
+15. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -229,7 +228,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
       - see [winget basics](#winget-basics) for instructions on how to use winget
     - If software isn't available via winget, install software the old fashioned way 😭
-17. ### configure audio settings
+16. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -244,7 +243,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-18. ### configure rgb lighting
+17. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
