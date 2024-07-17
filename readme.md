@@ -28,15 +28,37 @@ First off, there is a [companion video](https://google.com) that goes along with
 - [bulk edit settings configuration](#bulk-edit-settings-configuration)
 
 # Suggested Prerequisites
-- 1x USB 2.0 flash drive under 32GB
-- 1x USB 3.0 flash drive under 32GB
-- 1x Windows 11 Pro For Workstations product key
+- A currently functioning computer running Windows.
+- A USB 2.0 flash drive under 32GB in size.
+- A USB 3.0 flash drive greater than 8GB in size.
+- A Windows 11 Pro For Workstations product key.
     - If you have a business grade microsoft account for work, you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011).
     - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 
 # steps
-
-1. ### Update & Configure Your Motherboard's BIOS
+1. Mount the Windows 11 ISO/Installer to a Bootable Flash Drive
+    1. Plug your USB 3.0 flash drive of 8GB or greater into a computer running Windows.
+    2. Install [Rufus](https://rufus.ie/en/) on said PC.
+       - Running the following command in PowerShell is the easiest way to install Rufus.
+       - ```PowerShell
+         winget install Rufus.Rufus --Location Documents
+         ```
+    3. Launch Rufus.
+    4. Click the arrow next to the "SELECT" button and click "DOWNLOAD", then click the "DOWNLOAD" button.
+    5. Select "Windows 11" in the drop down then click "Continue".
+    6. The latest release should be automatically selected, click "Continue" again.
+    7. There should only be one available "Edition" and it should be automatically selected, click continue again.
+    8. Select your language.
+        - Note that there are two English options, "English (United States)", and English International.
+    9. x64 "Architecture" should automatically be selected, click "Download".
+    10. Choose the location in-which you'd like to save the ISO, and wait for the download to complete.
+    11. Select your flash drive via the "Device" dropdown.
+    12. Change the "DOWNLOAD" dropdown back to "SELECT", and then click select.
+    13. Select the ISO you just downloaded and click "Open".
+    14. Click START at the bottom of the window.
+    15. Uncheck every pre-selected option in the "Window User Experience" dialog, then click "OK".
+    16. You should be notified when the mounting process is complete, after which you may close Rufus.
+2. ### Update & Configure Your Motherboard's BIOS
     - #### BIOS Update Preface
         - I *highly* recommend viewing the companion video for this section.
         - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
@@ -59,11 +81,11 @@ First off, there is a [companion video](https://google.com) that goes along with
         4. In most cases, there should now be a flashing light, and the update process is complete when that light has finished flashing.
         5. Once the light is done flashing, turn your computer on via the power button. At this point your computer may restart multiple times as it updates the firmware of onboard devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS". 
     - #### Configuring BIOS
-        1. Verify that your virtual or physical TPM is enabled (usually on by default).
+        1. Enable virtual or physical TPM (usually on by default).
         3. Verify that secure boot is *enabled and active*.
-        3. Verify that XMP is enabled.
+        3. Enable XMP.
         4. Adjust system fan curves as desired.
-3. ### create a bootable flash drive & install windows
+3. ### Create a Bootable Flash Drive & Install Windows
    - attach an 8gb+ flash drive to your computer
    - download & install [rufus](https://rufus.ie/en/)
    - use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](https://pureinfotech.com/rufus-create-bootable-windows-11-usb/))
