@@ -31,8 +31,8 @@ First off, there is a [companion video](https://google.com) that goes along with
 - 1x USB 2.0 flash drive under 32GB
 - 1x USB 3.0 flash drive under 32GB
 - 1x Windows 11 Pro For Workstations product key
-    - You may have access to free keys [here](https://my.visualstudio.com/Downloads?q=Windows%2011) if you have a Microsoft account through your employer.
-    - You can buy cheap keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/).
+    - If you have a business grade microsoft account for work, you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011).
+    - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 
 # steps
 
@@ -63,9 +63,6 @@ First off, there is a [companion video](https://google.com) that goes along with
         3. Verify that secure boot is *enabled and active*.
         3. Verify that XMP is enabled.
         4. Adjust system fan curves as desired.
-2. ### purchase/obtain a `windows 11 pro for workstations` product key
-   - If you have a business grade microsoft account for work, you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011).
-   - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 3. ### create a bootable flash drive & install windows
    - attach an 8gb+ flash drive to your computer
    - download & install [rufus](https://rufus.ie/en/)
