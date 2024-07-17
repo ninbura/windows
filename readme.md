@@ -85,13 +85,8 @@ First off, there is a [companion video](https://google.com) that goes along with
         3. Verify that secure boot is *enabled and active*.
         3. Enable XMP.
         4. Adjust system fan curves as desired.
-3. ### Create a Bootable Flash Drive & Install Windows
-   - attach an 8gb+ flash drive to your computer
-   - download & install [rufus](https://rufus.ie/en/)
-   - use rufus to download & mount the windows 11 iso to your flash drive ([tutorial](https://pureinfotech.com/rufus-create-bootable-windows-11-usb/))
-   - Before starting the windows setup process, please have your aformentioned windows 11 pro for workstations product key ready.
-   - If you don't have a product key yet you might be able to manually select windows 11 pro for workstations as the target operating system. But I've come accross times where "for workstations" isn't in the operating system list.
-   - undergo the windows setup process ([tutorial](https://youtu.be/mTDbHgs9dHk?si=hBSuKpeqPmHCfUP6&t=117) | start video at 1:57)
+3. ### Install Windows
+   - Under construction
 4. ### verify that windows is activated
    - open settings & navigate to `system > activation`
    - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
