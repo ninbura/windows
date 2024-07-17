@@ -51,27 +51,27 @@ First off, there is a [companion video](https://google.com) that goes along with
 # steps
 
 1. ### Update & Configure Your Motherboard's BIOS
-  - ### BIOS Update Preface
+  - #### BIOS Update Preface
     - I *highly* recommend viewing the companion video for this section.
     - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
     - Not every motherboard has "Flashback" functionality, which allows you to update your BIOS without access to the current BIOS.
     - You do not need to update your BIOS via both the existing BIOS & Flashback, choose one or the other.
     - If you're attempting to update your BIOS to udpate support for a new CPU you will need to use the Flashback option if avaialble. As this typically does not require that you have a CPU, or even RAM installed.
-  - ### Prepping Flash Drive
+  - #### Prepping Flash Drive
     1. Plug your <32GB USB 2.0 flash drive to a USB port on a computer running Windows.
     2. Format said flash drive as FAT32 using File Explorer.
     3. Locate your Motherboard's model number.
     4. Search for your motherboard's product page, and navigate to the "support" page for said product.
     5. Download the latest BIOS version available, and extract the contents to the root of your flash drive.
       - If specified on the support page, please verify that your *current BIOS* version meets the minimum required BIOS version to upgrade to the latest BIOS version.
-  - ### Updating Via Existing BIOS
+  - #### Updating Via Existing BIOS
     1. Plug the flash drive that now contains the desired BIOS into a USB port on the computer you're trying to update.
       - It is preferred that you use a port directly attached to your motherboard on a desktop computer, ie on the back of your computer.
     2. Boot into your current BIOS by mashing the BIOS access key as your computer boots (typically the `delete` key).
     3. Navigate to the BIOS flashing tool, usually located in "Advanced" settings and named something with "flash" in its name.
     4. Select the flash drive & the BIOS file on said flash drive to begin the update process.
     5. Wait for the BIOS to complete flashing, and follow any prompt thereafter. Typically, your computer will automatically restart multiple times after this point, as it updates the firmware of multiple on-board devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS".
-  - ### Updating Via "Flashback"
+  - #### Updating Via "Flashback"
     1. Re-name the BIOS file on your USB 2.0 flash drive to what is specified via your motherboard's manual.
       - In some cases there will be a program that was extracted with your BIOS that will automatically rename the BIOS.
     2. Plug your USB 2.0 flash drive into the specified USB flashback port on your motherboard.
@@ -80,7 +80,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - Please refer to your motherboard's manual for specifics.
     4. In most cases, there should now be a flashing light, and the update process is complete when that light has finished flashing.
     5. Once the light is done flashing, turn your computer on via the power button. At this point your computer may restart multiple times as it updates the firmware of onboard devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS". 
-  - ### Configuring BIOS
+  - #### Configuring BIOS
     - There are 4 main tasks you want to accomplish in your newly updated BIOS.
       1. Verify that your virtual or physical TPM is enabled (usually on by default).
       3. Verify that secure boot is *enabled and active*.
