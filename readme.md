@@ -445,14 +445,9 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### troubleshooting bootloop / boot problems
 
-- if computer is bootlooping
-  - re-flash bios using advanced flashing utility
-  - Consult motherboard manual for exact steps, should mention the word "flash" and describe a process for updating your bios without having access to the bios.
-  - typically involves
-    - putting bios file on flash drive
-    - naming bios file something specific
-    - putting usb stick in specific port
-    - pressing a physical button on the motherboard / io panel or simply booting the pc once criteria is met
+- If computer is bootlooping
+  - Re-flash bios using Flashback functionality, note that not every computer has this functionality.
+  - See []()
 - if computer failed to boot into bios after enabling x.m.p and now you're stuck in "safe mode"
   - try setting ram clock at a lower clock
   - if setting the clock speed lower multiple time fails simply disable x.m.p
@@ -462,13 +457,12 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### troubleshooting failed windows activation
 
-- verify that the activation key you entered matches the one you purchased/obtained earlier
-- if key matches but windows still failed to activate you may need to activate by phone
-  - there should be a button to do this via the `system > activation` screen
-  - follow on-screen instructions
-  - involves calling a number and answering prompts by voice and dial pad
-  - I typically start spamming "represnetative" by voice to try to get to someone as soon as possible. But I believe you can only do this after stating that you're having trouble with activating windows.
-- I've never had phone activiation fail, but if it did somehow you may have purchased a key that's already been used and will need to get a new one.
+- Verify that the product key you entered matches the one you purchased/obtained earlier.
+- If the product keys match but Windows still failed to activate you may need to activate by phone.
+  - There should be a button to do this via the `system > activation` screen.
+  - Follow on-screen instructions.
+  - Involves calling a number and answering prompts by voice and or your dial pad.
+- I've never had phone activiation fail, but if it did somehow, you may have purchased a key that's already been used and will need to get a new one.
 
 ### troubleshooting high temperatures
 
