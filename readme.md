@@ -47,16 +47,16 @@ First off, there is a [companion video](https://google.com) that goes along with
     4. Click the arrow next to the "SELECT" button and click "DOWNLOAD", then click the "DOWNLOAD" button.
     5. Select "Windows 11" in the drop down then click "Continue".
     6. The latest release should be automatically selected, click "Continue" again.
-    7. There should only be one available "Edition" and it should be automatically selected, click continue again.
-    8. Select your language.
+    7. There should only be one available "Edition" and it should be automatically selected, click "Continue" again.
+    8. Select your preferred language.
         - Note that there are two English options, "English (United States)", and English International.
-    9. x64 "Architecture" should automatically be selected, click "Download".
+    9. The x64 "Architecture" should automatically be selected, click "Download".
     10. Choose the location in-which you'd like to save the ISO, and wait for the download to complete.
     11. Select your flash drive via the "Device" dropdown.
-    12. Change the "DOWNLOAD" dropdown back to "SELECT", and then click select.
+    12. Change the "DOWNLOAD" dropdown back to "SELECT", and then click "SELECT".
     13. Select the ISO you just downloaded and click "Open".
     14. Click START at the bottom of the window.
-    15. Uncheck every pre-selected option in the "Window User Experience" dialog, then click "OK".
+    15. Uncheck every checkbox in the "Window User Experience" dialog, then click "OK".
     16. You should be notified when the mounting process is complete, after which you may close Rufus.
 2. ### Update & Configure Your Motherboard's BIOS
     - #### BIOS Update Preface
