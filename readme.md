@@ -108,7 +108,7 @@ First off, there is a [companion video](https://google.com) that goes along with
         4. Wait until all updates have been retreived, should be a little loading symbol to reference.
         5. Select "Update All" just left of the "Get Updates" button.
         6. Wait for all Microsoft Store applications to update before proceeding.
-8. ### Use winget to manually install a few applications
+7. ### Use winget to manually install a few applications
     1. right click the start button on taskbar & select "Terminal (Admin)"
     2. run the following command
         - ```PowerShell
@@ -140,11 +140,11 @@ First off, there is a [companion video](https://google.com) that goes along with
               winget install Google.Chrome
               ```
         - At this point I would recommend opening this tutorial on the computer your configuring via the browser you just installed. This will make running commands much easier as you can just copy & paste them.
-9. ### Configure Windows Terminal
+8. ### Configure Windows Terminal
     - Restart Windows Terminal
     - Open Windows Terminal settings (dropdown near tabs) & set your "Default profile" as PowerShell 7 (darker blue PowerShell).
     - Select the powershell 7 profile in the left hand menu & enable "Run this profile as administrator".
-10. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
+9. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
@@ -159,7 +159,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Save and close `config.json`.
     - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
     - Wait for the script to finish running, then **restart your computer**.
-11. ### anually configure other windows settings
+11. ### Manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
