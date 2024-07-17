@@ -108,58 +108,57 @@ First off, there is a [companion video](https://google.com) that goes along with
         4. Wait until all updates have been retreived, should be a little loading symbol to reference.
         5. Select "Update All" just left of the "Get Updates" button.
         6. Wait for all Microsoft Store applications to update before proceeding.
-8. ### Use winget to install a few prerequisite applications
-   1. right click the start button on taskbar & select "Terminal (Admin)"
-   2. run the following command
+8. ### Use winget to manually install a few applications
+    1. right click the start button on taskbar & select "Terminal (Admin)"
+    2. run the following command
      - ```PowerShell
        winget install jazzdelightsme.WingetPathUpdater
        ```
-   3. Close Windows Terminal
-   4. Right click the start button on the taskbar & select "Terminal"
-   5. run the following command
-     - ```PowerShell
-       winget install Microsoft.PowerShell Git.Git
-       ```
-   6. Install your internet browser of choice
-     - Run one of the following commands, unless you plan on using Microsoft Edge which should already be installed.
-     - ```PowerShell
-       winget install TheBrowserCompany.Arc
-       ```
-     - ```PowerShell
-       winget install Mozilla.Firefox
-       ```
-     - ```PowerShell
-       winget install Brave.Brave
-       ```
-     - ```PowerShell
-       winget install Google.Chrome
-       ```
-9. ### configure windows terminal
-   - restart windows terminal
-   - open windows terminal settings (dropdown near tabs) & set your default profile as powershell 7 (darker blue powershell)
-   - select the powershell 7 profile in the left hand menu & enable "run this profile as administrator"
-10. ### download, configure, & run `bulk-edit-settings` powershell script
-   - restart windows terminal
-   - run the following commands (you may have to hit enter multiple times if you copy/paste the full block)
-     - ```powershell
-       if (!(Test-Path "~/repos")) { New-Item -path "~/repos" -ItemType "Directory" }
-       Set-Location -Path "~/repos"
-       git clone https://github.com/ninbura/windows
-       New-Item -Path "~/repos/windows/config.json" -ItemType "File"
-       ```
-     - not that `~` represents your user's directory (ie `C:/Users/gabri/`)
-   - open `~/repos/windows/config.json` in desired text editor
-   - see [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file
-   - save and close `config.json`
-   - right click `~/repos/windows/run-me.bat` & select "run as administrator"
-   - Wait for the script to finish running, then **restart your computer**.
-   - ### some notes
-     - It's advandtageous to maintain and backup your `config.json` file somewhere, so you can easily load it in the future.
-     - I will likely update the preconfigured `config.json` example, as well as add more options in the future. Revisit this repository every so often to get the latest enhancements.
-     - To update the `bulk-edit-settings.ps1` script to handle said new options, you simply need to `pull` the repository in its existing location on your pc using git.
-       - `cd ~/repos/windows`
-       - `git pull`
-11. ### manually configure other windows settings
+    3. Close Windows Terminal
+    4. Right click the start button on the taskbar & select "Terminal"
+    5. run the following command
+        - ```PowerShell
+          winget install Microsoft.PowerShell Git.Git
+          ```
+    6. Install Your Internet Browser of Choice
+        - If your browser is not listed below use the following command to find your desired browser ID via winget.
+            - ```PowerShell
+              winget search [browser name]
+              ```
+        - If your desired browser is not available on winget, install it the old fashion way.
+        - Run one of the following commands, unless you plan on using Microsoft Edge which should already be installed.
+            - ```PowerShell
+              winget install TheBrowserCompany.Arc
+              ```
+            - ```PowerShell
+              winget install Mozilla.Firefox
+              ```
+            - ```PowerShell
+              winget install Brave.Brave
+              ```
+            - ```PowerShell
+              winget install Google.Chrome
+              ```
+9. ### Configure Windows Terminal
+    - Restart Windows Terminal
+    - Open Windows Terminal settings (dropdown near tabs) & set your "Default profile" as PowerShell 7 (darker blue PowerShell).
+    - Select the powershell 7 profile in the left hand menu & enable "Run this profile as administrator".
+10. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
+    - Restart Windows Terminal
+    - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
+        - ```PowerShell
+          if (!(Test-Path "~/repos")) { New-Item -Path "~/repos" -ItemType "Directory" }
+          Set-Location -Path "~/repos"
+          git clone https://github.com/ninbura/windows
+          New-Item -Path "~/repos/windows/config.json" -ItemType "File"
+          ```
+    - Note that `~` represents your user's directory (ie `C:/Users/gabri/`).
+    - Open `~/repos/windows/config.json` in desired text editor (ie Notepad).
+    - See [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file.
+    - Save and close `config.json`.
+    - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
+    - Wait for the script to finish running, then **restart your computer**.
+11. ### anually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
