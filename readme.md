@@ -125,7 +125,7 @@ First off, there is a [companion video](https://google.com) that goes along with
             - ```PowerShell
               winget search [browser name]
               ```
-        - If your desired browser is not available on winget, install it the old fashion way.
+        - If your desired browser is not available on winget, install it the old fashionED way.
         - Run one of the following commands, unless you plan on using Microsoft Edge which should already be installed.
             - ```PowerShell
               winget install TheBrowserCompany.Arc
