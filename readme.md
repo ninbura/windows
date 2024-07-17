@@ -45,7 +45,7 @@ First off, there is a [companion video](https://google.com) that goes along with
          ```
     3. Launch Rufus.
     4. Click the arrow next to the "SELECT" button and click "DOWNLOAD", then click the "DOWNLOAD" button.
-    5. Select "Windows 11" in the drop down then click "Continue".
+    5. Select "Windows 11" in the drop down, then click "Continue".
     6. The latest release should be automatically selected, click "Continue" again.
     7. There should only be one available "Edition" and it should be automatically selected, click "Continue" again.
     8. Select your preferred language.
