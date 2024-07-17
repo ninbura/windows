@@ -51,12 +51,12 @@ First off, there is a [companion video](https://google.com) that goes along with
 # steps
 
 1. ### Update & Configure Your Motherboard's BIOS
-  - #### BIOS Update Preface
-    - I *highly* recommend viewing the companion video for this section.
-    - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
-    - Not every motherboard has "Flashback" functionality, which allows you to update your BIOS without access to the current BIOS.
-    - You do not need to update your BIOS via both the existing BIOS & Flashback, choose one or the other.
-    - If you're attempting to update your BIOS to udpate support for a new CPU you will need to use the Flashback option if avaialble. As this typically does not require that you have a CPU, or even RAM installed.
+    - #### BIOS Update Preface
+        - I *highly* recommend viewing the companion video for this section.
+        - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
+        - Not every motherboard has "Flashback" functionality, which allows you to update your BIOS without access to the current BIOS.
+        - You do not need to update your BIOS via both the existing BIOS & Flashback, choose one or the other.
+        - If you're attempting to update your BIOS to udpate support for a new CPU you will need to use the Flashback option if avaialble. As this typically does not require that you have a CPU, or even RAM installed.
 3. ### purchase/obtain a `windows 11 pro for workstations` product key
    - buy keys [here](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/)
    - if you have a business grade microsoft account for work you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011)
