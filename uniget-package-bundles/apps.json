@@ -189,7 +189,9 @@
         "RunAsAdministrator": false,
         "Architecture": "",
         "InstallationScope": "",
-        "CustomParameters": ["--Location Documents"],
+        "CustomParameters": [
+          ""
+        ],
         "PreRelease": false,
         "CustomInstallLocation": "",
         "Version": ""
@@ -1326,6 +1328,50 @@
     {
       "Id": "7zip.7zip",
       "Name": "7-Zip",
+      "Version": "",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "GOG.Galaxy",
+      "Name": "GOG GALAXY",
+      "Version": "",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
+      "Id": "Blizzard.BattleNet",
+      "Name": "Battle.net Setup",
       "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
