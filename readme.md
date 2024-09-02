@@ -370,7 +370,6 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
 - [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
 - [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
-- [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (OBS plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (OBS plugin)
 - [**OBS DistroAV**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (OBS NDI plugin)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
@@ -509,7 +508,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
 - #### services
   - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
 - #### start menu
-  - `ShowMorPins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
+  - `ShowMorePins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
   - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
   - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
   - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
