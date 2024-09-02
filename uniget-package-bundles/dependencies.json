@@ -4,7 +4,7 @@
     {
       "Id": "Microsoft.DirectX",
       "Name": "DirectX End-User Runtime Web \u2026",
-      "Version": "9.29.1974.1",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -26,7 +26,7 @@
     {
       "Id": "Microsoft.VCRedist.2005.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable",
-      "Version": "8.0.61001",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -48,7 +48,7 @@
     {
       "Id": "Microsoft.VCRedist.2005.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable (x64)",
-      "Version": "8.0.61000",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -70,7 +70,7 @@
     {
       "Id": "Microsoft.VCRedist.2008.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x64",
-      "Version": "9.0.30729.6161",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -92,7 +92,7 @@
     {
       "Id": "Microsoft.VCRedist.2008.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x86",
-      "Version": "9.0.30729.6161",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -114,7 +114,7 @@
     {
       "Id": "Microsoft.VCRedist.2010.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2010 x64 Redistributable",
-      "Version": "10.0.40219",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -136,7 +136,7 @@
     {
       "Id": "Microsoft.VCRedist.2010.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2010 x86 Redistributable",
-      "Version": "10.0.40219",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -158,7 +158,7 @@
     {
       "Id": "Microsoft.VCRedist.2012.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x64)",
-      "Version": "11.0.61030.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -180,7 +180,7 @@
     {
       "Id": "Microsoft.VCRedist.2012.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x86)",
-      "Version": "11.0.61030.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -202,7 +202,7 @@
     {
       "Id": "Microsoft.VCRedist.2013.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x64)",
-      "Version": "12.0.40664.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -224,7 +224,7 @@
     {
       "Id": "Microsoft.VCRedist.2013.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x86)",
-      "Version": "12.0.40664.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -246,7 +246,7 @@
     {
       "Id": "Microsoft.VCRedist.2015\u002B.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x64)",
-      "Version": "14.38.33135.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
@@ -268,7 +268,7 @@
     {
       "Id": "Microsoft.VCRedist.2015\u002B.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x86)",
-      "Version": "14.38.33135.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
