@@ -180,7 +180,7 @@
     {
       "Id": "Rufus.Rufus",
       "Name": "Rufus",
-      "Version": "1.0",
+      "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
