@@ -364,17 +364,17 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### old school
 
-- [**Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
-- [**Battlenet Launcher**](https://us.shop.battle.net/en-us) (blizzard's game launcher)
 - [**Davinci Resolve**](https://www.blackmagicdesign.com/products/davinciresolve) (download link near the bottom of the page)
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
 - [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
+- [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
 - [**OBS ASIO**](https://github.com/Andersama/obs-asio/releases) (obs plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (obs plugin)
 - [**OBS NDI**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (obs plugin)
 - [**Rode Central**](https://rode.com/en-us/software/rode-central) (Rodecaster Pro II & Rodecaster Duo)
+- [**Jagex Launcher**](https://www.jagex.com/en-GB/launcher) (RuneScape client)
 - [**window-switcher**](https://github.com/sigoden/window-switcher/releases) (macOS style window switching for windows 11)
 - [**Wootliltiy**](https://wooting.io/wootility) (software to configure wooting keyboards)
 
