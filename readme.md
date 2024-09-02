@@ -486,7 +486,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
 - #### administrative
   - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
 - #### cursor
-  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced point precision, a must for gaming, but just good in all cases to be honest.
+  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced pointer precision, a must for gaming, but just good in all cases to be honest.
   - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
 - #### file explorer
   - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
