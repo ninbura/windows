@@ -442,7 +442,7 @@ Note that if a setting is ommited from the configuration it will simply skip the
     "ShowFileExtensionsForKnownFileTypes": true,
     "ShowHiddenFilesAndFolders": true,
     "ShowRecentlyUsedFilesInQuickAccess": false,
-    "ShowFrequentlyUsedFoldersInQuickAccess": true,
+    "ShowFrequentlyUsedFoldersInQuickAccess": false,
     "ShowOfficeCloudFilesInQuickAccess": false
   },
   "Network": {
