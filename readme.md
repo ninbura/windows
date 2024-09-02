@@ -112,15 +112,19 @@ First off, there is a [companion video](https://google.com) that goes along with
     1. right click the start button on taskbar & select "Terminal (Admin)"
     2. run the following command
         - ```PowerShell
+          set-executionpolicy remotesigned
+          ```
+    3. run the following command
+        - ```PowerShell
           winget install jazzdelightsme.WingetPathUpdater
           ```
-    3. Close Windows Terminal
-    4. Right click the start button on the taskbar & select "Terminal"
-    5. run the following command
+    4. Close Windows Terminal
+    5. Right click the start button on the taskbar & select "Terminal"
+    6. run the following command
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    6. Install Your Internet Browser of Choice
+    7. Install Your Internet Browser of Choice
         - If your browser is not listed below use the following command to find your desired browser ID via winget.
             - ```PowerShell
               winget search [browser name]
