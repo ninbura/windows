@@ -143,7 +143,7 @@ First off, there is a [companion video](https://google.com) that goes along with
 8. ### Configure Windows Terminal
     - Restart Windows Terminal
     - Open Windows Terminal settings (dropdown near tabs) & set your "Default profile" as PowerShell 7 (darker blue PowerShell).
-    - Select the powershell 7 profile in the left hand menu & enable "Run this profile as administrator".
+    - Simply right click the start menu and select "Terminal (Admin)" when you need to run PowerShell 7 as admin, but for the most part try to run it un-elevated.
 9. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
