@@ -189,6 +189,8 @@ First off, there is a [companion video](https://google.com) that goes along with
     - restart your computer after installing all drivers
 13. ### UniGetUI - bulk install/update applications
     - #### under construction
+    - UniGetUI package bundles are found in the `uniget-package-bundles` folder within the directory in-which you cloned this repository.
+    - Please install all applications in the `dependencies.json` package bundle before installing anything from the `apps.json` package bundle.
 14. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
     - This program should have been installed via wigui, just search for it in start and open it.
