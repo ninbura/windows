@@ -2,6 +2,28 @@
   "export_version": 2,
   "packages": [
     {
+      "Id": "7zip.7zip",
+      "Name": "7-Zip",
+      "Version": "",
+      "Source": "winget",
+      "ManagerName": "Winget",
+      "InstallationOptions": {
+        "SkipHashCheck": false,
+        "InteractiveInstallation": false,
+        "RunAsAdministrator": false,
+        "Architecture": "",
+        "InstallationScope": "",
+        "CustomParameters": [],
+        "PreRelease": false,
+        "CustomInstallLocation": "",
+        "Version": ""
+      },
+      "Updates": {
+        "UpdatesIgnored": false,
+        "IgnoredVersion": ""
+      }
+    },
+    {
       "Id": "Apple.iTunes",
       "Name": "iTunes",
       "Version": "",
@@ -189,9 +211,7 @@
         "RunAsAdministrator": false,
         "Architecture": "",
         "InstallationScope": "",
-        "CustomParameters": [
-          ""
-        ],
+        "CustomParameters": [],
         "PreRelease": false,
         "CustomInstallLocation": "",
         "Version": ""
@@ -1306,28 +1326,6 @@
     {
       "Id": "Shure.ShurePlusMOTIV",
       "Name": "ShurePlus MOTIV",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "SkipHashCheck": false,
-        "InteractiveInstallation": false,
-        "RunAsAdministrator": false,
-        "Architecture": "",
-        "InstallationScope": "",
-        "CustomParameters": [],
-        "PreRelease": false,
-        "CustomInstallLocation": "",
-        "Version": ""
-      },
-      "Updates": {
-        "UpdatesIgnored": false,
-        "IgnoredVersion": ""
-      }
-    },
-    {
-      "Id": "7zip.7zip",
-      "Name": "7-Zip",
       "Version": "",
       "Source": "winget",
       "ManagerName": "Winget",
