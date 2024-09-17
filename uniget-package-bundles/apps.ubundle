@@ -211,7 +211,10 @@
         "RunAsAdministrator": false,
         "Architecture": "",
         "InstallationScope": "",
-        "CustomParameters": [ "--Location Documents" ],
+        "CustomParameters": [
+          "--Location",
+          "Documents"
+        ],
         "PreRelease": false,
         "CustomInstallLocation": "",
         "Version": ""
