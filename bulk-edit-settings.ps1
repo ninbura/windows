@@ -29,20 +29,6 @@ function getRelativePath(){
   return $relativePath
 }
 
-function createListFiles($relativePath) {
-  $listsPath = "$relativePath/wigui-lists"
-
-  if(!(Test-Path $listsPath)) { New-Item -Path "$listsPath" -ItemType Directory }
-
-  $listNames = @("update-blacklist", "admin-install-list", "dependency-install-list", "standard-install-list")
-
-  foreach ($listName in $listNames) {
-    $listPath = "$listsPath/$listName.txt"
-
-    if(!(test-path $listPath)) { New-Item -Path "$listPath" -ItemType File }
-  }
-}
-
 function modifyRegistry($registryTweak) {
   if($registryTweak.delete){
     if($null -ne $registryTweak.property) {
@@ -440,7 +426,6 @@ function configureOtherSettings($config) {
 function main {
   startup
   $relativePath = getRelativePath
-  createListFiles $relativePath
   $config = Get-Content -Raw -Path "$relativePath\config.json" | ConvertFrom-Json
   editRegistry $config
   configureOtherSettings $config
