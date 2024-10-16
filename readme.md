@@ -152,9 +152,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
-          if (!(Test-Path "~/repos")) { New-Item -Path "~/repos" -ItemType "Directory" } `
-          Set-Location -Path "~/repos" `
-          git clone https://github.com/ninbura/windows `
+          git clone https://github.com/ninbura/windows /Users/$env:username/repos/windows
           New-Item -Path "~/repos/windows/config.json" -ItemType "File"
           ```
     - Note that `~` represents your user's directory (ie `C:/Users/gabri/`).
