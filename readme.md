@@ -187,6 +187,9 @@ First off, there is a [companion video](https://google.com) that goes along with
     - restart your computer after installing all drivers
 13. ### UniGetUI - bulk install/update applications
     - #### under construction
+    - ```
+      winget install MartiCliment.UniGetUI
+      ```
     - UniGetUI package bundles are found in the `uniget-package-bundles` folder within the directory in-which you cloned this repository.
     - Please install all applications in the `dependencies.ubundle` package bundle before installing anything from the `apps.ubundle` package bundle.
 14. ### configure msi afterburner (gpu fan curve)
