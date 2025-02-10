@@ -331,7 +331,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 
 ### old school
 
-- [**Davinci Resolve**](https://www.blackmagicdesign.com/products/davinciresolve) (download link near the bottom of the page)
+- [**DaVinci Resolve**](https://www.blackmagicdesign.com/products/davinciresolve) (download link near the bottom of the page)
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
