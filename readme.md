@@ -39,7 +39,7 @@ First off, there is a [companion video](https://google.com) that goes along with
 1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus
 2. ### Update & Configure Your Motherboard's BIOS
     1. update BIOS via GUI or advanced "Flashback"
-    2.
+    2. configure BIOS
         - Enable virtual or physical TPM (usually on by default).
         - Verify that secure boot is *enabled and active*.
         - Enable XMP.
