@@ -67,22 +67,26 @@ First off, there is a [companion video](https://google.com) that goes along with
 8. ### Enable sudo for Windows
     1. toggle `Settings > System > For Developers > Enable sudo`
     2. change `Configure how sudo runs applications` to `Inline`
-9. ### Use winget to manually install a few applications
+9. ### configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
     3. enable script execution
         - ```PowerShell
           sudo Set-ExecutionPolicy RemoteSigned
           ```
-    4. install WingetPathUpdater
+    4. enable InstallerHasOverride
+        - ```PowerShell
+          sudo winget settings --enable InstallerHashOverride
+          ```
+    5. install WingetPathUpdater
         - ```PowerShell
           sudo winget install jazzdelightsme.WingetPathUpdater
           ```
-    5. run the following command
+    6. run the following command
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    6. Install Your Internet Browser of Choice
+    7. Install Your Internet Browser of Choice
         - winget search example
             - ```PowerShell
               winget search [browser name]
@@ -142,19 +146,19 @@ First off, there is a [companion video](https://google.com) that goes along with
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-12. ### download/install system drivers
+13. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-13. ### UniGetUI - bulk install/update applications
+14. ### UniGetUI - bulk install/update applications
     - #### under construction
     - ```
       winget install MartiCliment.UniGetUI
       ```
     - UniGetUI package bundles are found in the `uniget-package-bundles` folder within the directory in-which you cloned this repository.
     - Please install all applications in the `dependencies.ubundle` package bundle before installing anything from the `apps.ubundle` package bundle.
-14. ### configure msi afterburner (gpu fan curve)
+15. ### configure msi afterburner (gpu fan curve)
     - _this is not applicable if your gpu is water cooled_
     - This program should have been installed via wigui, just search for it in start and open it.
     - open settings (should be a button on the left hand side)
@@ -170,7 +174,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - hit "apply"
     - hit "ok" to close settings dialog
     - minimize msi afterburner
-15. ### verify that system temperatures are in-check
+16. ### verify that system temperatures are in-check
     - #### cpu & gpu
       - temps are model dependent
       - higher end components run hotter than lower end components
@@ -205,7 +209,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - open crystaldiskmark and hit the giant "all" button
         - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
       - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-16. ### download/install remaining software
+17. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -214,7 +218,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
       - see [winget basics](#winget-basics) for instructions on how to use winget
     - If software isn't available via winget, install software the old fashioned way 😭
-17. ### configure audio settings
+18. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -229,7 +233,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-18. ### configure rgb lighting
+19. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
