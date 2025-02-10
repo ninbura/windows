@@ -82,7 +82,7 @@ First off, there is a [companion video](https://google.com) that goes along with
         - ```PowerShell
           sudo winget install jazzdelightsme.WingetPathUpdater
           ```
-    6. run the following command
+    6. install PowerShell 7 & Git
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
