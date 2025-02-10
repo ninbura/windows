@@ -76,7 +76,7 @@ First off, there is a [companion video](https://google.com) that goes along with
           ```
     4. install WingetPathUpdater
         - ```PowerShell
-          winget install jazzdelightsme.WingetPathUpdater
+          sudo winget install jazzdelightsme.WingetPathUpdater
           ```
     5. run the following command
         - ```PowerShell
