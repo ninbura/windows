@@ -36,61 +36,20 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 
 # steps
-1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive
-    1. Plug your USB 3.0 flash drive of 8GB or greater into a computer running Windows.
-    2. Install [Rufus](https://rufus.ie/en/) on said PC.
-       - Running the following command in PowerShell is the easiest way to install Rufus.
-       - ```PowerShell
-         winget install Rufus.Rufus --Location Documents
-         ```
-    3. Launch Rufus.
-    4. Click the arrow next to the "SELECT" button and click "DOWNLOAD", then click the "DOWNLOAD" button.
-    5. Select "Windows 11" in the drop down, then click "Continue".
-    6. The latest release should be automatically selected, click "Continue" again.
-    7. There should only be one available "Edition" and it should be automatically selected, click "Continue" again.
-    8. Select your preferred language.
-        - Note that there are two English options, "English (United States)", and English International.
-    9. The x64 "Architecture" should automatically be selected, click "Download".
-    10. Choose the location in-which you'd like to save the ISO, and wait for the download to complete.
-    11. Select your flash drive via the "Device" dropdown.
-    12. Change the "DOWNLOAD" dropdown back to "SELECT", and then click "SELECT".
-    13. Select the ISO you just downloaded and click "Open".
-    14. Click START at the bottom of the window.
-    15. Uncheck every checkbox in the "Window User Experience" dialog, then click "OK".
-    16. You should be notified when the mounting process is complete, after which you may close Rufus.
+1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus
 2. ### Update & Configure Your Motherboard's BIOS
-    - #### BIOS Update Preface
-        - I *highly* recommend viewing the companion video for this section.
-        - The below is a fairly high-level overview of the BIOS update/configuration process, as every motherboard is different.
-    - #### Prepping Flash Drive
-        1. Plug your <32GB USB 2.0 flash drive to a USB port on a computer running Windows.
-        2. Format said flash drive as FAT32 using File Explorer.
-        3. Locate your Motherboard's model number.
-        4. Search for your motherboard's product page, and navigate to the "support" page for said product.
-        5. Download the latest BIOS version available, and extract the contents to the root of your flash drive.
-    - #### Updating Via Existing BIOS
-        1. Plug the flash drive that now contains the desired BIOS into a USB port on the computer you're trying to update.
-        2. Boot into your current BIOS by mashing the BIOS access key as your computer boots (typically the `delete` key).
-        3. Navigate to the BIOS flashing tool, usually located in "Advanced" settings and named something with "flash" in its name.
-        4. Select the flash drive & the BIOS file on said flash drive to begin the update process.
-        5. Wait for the BIOS to complete flashing, and follow any prompt thereafter. Typically, your computer will automatically restart multiple times after this point, as it updates the firmware of multiple on-board devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS".
-    - #### Updating Via "Flashback"
-        1. Re-name the BIOS file on your USB 2.0 flash drive to what is specified via your motherboard's manual.
-        2. Plug your USB 2.0 flash drive into the specified USB flashback port on your motherboard.
-        3. In most cases, your manual will now instruct you to press and hold a BIOS flashback button for a couple seconds.
-        4. In most cases, there should now be a flashing light, and the update process is complete when that light has finished flashing.
-        5. Once the light is done flashing, turn your computer on via the power button. At this point your computer may restart multiple times as it updates the firmware of onboard devices. Be patient, do not manually power down the system unless it has been completely unresponsive for an extended period of time. After all is said and done, you should typically arrive a screen that says "press F1 to enter BIOS". 
-    - #### Configuring BIOS
-        1. Enable virtual or physical TPM (usually on by default).
-        3. Verify that secure boot is *enabled and active*.
-        3. Enable XMP.
-        4. Adjust system fan curves as desired.
-3. ### Install Windows
+    1. update BIOS via GUI or advanced "Flashback"
+    2.
+        - Enable virtual or physical TPM (usually on by default).
+        - Verify that secure boot is *enabled and active*.
+        - Enable XMP.
+        - Adjust system fan curves as desired.
+4. ### Install Windows
     - Under construction
-4. ### Verify that Windows is Activated
+5. ### Verify that Windows is Activated
     - open settings & navigate to `system > activation`
     - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-5. ### Update Windows
+6. ### Update Windows
     - Open the Settings app & navigate to `Windows Updates`.
     - Optionally, toggle "Get the latest updates as soon as they're available"; I personally suggest doing this.
     - Check for updates & wait for them to download/install.
@@ -98,39 +57,37 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Check for updates again.
     - If you have more updates and pc requests restarting again, do so.
     - Repeat until Windows states that everything is up-to-date.
-6. ### Update Microsoft Store Apps
-    - #### Preface
-        - Completion of this step is often required before winget will function properly, which is a big component of this tutorial.
-    - #### Steps
-        1. Open the Microsoft Store via your Start Menu.
-        2. Click the "library" button in the bottom left hand corner of the window.
-        3. Select "Get Updates" in the top right hand corner of the window.
-        4. Wait until all updates have been retreived, should be a little loading symbol to reference.
-        5. Select "Update All" just left of the "Get Updates" button.
-        6. Wait for all Microsoft Store applications to update before proceeding.
-7. ### Use winget to manually install a few applications
-    1. right click the start button on taskbar & select "Terminal (Admin)"
-    2. run the following command
+7. ### Update Microsoft Store Apps
+    1. Open the Microsoft Store via your Start Menu.
+    2. Click the "library" button in the bottom left hand corner of the window.
+    3. Select "Get Updates" in the top right hand corner of the window.
+    4. Wait until all updates have been retreived, should be a little loading symbol to reference.
+    5. Select "Update All" just left of the "Get Updates" button.
+    6. Wait for all Microsoft Store applications to update before proceeding.
+8. ### Enable sudo for Windows
+    1. toggle `Settings > System > For Developers > Enable sudo`
+    2. change `Configure how sudo runs applications` to `Inline`
+9. ### Use winget to manually install a few applications
+    1. right click the start button and click `Terminal`
+    2. run/enter the following commands in Windows Terminal
+    3. enable script execution
         - ```PowerShell
-          set-executionpolicy remotesigned
+          sudo Set-ExecutionPolicy RemoteSigned
           ```
-    3. run the following command
+    4. install WingetPathUpdater
         - ```PowerShell
           winget install jazzdelightsme.WingetPathUpdater
           ```
-    4. Close Windows Terminal
-    5. Right click the start button on the taskbar & select "Terminal"
-    6. run the following command
+    5. run the following command
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    7. Install Your Internet Browser of Choice
-        - If your browser is not listed below use the following command to find your desired browser ID via winget.
+    6. Install Your Internet Browser of Choice
+        - winget search example
             - ```PowerShell
               winget search [browser name]
               ```
-        - If your desired browser is not available on winget, install it the old fashioned way.
-        - Run one of the following commands, unless you plan on using Microsoft Edge which should already be installed.
+        - winget install examples
             - ```PowerShell
               winget install TheBrowserCompany.Arc
               ```
@@ -143,12 +100,17 @@ First off, there is a [companion video](https://google.com) that goes along with
             - ```PowerShell
               winget install Google.Chrome
               ```
-        - At this point I would recommend opening this tutorial on the computer your configuring via the browser you just installed. This will make running commands much easier as you can just copy & paste them.
-8. ### Configure Windows Terminal
-    - Restart Windows Terminal
-    - Open Windows Terminal settings (dropdown near tabs) & set your "Default profile" as PowerShell 7 (darker blue PowerShell).
-    - Simply right click the start menu and select "Terminal (Admin)" when you need to run PowerShell 7 as admin, but for the most part try to run it un-elevated.
-9. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
+            - ```PowerShell
+              winget install Zen-Team.ZenBrowser
+              ```
+10. ### Configure Windows Terminal
+    - set PowerShell 7 as default profile
+        - There will be two PowerShell options in the list, you want the one with the darker blue color.
+        - `Settings > Default profile > PowerShell`
+    - configure theming
+        - `Settings > Appearence`
+        - `Settings > Defaults > Appearence`
+11. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
@@ -161,7 +123,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - Save and close `config.json`.
     - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
     - Wait for the script to finish running, then **restart your computer**.
-11. ### Manually configure other windows settings
+12. ### Manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
