@@ -86,7 +86,7 @@ First off, there is a [companion video](https://google.com) that goes along with
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    7. Install Your Internet Browser of Choice
+    7. install your internet browser of choice
         - winget search example
             - ```PowerShell
               winget search [browser name]
