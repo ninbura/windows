@@ -340,7 +340,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
 - [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (OBS plugin)
-- [**OBS DistroAV**](https://github.com/obs-ndi/obs-ndi/releases/tag/4.11.1) (OBS NDI plugin)
+- [**OBS DistroAV**](https://github.com/DistroAV/DistroAV/releases/latest) (OBS NDI plugin)
 - [**Jagex Launcher**](https://www.jagex.com/en-GB/launcher) (RuneScape client)
 - [**window-switcher**](https://github.com/sigoden/window-switcher/releases) (macOS style window switching for windows 11)
 - [**Wootliltiy**](https://wooting.io/wootility) (software to configure wooting keyboards)
