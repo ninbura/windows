@@ -332,6 +332,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 ### old school
 
 - [**AVerMedia Assiste Central Pro**](https://www.avermedia.com/support/download) (AVerMedia capture card firmware/software)
+- [**Dante Controller**](https://my.audinate.com/support/downloads/dante-controller) (Audinate/Dante audio router)
 - [**DaVinci Resolve**](https://www.blackmagicdesign.com/products/davinciresolve) (download link near the bottom of the page)
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
