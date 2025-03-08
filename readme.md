@@ -1,23 +1,24 @@
 # Table of Contents
 
 - [steps](#steps)
-    1.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
-    2.  [purchase/obtain a `windows 11 pro for workstations` product key](#purchaseobtain-a-windows-11-pro-for-workstations-product-key)
-    3.  [create a bootable flash drive & install windows](#create-a-bootable-flash-drive--install-windows)
+    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](mount-the-windows-11-isoinstaller-to-a-bootable-flash-drive-using-rufus)
+    2.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
+    3.  [Install Windows](#install-windows)
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
     5.  [update windows](#update-windows)
     6.  [update microsoft store apps](#update-microsoft-store-apps)
-    7.  [install powershell 7 & git](#install-powershell-7--git)
-    8.  [configure windows terminal](#configure-windows-terminal)
-    9.  [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
-    10. [manually configure other windows settings](#manually-configure-other-windows-settings)
-    11. [download/install system drivers](#downloadinstall-system-drivers)
-    12. [wigui - install winget auto update & bulk install applications](#wigui---install-winget-auto-update--bulk-install-applications)
-    13. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
-    14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-    15. [download/install remaining software](#downloadinstall-remaining-software)
-    16. [configure audio settings](#configure-audio-settings)
-    17. [configure rgb lighting](#configure-rgb-lighting)
+    7.  [Configure Developer Settings (don't skip)](#configure-developer-settings-dont-skip)
+    8.  [install powershell 7 & git](#install-powershell-7--git)
+    9.  [configure windows terminal](#configure-windows-terminal)
+    10.  [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
+    11. [manually configure other windows settings](#manually-configure-other-windows-settings)
+    12. [download/install system drivers](#downloadinstall-system-drivers)
+    13. [wigui - install winget auto update & bulk install applications](#wigui---install-winget-auto-update--bulk-install-applications)
+    14. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
+    15. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
+    16. [download/install remaining software](#downloadinstall-remaining-software)
+    17. [configure audio settings](#configure-audio-settings)
+    18. [configure rgb lighting](#configure-rgb-lighting)
 - [drivers](#drivers)
 - [software](#software)
 - [troubleshooting](#troubleshooting)
@@ -33,8 +34,12 @@
 
 # steps
 1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus
+    - USB 3.0 drive preffered
+    - must be greater than 8GB
 2. ### Update & Configure Your Motherboard's BIOS
     1. update BIOS via GUI or advanced "Flashback"
+       - USB 2.0 flash drive preferred
+       - must be smaller than 32GB & formatted as FAT32
     2. configure BIOS
         - enable virtual or physical TPM (usually on by default)
         - verify that secure boot is *enabled and active*
@@ -102,7 +107,7 @@
             - ```PowerShell
               winget install Zen-Team.ZenBrowser
               ```
-9 ### Configure Windows Terminal
+9. ### Configure Windows Terminal
     - set PowerShell 7 as default profile
         - There will be two PowerShell options in the list, you want the one with the darker blue color.
         - `Settings > Default profile > PowerShell`
