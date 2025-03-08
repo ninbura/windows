@@ -64,7 +64,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-8. ### COnfigure Developer Settings (don't skip)
+8. ### Configure Developer Settings (don't skip)
     1. navigate to `Settings > System > For Developers`
     2. under `Terminal` select Windows Terminal in the drop down
     3. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
