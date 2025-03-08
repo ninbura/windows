@@ -157,58 +157,10 @@ First off, there is a [companion video](https://google.com) that goes along with
       ```
     - UniGetUI package bundles are found in the `uniget-package-bundles` folder within the directory in-which you cloned this repository.
     - Please install all applications in the `dependencies.ubundle` package bundle before installing anything from the `apps.ubundle` package bundle.
-15. ### configure msi afterburner (gpu fan curve)
-    - _this is not applicable if your gpu is water cooled_
-    - This program should have been installed via wigui, just search for it in start and open it.
-    - open settings (should be a button on the left hand side)
-    - enable startup at launch
-      - click on the "general" tab
-      - check "start with windows"
-      - check "start minimized"
-      - hit "apply"
-    - enable msi afterburners fan curve
-      - click on the "fan" tab
-      - check "enable user defined software automatic fan control"
-        - Leaving the fan curve in its default state is fine, but feel free to create your own curve if you want.
-      - hit "apply"
-    - hit "ok" to close settings dialog
-    - minimize msi afterburner
-16. ### verify that system temperatures are in-check
-    - #### cpu & gpu
-      - temps are model dependent
-      - higher end components run hotter than lower end components
-      - lower temp is better but as long as things are generally within listed ranges you should be fine
-      - open HWiNFO (installed via wigui, search start)
-        - select "show sensors"
-        - cpu & gpu idle temp should be >60c
-      - open Aida64 Extreme (installed via wigui, search start)
-        - confirm you're okay with app being in trial mode
-        - open system stability test dialog `tools > system stability test`
-        - enable everything except "local disks"
-        - run test for 5-15 minutes
-        - to prevent throttling your
-          - cpu load temp should be >=99c
-          - gpu load temp should be >=84c
-      - Even high-end cooling, modern amd & intel cpus can easily reach 100c.
-      - While this is technically safe because they'll throttle, you won't get maximum performance unless you stay below 100c.
-      - there are all in one water coolers large enough to prevent even the highest end CPUs from throttling
-      - I suggest Artic's "liquid freezer line"
-        - 360/420mm for intel i7 & AMD x700
-        - 420mm for intel i9 & AMD X900
-      - for i5 cpus & below I suggest purchasing the **thermalright peerless assassin** air cooler
-      - if temps for cpu or gpu are high per numbers above see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-    - #### m.2 drives
-      - download/install [crystaldiskinfo & crystaldiskmark](https://crystalmark.info/en/software)
-        - hard drive monitor & benchmark
-        - get "Shizuku" editions for a good time ☺️
-      - open crystaldiskinfo (search start)
-        - verify that m.2 idle temp is below 60c
-        - verify that m.2 drive health is "good"
-        - consider replacing your hard drive if health is poor
-      - open crystaldiskmark and hit the giant "all" button
-        - verify that drive temp remains under 65c via crystaldiskinfo during benchmark
-      - if you see your m.2 temperatures go above 65c during the benchamrk see [troubleshooting high temperatures](#troubleshooting-high-temperatures)
-17. ### download/install remaining software
+15. ### verify that system temperatures are in-check
+    - under construction
+    - see [troubleshooting high temperatures](#troubleshooting-high-temperatures) if temps are high
+16. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -217,7 +169,7 @@ First off, there is a [companion video](https://google.com) that goes along with
     - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
       - see [winget basics](#winget-basics) for instructions on how to use winget
     - If software isn't available via winget, install software the old fashioned way 😭
-18. ### configure audio settings
+17. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -232,7 +184,7 @@ First off, there is a [companion video](https://google.com) that goes along with
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-19. ### configure rgb lighting
+18. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
