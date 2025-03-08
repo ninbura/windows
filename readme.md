@@ -162,9 +162,8 @@
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
     - Note that every piece of software you want may not have been included in your install list, and or may not be listed in the [software](#software) section below. Said lists are composed of items relevant to me and my direct peers.
     - software in the [software](#software) section below is software that can not currently be installed properly via wigui
-    - It is _always_ preferred you install software with winget, it's much quicker & winget-autoupdate will keep your software updated.
-      - see [winget basics](#winget-basics) for instructions on how to use winget
-    - If software isn't available via winget, install software the old fashioned way 😭
+    - It is _always_ preferred you install software with winget/UniGetUI, it's much quicker & UniGetUI will keep your software updated.
+    - If software isn't available via winget/UniGetUi, install software the old fashioned way 😭
 17. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
