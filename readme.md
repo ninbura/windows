@@ -1,7 +1,7 @@
 # Table of Contents
 
 - [steps](#steps)
-    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](mount-the-windows-11-iso-installer-to-a-bootable-flash-drive-using-rufus)
+    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](#mount-the-windows-11-isoinstaller-to-a-bootable-flash-drive-using-rufus)
     2.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
     3.  [Install Windows](#install-windows)
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
@@ -13,7 +13,7 @@
     10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
     11. [manually configure other windows settings](#manually-configure-other-windows-settings)
     12. [download/install system drivers](#downloadinstall-system-drivers)
-    13. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-install-update-applications)
+    13. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-installupdate-applications)
     14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
     15. [download/install remaining software](#downloadinstall-remaining-software)
     16. [configure audio settings](#configure-audio-settings)
