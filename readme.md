@@ -38,7 +38,7 @@
     2. configure BIOS
         - Enable virtual or physical TPM (usually on by default).
         - Verify that secure boot is *enabled and active*.
-        - Enable XMP.
+        - Enable XMP/EXPO/DOCP.
         - Adjust system fan curves as desired.
 4. ### Install Windows
     - Under construction
