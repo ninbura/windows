@@ -245,7 +245,7 @@
 - I would uncheck installing amd's powerplan when installing AMD chipset/cpu drivers
 - you'll also want to select the "clean install" option when installing AMD gpu drivers.
 
-### [nvidia](https://www.nvidia.com/download/index.aspx)
+### nvidia ([direct drivers](https://www.nvidia.com/download/index.aspx) | [Nvidia App](https://www.nvidia.com/en-us/software/nvidia-app/) (preferred))
 
 - _Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!_
 - always select **custom install** and then **clean install**
