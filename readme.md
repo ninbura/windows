@@ -36,10 +36,10 @@
 2. ### Update & Configure Your Motherboard's BIOS
     1. update BIOS via GUI or advanced "Flashback"
     2. configure BIOS
-        - Enable virtual or physical TPM (usually on by default).
-        - Verify that secure boot is *enabled and active*.
-        - Enable XMP/EXPO/DOCP.
-        - Adjust system fan curves as desired.
+        - enable virtual or physical TPM (usually on by default)
+        - verify that secure boot is *enabled and active*
+        - enable XMP/EXPO/DOCP (memory profile)
+        - adjust system fan curves as desired
 4. ### Install Windows
     - Under construction
 5. ### Verify that Windows is Activated
