@@ -160,8 +160,8 @@
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
-    - Note that every piece of software you want may not have been included in your install list, and or may not be listed in the [software](#software) section below. Said lists are composed of items relevant to me and my direct peers.
-    - software in the [software](#software) section below is software that can not currently be installed properly via wigui
+    - Note that every piece of software you want may not have been included in your `apps.ubundle`, and or may not be listed in the [software](#software) section below. Said lists are composed of items relevant to me and my direct peers.
+    - software in the section below is software that can not currently be installed properly via winget/UniGetUI
     - It is _always_ preferred you install software with winget/UniGetUI, it's much quicker & UniGetUI will keep your software updated.
     - If software isn't available via winget/UniGetUi, install software the old fashioned way 😭
 17. ### configure audio settings
