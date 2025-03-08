@@ -232,7 +232,7 @@
 - sata drivers
     - typically labeled as "Intel Rapid Storage Technology" or "AMD SATA"
 
-### intel
+### Intel
 
 - check motherboard page to make sure your motherboard uses intel for these devices
 - [bluetooth](https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html)
@@ -240,12 +240,12 @@
 - [wan](https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html)
 - [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
 
-### [amd cpu/chipset & gpu](https://www.amd.com/en/support)
+### [AMD CPU/chipset & GPU](https://www.amd.com/en/support)
 
 - I would uncheck installing amd's powerplan when installing AMD chipset/cpu drivers
 - you'll also want to select the "clean install" option when installing AMD gpu drivers.
 
-### nvidia ([direct drivers](https://www.nvidia.com/download/index.aspx) | [Nvidia App](https://www.nvidia.com/en-us/software/nvidia-app/) (preferred))
+### Nvidia ([direct drivers](https://www.nvidia.com/download/index.aspx) | [Nvidia App (preferred)](https://www.nvidia.com/en-us/software/nvidia-app/))
 
 - _Click buttons on nvidia driver page slowly, if you move too fast you will get ip banned!_
 - always select **custom install** and then **clean install**
