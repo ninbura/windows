@@ -40,12 +40,12 @@
         - verify that secure boot is *enabled and active*
         - enable XMP/EXPO/DOCP (memory profile)
         - adjust system fan curves as desired
-4. ### Install Windows
+3. ### Install Windows
     - Under construction
-5. ### Verify that Windows is Activated
+4. ### Verify that Windows is Activated
     - open settings & navigate to `system > activation`
     - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
-6. ### Update Windows
+5. ### Update Windows
     - Open the Settings app & navigate to `Windows Updates`.
     - Optionally, toggle "Get the latest updates as soon as they're available"; I personally suggest doing this.
     - Check for updates & wait for them to download/install.
@@ -53,20 +53,20 @@
     - Check for updates again.
     - If you have more updates and pc requests restarting again, do so.
     - Repeat until Windows states that everything is up-to-date.
-7. ### Update Microsoft Store Apps
+6. ### Update Microsoft Store Apps
     1. Open the Microsoft Store via your Start Menu.
     2. Click the "library" or "downloads" button (version dependent) in the bottom left hand corner of the window.
     3. Select "Get Updates" in the top right hand corner of the window.
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-8. ### Configure Developer Settings (don't skip)
+7. ### Configure Developer Settings (don't skip)
     1. navigate to `Settings > System > For Developers`
     2. under `Terminal` select Windows Terminal in the drop down
     3. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
     4. toggle `Enable sudo`
     5. change `Configure how sudo runs applications` to `Inline`
-9. ### configure winget & manually install a few applications
+8. ### configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
     3. enable InstallerHasOverride
@@ -102,14 +102,14 @@
             - ```PowerShell
               winget install Zen-Team.ZenBrowser
               ```
-10. ### Configure Windows Terminal
+9 ### Configure Windows Terminal
     - set PowerShell 7 as default profile
         - There will be two PowerShell options in the list, you want the one with the darker blue color.
         - `Settings > Default profile > PowerShell`
     - configure theming
         - `Settings > Appearence`
         - `Settings > Defaults > Appearence`
-11. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
+10. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
@@ -122,7 +122,7 @@
     - Save and close `config.json`.
     - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
     - Wait for the script to finish running, then **restart your computer**.
-12. ### Manually configure other windows settings
+11. ### Manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
@@ -141,22 +141,25 @@
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-13. ### download/install system drivers
+12. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-14. ### UniGetUI - bulk install/update applications
-    - #### under construction
-    - ```
-      winget install MartiCliment.UniGetUI
-      ```
-    - UniGetUI package bundles are found in the `uniget-package-bundles` folder within the directory in-which you cloned this repository.
-    - Please install all applications in the `dependencies.ubundle` package bundle before installing anything from the `apps.ubundle` package bundle.
-15. ### verify that system temperatures are in-check
+13. ### UniGetUI - bulk install/update applications
+    1. install & open UniGetUI
+        - ```PowerShell
+          winget install MartiCliment.UniGetUI
+          ```
+    2. click on "Package BUndles" in the left-hand side menu
+    3. Load the `~/repos/windows/unigetui-package-bundles/dependencies.ubundle` bundle, check the box in the header to select all applications, and click "Install Selection".
+    4. wait for dependencies to finish installing
+    5. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
+    6. wait for apps to finish installing
+14. ### verify that system temperatures are in-check
     - under construction
     - see [troubleshooting high temperatures](#troubleshooting-high-temperatures) if temps are high
-16. ### download/install remaining software
+15. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -164,7 +167,7 @@
     - software in the section below is software that can not currently be installed properly via winget/UniGetUI
     - It is _always_ preferred you install software with winget/UniGetUI, it's much quicker & UniGetUI will keep your software updated.
     - If software isn't available via winget/UniGetUi, install software the old fashioned way 😭
-17. ### configure audio settings
+16. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -179,7 +182,7 @@
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-18. ### configure rgb lighting
+17. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
