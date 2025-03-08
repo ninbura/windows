@@ -211,7 +211,7 @@
 
 - look for the following drivers on your motherboard's support/driver page
 - audio drivers
-  - usually labeled as realtek
+  - usually labeled as Realtek
   - only grab latest version, don't need mulitple motherboard audio drivers
 - intel chipset drivers (intel cpus only)
   - there may be multiple "chipset" style drivers
@@ -225,24 +225,24 @@
 - communication drivers
   - If LAN, Wifi, or Bluetooth drivers are listed as Intel, I would suggest using the links below in-favor of the drivers on the Motherboard support page. They are more up to date.
   - drivers
-    - bluetooth
-    - lan (ethernet / wired internet driver)
-    - wan (wifi driver)
+    - Bluetooth
+    - LAN (ethernet / wired internet driver)
+    - WAN (wifi driver)
 - sata drivers
     - typically labeled as "Intel Rapid Storage Technology" or "AMD SATA"
 
 ### Intel
 
 - check motherboard page to make sure your motherboard uses intel for these devices
-- [bluetooth](https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html)
-- [lan](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
-- [wan](https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html)
+- [Bluetooth](https://www.intel.com/content/www/us/en/support/articles/000005489/wireless.html)
+- [LAN](https://www.intel.com/content/www/us/en/download/727998/intel-network-adapter-driver-for-microsoft-windows-11.html)
+- [WAN](https://www.intel.com/content/www/us/en/download/19351/windows-10-and-windows-11-wi-fi-drivers-for-intel-wireless-adapters.html)
 - [graphics](https://www.intel.com/content/www/us/en/download/785597/intel-arc-iris-xe-graphics-windows.html)
 
 ### [AMD CPU/chipset & GPU](https://www.amd.com/en/support)
 
-- I would uncheck installing amd's powerplan when installing AMD chipset/cpu drivers
-- you'll also want to select the "clean install" option when installing AMD gpu drivers.
+- I would uncheck installing AMD's powerplan when installing AMD chipset/CPU drivers
+- you'll also want to select the "clean install" option when installing AMD GPU drivers
 
 ### Nvidia ([direct drivers](https://www.nvidia.com/download/index.aspx) | [Nvidia App (preferred)](https://www.nvidia.com/en-us/software/nvidia-app/))
 
