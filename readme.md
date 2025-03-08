@@ -1,24 +1,23 @@
 # Table of Contents
 
 - [steps](#steps)
-    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](mount-the-windows-11-isoinstaller-to-a-bootable-flash-drive-using-rufus)
+    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](mount-the-windows-11-iso-installer-to-a-bootable-flash-drive-using-rufus)
     2.  [update & configure your motherboard's bios](#update--configure-your-motherboards-bios)
     3.  [Install Windows](#install-windows)
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
     5.  [update windows](#update-windows)
     6.  [update microsoft store apps](#update-microsoft-store-apps)
     7.  [Configure Developer Settings (don't skip)](#configure-developer-settings-dont-skip)
-    8.  [install powershell 7 & git](#install-powershell-7--git)
+    8.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
     9.  [configure windows terminal](#configure-windows-terminal)
-    10.  [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
+    10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
     11. [manually configure other windows settings](#manually-configure-other-windows-settings)
     12. [download/install system drivers](#downloadinstall-system-drivers)
-    13. [wigui - install winget auto update & bulk install applications](#wigui---install-winget-auto-update--bulk-install-applications)
-    14. [configure msi afterburner (gpu fan curve)](#configure-msi-afterburner-gpu-fan-curve)
-    15. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-    16. [download/install remaining software](#downloadinstall-remaining-software)
-    17. [configure audio settings](#configure-audio-settings)
-    18. [configure rgb lighting](#configure-rgb-lighting)
+    13. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-install-update-applications)
+    14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
+    15. [download/install remaining software](#downloadinstall-remaining-software)
+    16. [configure audio settings](#configure-audio-settings)
+    17. [configure rgb lighting](#configure-rgb-lighting)
 - [drivers](#drivers)
 - [software](#software)
 - [troubleshooting](#troubleshooting)
@@ -71,7 +70,7 @@
     3. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
     4. toggle `Enable sudo`
     5. change `Configure how sudo runs applications` to `Inline`
-8. ### configure winget & manually install a few applications
+8. ### Configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
     3. enable InstallerHasOverride
