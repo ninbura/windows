@@ -64,29 +64,28 @@ First off, there is a [companion video](https://google.com) that goes along with
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-8. ### Enable sudo for Windows
-    1. toggle `Settings > System > For Developers > Enable sudo`
-    2. change `Configure how sudo runs applications` to `Inline`
+8. ### COnfigure Developer Settings (don't skip)
+    1. navigate to `Settings > System > For Developers`
+    2. under `Terminal` select Windows Terminal in the drop down
+    3. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
+    4. toggle `Enable sudo`
+    5. change `Configure how sudo runs applications` to `Inline`
 9. ### configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
-    3. enable script execution
-        - ```PowerShell
-          sudo Set-ExecutionPolicy RemoteSigned
-          ```
-    4. enable InstallerHasOverride
+    3. enable InstallerHasOverride
         - ```PowerShell
           sudo winget settings --enable InstallerHashOverride
           ```
-    5. install WingetPathUpdater
+    4. install WingetPathUpdater
         - ```PowerShell
           sudo winget install jazzdelightsme.WingetPathUpdater
           ```
-    6. install PowerShell 7 & Git
+    5. install PowerShell 7 & Git
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    7. install your internet browser of choice
+    6. install your internet browser of choice
         - winget search example
             - ```PowerShell
               winget search [browser name]
