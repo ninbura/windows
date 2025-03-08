@@ -192,7 +192,6 @@
 
 ### drivers preface
 
-- please read [download/install drivers from the drivers list below](#downloadinstall-drivers-from-the-drivers-list-below)
 - **Many drivers will need be downloaded from your motherboard's support page**, others are typically universal.
 - If your motherboard uses intel drivers for bluetooth, lan (ethernet), & wan (wifi) you can use the links below to get the latest versions.
 - To verify that your motherboard uses universal intel drivers, you'll need to go to your motherboards support page.
