@@ -10,7 +10,7 @@
     7.  [Configure Developer Settings (don't skip)](#configure-developer-settings-dont-skip)
     8.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
     9.  [configure windows terminal](#configure-windows-terminal)
-    10. [download, configure, & run bulk-edit-settings powershell script](#download-configure--run-bulk-edit-settings-powershell-script)
+    10. [Download, configure, & run the `bulk-edit-settings` PowerShell script.](#Download-configure-&-run-the-bulk-edit-settings-PowerShell-script)
     11. [manually configure other windows settings](#manually-configure-other-windows-settings)
     12. [download/install system drivers](#downloadinstall-system-drivers)
     13. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-installupdate-applications)
