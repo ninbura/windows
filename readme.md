@@ -216,12 +216,11 @@
 - intel chipset drivers (intel cpus only)
   - there may be multiple "chipset" style drivers
   - look for drivers titled as so
-    - intel serial i/o
-    - intel management engine
-    - intel me
-    - intel mei
-    - intel inf
-    - intel hid
+    - Intel Serial I/O
+    - Intel Management Engine
+    - Intel INF
+    - Intel HID
+    - etc
   - you should see one or many of the aformentioned intel chipset drivers
 - communication drivers
   - If LAN, Wifi, or Bluetooth drivers are listed as Intel, I would suggest using the links below in-favor of the drivers on the Motherboard support page. They are more up to date.
@@ -292,7 +291,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
 - [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
-- [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (obs plugin)
+- [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (OBS plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (OBS plugin)
 - [**OBS DistroAV**](https://github.com/DistroAV/DistroAV/releases/latest) (OBS NDI plugin)
 - [**Jagex Launcher**](https://www.jagex.com/en-GB/launcher) (RuneScape client)
