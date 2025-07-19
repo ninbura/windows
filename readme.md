@@ -77,15 +77,11 @@
         - ```PowerShell
           sudo winget settings --enable InstallerHashOverride
           ```
-    4. install WingetPathUpdater
-        - ```PowerShell
-          sudo winget install jazzdelightsme.WingetPathUpdater
-          ```
-    5. install PowerShell 7 & Git
+    4. install PowerShell 7 & Git
         - ```PowerShell
           winget install Microsoft.PowerShell Git.Git
           ```
-    6. install your internet browser of choice
+    5. install your internet browser of choice
         - winget search example
             - ```PowerShell
               winget search [browser name]
