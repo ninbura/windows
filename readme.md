@@ -113,7 +113,7 @@
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
-          git clone https://github.com/ninbura/windows /Users/$env:username/repos/windows
+          git clone https://github.com/ninbura/windows $HOME/repos/windows
           New-Item -Path "~/repos/windows/config.json" -ItemType "File"
           ```
     - Note that `~` represents your user's directory (ie `C:/Users/gabri/`).
