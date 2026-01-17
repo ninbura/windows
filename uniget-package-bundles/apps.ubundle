@@ -104,6 +104,13 @@
       }
     },
     {
+      "Id": "DistroAV.DistroAV",
+      "Name": "DistroAV",
+      "Version": "6.1.1",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
       "Id": "Docker.DockerDesktop",
       "Name": "Docker Desktop",
       "Version": "",
@@ -237,9 +244,9 @@
       "ManagerName": "Winget"
     },
     {
-      "Id": "Microsoft.DotNet.SDK.8",
-      "Name": "Microsoft .NET SDK 8.0",
-      "Version": "",
+      "Id": "Microsoft.DotNet.SDK.10",
+      "Name": "Microsoft .NET SDK 10.0",
+      "Version": "10.0.102",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -265,16 +272,16 @@
       "ManagerName": "Winget"
     },
     {
-      "Id": "Microsoft.VisualStudio.2022.Community",
-      "Name": "Visual Studio Community 2022",
-      "Version": "",
+      "Id": "Microsoft.VisualStudio.Community",
+      "Name": "Visual Studio Community 2026",
+      "Version": "18.2.0",
       "Source": "winget",
       "ManagerName": "Winget"
     },
     {
-      "Id": "Microsoft.VisualStudio.2022.Professional",
-      "Name": "Visual Studio Professional 2022",
-      "Version": "",
+      "Id": "Microsoft.VisualStudio.Professional",
+      "Name": "Visual Studio Professional 2026",
+      "Version": "18.2.0",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -323,7 +330,7 @@
     {
       "Id": "Neovim.Neovim",
       "Name": "Neovim",
-      "Version": "0.10.2",
+      "Version": "0.11.5",
       "Source": "winget",
       "ManagerName": "Winget"
     },
@@ -449,19 +456,7 @@
       "Source": "winget",
       "ManagerName": "Winget",
       "InstallationOptions": {
-        "OverridesNextLevelOpts": true,
-        "CustomParameters_Install": [
-          "--Location",
-          "Documents"
-        ],
-        "CustomParameters_Update": [
-          "--Location",
-          "Documents"
-        ],
-        "CustomParameters_Uninstall": [
-          "--Location",
-          "Documents"
-        ]
+        "OverridesNextLevelOpts": true
       }
     },
     {
@@ -545,6 +540,13 @@
       "Id": "mpv.net",
       "Name": "mpv.net",
       "Version": "",
+      "Source": "winget",
+      "ManagerName": "Winget"
+    },
+    {
+      "Id": "sigoden.WindowSwitcher",
+      "Name": "Window Switcher",
+      "Version": "1.17.0",
       "Source": "winget",
       "ManagerName": "Winget"
     },
