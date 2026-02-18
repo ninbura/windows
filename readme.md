@@ -151,7 +151,7 @@
         - ```PowerShell
           winget install MartiCliment.UniGetUI
           ```
-    2. click on "Package BUndles" in the left-hand side menu
+    2. click on "Package Bundles" in the left-hand side menu
     3. Load the `~/repos/windows/unigetui-package-bundles/dependencies.ubundle` bundle, check the box in the header to select all applications, and click "Install Selection".
     4. wait for dependencies to finish installing
     5. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
