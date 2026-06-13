@@ -200,7 +200,7 @@
 12. ### UniGetUI - Bulk Install/Update Applications
     1. install & open UniGetUI
         - ```PowerShell
-          winget install MartiCliment.UniGetUI
+          winget install Devolutions.UniGetUI
           ```
     2. click on "Package Bundles" in the left-hand side menu
     3. Load the `~/repos/windows/unigetui-package-bundles/dependencies.ubundle` bundle, check the box in the header to select all applications, and click "Install Selection".
