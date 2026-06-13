@@ -46,6 +46,8 @@
         - adjust system fan curves as desired
 3. ### Install Windows
     - Under construction
+    - It's best to put your key in up-front if you have it, for enterprise it'll figure that out during the later setup when you say "for work".
+    - When choosing the disk you want to install Windows on, make sure you're deleted all the partitions on it so it shows as one entry.
 4. ### Verify that Windows is Activated
     - open settings & navigate to `system > activation`
     - If it says activation failed don't panic, see [troubleshooting failed windows activation](#troubleshooting-failed-windows-activation).
@@ -93,10 +95,25 @@
         3. Set Terminal to "Windows Terminal"
         4. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
         5. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline".
-    - Theme
+    - Personalization
         1. Open Windows Settings & navigate to "Personalization" > "Colors".
-        2. Set "Choose your mode" to "Dark".
-        3. Set your Accent color per your desire.
+            1. Set "Choose your mode" to "Dark".
+            2. Set your Accent color per your desire.
+        2. Navigate to "Personalization" > "Themes" > "Desktop icon settings"
+            1. Before you uncheck "Recycle Bin", pin it to your Favorites in File Explorer.
+            2. Open your Recyle Bin by double clicking the icon on your desktop.
+            3. Drag the "Recycle Bin" text from from the URL bar in File Explorer to your pinned section, I put it at the bottom.
+            4. Uncheck "Recycle Bin" in the "Desktop icon settings" dialog we opened earlier.
+        3. Navigate to "Personalization" > "Lock screen"
+            1. Set "Lock screen status" to "None".
+        4. Navigate to "Personalization" > "Start"
+            1. Toggle off "Show reccomended files int Start...".
+            2. Toggle off "Show recommendatoins for tips...".
+            3. Toggle off "Show account-related notifications.
+        5. Navigate to "Personalization" > "Taskbar".
+            1. Set "Search" to "Hide" & untoggle all other "Taskbar items".
+            2. Expand the "Taskbar behaviors" menu.
+            3. Uncheck "Show flashing taskbar apps", and "Show my taskbar on all displays".
     - Date & Time
         - Date & Time Format
             1. Open Control Panel.
@@ -113,12 +130,23 @@
             1. Open Windows Settings & navigate to "Time & Language" > "Date & Time".
             3. Toggle "Show time in Notification Center" on.
             4. Expand "Show time and date in the System try" & enable "Show seconds in system tray clock".
-    - 
-    2.  navigate to `Settings > System > For Developers`
-    3. under `Terminal` select Windows Terminal in the drop down
-    4. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
-    5. toggle `Enable sudo`
-    6. change `Configure how sudo runs applications` to `Inline`
+    - File Explorer
+        1. Open File Explorer, Click "View" > "Show", and enable "Compact view".
+        2. Cick the ellipsis (...) in the ribbon, and click "Options".
+        3. Uncheck everything in the "Privacy" section, apply & close.
+    - Network File Sharing
+        1. Open Windows Settings & Navigate to "Network & internet" > "Advanced network settings" > "Advanced sharing settings".
+        2. Toggle on all toggles in each section.
+        3. Open File Explorer and navigate to "This PC".
+        4. Right click your `C` drive, and then "Properties" > "Sharing" (tab) > "Advanced Sharing".
+        5. Check "Share this folder", supply a Share name (ie GamePC), click Permissions, and check Allow on everything, "OK", "Apply", and "OK".
+    - Performance Settings
+        1. Open Control Panel & navigate to "Hardware and Sound" > "Power Options".
+        2. Expand the "Hide additional plans" menu, and select "Ultimate Performance" or "High Performance" if the former isn't showing.
+        3. Click the "Change plan settings" hyperlink on the plan you enabled, and configure display & computer sleep to your liking.
+        4. Click the "change advanced power settings" hyperlink, expand the "USB settings" > "USB selective suspend setting" and disable it.
+    - Start Menu
+        1. Open Windows Settings & navigate to 
 9. ### Configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
@@ -389,100 +417,3 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
   - need an aftermarket heatsink for your m.2 drive
   - need to install a fan pointing directly at your m.2 drive
   - have a defective drive and need to rma / exchange it
-
-# bulk-edit-settings configuration
-
-### config.json example
-
-Note that if a setting is ommited from the configuration it will simply skip the logic to set that setting. So, you don't necessarily have to set everything to true or false. If you want to use Windows' default configuration for any given setting, simply omit it from `config.json`.
-
-```json
-{
-  "Administrative": {
-    "DisableUacPopups": true
-  },
-  "Cursor": {
-    "DisableEnhancedPointerPrecision": true,
-    "DisableEaseCursorMovement": true
-  },
-  "FileExplorer": {
-    "EnableCompactView": true,
-    "MoveRecycleBinToFileExplorer": true,
-    "ShowFileExtensionsForKnownFileTypes": true,
-    "ShowHiddenFilesAndFolders": true,
-    "ShowRecentlyUsedFilesInQuickAccess": false,
-    "ShowFrequentlyUsedFoldersInQuickAccess": false,
-    "ShowOfficeCloudFilesInQuickAccess": false
-  },
-  "Network": {
-    "EnableNetworkDiscovery": true
-  },
-  "Performance": {
-    "EnableUltimatePerformance": true,
-    "DisableMonitorTimeout": true,
-    "DisableSleep": true,
-    "DisableUsbSelectiveSuspend": true
-  },
-  "Services": {
-    "DisableTelemetry": true
-  },
-  "StartMenu": {
-    "ShowMorePins": true,
-    "ShowRecentlyAddedApps": true,
-    "ShowMostUsedApps": true,
-    "ShowRecentlyOpenedItems": true,
-    "ShowRecomendations": false
-  },
-  "Taskbar": {
-    "ShowTaskbarOnAllDisplays": false,
-    "CenterAlignTaskbarItems": true,
-    "ShowSearchOnTaskbar": false,
-    "ShowTaskViewButton": false,
-    "ShowWidgetsButton": false,
-    "ShowChatButton": false,
-    "ShowSecondsOnClock": true
-  }
-}
-```
-
-### setting descriptions
-
-- #### administrative
-  - `DisableUacPopups` [`true`/`false`] - removes the "are you sure" popup when you doing anything that requires admin privileges
-- #### cursor
-  - `DisableEnhancedPointerPrecision` [`true`/`false`] - Disables enhanced pointer precision, a must for gaming, but just good in all cases to be honest.
-  - `DisableEaseCursorMovement` [`true`/`false`] - Disables "easing" cursor movement between displays. Easing feels super jank imo, it can make your cursor jump to an unnatural place when transitioning through displays.
-- #### file explorer
-  - `EnableCompactView` [`true`/`false`] - This removes a lot of dead space in file explorer, returning some of the way it looked/felt in windows 10.
-  - `MoveRecycleBinToFileExplorer` [`true`/`false`] - This will remove the recycle bin shortcut from your desktop and pin it to the bottom of the left hand side menu of file explorer. It's still very accesible, and this keeps your desktop clean.
-  - `ShowFileExtensionsForKnownFileTypes` [`true`/`false`] - This makes it so windows doesn't hide file extensions at the end of file names, super useful to see file extensions in many use cases.
-  - `ShowFrequentlyUsedFoldersInQuickAccess` [`true`/`false`] - Supposed to make it so pinned folders show in the File Explorer Home, but kinda it's kind of bugged. May require interaction with the gui to get working properly.
-  - `ShowHiddenFilesAndFolders` [`true`/`false`] - prevents windows from hiding files and folders in file explorer
-  - `ShowOfficeCloudFilesInQuickAccess` [`true`/`false`] - Make it so Office cloud files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-  - `ShowRecentlyUsedFilesInQuickAccess` [`true`/`false`]- Make it so recently used files show up in the quick access menu within the left hand side menu of file explorer. I like to to disable this.
-- #### network
-  - `EnableNetworkDiscovery` [`true`/`false`] - enables network discovery on all networking interfaces
-- #### performance
-  - `EnableUltimatePerformance` [`true`/`false`] - unlocks Windows' "Ultimate Performance" power plan setting and enable it. This will give you the abosolute best performance out of your PC.
-  - `DisableMonitorTimeout` [`true`/`false`] - prevents windows from turning off your display after a period of inactivity
-  - `MonitorTimeout` [`1-9999`] - If `DisableMonitorTimeout` is set to `false`; this will set the number of minutes before your display will turn itself off due to inactivity.
-  - `DisableSleep` [`true`/`false`] - prevents windows from putting your computer into sleep/hybernation after a certain period of inactivity. In my experience sleep can break a lot of things, after which I'm required to reboot. I much prefer that my computer simply never enters a hybernated state.
-  - `StandbyTimeout` [`1-9999`] - If `DisableSleep` is set to `false`; this will set the number of minutes before you computer will enter sleep/hybernation due to inactivity.
-  - `DisableUsbSelectiveSuspend` [`true`/`false`] - prevents windows from powering down usb connected devices after a certain amount of inactivity. USB Selective Suspend can really mess with audio interfaces and other USB devices, I highly recommend you sest this to `true` to disable it.
-- #### services
-  - `DisableTelemetry` [`true`/`false`] - Disables telemetry within Windows. Telemetry is the process of Microsoft collecting data from your pc, diagnostic and what have you. I'd recommend setting this to `true` for the most part, you don't need to send your data to Microsoft in most cases. Should marginally increase performance and network usage.
-- #### start menu
-  - `ShowMorePins` [`true`/`false`] - Allows for more pinned apps in the start menu as opposed to more recommendations. People sleep on the new start menu, apps that you use frequently that aren't already pinned to your taskbar should be pinned to your start menu. You also get pin folders for good orgnaiztion capabilities.
-  - `ShowRecentlyAddedApps` [`true`/`false`] - Will momentarily disable recently installed apps within the recommendations section of the start menu. I like this, it's useful for quickly accessing and or pinning newly installed apps.
-  - `ShowMostUsedApps` [`true`/`false`] - shows most used apps within the recommendations section of the start menu
-  - `ShowRecentlyOpenedItems` [`true`/`false`] - shows recently opened files within the recommendations section of the start menu
-  - `ShowRecommendations` [`true`/`false`] - shows algorithmically generated file/app recommendations within the recommendations section of the start menu
-- #### task bar
-  - `ShowTaskbarOnAllDisplays` [`true`/`false`] - shows task bar on all connected displays
-  - `CenterAlignTaskbarItems` [`true`/`false`] - Center aligns task bar items. Preferable to left alignment as your mouse is always closer to what you have pinned on the taskbar.
-  - `ShowSearch` [`true`/`false`] - Displays a search box on your task bar. Feels redundant to me as you can just open the start menu and start typing to search. Easiest by simply pressing the Windows key and then typing.
-  - `SearchStyle` [`1-3`] - If `ShowSearchOnTaskBar` is set to `true`, this will determine what style your search bar will display as (1=compact | 2=search icon + label + box icon | 3=search icon + label).
-  - `ShowTaskViewButton` [`true`/`false`] - shows the taskview button on task bar
-  - `ShowWidgetsButton` [`true`/`false`] - shows the widget button on task bar
-  - `ShowChatButton` [`true`/`false`] - shows the chat button on your (through Microsoft Teams)
-  - `ShowSecondsOnClock`- displays seconds on your system clock
