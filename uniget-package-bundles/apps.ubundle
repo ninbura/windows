@@ -4,558 +4,464 @@
     {
       "Id": "7zip.7zip",
       "Name": "7-Zip",
-      "Version": "",
+      "Version": "26.01",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "9MVZQVXJBQ9V",
       "Name": "AV1 Video Extension",
       "Version": "Unknown",
       "Source": "msstore",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "9NBLGGH30XJ3",
       "Name": "Xbox Accessories",
-      "Version": "",
+      "Version": "Unknown",
       "Source": "msstore",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "9PKTQ5699M62",
       "Name": "iCloud",
-      "Version": "",
+      "Version": "Unknown",
       "Source": "msstore",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
-      "Id": "Andersama.obs-asio",
-      "Name": "obs-asio",
-      "Version": "",
+      "Id": "Adobe.CreativeCloud",
+      "Name": "Adobe Creative Cloud",
+      "Version": "6.9.1.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Apple.iTunes",
       "Name": "iTunes",
-      "Version": "",
+      "Version": "12.13.10.3",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Audinate.DanteVia",
       "Name": "Dante Via",
       "Version": "1.3.2.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Audinate.DanteVirtualSoundcard",
       "Name": "Dante Virtual Soundcard",
       "Version": "4.4.1.3",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Blizzard.BattleNet",
       "Name": "Battle.net Setup",
-      "Version": "",
+      "Version": "1.19.3.3219",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "BurntSushi.ripgrep.GNU",
       "Name": "RipGrep GNU",
-      "Version": "",
+      "Version": "15.1.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "CoreyButler.NVMforWindows",
       "Name": "NVM for Windows",
-      "Version": "",
+      "Version": "1.2.2",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "CrystalDewWorld.CrystalDiskInfo.ShizukuEdition",
       "Name": "CrystalDiskInfo Shizuku Edition",
-      "Version": "",
+      "Version": "9.9.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "CrystalDewWorld.CrystalDiskMark.ShizukuEdition",
       "Name": "CrystalDiskMark Shizuku Edition",
-      "Version": "",
+      "Version": "9.0.3",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Discord.Discord",
       "Name": "Discord",
-      "Version": "",
+      "Version": "1.0.9241",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "Updates": {
-        "UpdatesIgnored": true,
-        "IgnoredVersion": "*"
-      }
+      "ManagerName": "winget"
     },
     {
       "Id": "DistroAV.DistroAV",
       "Name": "DistroAV",
-      "Version": "6.1.1",
+      "Version": "6.2.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Docker.DockerDesktop",
       "Name": "Docker Desktop",
-      "Version": "",
+      "Version": "4.77.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Elgato.4KCaptureUtility",
       "Name": "Elgato 4K Capture Utility",
-      "Version": "",
+      "Version": "1.7.16.10419",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Elgato.CameraHub",
       "Name": "Elgato Camera Hub",
-      "Version": "",
+      "Version": "2.2.2.6949",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Elgato.ControlCenter",
+      "Name": "Elgato Control Center",
+      "Version": "1.8.2.714",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "Elgato.StreamDeck",
       "Name": "Elgato Stream Deck",
-      "Version": "",
+      "Version": "7.4.2.22730",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "EpicGames.EpicGamesLauncher",
       "Name": "Epic Games Launcher",
-      "Version": "",
+      "Version": "1.3.176.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Figma.Figma",
       "Name": "Figma",
-      "Version": "",
+      "Version": "126.5.6",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "Figma.FigmaAgent",
-      "Name": "Figma Agent",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "FinalWire.AIDA64.Extreme",
       "Name": "AIDA64 Extreme",
-      "Version": "",
+      "Version": "8.30",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "GOG.Galaxy",
-      "Name": "GOG GALAXY",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "Google.Chrome",
-      "Name": "Google Chrome",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "Google.ChromeRemoteDesktopHost",
-      "Name": "Chrome Remote Desktop Host",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Google.PlatformTools",
-      "Name": "Platform Tools",
-      "Version": "",
+      "Name": "Android SDK Platform-Tools",
+      "Version": "37.0.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Guru3D.Afterburner",
-      "Name": "Afterburner",
-      "Version": "",
+      "Name": "MSI Afterburner",
+      "Version": "4.6.6",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Gyan.FFmpeg",
       "Name": "FFmpeg",
-      "Version": "",
+      "Version": "8.1.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "ImputNet.Helium",
+      "Name": "Helium",
+      "Version": "0.13.3.1",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "JetBrains.Toolbox",
       "Name": "JetBrains Toolbox",
-      "Version": "2.9.1.58121",
+      "Version": "3.5.0.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "LLVM.LLVM",
       "Name": "LLVM",
-      "Version": "",
+      "Version": "22.1.7",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "LLVM.clangd",
       "Name": "clangd",
-      "Version": "",
+      "Version": "22.1.6",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Logitech.GHUB",
       "Name": "Logitech G HUB",
-      "Version": "",
+      "Version": "2026.3.880543",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Logitech.LogiBolt",
+      "Name": "Logi Bolt",
+      "Version": "1.2.6024.0",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "Logitech.OptionsPlus",
       "Name": "Logi Options\u002B",
-      "Version": "",
+      "Version": "2.4.903778",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
-      "Id": "Microsoft.DotNet.SDK.10",
-      "Name": "Microsoft .NET SDK 10.0",
-      "Version": "10.0.102",
+      "Id": "Microsoft.DotNet.DesktopRuntime.10",
+      "Name": "Microsoft .NET Windows Desktop Runtime 10.0",
+      "Version": "10.0.9",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.Office",
       "Name": "Microsoft 365 Apps for enterprise",
-      "Version": "16.0.18025.20140",
+      "Version": "16.0.20026.20112",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.PowerToys",
-      "Name": "PowerToys (Preview)",
-      "Version": "",
+      "Name": "PowerToys",
+      "Version": "0.100.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.Teams",
       "Name": "Microsoft Teams",
-      "Version": "",
+      "Version": "26134.1702.4747.7366",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VisualStudio.Community",
       "Name": "Visual Studio Community 2026",
-      "Version": "18.2.0",
+      "Version": "18.7.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VisualStudio.Professional",
       "Name": "Visual Studio Professional 2026",
-      "Version": "18.2.0",
+      "Version": "18.7.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VisualStudioCode",
       "Name": "Microsoft Visual Studio Code",
-      "Version": "",
+      "Version": "1.124.2",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Microsoft.VisualStudioCode.Insiders",
+      "Name": "Microsoft Visual Studio Code Insiders",
+      "Version": "1.125.0",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "Mojang.MinecraftLauncher",
       "Name": "Minecraft Launcher",
-      "Version": "",
+      "Version": "2.0.0.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Mozilla.Firefox",
-      "Name": "Mozilla Firefox",
-      "Version": "",
+      "Name": "Mozilla Firefox (en-US)",
+      "Version": "151.0.4",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "Updates": {
-        "IgnoredVersion": "129.0"
-      }
+      "ManagerName": "winget"
     },
     {
       "Id": "Mozilla.Firefox.DeveloperEdition",
-      "Name": "Firefox Developer Edition",
-      "Version": "",
+      "Name": "Firefox Developer Edition (en-US)",
+      "Version": "151.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "NDI.NDITools",
-      "Name": "NDI 6 Tools",
-      "Version": "",
+      "Name": "NDI Tools",
+      "Version": "6.3.2.0",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "OverridesNextLevelOpts": true,
-        "InteractiveInstallation": true
-      }
+      "ManagerName": "winget"
     },
     {
       "Id": "Neovim.Neovim",
       "Name": "Neovim",
-      "Version": "0.11.5",
+      "Version": "0.12.2",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Notion.Notion",
       "Name": "Notion",
-      "Version": "",
+      "Version": "7.21.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "OBSProject.OBSStudio",
       "Name": "OBS Studio",
-      "Version": "",
+      "Version": "32.1.2",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Obsidian.Obsidian",
       "Name": "Obsidian",
-      "Version": "",
+      "Version": "1.12.7",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
-      "Id": "Olivia.VIA",
-      "Name": "VIA",
-      "Version": "",
+      "Id": "Proton.ProtonAuthenticator",
+      "Name": "Proton Authenticator",
+      "Version": "1.1.6",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "PlayStation.PSRemotePlay",
-      "Name": "PS Remote Play",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Proton.ProtonDrive",
       "Name": "Proton Drive",
-      "Version": "",
+      "Version": "3.0.1",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "Updates": {
-        "IgnoredVersion": "1.6.1"
-      }
+      "ManagerName": "winget"
     },
     {
       "Id": "Proton.ProtonMail",
       "Name": "Proton Mail",
-      "Version": "",
+      "Version": "1.12.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
-      "Id": "Proton.ProtonMailBridge",
-      "Name": "Proton Mail Bridge",
-      "Version": "",
+      "Id": "Proton.ProtonMeet",
+      "Name": "Proton Meet",
+      "Version": "1.0.9",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Proton.ProtonPass",
       "Name": "Proton Pass",
-      "Version": "",
+      "Version": "1.37.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Proton.ProtonPass.CLI",
+      "Name": "Proton Pass CLI",
+      "Version": "2.1.3",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "Proton.ProtonVPN",
       "Name": "Proton VPN",
-      "Version": "",
+      "Version": "4.4.1",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
-      "Id": "REALiX.HWiNFO",
-      "Name": "HWiNFO",
-      "Version": "",
+      "Id": "RODE.RODECasterApp",
+      "Name": "RODECaster App",
+      "Version": "2.0.111",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "RODE.RODECasterSeriesASIODriver",
+      "Name": "RODECaster Series ASIO Driver",
+      "Version": "1.1.6",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "RODE.RODECasterVirtualDeviceDriver",
       "Name": "R\u00D8DECaster Virtual Device Driver",
-      "Version": "1.0.1",
+      "Version": "1.0.4",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "RODE.Rode-Central",
-      "Name": "R\u00D8DE Central",
-      "Version": "2.0.62",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "RODE.Rode-Connect",
-      "Name": "R\u00D8DE Connect",
-      "Version": "1.3.43",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "RiotGames.LeagueOfLegends.NA",
       "Name": "League of Legends (North America server)",
-      "Version": "",
+      "Version": "125.0.3.4086",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "RiotGames.Valorant.NA",
       "Name": "VALORANT (North America server)",
-      "Version": "",
+      "Version": "123.0.2.3988",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Rufus.Rufus",
       "Name": "Rufus",
-      "Version": "",
+      "Version": "4.14",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "OverridesNextLevelOpts": true
-      }
-    },
-    {
-      "Id": "Shure.ShurePlusMOTIV",
-      "Name": "ShurePlus MOTIV",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "SimpleX.SimpleX-Chat",
-      "Name": "SimpleX Chat",
-      "Version": "6.4.5",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "Symless.Synergy",
-      "Name": "Synergy (64-bit)",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "TailwindLabs.TailwindCSS",
-      "Name": "Tailwind CSS",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "TeamViewer.TeamViewer",
-      "Name": "TeamViewer",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "Valve.Steam",
-      "Name": "Steam",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "VideoLAN.VLC",
-      "Name": "VLC media player",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "WireGuard.WireGuard",
       "Name": "WireGuard",
-      "Version": "0.5.3",
+      "Version": "1.1",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "XPDLPKWG9SW2WD",
-      "Name": "Adobe Creative Cloud",
-      "Version": "",
-      "Source": "msstore",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Zen-Team.Zen-Browser",
       "Name": "Zen Browser",
-      "Version": "1.0.0-a.39",
+      "Version": "1.21b",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "goatcorp.XIVLauncher",
-      "Name": "XIVLauncher",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "mpv.net",
       "Name": "mpv.net",
-      "Version": "",
+      "Version": "7.1.2.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "sigoden.WindowSwitcher",
       "Name": "Window Switcher",
       "Version": "1.17.0",
       "Source": "winget",
-      "ManagerName": "Winget"
-    },
-    {
-      "Id": "touchbyte.PhotoSync",
-      "Name": "PhotoSync",
-      "Version": "",
-      "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     }
   ],
   "incompatible_packages_info": "Incompatible packages cannot be installed from UniGetUI, either because they came from a local source (for example Local PC) or because the package manager was unavailable. Nevertheless, they have been listed here for logging purposes.",

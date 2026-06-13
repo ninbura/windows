@@ -3,98 +3,108 @@
   "packages": [
     {
       "Id": "Microsoft.DirectX",
-      "Name": "DirectX End-User Runtime Web \u2026",
-      "Version": "",
+      "Name": "DirectX End-User Runtime Installer",
+      "Version": "9.29.1974.0",
       "Source": "winget",
-      "ManagerName": "Winget",
-      "InstallationOptions": {
-        "OverridesNextLevelOpts": true,
-        "InteractiveInstallation": true
-      }
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Microsoft.VCLibs.14",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Runtime Package",
+      "Version": "14.0.33519.0",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "Microsoft.VCLibs.Desktop.14",
+      "Name": "Microsoft Visual C\u002B\u002B 2015 UWP Desktop Runtime Package",
+      "Version": "14.0.33728.0",
+      "Source": "winget",
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2005.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable (x64)",
-      "Version": "",
+      "Version": "8.0.61000",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2005.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable",
-      "Version": "",
+      "Name": "Microsoft Visual C\u002B\u002B 2005 Redistributable (x86)",
+      "Version": "8.0.61001",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2008.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x64",
-      "Version": "",
+      "Version": "9.0.30729.6161",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2008.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2008 Redistributable - x86",
-      "Version": "",
+      "Version": "9.0.30729.6161",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2010.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2010 x64 Redistributable",
-      "Version": "",
+      "Version": "10.0.40219",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2010.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2010 x86 Redistributable",
-      "Version": "",
+      "Version": "10.0.40219",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2012.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x64)",
-      "Version": "",
+      "Version": "11.0.61030.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2012.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2012 Redistributable (x86)",
-      "Version": "",
+      "Version": "11.0.61030.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2013.x64",
       "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x64)",
-      "Version": "",
+      "Version": "12.0.40664.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2013.x86",
       "Name": "Microsoft Visual C\u002B\u002B 2013 Redistributable (x86)",
-      "Version": "",
+      "Version": "12.0.40664.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2015\u002B.x64",
-      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x64)",
-      "Version": "",
+      "Name": "Microsoft Visual C\u002B\u002B v14 Redistributable (x64)",
+      "Version": "14.51.36247.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     },
     {
       "Id": "Microsoft.VCRedist.2015\u002B.x86",
-      "Name": "Microsoft Visual C\u002B\u002B 2015-2022 Redistributable (x86)",
-      "Version": "",
+      "Name": "Microsoft Visual C\u002B\u002B v14 Redistributable (x86)",
+      "Version": "14.51.36247.0",
       "Source": "winget",
-      "ManagerName": "Winget"
+      "ManagerName": "winget"
     }
   ],
   "incompatible_packages_info": "Incompatible packages cannot be installed from UniGetUI, either because they came from a local source (for example Local PC) or because the package manager was unavailable. Nevertheless, they have been listed here for logging purposes.",
