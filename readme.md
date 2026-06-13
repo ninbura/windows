@@ -7,21 +7,20 @@
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
     5.  [update windows](#update-windows)
     6.  [update microsoft store apps](#update-microsoft-store-apps)
-    7.  [Configure Developer Settings (don't skip)](#configure-developer-settings-dont-skip)
-    8.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
-    9.  [configure windows terminal](#configure-windows-terminal)
-    10. [Download, configure, & run the `bulk-edit-settings` PowerShell script.](#Download-configure--run-the-bulk-edit-settings-PowerShell-script)
-    11. [manually configure other windows settings](#manually-configure-other-windows-settings)
-    12. [download/install system drivers](#downloadinstall-system-drivers)
-    13. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-installupdate-applications)
-    14. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-    15. [download/install remaining software](#downloadinstall-remaining-software)
-    16. [configure audio settings](#configure-audio-settings)
-    17. [configure rgb lighting](#configure-rgb-lighting)
+    7.  [Configure Windows Settings](#configure-windows-settings)
+    9.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
+    10. [configure windows terminal](#configure-windows-terminal)
+    11. [Download, configure, & run the `bulk-edit-settings` PowerShell script.](#Download-configure--run-the-bulk-edit-settings-PowerShell-script)
+    12. [manually configure other windows settings](#manually-configure-other-windows-settings)
+    13. [download/install system drivers](#downloadinstall-system-drivers)
+    14. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-installupdate-applications)
+    15. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
+    16. [download/install remaining software](#downloadinstall-remaining-software)
+    17. [configure audio settings](#configure-audio-settings)
+    18. [configure rgb lighting](#configure-rgb-lighting)
 - [drivers](#drivers)
 - [software](#software)
 - [troubleshooting](#troubleshooting)
-- [bulk edit settings configuration](#bulk-edit-settings-configuration)
 
 # Suggested Prerequisites
 - A currently functioning computer running Windows.
@@ -64,12 +63,53 @@
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-7. ### Configure Developer Settings (don't skip)
-    1. navigate to `Settings > System > For Developers`
-    2. under `Terminal` select Windows Terminal in the drop down
-    3. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
-    4. toggle `Enable sudo`
-    5. change `Configure how sudo runs applications` to `Inline`
+7. ### Configure Windows Settings
+    - Mouse Acceleration
+        1. Open Control Panel
+        2. Click "Hardware And Sound" > "Mouse" (Devices and Printers)
+        3. Click the "Pointer Option" tab & uncheck "Enhance pointer precision"
+    - UAC Prompts
+        - Do at your own risk, technically this makes it easier to perform administrative actions.
+        1. Open Control Panel
+        2. Navigate to "User Accounts" > "User Accounts" > "Change User Account Control Settings"
+        3. Drag the slider to "Never notify"
+    - Advanced Settings
+        1. Open Windows Settings
+        2. Navigate to "System" > "Advanced" > "File Explorer"
+            1. Toggle "Show file extensions" on
+            2. Toggle "Show hidden and system files" on
+        3. Navigate back to "Advanced"
+        4. Set Terminal to "Windows Terminal"
+        5. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
+        6. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline".
+    - Theme
+        1. Open Windows Settings
+        2. Navigate to "Personalization" > "Colors"
+        3. Set "Choose your mode" to "Dark"
+        4. Set your Accent color per your desire
+    - Date & Time
+        - Date & Time Format
+            1. Open Control Panel
+            2. Click "Clock & Region" > "Date & Time"
+            3. Click the "Change date and time..." button
+            4. Click the "Change calendar settings" hyperlink
+            5. Click the "Additional settings..." button
+            6. Click the "Time" tab
+                1. Set "Short time:" to `HH:mm`
+                2. Set "Long time:" to `HH:mm:ss`
+            7. Click the "Date" tab
+                1. Set "Short Date:" to `yyyy/MM/dd`
+        - Taskbar & Notification Tray
+            1. Open Windows Settings
+            2. Click on "Time & Language" > "Date & Time"
+            3. Toggle "Show time in Notification Center" on
+            4. Expand "Show time and date in the System try" & enable "Show seconds in system tray clock"
+    - 
+    2.  navigate to `Settings > System > For Developers`
+    3. under `Terminal` select Windows Terminal in the drop down
+    4. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
+    5. toggle `Enable sudo`
+    6. change `Configure how sudo runs applications` to `Inline`
 8. ### Configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
