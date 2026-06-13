@@ -7,7 +7,7 @@
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
     5.  [update windows](#update-windows)
     6.  [update microsoft store apps](#update-microsoft-store-apps)
-    7.  [Install Optional Features (For Windows N Editions)(#install-optional-features--for-windows-n-editions)
+    7.  [Install Optional Features (For Windows N Editions)](#install-optional-features--for-windows-n-editions)
     8.  [Configure Windows Settings](#configure-windows-settings)
     9.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
     10. [configure windows terminal](#configure-windows-terminal)
