@@ -7,7 +7,8 @@
     4.  [verify that windows is activated](#verify-that-windows-is-activated)
     5.  [update windows](#update-windows)
     6.  [update microsoft store apps](#update-microsoft-store-apps)
-    7.  [Configure Windows Settings](#configure-windows-settings)
+    7.  [Install Optional Features (For Windows N Editions)(#install-optional-features--for-windows-n-editions)
+    8.  [Configure Windows Settings](#configure-windows-settings)
     9.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
     10. [configure windows terminal](#configure-windows-terminal)
     11. [Download, configure, & run the `bulk-edit-settings` PowerShell script.](#Download-configure--run-the-bulk-edit-settings-PowerShell-script)
@@ -63,7 +64,7 @@
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-7. ### Install "Optional Features" (For Windows N Editions)
+7. ### Install "Optional Features" (Windows N Editions)
     1. Open Windows Settings & navigate to "System" > "Optional Features" > "View Features" > "See available features".
     3. Search "Media" & Install "Media Feature Pack.
     4. Note that if install fails, just repeat the steps to try again, sometimes it takes 2 tries.
