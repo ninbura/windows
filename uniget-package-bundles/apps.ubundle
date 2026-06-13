@@ -452,6 +452,13 @@
       }
     },
     {
+      "Id": "Valve.Steam",
+      "Name": "Steam",
+      "Version": "2.10.91.91",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
       "Id": "WireGuard.WireGuard",
       "Name": "WireGuard",
       "Version": "1.1",
