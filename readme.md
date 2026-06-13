@@ -63,54 +63,62 @@
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-7. ### Configure Windows Settings
+7. ### Install "Optional Features" (For Windows N Editions)
+    1. Open Windows Settings & navigate to "System" > "Optional Features" > "View Features" > "See available features".
+    3. Search "Media" & Install "Media Feature Pack.
+    4. Note that if install fails, just repeat the steps to try again, sometimes it takes 2 tries.
+    5. Open Microsoft Store.
+    6. Search & Install "Xbox" app.
+    7. Open Xbox app & sign in.
+    8. Uncheck all the "Get ready to play" toggles.
+    9. Click your username/photo in the top right, then click Settings.
+    10. Navigate to "App" & install missing dependencies.
+    11. Open Windows Settings & Navigate to 
+8. ### Configure Windows Settings
     - Mouse Acceleration
-        1. Open Control Panel
-        2. Click "Hardware And Sound" > "Mouse" (Devices and Printers)
-        3. Click the "Pointer Option" tab & uncheck "Enhance pointer precision"
+        1. Open Control Panel.
+        2. Click "Hardware And Sound" > "Mouse" (Devices and Printers).
+        3. Click the "Pointer Option" tab & uncheck "Enhance pointer precision".
     - UAC Prompts
         - Do at your own risk, technically this makes it easier to perform administrative actions.
-        1. Open Control Panel
-        2. Navigate to "User Accounts" > "User Accounts" > "Change User Account Control Settings"
-        3. Drag the slider to "Never notify"
+        1. Open Control Panel.
+        2. Navigate to "User Accounts" > "User Accounts" > "Change User Account Control Settings".
+        3. Drag the slider to "Never notify".
     - Advanced Settings
-        1. Open Windows Settings
-        2. Navigate to "System" > "Advanced" > "File Explorer"
+        1. Open Windows Settings & navigate to "System" > "Advanced" > "File Explorer".
             1. Toggle "Show file extensions" on
             2. Toggle "Show hidden and system files" on
-        3. Navigate back to "Advanced"
-        4. Set Terminal to "Windows Terminal"
-        5. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
-        6. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline".
+        2. Navigate back to "Advanced"
+        3. Set Terminal to "Windows Terminal"
+        4. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
+        5. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline".
     - Theme
-        1. Open Windows Settings
-        2. Navigate to "Personalization" > "Colors"
-        3. Set "Choose your mode" to "Dark"
-        4. Set your Accent color per your desire
+        1. Open Windows Settings & navigate to "Personalization" > "Colors".
+        2. Set "Choose your mode" to "Dark".
+        3. Set your Accent color per your desire.
     - Date & Time
         - Date & Time Format
-            1. Open Control Panel
-            2. Click "Clock & Region" > "Date & Time"
-            3. Click the "Change date and time..." button
-            4. Click the "Change calendar settings" hyperlink
-            5. Click the "Additional settings..." button
-            6. Click the "Time" tab
-                1. Set "Short time:" to `HH:mm`
-                2. Set "Long time:" to `HH:mm:ss`
-            7. Click the "Date" tab
-                1. Set "Short Date:" to `yyyy/MM/dd`
+            1. Open Control Panel.
+            2. Click "Clock & Region" > "Date & Time".
+            3. Click the "Change date and time..." button.
+            4. Click the "Change calendar settings" hyperlink.
+            5. Click the "Additional settings..." button.
+            6. Click the "Time" tab.
+                1. Set "Short time:" to `HH:mm`.
+                2. Set "Long time:" to `HH:mm:ss`.
+            7. Click the "Date" tab.
+                1. Set "Short Date:" to `yyyy/MM/dd`.
         - Taskbar & Notification Tray
-            1. Open Windows Settings
-            2. Click on "Time & Language" > "Date & Time"
-            3. Toggle "Show time in Notification Center" on
-            4. Expand "Show time and date in the System try" & enable "Show seconds in system tray clock"
+            1. Open Windows Settings & navigate to "Time & Language" > "Date & Time".
+            3. Toggle "Show time in Notification Center" on.
+            4. Expand "Show time and date in the System try" & enable "Show seconds in system tray clock".
     - 
     2.  navigate to `Settings > System > For Developers`
     3. under `Terminal` select Windows Terminal in the drop down
     4. under `PowerShell` toggle `Change execution policy to allow local PowerShell scripts to run without signing. Require signing for remote scripts.`
     5. toggle `Enable sudo`
     6. change `Configure how sudo runs applications` to `Inline`
-8. ### Configure winget & manually install a few applications
+9. ### Configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
     3. enable InstallerHasOverride
@@ -142,14 +150,14 @@
             - ```PowerShell
               winget install Zen-Team.ZenBrowser
               ```
-9. ### Configure Windows Terminal
+10. ### Configure Windows Terminal
     - set PowerShell 7 as default profile
         - There will be two PowerShell options in the list, you want the one with the darker blue color.
         - `Settings > Default profile > PowerShell`
     - configure theming
         - `Settings > Appearence`
         - `Settings > Defaults > Appearence`
-10. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
+11. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
     - Restart Windows Terminal
     - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
         - ```PowerShell
@@ -162,7 +170,7 @@
     - Save and close `config.json`.
     - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
     - Wait for the script to finish running, then **restart your computer**.
-11. ### Manually configure other windows settings
+12. ### Manually configure other windows settings
     - theme settings
       - navigate to `personalization > colors`
       - change "choose your mode" to dark
@@ -181,12 +189,12 @@
       - enable "public folder sharing"
       - enable "password protected sharing"
     - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-12. ### download/install system drivers
+13. ### download/install system drivers
     - see [drivers](#drivers) list below
     - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
     - you don't need to restart your computer when prompted after every single driver
     - restart your computer after installing all drivers
-13. ### UniGetUI - bulk install/update applications
+14. ### UniGetUI - bulk install/update applications
     1. install & open UniGetUI
         - ```PowerShell
           winget install MartiCliment.UniGetUI
@@ -196,10 +204,10 @@
     4. wait for dependencies to finish installing
     5. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
     6. wait for apps to finish installing
-14. ### verify that system temperatures are in-check
+15. ### verify that system temperatures are in-check
     - under construction
     - see [troubleshooting high temperatures](#troubleshooting-high-temperatures) if temps are high
-15. ### download/install remaining software
+16. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -207,7 +215,7 @@
     - software in the section below is software that can not currently be installed properly via winget/UniGetUI
     - It is _always_ preferred you install software with winget/UniGetUI, it's much quicker & UniGetUI will keep your software updated.
     - If software isn't available via winget/UniGetUi, install software the old fashioned way 😭
-16. ### configure audio settings
+17. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -222,7 +230,7 @@
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-17. ### configure rgb lighting
+18. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
