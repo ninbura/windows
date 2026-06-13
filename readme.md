@@ -138,6 +138,10 @@
         3. Open File Explorer and navigate to "This PC".
         4. Right click your `C` drive, and then "Properties" > "Sharing" (tab) > "Advanced Sharing".
         5. Check "Share this folder", supply a Share name (ie GamePC), click Permissions, and check Allow on everything, "OK", "Apply", and "OK".
+        6. Press Control + Alt + Escape on your keyboard and click "Sign out".
+        7. Click the "I forgot my PIN" button, and make sure that you *use your password* to reset it.
+        8. Don't opt for Microsoft Authenticator as the only step, click "Use your passwrod instead", there may still be a Microsoft Authenticator step later; that's fine.
+        9. You have to login to your PC using your password at least once for File Sharing to work properly, you will be prompted to set a pin again, this is also fine.
     - Performance Settings
         1. Open Control Panel & navigate to "Hardware and Sound" > "Power Options".
         2. Expand the "Hide additional plans" menu, and select "Ultimate Performance" or "High Performance" if the former isn't showing.
