@@ -1,27 +1,25 @@
 # Table of Contents
 
-- [steps](#steps)
-    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus](#mount-the-windows-11-isoinstaller-to-a-bootable-flash-drive-using-rufus)
+- [Steps](#steps)
+    1.  [Mount the Windows 11 ISO/Installer to a Bootable Flash Drive Using Rufus](#mount-the-windows-11-isoinstaller-to-a-bootable-flash-drive-using-rufus)
     2.  [Update & Configure Your Motherboard's BIOS](#update--configure-your-motherboards-bios)
     3.  [Install Windows](#install-windows)
-    4.  [Verify that Windows is Activated](#verify-that-windows-is-activated)
+    4.  [Verify That Windows Is Activated](#verify-that-windows-is-activated)
     5.  [Update Windows](#update-windows)
     6.  [Update Microsoft Store Apps](#update-microsoft-store-apps)
     7.  [Install Optional Features (Windows N Editions)](#install-optional-features-windows-n-editions)
     8.  [Configure Windows Settings](#configure-windows-settings)
-    9.  [Configure winget & manually install a few applications](#configure-winget--manually-install-a-few-applications)
-    10. [configure windows terminal](#configure-windows-terminal)
-    11. [Download, configure, & run the `bulk-edit-settings` PowerShell script.](#Download-configure--run-the-bulk-edit-settings-PowerShell-script)
-    12. [manually configure other windows settings](#manually-configure-other-windows-settings)
-    13. [download/install system drivers](#downloadinstall-system-drivers)
-    14. [UniGetUI - bulk install/update applications](#UniGetUI---bulk-installupdate-applications)
-    15. [verify that system temperatures are in-check](#verify-that-system-temperatures-are-in-check)
-    16. [download/install remaining software](#downloadinstall-remaining-software)
-    17. [configure audio settings](#configure-audio-settings)
-    18. [configure rgb lighting](#configure-rgb-lighting)
-- [drivers](#drivers)
-- [software](#software)
-- [troubleshooting](#troubleshooting)
+    9.  [Configure Winget & Manually Install a Few Applications](#configure-winget--manually-install-a-few-applications)
+    10. [Configure Windows Terminal & Clone This Repository](#configure-windows-terminal--clone-this-repository)
+    11. [Download/Install System Drivers](#downloadinstall-system-drivers)
+    12. [UniGetUI - Bulk Install/Update Applications](#UniGetUI---bulk-installupdate-applications)
+    13. [Verify That System Temperatures Are In-Check](#verify-that-system-temperatures-are-in-check)
+    14. [Download/Install Remaining Software](#downloadinstall-remaining-software)
+    15. [Configure Audio Settings](#configure-audio-settings)
+    16. [Configure RGB Lighting](#configure-rgb-lighting)
+- [Drivers](#drivers)
+- [Software](#software)
+- [Troubleshooting](#troubleshooting)
 
 # Suggested Prerequisites
 - A currently functioning computer running Windows.
@@ -31,7 +29,7 @@
     - If you have a business grade microsoft account for work, you may be able to obtain a key for free [here](https://my.visualstudio.com/Downloads?q=Windows%2011).
     - Otherwise, [this](https://wholsalekeys.com/shop/windows-11-pro-for-workstations/) is a good place to buy cheap keys.
 
-# steps
+# Steps
 1. ### Mount the Windows 11 ISO/Installer to a Bootable Flash Drive using Rufus
     - USB 3.0 drive preffered
     - must be greater than 8GB
@@ -177,51 +175,19 @@
             - ```PowerShell
               winget install Zen-Team.ZenBrowser
               ```
-10. ### Configure Windows Terminal
+10. ### Download/Install System Drivers
+    - see [drivers](#drivers) list below
+    - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
+    - you don't need to restart your computer when prompted after every single driver
+    - restart your computer after installing all drivers
+11. ### Configure Windows Terminal & Clone This Repository.
     - set PowerShell 7 as default profile
         - There will be two PowerShell options in the list, you want the one with the darker blue color.
         - `Settings > Default profile > PowerShell`
     - configure theming
         - `Settings > Appearence`
         - `Settings > Defaults > Appearence`
-11. ### Download, configure, & run the `bulk-edit-settings` PowerShell script.
-    - Restart Windows Terminal
-    - Run the following commands (you may have to hit enter multiple times if you copy/paste the full block).
-        - ```PowerShell
-          git clone https://github.com/ninbura/windows $HOME/repos/windows
-          New-Item -Path "~/repos/windows/config.json" -ItemType "File"
-          ```
-    - Note that `~` represents your user's directory (ie `C:/Users/gabri/`).
-    - Open `~/repos/windows/config.json` in desired text editor (ie Notepad).
-    - See [bulk edit settings configuration](#bulk-edit-settings-configuration) for instructions as how to configure your `config.json` file.
-    - Save and close `config.json`.
-    - Right click `~/repos/windows/run-me.bat` & select "Run as administrator".
-    - Wait for the script to finish running, then **restart your computer**.
-12. ### Manually configure other windows settings
-    - theme settings
-      - navigate to `personalization > colors`
-      - change "choose your mode" to dark
-      - set desired accent color
-    - display settings
-      - navigate to `system > display`
-      - order displays as desired
-      - select main display
-      - open "multiple displays" dropdown
-        - check "make this my main display"
-      - scroll to bottom of list & select "advanced display"
-        - generally set refresh rate to max for each monitor
-    - network settings
-      - navigate to `network & internet > advanced network settings > advanced sharing settings`
-      - expand "all networks" drop down
-      - enable "public folder sharing"
-      - enable "password protected sharing"
-    - Configure other system settings you'd like which weren't included in the above list or the `bulk-edit-settings` powershell script.
-13. ### download/install system drivers
-    - see [drivers](#drivers) list below
-    - Note that every driver you need may not be listed below, said list is composed of items relevant to me and my direct peers.
-    - you don't need to restart your computer when prompted after every single driver
-    - restart your computer after installing all drivers
-14. ### UniGetUI - bulk install/update applications
+12. ### UniGetUI - Bulk Install/Update Applications
     1. install & open UniGetUI
         - ```PowerShell
           winget install MartiCliment.UniGetUI
@@ -231,10 +197,11 @@
     4. wait for dependencies to finish installing
     5. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
     6. wait for apps to finish installing
-15. ### verify that system temperatures are in-check
+13. ### verify That System Temperatures Are In-Check
     - under construction
+    - Use HWiNFO to monitor temps.
     - see [troubleshooting high temperatures](#troubleshooting-high-temperatures) if temps are high
-16. ### download/install remaining software
+14. ### download/install remaining software
     - see [software](#software) section below
     - just like drivers you don't need to restart your computer when prompted after every single install
     - restart your computer after installing all desired software (if you were prompted at somepoint to do so)
@@ -242,7 +209,7 @@
     - software in the section below is software that can not currently be installed properly via winget/UniGetUI
     - It is _always_ preferred you install software with winget/UniGetUI, it's much quicker & UniGetUI will keep your software updated.
     - If software isn't available via winget/UniGetUi, install software the old fashioned way 😭
-17. ### configure audio settings
+15. ### configure audio settings
     - open control panel & navigate to `hardware & sound > sound`
     - verify you're on the "playback" tab
       - right click any device that you wont be using & select "disable" (repeat for all unused devices)
@@ -257,7 +224,7 @@
       - right click any device and uncheck "show disabled devices" (re-enable as needed for troubleshooting and such)
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
-18. ### configure rgb lighting
+16. ### configure rgb lighting
     - this is a very inconsistent process not only by motherboard but often by sepcific components
     - often times your motherboard will have a single piece of software that allows for configuring all rgb
     - other times you need a specific program for a specific component
