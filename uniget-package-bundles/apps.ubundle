@@ -433,7 +433,14 @@
       "Name": "Rufus",
       "Version": "4.14",
       "Source": "winget",
-      "ManagerName": "winget"
+      "ManagerName": "winget",
+      "InstallationOptions": {
+        "OverridesNextLevelOpts": true,
+        "CustomParameters_Install": [
+          "--Location",
+          "Documents"
+        ]
+      }
     },
     {
       "Id": "WireGuard.WireGuard",
