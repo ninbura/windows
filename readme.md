@@ -203,15 +203,20 @@
           winget install Devolutions.UniGetUI
           ```
     2. Click on "Settings" in the bottom left hand corner of the app, and navigate to "Administrator rights and other dangerous settings".
-    3. Enable "Allow custom command-line arguments" & "Allow importing custom command-line arguments when importing packages from a bundle", these options are used in my bundles to set app locations for apps like BattleNet & Rufus.
+    3. Enable "Allow custom command-line arguments" & "Allow importing custom command-line arguments when importing packages from a bundle".
+        - These options are used in my bundles to set app locations for apps like BattleNet & Rufus.
+        - Note that all other "Portable" apps, like FFmpeg, window-switcher install to the following location.
+            - ```PowerShell
+              %LOCALAPPDATA%\Microsoft\WinGet\Packages
+              ```
     4. Go back to Settings, and navigate to "Package update preferences".
     5. Set "Check for updates every:" to "12 hours".
     6. Click "Package managers" in the bottom left hand corner of the app, and untoggle everything except "WinGet".
     7. click on "Package Bundles" in the left-hand side menu
     8. Load the `~/repos/windows/unigetui-package-bundles/dependencies.ubundle` bundle, check the box in the header to select all applications, and click "Install Selection".
-    4. wait for dependencies to finish installing
-    5. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
-    6. wait for apps to finish installing
+    9. wait for dependencies to finish installing
+    10. load the `~/repos/windows/unigetui-package-bundles/apps.ubundle` bundle, select the apps you'd like to install, and and click "Install Selection".
+    11. wait for apps to finish installing
 13. ### verify That System Temperatures Are In-Check
     - under construction
     - Use HWiNFO to monitor temps.
