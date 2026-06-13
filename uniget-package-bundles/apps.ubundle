@@ -62,7 +62,16 @@
       "Name": "Battle.net Setup",
       "Version": "1.19.3.3219",
       "Source": "winget",
-      "ManagerName": "winget"
+      "ManagerName": "winget",
+      "InstallationOptions": {
+        "OverridesNextLevelOpts": true,
+        "CustomParameters_Install": [
+          "--Location",
+          "\u0022C:\\Program",
+          "Files",
+          "(x86)\\Battle.net\u0022"
+        ]
+      }
     },
     {
       "Id": "BurntSushi.ripgrep.GNU",
