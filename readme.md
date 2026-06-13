@@ -145,8 +145,6 @@
         2. Expand the "Hide additional plans" menu, and select "Ultimate Performance" or "High Performance" if the former isn't showing.
         3. Click the "Change plan settings" hyperlink on the plan you enabled, and configure display & computer sleep to your liking.
         4. Click the "change advanced power settings" hyperlink, expand the "USB settings" > "USB selective suspend setting" and disable it.
-    - Start Menu
-        1. Open Windows Settings & navigate to 
 9. ### Configure winget & manually install a few applications
     1. right click the start button and click `Terminal`
     2. run/enter the following commands in Windows Terminal
