@@ -403,6 +403,13 @@
       "ManagerName": "winget"
     },
     {
+      "Id": "REALiX.HWiNFO",
+      "Name": "HWiNFO\u00AE",
+      "Version": "8.48",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
       "Id": "RODE.RODECasterApp",
       "Name": "RODECaster App",
       "Version": "2.0.111",
