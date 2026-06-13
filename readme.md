@@ -186,7 +186,13 @@
         - `Settings > Default profile > PowerShell`
     - configure theming
         - `Settings > Appearence`
+            - Toggle "Use acrylic material in the tab row" on.
         - `Settings > Defaults > Appearence`
+            - Set transparency to 80%.
+    - Restart Windows Terminal, and run the follwing command.
+        - ```PowerShell
+          mkdir ~/repos; git clone https://github.com/ninbura/windows ~/repos/windows
+          ```
 12. ### UniGetUI - Bulk Install/Update Applications
     1. install & open UniGetUI
         - ```PowerShell
