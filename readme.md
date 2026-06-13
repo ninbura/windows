@@ -64,7 +64,7 @@
     4. Wait until all updates have been retreived, should be a little loading symbol to reference.
     5. Select "Update All" just left of the "Get Updates" button.
     6. Wait for all Microsoft Store applications to update before proceeding.
-7. ### Install "Optional Features" (Windows N Editions)
+7. ### Install Optional Features (Windows N Editions)
     1. Open Windows Settings & navigate to "System" > "Optional Features" > "View Features" > "See available features".
     3. Search "Media" & Install "Media Feature Pack.
     4. Note that if install fails, just repeat the steps to try again, sometimes it takes 2 tries.
