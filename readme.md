@@ -203,7 +203,7 @@
           winget install Devolutions.UniGetUI
           ```
     2. Click on "Settings" in the bottom left hand corner of the app, and navigate to "Administrator rights and other dangerous settings".
-    3. Enable "Allow custom command-line arguments", this is used in my bundles to set app locations for portable apps like Rufus.
+    3. Enable "Allow custom command-line arguments" & "Allow importing custom command-line arguments when importing packages from a bundle", these options are used in my bundles to set app locations for apps like BattleNet & Rufus.
     4. Go back to Settings, and navigate to "Package update preferences".
     5. Set "Check for updates every:" to "12 hours".
     6. Click "Package managers" in the bottom left hand corner of the app, and untoggle everything except "WinGet".
