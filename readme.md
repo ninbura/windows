@@ -257,7 +257,7 @@
         - Other times you need a specific program for a specific component.
           - For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
         - It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
-    - For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
+        - For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
 
 # drivers
 
