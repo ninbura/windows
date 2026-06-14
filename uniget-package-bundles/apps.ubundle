@@ -354,6 +354,13 @@
       "ManagerName": "winget"
     },
     {
+      "Id": "OpenRGB.OpenRGB",
+      "Name": "OpenRGB",
+      "Version": "0.9.1646",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
       "Id": "Proton.ProtonAuthenticator",
       "Name": "Proton Authenticator",
       "Version": "1.1.6",
