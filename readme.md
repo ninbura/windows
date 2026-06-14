@@ -97,18 +97,20 @@
         1. Open Windows Settings & navigate to "Personalization" > "Colors".
             1. Set "Choose your mode" to "Dark".
             2. Set your Accent color per your desire.
-        2. Navigate to "Personalization" > "Themes" > "Desktop icon settings"
+        2. Navigate to "Personalization" > "Themes" > "Desktop icon settings".
             1. Before you uncheck "Recycle Bin", pin it to your Favorites in File Explorer.
             2. Open your Recyle Bin by double clicking the icon on your desktop.
             3. Drag the "Recycle Bin" text from from the URL bar in File Explorer to your pinned section, I put it at the bottom.
             4. Uncheck "Recycle Bin" in the "Desktop icon settings" dialog we opened earlier.
-        3. Navigate to "Personalization" > "Lock screen"
+        3. Navigate to "Personalization" > "Dynamic Lighting".
+            1. Disable "Use Dynamic Lighting on my devices". 
+        4. Navigate to "Personalization" > "Lock screen".
             1. Set "Lock screen status" to "None".
-        4. Navigate to "Personalization" > "Start"
+        5. Navigate to "Personalization" > "Start"
             1. Toggle off "Show reccomended files int Start...".
             2. Toggle off "Show recommendatoins for tips...".
             3. Toggle off "Show account-related notifications.
-        5. Navigate to "Personalization" > "Taskbar".
+        6. Navigate to "Personalization" > "Taskbar".
             1. Set "Search" to "Hide" & untoggle all other "Taskbar items".
             2. Expand the "Taskbar behaviors" menu.
             3. Uncheck "Show flashing taskbar apps", and "Show my taskbar on all displays".
