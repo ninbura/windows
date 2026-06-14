@@ -250,7 +250,7 @@
           - ```PowerShell
             winget install OpenRGB.OpenRGB
             ```
-        - Note that you will most likely want to run OpenRGB as adminstrator, to make this consistently apply at launch apply "Run this program as an adminitrator" in the "Compatibility" tab in the properties of the OpenRGB executable (right click > Properties).
+        - Note that you will most likely want to run OpenRGB as adminstrator, to make this consistently apply at launch enable "Run this program as an adminitrator" in the "Compatibility" tab in the properties of the OpenRGB executable (right click > Properties).
     - Other
         - This is a very inconsistent process not only by motherboard but often by sepcific components.
         - Often times your motherboard will have a single piece of software that allows for configuring all rgb.
