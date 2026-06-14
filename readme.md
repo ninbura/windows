@@ -245,11 +245,18 @@
       - select desired device & click the "set default" button below the device list
     - repeat these steps any time you encounter **_(😔((((audio problems))))😔)_**
 16. ### configure rgb lighting
-    - this is a very inconsistent process not only by motherboard but often by sepcific components
-    - often times your motherboard will have a single piece of software that allows for configuring all rgb
-    - other times you need a specific program for a specific component
-      - For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
-    - It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
+    - OpenRGB
+        - I would first try OpenRBG, you can install it via UniGetUI, through the Apps package bundle in this repo, or via WinGet directly.
+          - ```PowerShell
+            winget install OpenRGB.OpenRGB
+            ```
+        - Note that you will most likely want to run OpenRGB as adminstrator, to make this consistently apply at launch apply "Run this program as an adminitrator" in the "Compatibility" tab in the properties of the OpenRGB executable (right click > Properties).
+    - Other
+        - This is a very inconsistent process not only by motherboard but often by sepcific components.
+        - Often times your motherboard will have a single piece of software that allows for configuring all rgb.
+        - Other times you need a specific program for a specific component.
+          - For exmaple, pny gpus use dedicated software, motherboard can't configure many pny gpus lighting.
+        - It's really such a mixed bag that you'll just have to start by referencing / installing your motherboards rgb control software, and then work from there.
     - For each component that can't be controlled via this software, google the exact component in question + "rgb control" & pray that you find competent instructions online.
 
 # drivers
