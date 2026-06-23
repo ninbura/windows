@@ -85,14 +85,22 @@
         1. Open Control Panel.
         2. Navigate to "User Accounts" > "User Accounts" > "Change User Account Control Settings".
         3. Drag the slider to "Never notify".
-    - Advanced Settings
-        1. Open Windows Settings & navigate to "System" > "Advanced" > "File Explorer".
-            1. Toggle "Show file extensions" on
-            2. Toggle "Show hidden and system files" on
-        2. Navigate back to "Advanced"
-        3. Set Terminal to "Windows Terminal"
-        4. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
-        5. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline".
+    - System
+        1. Notifications
+            1. Open Windows Settings & navigate to "System" > "Notifications".
+            2. Expand the "Notifications" drop down, and enable "Show notification bell Icon".
+            3. Disable "Do no disturb".
+            4. Expand the "Turn on do not disturb automatically".
+                1. Disable "When duplicating your display...".
+                2. Disable "For the first hour after a Windows feature update". 
+        2. Advanced Settings
+            1. Navigate to "System" > "Advanced" > "File Explorer".
+                1. Toggle "Show file extensions" on
+                2. Toggle "Show hidden and system files" on
+            2. Navigate back to "Advanced"
+            3. Set Terminal to "Windows Terminal"
+            4. Expand the "PowerShell" menu & enable "Change execution policy to allow..."
+            5. Enable sudo, Expand the sudo menu, and set "Configure how sudo runs applications to "Inline". 
     - Personalization
         1. Open Windows Settings & navigate to "Personalization" > "Colors".
             1. Set "Choose your mode" to "Dark".
