@@ -242,9 +242,9 @@
       "ManagerName": "winget"
     },
     {
-      "Id": "Microsoft.DotNet.DesktopRuntime.10",
-      "Name": "Microsoft .NET Windows Desktop Runtime 10.0",
-      "Version": "10.0.9",
+      "Id": "Microsoft.DotNet.SDK.10",
+      "Name": "Microsoft .NET SDK 10.0",
+      "Version": "10.0.301",
       "Source": "winget",
       "ManagerName": "winget"
     },
@@ -476,6 +476,13 @@
       "Id": "WireGuard.WireGuard",
       "Name": "WireGuard",
       "Version": "1.1",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
+      "Id": "ZedIndustries.Zed",
+      "Name": "Zed",
+      "Version": "1.7.2",
       "Source": "winget",
       "ManagerName": "winget"
     },
