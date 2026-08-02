@@ -172,6 +172,13 @@
       "ManagerName": "winget"
     },
     {
+      "Id": "GOG.Galaxy",
+      "Name": "GOG GALAXY",
+      "Version": "2.1.7.22",
+      "Source": "winget",
+      "ManagerName": "winget"
+    },
+    {
       "Id": "Google.PlatformTools",
       "Name": "Android SDK Platform-Tools",
       "Version": "37.0.0",
@@ -294,13 +301,6 @@
       "Id": "Microsoft.VisualStudioCode.Insiders",
       "Name": "Microsoft Visual Studio Code Insiders",
       "Version": "1.125.0",
-      "Source": "winget",
-      "ManagerName": "winget"
-    },
-    {
-      "Id": "Mojang.MinecraftLauncher",
-      "Name": "Minecraft Launcher",
-      "Version": "2.0.0.0",
       "Source": "winget",
       "ManagerName": "winget"
     },

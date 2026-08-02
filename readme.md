@@ -365,6 +365,7 @@ please read [download/install remaining software](#downloadinstall-remaining-sof
 - [**EasyBCD**](https://neosmart.net/EasyBCD/) (tool for dual booting)
 - [**FFXIV Launcher**](https://na.finalfantasyxiv.com/lodestone/playguide/#returner) (square enix's final fantasy 14 launcher)
 - [**iReboot**](https://neosmart.net/iReboot/) (tool for dual booting)
+- [**Minecraft Launcher**](https://www.xbox.com/en-US/games/store/minecraft-launcher/9pgw18npbzv5) (Now distributed via the Xbox App)
 - [**Nvidia App**](https://www.nvidia.com/en-us/software/nvidia-app/) (new Nvidia app that aims to replace GeForce Now & Nvidia Control Panel)
 - [**OBS Advanced Scene Switcher**](https://github.com/WarmUpTill/SceneSwitcher/releases) (OBS plugin)
 - [**OBS Audio Monitor**](https://obsproject.com/forum/resources/audio-monitor.1186/) (OBS plugin)
